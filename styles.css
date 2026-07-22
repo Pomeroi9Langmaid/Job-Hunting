@@ -247,6 +247,17 @@ table {
   table-layout: fixed;
 }
 
+.col-date { width: 95px; }
+.col-company { width: 140px; }
+.col-industry { width: 155px; }
+.col-size { width: 120px; }
+.col-city { width: 120px; }
+.col-role { width: 240px; }
+.col-job-ad { width: 112px; }
+.col-contact { width: 205px; }
+.col-route { width: 205px; }
+.col-progress { width: 320px; }
+
 th {
   padding: 12px 13px;
   color: #f7f9fc;
