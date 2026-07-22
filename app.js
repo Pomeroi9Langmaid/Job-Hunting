@@ -282,8 +282,8 @@ function rowMarkup(record) {
       <td class="city-cell" data-label="City">${escapeHtml(record.city)}</td>
       <td class="role-cell" data-label="Role">${roleMarkup(record)}</td>
       <td class="job-ad-cell" data-label="Job ad">${jobAdMarkup(record)}</td>
-      <td class="route-cell" data-label="Route">${routeMarkup(record)}</td>
       <td class="contact-cell" data-label="Contact">${contactMarkup(record)}</td>
+      <td class="route-cell" data-label="Route">${routeMarkup(record)}</td>
       <td class="progress-cell" data-label="Progress">
         <div class="progress-flow">${progressMarkup(record)}</div>
         ${details}
