@@ -5,18 +5,19 @@ const state = {
 const elements = {
   body: document.querySelector("#applications-body"),
   totalCount: document.querySelector("#total-count"),
-  openRoleCount: document.querySelector("#open-role-count"),
+  applicationCount: document.querySelector("#application-count"),
+  directCount: document.querySelector("#direct-count"),
   speculativeCount: document.querySelector("#speculative-count"),
   interviewCount: document.querySelector("#interview-count"),
   visibleCount: document.querySelector("#visible-count"),
+  lastUpdated: document.querySelector("#last-updated"),
   search: document.querySelector("#search-input"),
   city: document.querySelector("#city-filter"),
   type: document.querySelector("#type-filter"),
   status: document.querySelector("#status-filter"),
-  interviewsOnly: document.querySelector("#interview-filter"),
   clear: document.querySelector("#clear-filters"),
   emptyState: document.querySelector("#empty-state"),
-  dialog: document.querySelector("#interview-dialog"),
+  dialog: document.querySelector("#details-dialog"),
   dialogCompany: document.querySelector("#dialog-company"),
   dialogRole: document.querySelector("#dialog-role"),
   dialogStages: document.querySelector("#dialog-stages"),
@@ -30,20 +31,20 @@ function parseCsv(text) {
   let field = "";
   let inQuotes = false;
 
-  for (let i = 0; i < text.length; i += 1) {
-    const char = text[i];
-    const next = text[i + 1];
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index];
+    const next = text[index + 1];
 
     if (char === '"' && inQuotes && next === '"') {
       field += '"';
-      i += 1;
+      index += 1;
     } else if (char === '"') {
       inQuotes = !inQuotes;
     } else if (char === "," && !inQuotes) {
       row.push(field);
       field = "";
     } else if ((char === "\n" || char === "\r") && !inQuotes) {
-      if (char === "\r" && next === "\n") i += 1;
+      if (char === "\r" && next === "\n") index += 1;
       row.push(field);
       if (row.some((value) => value.length > 0)) rows.push(row);
       row = [];
@@ -71,6 +72,15 @@ function normaliseRecord(record) {
   };
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function splitCities(city) {
   return city
     .split(/\s*[/,]\s*/)
@@ -89,12 +99,10 @@ function addOptions(select, values) {
 
 function setupFilters() {
   const cities = [...new Set(state.records.flatMap((record) => splitCities(record.city)))].sort();
-  const statuses = [...new Set(state.records.map((record) => record.status))].sort();
   addOptions(elements.city, cities);
-  addOptions(elements.status, statuses);
 
-  [elements.search, elements.city, elements.type, elements.status, elements.interviewsOnly].forEach(
-    (control) => control.addEventListener("input", render),
+  [elements.search, elements.city, elements.type, elements.status].forEach((control) =>
+    control.addEventListener("input", render),
   );
 
   elements.clear.addEventListener("click", () => {
@@ -102,58 +110,100 @@ function setupFilters() {
     elements.city.value = "";
     elements.type.value = "";
     elements.status.value = "";
-    elements.interviewsOnly.checked = false;
     render();
     elements.search.focus();
   });
 }
 
-function statusClass(status) {
-  if (status === "Rejected") return "pill-rejected";
-  if (status === "Awaiting response") return "pill-waiting";
-  return "pill-applied";
+function routeLabel(type) {
+  if (type === "Open Role Application") return "OPEN ROLE";
+  if (type === "Direct Role Outreach") return "DIRECT ABOUT ROLE";
+  return "SPECULATIVE";
 }
 
-function typeClass(type) {
-  return type === "Speculative Outreach" ? "pill-speculative" : "pill-open";
+function routeClass(type) {
+  if (type === "Open Role Application") return "pill-role";
+  if (type === "Direct Role Outreach") return "pill-direct";
+  return "pill-speculative";
 }
 
-function escapeHtml(value) {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+function startLabel(type) {
+  if (type === "Open Role Application") return "APPLIED FOR ROLE";
+  if (type === "Direct Role Outreach") return "DIRECT ROLE OUTREACH";
+  return "SPECULATIVE OUTREACH";
 }
 
-function linkMarkup(record) {
-  const links = [];
+function stepMarkup(label, date, className) {
+  const dateMarkup = date ? `<small>${escapeHtml(date)}</small>` : "";
+  return `<span class="progress-step ${className}">${escapeHtml(label)}${dateMarkup}</span>`;
+}
+
+function progressMarkup(record) {
+  const steps = [stepMarkup(startLabel(record.activity_type), record.activity_date, "step-start")];
+
+  if (record.interview_steps) {
+    record.interview_steps.split(";").forEach((step) => {
+      const [date, label] = step.split("|");
+      if (label) steps.push(stepMarkup(label, date, "step-interview"));
+    });
+  }
+
+  if (record.current_status === "Application Closed") {
+    steps.push(stepMarkup("APPLICATION CLOSED", record.outcome_date, "step-closed"));
+  }
+
+  if (record.current_status === "Closed by Andrew") {
+    steps.push(stepMarkup("CLOSED BY ANDREW", record.outcome_date, "step-closed"));
+  }
+
+  return steps.join('<span class="flow-arrow" aria-hidden="true">→</span>');
+}
+
+function roleMarkup(record) {
+  const parts = [escapeHtml(record.job_title)];
+  if (record.notes) parts.push(`<span class="cell-note">${escapeHtml(record.notes)}</span>`);
 
   if (record.job_url) {
-    links.push(
-      `<a class="job-link" href="${escapeHtml(record.job_url)}" target="_blank" rel="noreferrer">Job link</a>`,
+    parts.push(
+      `<a class="job-link" href="${escapeHtml(record.job_url)}" target="_blank" rel="noreferrer">JOB AD</a>`,
     );
-  } else {
-    const text = record.activity_type === "Speculative Outreach" ? "No job advert" : "Link not saved";
-    links.push(`<span class="no-link">${text}</span>`);
+  } else if (record.activity_type !== "Speculative Outreach") {
+    parts.push('<span class="cell-note">Job link not retained</span>');
   }
 
-  if (record.interview_count > 0) {
-    const label = record.interview_count > 1 ? `INTERVIEW x${record.interview_count}` : "INTERVIEW";
-    links.push(
-      `<button class="interview-button" type="button" data-interview-id="${escapeHtml(record.id)}">${label}</button>`,
-    );
-  }
+  return parts.join("");
+}
 
-  return links.join("");
+function routeMarkup(record) {
+  return `
+    <span class="pill ${routeClass(record.activity_type)}">${routeLabel(record.activity_type)}</span>
+    <span class="cell-note">${escapeHtml(record.route_reason)}</span>
+  `;
 }
 
 function contactMarkup(record) {
-  if (!record.contact_name) return '<span class="no-link">Not applicable</span>';
-  const title = record.contact_title ? `, ${escapeHtml(record.contact_title)}` : "";
-  const sent = record.contacted_date ? `<span>Sent ${escapeHtml(record.contacted_date)}</span>` : "";
+  if (!record.contact_name) {
+    return record.activity_type === "Open Role Application"
+      ? '<span class="cell-note">Online application</span>'
+      : '<span class="cell-note">Contact not recorded</span>';
+  }
+
+  const title = record.contact_title
+    ? `<span class="cell-note">${escapeHtml(record.contact_title)}</span>`
+    : "";
+  const sent = record.contacted_date
+    ? `<span class="cell-note">Sent ${escapeHtml(record.contacted_date)}</span>`
+    : "";
   return `${escapeHtml(record.contact_name)}${title}${sent}`;
+}
+
+function progressFilterMatches(record, selected) {
+  if (!selected) return true;
+  if (selected === "Interviewed") return record.interview_count > 0;
+  if (selected === "Active") {
+    return record.current_status === "Active" || record.current_status === "Awaiting Response";
+  }
+  return record.current_status === selected;
 }
 
 function recordMatches(record) {
@@ -161,40 +211,42 @@ function recordMatches(record) {
   const city = elements.city.value;
   const type = elements.type.value;
   const status = elements.status.value;
-
   const haystack = Object.values(record).join(" ").toLowerCase();
-  const cityMatch = !city || splitCities(record.city).includes(city);
 
   return (
     (!query || haystack.includes(query)) &&
-    cityMatch &&
+    (!city || splitCities(record.city).includes(city)) &&
     (!type || record.activity_type === type) &&
-    (!status || record.status === status) &&
-    (!elements.interviewsOnly.checked || record.interview_count > 0)
+    progressFilterMatches(record, status)
   );
 }
 
 function rowMarkup(record) {
-  const note = record.notes ? `<span class="role-note">${escapeHtml(record.notes)}</span>` : "";
+  const details = record.interview_count > 0 || record.outcome
+    ? `<button class="details-button" type="button" data-details-id="${escapeHtml(record.id)}">DETAILS</button>`
+    : "";
+
   return `
     <tr>
       <td class="date-cell" data-label="Date">${escapeHtml(record.activity_date)}</td>
       <td class="company-cell" data-label="Company">${escapeHtml(record.company)}</td>
       <td class="city-cell" data-label="City">${escapeHtml(record.city)}</td>
-      <td class="role-cell" data-label="Role or approach">${escapeHtml(record.job_title)}${note}</td>
-      <td data-label="Type"><span class="pill ${typeClass(record.activity_type)}">${escapeHtml(record.activity_type)}</span></td>
+      <td class="role-cell" data-label="Role">${roleMarkup(record)}</td>
+      <td class="route-cell" data-label="Route">${routeMarkup(record)}</td>
+      <td class="progress-cell" data-label="Progress">
+        <div class="progress-flow">${progressMarkup(record)}</div>
+        ${details}
+      </td>
       <td class="contact-cell" data-label="Contact">${contactMarkup(record)}</td>
-      <td data-label="Status"><span class="pill ${statusClass(record.status)}">${escapeHtml(record.status)}</span></td>
-      <td class="links-cell" data-label="Links"><div class="link-stack">${linkMarkup(record)}</div></td>
     </tr>
   `;
 }
 
-function openInterview(record) {
+function openDetails(record) {
   elements.dialogCompany.textContent = record.company;
   elements.dialogRole.textContent = record.job_title;
-  elements.dialogStages.textContent = record.interview_details || "Interview details not recorded.";
-  elements.dialogOutcome.textContent = record.outcome || "Outcome not recorded.";
+  elements.dialogStages.textContent = record.interview_details || "No interview recorded.";
+  elements.dialogOutcome.textContent = record.outcome || "No outcome recorded.";
   elements.dialog.showModal();
 }
 
@@ -204,18 +256,21 @@ function render() {
   elements.visibleCount.textContent = filtered.length;
   elements.emptyState.hidden = filtered.length !== 0;
 
-  document.querySelectorAll("[data-interview-id]").forEach((button) => {
+  document.querySelectorAll("[data-details-id]").forEach((button) => {
     button.addEventListener("click", () => {
-      const record = state.records.find((item) => item.id === button.dataset.interviewId);
-      if (record) openInterview(record);
+      const record = state.records.find((item) => item.id === button.dataset.detailsId);
+      if (record) openDetails(record);
     });
   });
 }
 
 function renderSummary() {
   elements.totalCount.textContent = state.records.length;
-  elements.openRoleCount.textContent = state.records.filter(
-    (record) => record.activity_type === "Open Job Role",
+  elements.applicationCount.textContent = state.records.filter(
+    (record) => record.activity_type === "Open Role Application",
+  ).length;
+  elements.directCount.textContent = state.records.filter(
+    (record) => record.activity_type === "Direct Role Outreach",
   ).length;
   elements.speculativeCount.textContent = state.records.filter(
     (record) => record.activity_type === "Speculative Outreach",
@@ -223,6 +278,20 @@ function renderSummary() {
   elements.interviewCount.textContent = state.records.filter(
     (record) => record.interview_count > 0,
   ).length;
+}
+
+function renderLastUpdated(response) {
+  const header = response.headers.get("last-modified");
+  const latestRecordDate = state.records.reduce(
+    (latest, record) => (record.date_sort > latest ? record.date_sort : latest),
+    "",
+  );
+  const date = header ? new Date(header) : new Date(`${latestRecordDate}T12:00:00`);
+  elements.lastUpdated.textContent = new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(date);
 }
 
 async function initialise() {
@@ -236,6 +305,7 @@ async function initialise() {
       .sort((a, b) => b.date_sort.localeCompare(a.date_sort) || Number(b.id) - Number(a.id));
 
     renderSummary();
+    renderLastUpdated(response);
     setupFilters();
     render();
   } catch (error) {
