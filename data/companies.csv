@@ -1,59 +1,60 @@
-company,sector_group,industry_sector,employee_band,employee_estimate,verified_date
-"TUI","Travel & Hospitality","Travel and tourism","10,001+","About 60,000","22 Jul 2026"
-"LA Zagaleta","Real Estate","Luxury real estate","11 to 50","About 30","22 Jul 2026"
-"WirelessCar","Automotive","Connected vehicle software","501 to 1,000","About 700 to 1,000","22 Jul 2026"
-"Explora Journeys / MSC","Travel & Hospitality","Luxury cruise travel","1,001 to 5,000","Explora Journeys brand","22 Jul 2026"
-"Epassi","Financial Services","Employee benefits fintech","501 to 1,000","About 500 to 1,000","22 Jul 2026"
-"Simployer","HR Technology","HR technology","201 to 500","About 280","22 Jul 2026"
-"DART Aerospace","Aerospace & Defence","Aerospace manufacturing","201 to 500","About 250","22 Jul 2026"
-"Mandaley","Consumer & Retail","Fashion and e-commerce","11 to 50","About 46","22 Jul 2026"
-"Aimpoint","Aerospace & Defence","Defence optics","51 to 200","About 190 to 200","22 Jul 2026"
-"All Aboard","Travel & Hospitality","Rail travel technology","11 to 50","Under 20","22 Jul 2026"
-"Docupath","Technology & SaaS","AI document software","11 to 50","More than 40","22 Jul 2026"
-"PriceShape","Technology & SaaS","Retail pricing software","51 to 200","About 100 to 120","22 Jul 2026"
-"Collinson","Travel & Hospitality","Travel and loyalty services","1,001 to 5,000","About 2,400","22 Jul 2026"
-"NORNORM","Consumer & Retail","Circular workplace furniture","51 to 200","About 100 to 120","22 Jul 2026"
-"Modine","Industrial & Safety","Thermal management manufacturing","10,001+","About 13,200","22 Jul 2026"
-"SQLI","Technology & SaaS","Digital consulting","1,001 to 5,000","More than 2,000","22 Jul 2026"
-"Sweed Beauty","Consumer & Retail","Cosmetics","11 to 50","About 11","22 Jul 2026"
-"Twistshake","Consumer & Retail","Baby products","1 to 10","Small international team","22 Jul 2026"
-"Electrolux Group","Consumer & Retail","Home appliances","10,001+","About 39,000","22 Jul 2026"
-"MONDO","Consumer & Retail","Consumer audio","1 to 10","Under 10","22 Jul 2026"
-"Vio.com","Travel & Hospitality","Travel technology","51 to 200","About 180 to 200","22 Jul 2026"
-"Atlar","Financial Services","Treasury fintech","11 to 50","About 35","22 Jul 2026"
-"Enode","Energy & Climate","Energy technology","51 to 200","More than 50","22 Jul 2026"
-"Consilium Safety Group","Industrial & Safety","Safety technology","501 to 1,000","About 500 to 600","22 Jul 2026"
-"Coretura","Automotive","Automotive software","51 to 200","About 130","22 Jul 2026"
-"Eliq","Energy & Climate","Energy software","51 to 200","About 70","22 Jul 2026"
-"Icebug","Consumer & Retail","Outdoor footwear","11 to 50","About 40","22 Jul 2026"
-"Eletive","HR Technology","HR software","51 to 200","About 90","22 Jul 2026"
-"Cebon","Industrial & Safety","Energy and safety products","51 to 200","About 140","22 Jul 2026"
-"WalkMe / SAP","Technology & SaaS","Digital adoption software","1,001 to 5,000","About 1,100; SAP owned","22 Jul 2026"
-"Nosto","Technology & SaaS","E-commerce software","201 to 500","About 200","22 Jul 2026"
-"Maria Nila","Consumer & Retail","Haircare and beauty","51 to 200","About 120 to 200","22 Jul 2026"
-"Saab","Aerospace & Defence","Defence and aerospace","10,001+","About 28,700","22 Jul 2026"
-"Frost Unmanned","Aerospace & Defence","Defence drones","11 to 50","Small growth company","22 Jul 2026"
-"Db Journey","Consumer & Retail","Travel goods","51 to 200","About 100","22 Jul 2026"
-"Surikat AB","Transport & Logistics","Logistics software","11 to 50","About 28","22 Jul 2026"
-"Grieg Connect","Transport & Logistics","Maritime software","11 to 50","About 20 to 30","22 Jul 2026"
-"Ascom","Healthcare","Healthcare technology","1,001 to 5,000","About 1,400","22 Jul 2026"
-"CShift / Fidureon","Technology & SaaS","Cybersecurity and GRC","1 to 10","Early-stage team","22 Jul 2026"
-"Ferroamp","Energy & Climate","Solar energy technology","11 to 50","About 46","22 Jul 2026"
-"Monterro","Investment","Software investment","51 to 200","Specialist investment team","22 Jul 2026"
-"Autoliv","Automotive","Automotive safety","10,001+","About 60,000","22 Jul 2026"
-"Atlas Copco","Industrial & Safety","Industrial technology","10,001+","About 56,500","22 Jul 2026"
-"JFD Global","Aerospace & Defence","Maritime and defence systems","501 to 1,000","About 500","22 Jul 2026"
-"SD Worx","HR Technology","HR and payroll technology","5,001 to 10,000","About 7,500","22 Jul 2026"
-"Telavox","Telecommunications","Business communications","201 to 500","About 420","22 Jul 2026"
-"Curoflow","Healthcare","Healthcare software","1 to 10","About 10","22 Jul 2026"
-"Strawberry","Travel & Hospitality","Hotels and hospitality","10,001+","More than 20,000","22 Jul 2026"
-"Varnish Software","Technology & SaaS","Web infrastructure software","51 to 200","About 100","22 Jul 2026"
-"Detectify","Technology & SaaS","Cybersecurity software","51 to 200","About 110 to 150","22 Jul 2026"
-"Everdrone","Healthcare","Emergency drone services","11 to 50","About 21","22 Jul 2026"
-"Meva Energy","Energy & Climate","Bioenergy technology","11 to 50","About 44 to 52","22 Jul 2026"
-"PulPac","Energy & Climate","Sustainable packaging","51 to 200","About 80","22 Jul 2026"
-"Icomera","Transport & Logistics","Transport connectivity","201 to 500","About 300","22 Jul 2026"
-"Modvion","Energy & Climate","Wind energy technology","11 to 50","About 42","22 Jul 2026"
-"Qmatic","Technology & SaaS","Customer journey software","201 to 500","About 300","22 Jul 2026"
-"Brand Metrics","Technology & SaaS","Media measurement software","11 to 50","About 35","22 Jul 2026"
-"PowerCell Group","Energy & Climate","Hydrogen fuel-cell technology","201 to 500","About 200 to 300","22 Jul 2026"
+company,sector_group,industry_sector,employee_band,employee_estimate,verified_date,contact_name,contact_title,contact_email
+TUI,Travel & Hospitality,Travel and tourism,"10,001+","About 60,000",22 Jul 2026,,,
+LA Zagaleta,Real Estate,Luxury real estate,11 to 50,About 30,22 Jul 2026,,,
+WirelessCar,Automotive,Connected vehicle software,"501 to 1,000","About 700 to 1,000",22 Jul 2026,,,
+Explora Journeys / MSC,Travel & Hospitality,Luxury cruise travel,"1,001 to 5,000",Explora Journeys brand,22 Jul 2026,,,
+Epassi,Financial Services,Employee benefits fintech,"501 to 1,000","About 500 to 1,000",22 Jul 2026,,,
+Simployer,HR Technology,HR technology,201 to 500,About 280,22 Jul 2026,,,
+DART Aerospace,Aerospace & Defence,Aerospace manufacturing,201 to 500,About 250,22 Jul 2026,,,
+Mandaley,Consumer & Retail,Fashion and e-commerce,11 to 50,About 46,22 Jul 2026,,,
+Aimpoint,Aerospace & Defence,Defence optics,51 to 200,About 190 to 200,22 Jul 2026,,,
+All Aboard,Travel & Hospitality,Rail travel technology,11 to 50,Under 20,22 Jul 2026,,,
+Docupath,Technology & SaaS,AI document software,11 to 50,More than 40,22 Jul 2026,,,
+PriceShape,Technology & SaaS,Retail pricing software,51 to 200,About 100 to 120,22 Jul 2026,,,
+Collinson,Travel & Hospitality,Travel and loyalty services,"1,001 to 5,000","About 2,400",22 Jul 2026,,,
+NORNORM,Consumer & Retail,Circular workplace furniture,51 to 200,About 100 to 120,22 Jul 2026,,,
+Modine,Industrial & Safety,Thermal management manufacturing,"10,001+","About 13,200",22 Jul 2026,,,
+SQLI,Technology & SaaS,Digital consulting,"1,001 to 5,000","More than 2,000",22 Jul 2026,,,
+Sweed Beauty,Consumer & Retail,Cosmetics,11 to 50,About 11,22 Jul 2026,,,
+Twistshake,Consumer & Retail,Baby products,1 to 10,Small international team,22 Jul 2026,,,
+Electrolux Group,Consumer & Retail,Home appliances,"10,001+","About 39,000",22 Jul 2026,,,
+MONDO,Consumer & Retail,Consumer audio,1 to 10,Under 10,22 Jul 2026,,,
+Vio.com,Travel & Hospitality,Travel technology,51 to 200,About 180 to 200,22 Jul 2026,,,
+Atlar,Financial Services,Treasury fintech,11 to 50,About 35,22 Jul 2026,,,
+Enode,Energy & Climate,Energy technology,51 to 200,More than 50,22 Jul 2026,,,
+Consilium Safety Group,Industrial & Safety,Safety technology,"501 to 1,000",About 500 to 600,22 Jul 2026,,,
+Coretura,Automotive,Automotive software,51 to 200,About 130,22 Jul 2026,,,
+Eliq,Energy & Climate,Energy software,51 to 200,About 70,22 Jul 2026,,,
+Icebug,Consumer & Retail,Outdoor footwear,11 to 50,About 40,22 Jul 2026,,,
+Eletive,HR Technology,HR software,51 to 200,About 90,22 Jul 2026,,,
+Cebon,Industrial & Safety,Energy and safety products,51 to 200,About 140,22 Jul 2026,,,
+WalkMe / SAP,Technology & SaaS,Digital adoption software,"1,001 to 5,000","About 1,100; SAP owned",22 Jul 2026,,,
+Nosto,Technology & SaaS,E-commerce software,201 to 500,About 200,22 Jul 2026,,,
+Maria Nila,Consumer & Retail,Haircare and beauty,51 to 200,About 120 to 200,22 Jul 2026,,,
+Saab,Aerospace & Defence,Defence and aerospace,"10,001+","About 28,700",22 Jul 2026,,,
+Frost Unmanned,Aerospace & Defence,Defence drones,11 to 50,Small growth company,22 Jul 2026,,,
+Db Journey,Consumer & Retail,Travel goods,51 to 200,About 100,22 Jul 2026,,,
+Surikat AB,Transport & Logistics,Logistics software,11 to 50,About 28,22 Jul 2026,,,
+Grieg Connect,Transport & Logistics,Maritime software,11 to 50,About 20 to 30,22 Jul 2026,,,
+Ascom,Healthcare,Healthcare technology,"1,001 to 5,000","About 1,400",22 Jul 2026,,,
+CShift / Fidureon,Technology & SaaS,Cybersecurity and GRC,1 to 10,Early-stage team,22 Jul 2026,,,
+Ferroamp,Energy & Climate,Solar energy technology,11 to 50,About 46,22 Jul 2026,,,
+Monterro,Investment,Software investment,51 to 200,Specialist investment team,22 Jul 2026,,,
+Autoliv,Automotive,Automotive safety,"10,001+","About 60,000",22 Jul 2026,,,
+Atlas Copco,Industrial & Safety,Industrial technology,"10,001+","About 56,500",22 Jul 2026,,,
+JFD Global,Aerospace & Defence,Maritime and defence systems,"501 to 1,000",About 500,22 Jul 2026,,,
+SD Worx,HR Technology,HR and payroll technology,"5,001 to 10,000","About 7,500",22 Jul 2026,,,
+Telavox,Telecommunications,Business communications,201 to 500,About 420,22 Jul 2026,,,
+Curoflow,Healthcare,Healthcare software,1 to 10,About 10,22 Jul 2026,,,
+Strawberry,Travel & Hospitality,Hotels and hospitality,"10,001+","More than 20,000",22 Jul 2026,,,
+Varnish Software,Technology & SaaS,Web infrastructure software,51 to 200,About 100,22 Jul 2026,,,
+Detectify,Technology & SaaS,Cybersecurity software,51 to 200,About 110 to 150,22 Jul 2026,,,
+Everdrone,Healthcare,Emergency drone services,11 to 50,About 21,22 Jul 2026,,,
+Meva Energy,Energy & Climate,Bioenergy technology,11 to 50,About 44 to 52,22 Jul 2026,,,
+PulPac,Energy & Climate,Sustainable packaging,51 to 200,About 80,22 Jul 2026,,,
+Icomera,Transport & Logistics,Transport connectivity,201 to 500,About 300,22 Jul 2026,,,
+Modvion,Energy & Climate,Wind energy technology,11 to 50,About 42,22 Jul 2026,Uffe Vinther-Schou,Head of Sales,uffe.vinther-schou@modvion.com
+Qmatic,Technology & SaaS,Customer journey software,201 to 500,About 300,22 Jul 2026,,,
+Brand Metrics,Technology & SaaS,Media measurement software,11 to 50,About 35,22 Jul 2026,Anders Lithner,CEO & Co-founder,anders@brandmetrics.com
+PowerCell Group,Energy & Climate,Hydrogen fuel-cell technology,201 to 500,About 200 to 300,22 Jul 2026,Richard Berkling,CEO,richard.berkling@powercellgroup.com
+Swegon,Industrial & Safety,Indoor climate and ventilation systems,"1,001 to 5,000","More than 4,100",22 Jul 2026,Eva Karlsson,CEO,eva.karlsson@swegon.com
