@@ -37,7 +37,7 @@ select {
 }
 
 .page-shell {
-  width: min(1580px, calc(100% - 40px));
+  width: min(1900px, calc(100% - 32px));
   margin: 0 auto;
   padding: 40px 0 64px;
 }
@@ -242,8 +242,9 @@ select:focus {
 
 table {
   width: 100%;
-  min-width: 1740px;
+  min-width: 1710px;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 th {
@@ -272,29 +273,31 @@ tbody tr:last-child td {
 }
 
 .date-cell {
-  width: 104px;
+  width: 95px;
   color: var(--muted);
   font-weight: 700;
   white-space: nowrap;
 }
 
 .company-cell {
-  min-width: 145px;
+  width: 140px;
+  min-width: 140px;
   color: var(--navy);
   font-weight: 850;
 }
 
 .industry-cell {
-  min-width: 165px;
-  max-width: 200px;
+  width: 155px;
+  min-width: 155px;
+  max-width: 155px;
   color: var(--navy);
   font-weight: 700;
   line-height: 1.38;
 }
 
 .size-cell {
-  width: 132px;
-  min-width: 132px;
+  width: 120px;
+  min-width: 120px;
   line-height: 1.35;
 }
 
@@ -305,34 +308,39 @@ tbody tr:last-child td {
 }
 
 .city-cell {
-  min-width: 125px;
+  width: 120px;
+  min-width: 120px;
   color: var(--muted);
 }
 
 .role-cell {
-  min-width: 230px;
-  max-width: 300px;
+  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
   font-weight: 700;
   line-height: 1.38;
 }
 
 .job-ad-cell {
-  width: 118px;
-  min-width: 118px;
+  width: 112px;
+  min-width: 112px;
 }
 
 .route-cell {
-  min-width: 225px;
-  max-width: 280px;
+  width: 205px;
+  min-width: 205px;
+  max-width: 205px;
 }
 
 .progress-cell {
-  min-width: 275px;
-  max-width: 410px;
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
 }
 
 .contact-cell {
-  min-width: 190px;
+  width: 205px;
+  min-width: 205px;
   line-height: 1.4;
 }
 
