@@ -1,5 +1,6 @@
 const state = {
   records: [],
+  companyProfiles: new Map(),
 };
 
 const elements = {
@@ -13,6 +14,8 @@ const elements = {
   lastUpdated: document.querySelector("#last-updated"),
   search: document.querySelector("#search-input"),
   city: document.querySelector("#city-filter"),
+  industry: document.querySelector("#industry-filter"),
+  size: document.querySelector("#size-filter"),
   type: document.querySelector("#type-filter"),
   status: document.querySelector("#status-filter"),
   clear: document.querySelector("#clear-filters"),
@@ -66,8 +69,10 @@ function parseCsv(text) {
 }
 
 function normaliseRecord(record) {
+  const companyProfile = state.companyProfiles.get(record.company) || {};
   return {
     ...record,
+    ...companyProfile,
     interview_count: Number(record.interview_count || 0),
   };
 }
@@ -99,15 +104,38 @@ function addOptions(select, values) {
 
 function setupFilters() {
   const cities = [...new Set(state.records.flatMap((record) => splitCities(record.city)))].sort();
+  const industries = [...new Set(state.records.map((record) => record.sector_group).filter(Boolean))].sort();
+  const sizeOrder = [
+    "1 to 10",
+    "11 to 50",
+    "51 to 200",
+    "201 to 500",
+    "501 to 1,000",
+    "1,001 to 5,000",
+    "5,001 to 10,000",
+    "10,001+",
+  ];
+  const sizesPresent = new Set(state.records.map((record) => record.employee_band).filter(Boolean));
   addOptions(elements.city, cities);
+  addOptions(elements.industry, industries);
+  addOptions(elements.size, sizeOrder.filter((size) => sizesPresent.has(size)));
 
-  [elements.search, elements.city, elements.type, elements.status].forEach((control) =>
+  [
+    elements.search,
+    elements.city,
+    elements.industry,
+    elements.size,
+    elements.type,
+    elements.status,
+  ].forEach((control) =>
     control.addEventListener("input", render),
   );
 
   elements.clear.addEventListener("click", () => {
     elements.search.value = "";
     elements.city.value = "";
+    elements.industry.value = "";
+    elements.size.value = "";
     elements.type.value = "";
     elements.status.value = "";
     render();
@@ -174,6 +202,21 @@ function jobAdMarkup(record) {
   return `<span class="job-link-missing">${label}</span>`;
 }
 
+function industryMarkup(record) {
+  return record.industry_sector
+    ? escapeHtml(record.industry_sector)
+    : '<span class="cell-note">Not researched</span>';
+}
+
+function companySizeMarkup(record) {
+  if (!record.employee_band) return '<span class="cell-note">Not researched</span>';
+
+  const estimate = record.employee_estimate
+    ? `<span class="cell-note">${escapeHtml(record.employee_estimate)}</span>`
+    : "";
+  return `<span class="size-band">${escapeHtml(record.employee_band)}</span>${estimate}`;
+}
+
 function routeMarkup(record) {
   return `
     <span class="pill ${routeClass(record.activity_type)}">${routeLabel(record.activity_type)}</span>
@@ -209,6 +252,8 @@ function progressFilterMatches(record, selected) {
 function recordMatches(record) {
   const query = elements.search.value.trim().toLowerCase();
   const city = elements.city.value;
+  const industry = elements.industry.value;
+  const size = elements.size.value;
   const type = elements.type.value;
   const status = elements.status.value;
   const haystack = Object.values(record).join(" ").toLowerCase();
@@ -216,6 +261,8 @@ function recordMatches(record) {
   return (
     (!query || haystack.includes(query)) &&
     (!city || splitCities(record.city).includes(city)) &&
+    (!industry || record.sector_group === industry) &&
+    (!size || record.employee_band === size) &&
     (!type || record.activity_type === type) &&
     progressFilterMatches(record, status)
   );
@@ -230,6 +277,8 @@ function rowMarkup(record) {
     <tr>
       <td class="date-cell" data-label="Date">${escapeHtml(record.activity_date)}</td>
       <td class="company-cell" data-label="Company">${escapeHtml(record.company)}</td>
+      <td class="industry-cell" data-label="Industry">${industryMarkup(record)}</td>
+      <td class="size-cell" data-label="Company size">${companySizeMarkup(record)}</td>
       <td class="city-cell" data-label="City">${escapeHtml(record.city)}</td>
       <td class="role-cell" data-label="Role">${roleMarkup(record)}</td>
       <td class="job-ad-cell" data-label="Job ad">${jobAdMarkup(record)}</td>
@@ -297,10 +346,20 @@ function renderLastUpdated(response) {
 
 async function initialise() {
   try {
-    const response = await fetch("data/applications.csv", { cache: "no-store" });
-    if (!response.ok) throw new Error(`Could not load data (${response.status})`);
+    const [response, companiesResponse] = await Promise.all([
+      fetch("data/applications.csv", { cache: "no-store" }),
+      fetch("data/companies.csv", { cache: "no-store" }),
+    ]);
+    if (!response.ok) throw new Error(`Could not load activity data (${response.status})`);
+    if (!companiesResponse.ok) {
+      throw new Error(`Could not load company data (${companiesResponse.status})`);
+    }
 
     const csv = await response.text();
+    const companiesCsv = await companiesResponse.text();
+    state.companyProfiles = new Map(
+      parseCsv(companiesCsv).map((profile) => [profile.company, profile]),
+    );
     state.records = parseCsv(csv)
       .map(normaliseRecord)
       .sort((a, b) => b.date_sort.localeCompare(a.date_sort) || Number(b.id) - Number(a.id));
