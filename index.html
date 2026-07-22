@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andrew Langmaid's job applications and speculative outreach tracker" />
+    <title>Job Search Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">ANDREW LANGMAID</p>
+          <h1>Job Search Tracker</h1>
+          <p class="subtitle">Applications and speculative outreach</p>
+        </div>
+        <div class="updated-block">
+          <span>Last updated</span>
+          <strong>22 July 2026</strong>
+        </div>
+      </header>
+
+      <section class="summary-grid" aria-label="Summary">
+        <article class="summary-card">
+          <span>Total activity</span>
+          <strong id="total-count">0</strong>
+        </article>
+        <article class="summary-card">
+          <span>Open job roles</span>
+          <strong id="open-role-count">0</strong>
+        </article>
+        <article class="summary-card">
+          <span>Speculative</span>
+          <strong id="speculative-count">0</strong>
+        </article>
+        <article class="summary-card interview-summary">
+          <span>Companies interviewed</span>
+          <strong id="interview-count">0</strong>
+        </article>
+      </section>
+
+      <section class="controls" aria-label="Filter applications">
+        <label class="search-control">
+          <span>Search</span>
+          <input id="search-input" type="search" placeholder="Company, role or contact" autocomplete="off" />
+        </label>
+
+        <label>
+          <span>City</span>
+          <select id="city-filter">
+            <option value="">All cities</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Activity</span>
+          <select id="type-filter">
+            <option value="">All activity</option>
+            <option value="Open Job Role">Open job role</option>
+            <option value="Speculative Outreach">Speculative outreach</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Status</span>
+          <select id="status-filter">
+            <option value="">All statuses</option>
+          </select>
+        </label>
+
+        <label class="checkbox-control">
+          <input id="interview-filter" type="checkbox" />
+          <span>Interviews only</span>
+        </label>
+
+        <button id="clear-filters" class="clear-button" type="button">Clear filters</button>
+      </section>
+
+      <section class="results-panel">
+        <div class="results-heading">
+          <p><strong id="visible-count">0</strong> records shown</p>
+          <p class="sort-label">Newest first</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Company</th>
+                <th>City</th>
+                <th>Role or approach</th>
+                <th>Type</th>
+                <th>Contact</th>
+                <th>Status</th>
+                <th>Links</th>
+              </tr>
+            </thead>
+            <tbody id="applications-body"></tbody>
+          </table>
+        </div>
+
+        <div id="empty-state" class="empty-state" hidden>
+          No records match these filters.
+        </div>
+      </section>
+    </main>
+
+    <dialog id="interview-dialog" class="interview-dialog">
+      <button class="dialog-close" type="button" aria-label="Close interview details">Close</button>
+      <p class="eyebrow">INTERVIEW DETAILS</p>
+      <h2 id="dialog-company"></h2>
+      <p id="dialog-role" class="dialog-role"></p>
+      <div class="dialog-section">
+        <h3>Stages</h3>
+        <p id="dialog-stages"></p>
+      </div>
+      <div class="dialog-section">
+        <h3>Outcome</h3>
+        <p id="dialog-outcome"></p>
+      </div>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
