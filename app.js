@@ -162,16 +162,16 @@ function progressMarkup(record) {
 function roleMarkup(record) {
   const parts = [escapeHtml(record.job_title)];
   if (record.notes) parts.push(`<span class="cell-note">${escapeHtml(record.notes)}</span>`);
+  return parts.join("");
+}
 
+function jobAdMarkup(record) {
   if (record.job_url) {
-    parts.push(
-      `<a class="job-link" href="${escapeHtml(record.job_url)}" target="_blank" rel="noreferrer">JOB AD</a>`,
-    );
-  } else if (record.activity_type !== "Speculative Outreach") {
-    parts.push('<span class="cell-note">Job link not retained</span>');
+    return `<a class="job-link" href="${escapeHtml(record.job_url)}" target="_blank" rel="noreferrer" aria-label="View the job advertisement for ${escapeHtml(record.job_title)}">VIEW JOB AD</a>`;
   }
 
-  return parts.join("");
+  const label = record.activity_type === "Speculative Outreach" ? "Not applicable" : "Not retained";
+  return `<span class="job-link-missing">${label}</span>`;
 }
 
 function routeMarkup(record) {
@@ -232,6 +232,7 @@ function rowMarkup(record) {
       <td class="company-cell" data-label="Company">${escapeHtml(record.company)}</td>
       <td class="city-cell" data-label="City">${escapeHtml(record.city)}</td>
       <td class="role-cell" data-label="Role">${roleMarkup(record)}</td>
+      <td class="job-ad-cell" data-label="Job ad">${jobAdMarkup(record)}</td>
       <td class="route-cell" data-label="Route">${routeMarkup(record)}</td>
       <td class="progress-cell" data-label="Progress">
         <div class="progress-flow">${progressMarkup(record)}</div>
