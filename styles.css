@@ -242,7 +242,7 @@ select:focus {
 
 table {
   width: 100%;
-  min-width: 1380px;
+  min-width: 1460px;
   border-collapse: collapse;
 }
 
@@ -294,6 +294,11 @@ tbody tr:last-child td {
   max-width: 300px;
   font-weight: 700;
   line-height: 1.38;
+}
+
+.job-ad-cell {
+  width: 118px;
+  min-width: 118px;
 }
 
 .route-cell {
@@ -399,7 +404,6 @@ tbody tr:last-child td {
   min-height: 28px;
   align-items: center;
   justify-content: center;
-  margin-top: 7px;
   padding: 4px 9px;
   border-radius: 7px;
   font-size: 0.66rem;
@@ -409,6 +413,8 @@ tbody tr:last-child td {
 }
 
 .job-link {
+  min-height: 32px;
+  padding-inline: 11px;
   border: 1px solid #b8c9dc;
   color: var(--blue);
   background: #fff;
@@ -417,6 +423,21 @@ tbody tr:last-child td {
 .job-link:hover {
   border-color: var(--blue);
   background: #eef4fb;
+}
+
+.job-link:focus-visible {
+  outline: 3px solid rgba(39, 95, 159, 0.2);
+  outline-offset: 2px;
+}
+
+.job-link-missing {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.details-button {
+  margin-top: 7px;
 }
 
 .details-button {
@@ -603,6 +624,7 @@ tbody tr:last-child td {
 
   .company-cell,
   .role-cell,
+  .job-ad-cell,
   .route-cell,
   .progress-cell,
   .contact-cell {
@@ -633,6 +655,7 @@ tbody tr:last-child td {
   td,
   .company-cell,
   .role-cell,
+  .job-ad-cell,
   .route-cell,
   .progress-cell,
   .contact-cell {
