@@ -141,7 +141,7 @@ h1 {
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(270px, 1.5fr) repeat(3, minmax(170px, 0.8fr)) auto;
+  grid-template-columns: minmax(250px, 1.4fr) repeat(5, minmax(135px, 0.72fr)) auto;
   align-items: end;
   gap: 11px;
   margin-bottom: 16px;
@@ -242,7 +242,7 @@ select:focus {
 
 table {
   width: 100%;
-  min-width: 1460px;
+  min-width: 1740px;
   border-collapse: collapse;
 }
 
@@ -282,6 +282,26 @@ tbody tr:last-child td {
   min-width: 145px;
   color: var(--navy);
   font-weight: 850;
+}
+
+.industry-cell {
+  min-width: 165px;
+  max-width: 200px;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1.38;
+}
+
+.size-cell {
+  width: 132px;
+  min-width: 132px;
+  line-height: 1.35;
+}
+
+.size-band {
+  color: var(--navy);
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .city-cell {
@@ -531,11 +551,15 @@ tbody tr:last-child td {
   }
 
   .controls {
-    grid-template-columns: 1.3fr repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .search-control {
+    grid-column: span 2;
   }
 
   .clear-button {
-    grid-column: 4;
+    grid-column: auto;
   }
 }
 
