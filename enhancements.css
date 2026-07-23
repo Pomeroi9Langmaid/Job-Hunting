@@ -1,0 +1,44 @@
+.reply-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 7px;
+}
+
+.reply-actions .details-button {
+  margin-top: 0;
+}
+
+.email-reply-button {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 9px;
+  border: 1px solid var(--green);
+  border-radius: 7px;
+  color: #fff;
+  background: var(--green);
+  cursor: pointer;
+  font-size: 0.66rem;
+  font-weight: 850;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.email-reply-button:hover {
+  border-color: #0f5f38;
+  background: #0f5f38;
+}
+
+.email-reply-button:focus-visible {
+  outline: 3px solid rgba(20, 120, 71, 0.22);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1181px) {
+  .controls {
+    grid-template-columns: minmax(230px, 1.35fr) repeat(6, minmax(125px, 0.68fr)) auto;
+  }
+}
