@@ -373,6 +373,13 @@ tbody tr:last-child td {
   line-height: 1.38;
 }
 
+.contact-email {
+  color: var(--blue);
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;

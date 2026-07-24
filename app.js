@@ -238,10 +238,13 @@ function contactMarkup(record) {
   const title = record.contact_title
     ? `<span class="cell-note">${escapeHtml(record.contact_title)}</span>`
     : "";
+  const email = record.contact_email
+    ? `<a class="cell-note contact-email" href="mailto:${escapeHtml(record.contact_email)}">${escapeHtml(record.contact_email)}</a>`
+    : "";
   const sent = record.contacted_date
     ? `<span class="cell-note">Sent ${escapeHtml(record.contacted_date)}</span>`
     : "";
-  return `${escapeHtml(record.contact_name)}${title}${sent}`;
+  return `${escapeHtml(record.contact_name)}${title}${email}${sent}`;
 }
 
 function progressFilterMatches(record, selected) {
