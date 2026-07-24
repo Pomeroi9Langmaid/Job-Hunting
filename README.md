@@ -1,6 +1,6 @@
 # Job Search Tracker
 
-Searchable Vercel dashboard for Andrew Langmaid's job applications, direct approaches and interview progress.
+Searchable Vercel dashboard for Andrew Langmaid's prospective targets, job applications, direct approaches and interview progress.
 
 ## Data structure
 
@@ -9,8 +9,9 @@ Searchable Vercel dashboard for Andrew Langmaid's job applications, direct appro
 - `Open Role Application`
 - `Direct Role Outreach`
 - `Speculative Outreach`
+- `Prospective Target`
 
-The page builds the progress flow from the application date, interview stages and closing status.
+`Prospective Target` means that the company and contact have been researched, but Andrew has neither applied nor reached out. The page builds the progress flow from the record date, interview stages and closing status.
 
 ## Updating the tracker
 

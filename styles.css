@@ -98,7 +98,7 @@ h1 {
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 16px;
 }
@@ -133,6 +133,15 @@ h1 {
 .interview-summary {
   border-color: #b9dec9;
   background: var(--green-pale);
+}
+
+.target-summary {
+  border-color: #c8d4e4;
+  background: #f1f5fa;
+}
+
+.target-summary strong {
+  color: var(--blue);
 }
 
 .interview-summary strong {
@@ -389,6 +398,11 @@ tbody tr:last-child td {
 .pill-speculative {
   color: var(--purple);
   background: var(--purple-pale);
+}
+
+.pill-target {
+  color: var(--blue);
+  background: #e9f1fb;
 }
 
 .progress-flow {

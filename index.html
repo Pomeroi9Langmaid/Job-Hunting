@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Andrew Langmaid's searchable job application and outreach tracker"
+      content="Andrew Langmaid's searchable job application, outreach and prospective target tracker"
     />
     <title>Andrew's Job Search</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -18,7 +18,7 @@
         <div>
           <p class="eyebrow">ANDREW LANGMAID</p>
           <h1>Job Search</h1>
-          <p class="subtitle">Applications, direct approaches and interview progress</p>
+          <p class="subtitle">Prospective targets, applications, direct approaches and interview progress</p>
         </div>
         <div class="updated-block">
           <span>Last updated</span>
@@ -28,7 +28,7 @@
 
       <section class="summary-grid" aria-label="Summary">
         <article class="summary-card">
-          <span>Total activity</span>
+          <span>Total records</span>
           <strong id="total-count">0</strong>
         </article>
         <article class="summary-card">
@@ -42,6 +42,10 @@
         <article class="summary-card">
           <span>Speculative outreach</span>
           <strong id="speculative-count">0</strong>
+        </article>
+        <article class="summary-card target-summary">
+          <span>Not yet contacted</span>
+          <strong id="target-count">0</strong>
         </article>
         <article class="summary-card interview-summary">
           <span>Interview processes</span>
@@ -88,6 +92,7 @@
             <option value="Open Role Application">Role application</option>
             <option value="Direct Role Outreach">Direct about a role</option>
             <option value="Speculative Outreach">Speculative outreach</option>
+            <option value="Prospective Target">Not applied / not reached out</option>
           </select>
         </label>
 
@@ -96,6 +101,7 @@
           <select id="status-filter">
             <option value="">All progress</option>
             <option value="Active">No closure recorded</option>
+            <option value="Not Contacted">Not contacted</option>
             <option value="Interviewed">Interviewed</option>
             <option value="Application Closed">Application closed</option>
             <option value="Closed by Andrew">Closed by Andrew</option>

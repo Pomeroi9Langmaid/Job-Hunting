@@ -9,6 +9,7 @@ const elements = {
   applicationCount: document.querySelector("#application-count"),
   directCount: document.querySelector("#direct-count"),
   speculativeCount: document.querySelector("#speculative-count"),
+  targetCount: document.querySelector("#target-count"),
   interviewCount: document.querySelector("#interview-count"),
   visibleCount: document.querySelector("#visible-count"),
   lastUpdated: document.querySelector("#last-updated"),
@@ -146,18 +147,21 @@ function setupFilters() {
 function routeLabel(type) {
   if (type === "Open Role Application") return "ADVERTISED ROLE";
   if (type === "Direct Role Outreach") return "DIRECT ABOUT ROLE";
+  if (type === "Prospective Target") return "NOT APPLIED / NOT REACHED OUT";
   return "REACHED OUT";
 }
 
 function routeClass(type) {
   if (type === "Open Role Application") return "pill-role";
   if (type === "Direct Role Outreach") return "pill-direct";
+  if (type === "Prospective Target") return "pill-target";
   return "pill-speculative";
 }
 
 function startLabel(type) {
   if (type === "Open Role Application") return "APPLIED FOR ROLE";
   if (type === "Direct Role Outreach") return "DIRECT ROLE OUTREACH";
+  if (type === "Prospective Target") return "NOT CONTACTED";
   return "REACHED OUT";
 }
 
@@ -324,6 +328,9 @@ function renderSummary() {
   ).length;
   elements.speculativeCount.textContent = state.records.filter(
     (record) => record.activity_type === "Speculative Outreach",
+  ).length;
+  elements.targetCount.textContent = state.records.filter(
+    (record) => record.activity_type === "Prospective Target",
   ).length;
   elements.interviewCount.textContent = state.records.filter(
     (record) => record.interview_count > 0,
