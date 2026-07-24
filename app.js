@@ -146,7 +146,7 @@ function setupFilters() {
 function routeLabel(type) {
   if (type === "Open Role Application") return "ADVERTISED ROLE";
   if (type === "Direct Role Outreach") return "DIRECT ABOUT ROLE";
-  return "SPECULATIVE";
+  return "REACHED OUT";
 }
 
 function routeClass(type) {
@@ -158,7 +158,7 @@ function routeClass(type) {
 function startLabel(type) {
   if (type === "Open Role Application") return "APPLIED FOR ROLE";
   if (type === "Direct Role Outreach") return "DIRECT ROLE OUTREACH";
-  return "SPECULATIVE OUTREACH";
+  return "REACHED OUT";
 }
 
 function stepMarkup(label, date, className) {
