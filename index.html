@@ -18,7 +18,7 @@
         <div>
           <p class="eyebrow">ANDREW LANGMAID</p>
           <h1>Job Search</h1>
-          <p class="subtitle">Prospective targets, applications, direct approaches and interview progress</p>
+          <p class="subtitle">Prospective targets, advertised-role applications, direct approaches and interview progress</p>
         </div>
         <div class="updated-block">
           <span>Last updated</span>
@@ -32,19 +32,19 @@
           <strong id="total-count">0</strong>
         </article>
         <article class="summary-card">
-          <span>Role applications</span>
+          <span>Advertised-role applications</span>
           <strong id="application-count">0</strong>
         </article>
         <article class="summary-card">
-          <span>Direct role outreach</span>
+          <span>Direct contact about advertised roles</span>
           <strong id="direct-count">0</strong>
         </article>
         <article class="summary-card">
-          <span>Speculative outreach</span>
+          <span>Speculative company approaches</span>
           <strong id="speculative-count">0</strong>
         </article>
         <article class="summary-card target-summary">
-          <span>Not yet contacted</span>
+          <span>Prospective targets not contacted</span>
           <strong id="target-count">0</strong>
         </article>
         <article class="summary-card interview-summary">
@@ -86,13 +86,13 @@
         </label>
 
         <label>
-          <span>Route</span>
+          <span>Application / outreach route</span>
           <select id="type-filter">
             <option value="">All routes</option>
-            <option value="Open Role Application">Role application</option>
-            <option value="Direct Role Outreach">Direct about a role</option>
-            <option value="Speculative Outreach">Speculative outreach</option>
-            <option value="Prospective Target">Not applied / not reached out</option>
+            <option value="Open Role Application">Applied to an advertised role</option>
+            <option value="Direct Role Outreach">Contacted someone about an advertised role</option>
+            <option value="Speculative Outreach">Speculative approach with no advertised role</option>
+            <option value="Prospective Target">Prospective target — not contacted</option>
           </select>
         </label>
 
@@ -141,7 +141,7 @@
                 <th>Role</th>
                 <th>Job ad</th>
                 <th>Contact</th>
-                <th>Route</th>
+                <th>Application / outreach route</th>
                 <th>Progress</th>
               </tr>
             </thead>
@@ -173,5 +173,6 @@
     <script src="app.js" defer></script>
     <script src="enhancements.js" defer></script>
     <script src="date-filter.js" defer></script>
+    <script src="route-labels.js" defer></script>
   </body>
 </html>
