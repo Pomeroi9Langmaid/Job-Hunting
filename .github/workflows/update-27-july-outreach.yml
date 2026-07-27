@@ -1,0 +1,73 @@
+name: Update 27 July outreach records
+
+on:
+  push:
+    paths:
+      - .github/workflows/update-27-july-outreach.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-tracker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update applications CSV
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+
+          path = Path('data/applications.csv')
+          with path.open(newline='', encoding='utf-8') as handle:
+              rows = list(csv.DictReader(handle))
+              fieldnames = list(rows[0].keys())
+
+          updates = {
+              'Picadeli': {
+                  'activity_date': '27 Jul 2026',
+                  'date_sort': '2026-07-27',
+                  'activity_type': 'Speculative Outreach',
+                  'contacted_date': '27 Jul 2026',
+                  'current_status': 'Awaiting Response',
+                  'route_reason': 'No advertised role. Direct speculative email.',
+                  'notes': 'Email sent 27 July 2026 to the general Picadeli address for the attention of David Bennertun. CV was attached under the filename Andrew_Langmaid_CV_Master_July_2026.pdf. Subject: Potential commercial fit with Picadeli.',
+              },
+              'Candela': {
+                  'activity_date': '27 Jul 2026',
+                  'date_sort': '2026-07-27',
+                  'activity_type': 'Speculative Outreach',
+                  'contacted_date': '27 Jul 2026',
+                  'current_status': 'Awaiting Response',
+                  'route_reason': 'No advertised role. Direct speculative email.',
+                  'notes': 'Initial email sent 27 July 2026 to Jerker Olofsson without the CV attached. A corrective follow-up was sent the same day with Andrew_Langmaid_Candela.pdf attached. Subject: Andrew Langmaid.',
+              },
+          }
+
+          found = set()
+          for row in rows:
+              company = row.get('company')
+              if company in updates:
+                  row.update(updates[company])
+                  found.add(company)
+
+          missing = set(updates) - found
+          if missing:
+              raise SystemExit(f'Missing companies: {sorted(missing)}')
+
+          with path.open('w', newline='', encoding='utf-8') as handle:
+              writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(rows)
+          PY
+
+      - name: Commit tracker update and remove workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/update-27-july-outreach.yml
+          git add data/applications.csv
+          git commit -m "Record Picadeli and Candela outreach"
+          git push
