@@ -37,8 +37,72 @@
   outline-offset: 2px;
 }
 
+.date-range-control input {
+  min-width: 145px;
+}
+
+.date-activity-summary {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.35fr) repeat(3, minmax(150px, 0.65fr));
+  gap: 12px;
+  margin: 0 0 18px;
+}
+
+.date-activity-summary > div,
+.date-activity-summary article {
+  min-height: 92px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.date-activity-summary span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.date-activity-summary strong {
+  display: block;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.05;
+}
+
+.date-summary-heading strong {
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  line-height: 1.3;
+}
+
+.date-activity-summary .period-total {
+  border-color: var(--green);
+  background: rgba(20, 120, 71, 0.08);
+}
+
+.date-activity-summary .period-total strong {
+  color: var(--green);
+}
+
 @media (min-width: 1181px) {
   .controls {
-    grid-template-columns: minmax(230px, 1.35fr) repeat(6, minmax(125px, 0.68fr)) auto;
+    grid-template-columns: minmax(220px, 1.2fr) repeat(10, minmax(118px, 0.62fr)) auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .date-activity-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .date-activity-summary {
+    grid-template-columns: 1fr;
   }
 }
