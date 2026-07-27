@@ -1,0 +1,70 @@
+name: Update latest outreach records
+on:
+  push:
+    paths:
+      - '.github/workflows/update-outreach-2026-07-27-b.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update applications CSV
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+
+          path = Path('data/applications.csv')
+          rows = list(csv.DictReader(path.open(newline='', encoding='utf-8')))
+          fields = rows[0].keys()
+
+          updates = {
+              '136': {
+                  'activity_date': '27 Jul 2026', 'date_sort': '2026-07-27',
+                  'activity_type': 'Speculative Outreach', 'contacted_date': '27 Jul 2026',
+                  'current_status': 'Awaiting Response',
+                  'route_reason': 'No advertised role. Direct speculative email.',
+                  'notes': 'Email sent 27 July 2026 to Henrik Schmidt with Andrew_Langmaid_PinMeTo.pdf attached. Subject: Andrew Langmaid.'
+              },
+              '137': {
+                  'activity_date': '27 Jul 2026', 'date_sort': '2026-07-27',
+                  'activity_type': 'Speculative Outreach', 'contacted_date': '27 Jul 2026',
+                  'current_status': 'Awaiting Response',
+                  'route_reason': 'No advertised role. Direct speculative email.',
+                  'notes': 'Email sent 27 July 2026 to Johannes Zetterlund with Andrew_Langmaid_Position_Green.pdf attached. Subject: Andrew Langmaid.'
+              },
+              '138': {
+                  'activity_date': '27 Jul 2026', 'date_sort': '2026-07-27',
+                  'activity_type': 'Speculative Outreach', 'contacted_date': '27 Jul 2026',
+                  'current_status': 'Awaiting Response',
+                  'route_reason': 'No advertised role. Direct speculative email.',
+                  'notes': 'Email sent 27 July 2026 to Fergus MacLeod with Andrew_Langmaid_BONESUPPORT.pdf attached. Subject: Andrew Langmaid.'
+              },
+              '139': {
+                  'activity_date': '27 Jul 2026', 'date_sort': '2026-07-27',
+                  'activity_type': 'Speculative Outreach', 'contacted_date': '27 Jul 2026',
+                  'current_status': 'Awaiting Response',
+                  'route_reason': 'No advertised role. Direct speculative email.',
+                  'notes': 'Email sent 27 July 2026 to Steve Ferguson with Andrew_Langmaid_CellaVision.pdf attached. Subject: Andrew Langmaid.'
+              },
+          }
+
+          for row in rows:
+              if row['id'] in updates:
+                  row.update(updates[row['id']])
+
+          with path.open('w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=fields)
+              writer.writeheader()
+              writer.writerows(rows)
+          PY
+      - name: Commit update and remove workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm .github/workflows/update-outreach-2026-07-27-b.yml
+          git add data/applications.csv .github/workflows/update-outreach-2026-07-27-b.yml
+          git commit -m 'Update PinMeTo Position Green BONESUPPORT and CellaVision outreach'
+          git push
