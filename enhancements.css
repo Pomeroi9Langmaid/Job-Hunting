@@ -37,8 +37,64 @@
   outline-offset: 2px;
 }
 
-.date-range-control input {
-  min-width: 145px;
+/* Filter panel: a deliberate two-row desktop layout rather than one long,
+   uneven strip. Each control receives enough width for its longest label. */
+.controls {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 14px 12px;
+  padding: 18px;
+}
+
+.controls label {
+  min-width: 0;
+}
+
+.controls .search-control { grid-column: span 3; }
+.controls label:has(#city-filter) { grid-column: span 2; }
+.controls label:has(#industry-filter) { grid-column: span 2; }
+.controls label:has(#size-filter) { grid-column: span 2; }
+.controls label:has(#type-filter) { grid-column: span 3; }
+.controls label:has(#period-filter) { grid-column: span 2; }
+.controls label:has(#date-from) { grid-column: span 2; }
+.controls label:has(#date-to) { grid-column: span 2; }
+.controls label:has(#reply-filter) { grid-column: span 3; }
+.controls label:has(#status-filter) { grid-column: span 2; }
+.controls .clear-button { grid-column: span 1; }
+
+.controls select,
+.controls input[type="search"],
+.controls input[type="date"] {
+  min-width: 0;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: var(--ink);
+  background-color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  outline: none;
+}
+
+.controls select {
+  padding: 0 34px 0 11px;
+  white-space: nowrap;
+}
+
+.controls input[type="date"] {
+  padding: 0 9px;
+}
+
+.controls input[type="date"]:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(39, 95, 159, 0.12);
+}
+
+.controls .clear-button {
+  width: 100%;
+  min-width: 78px;
+  height: 44px;
 }
 
 .date-activity-summary {
@@ -89,19 +145,70 @@
   color: var(--green);
 }
 
-@media (min-width: 1181px) {
+@media (max-width: 1180px) {
   .controls {
-    grid-template-columns: minmax(220px, 1.2fr) repeat(10, minmax(118px, 0.62fr)) auto;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
+
+  .controls .search-control { grid-column: span 3; }
+  .controls label:has(#city-filter),
+  .controls label:has(#industry-filter),
+  .controls label:has(#size-filter),
+  .controls label:has(#type-filter),
+  .controls label:has(#period-filter),
+  .controls label:has(#date-from),
+  .controls label:has(#date-to),
+  .controls label:has(#reply-filter),
+  .controls label:has(#status-filter) { grid-column: span 2; }
+  .controls .clear-button { grid-column: span 1; }
 }
 
 @media (max-width: 900px) {
+  .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .controls .search-control,
+  .controls label:has(#reply-filter) {
+    grid-column: 1 / -1;
+  }
+
+  .controls label:has(#city-filter),
+  .controls label:has(#industry-filter),
+  .controls label:has(#size-filter),
+  .controls label:has(#type-filter),
+  .controls label:has(#period-filter),
+  .controls label:has(#date-from),
+  .controls label:has(#date-to),
+  .controls label:has(#status-filter),
+  .controls .clear-button {
+    grid-column: span 1;
+  }
+
   .date-activity-summary {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 560px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .controls .search-control,
+  .controls label:has(#city-filter),
+  .controls label:has(#industry-filter),
+  .controls label:has(#size-filter),
+  .controls label:has(#type-filter),
+  .controls label:has(#period-filter),
+  .controls label:has(#date-from),
+  .controls label:has(#date-to),
+  .controls label:has(#reply-filter),
+  .controls label:has(#status-filter),
+  .controls .clear-button {
+    grid-column: 1;
+  }
+
   .date-activity-summary {
     grid-template-columns: 1fr;
   }
