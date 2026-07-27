@@ -230,6 +230,24 @@
     resultsPanel.before(summary);
   }
 
+  function applyKnownCompanyCorrections() {
+    document.querySelectorAll("#applications-body tr").forEach((row) => {
+      const detailsButton = row.querySelector("[data-details-id]");
+      const record = detailsButton ? recordsById.get(detailsButton.dataset.detailsId) : null;
+      if (!record || record.company !== "Dyson") return;
+
+      const industryCell = row.querySelector(".industry-cell");
+      const sizeCell = row.querySelector(".size-cell");
+      const cityCell = row.querySelector(".city-cell");
+
+      if (industryCell) industryCell.textContent = "Consumer technology / premium home appliances";
+      if (sizeCell) {
+        sizeCell.innerHTML = '<span class="size-band">10,001+</span><span class="cell-note">Large global company</span>';
+      }
+      if (cityCell) cityCell.textContent = "Sweden / Remote";
+    });
+  }
+
   function addReplyButtons() {
     document.querySelectorAll("#applications-body tr").forEach((row) => {
       const detailsButton = row.querySelector("[data-details-id]");
@@ -315,6 +333,7 @@
     applying = true;
     addFilters();
     addDateSummary();
+    applyKnownCompanyCorrections();
     addReplyButtons();
     updateDateSummary();
     applyExtraFilters();
