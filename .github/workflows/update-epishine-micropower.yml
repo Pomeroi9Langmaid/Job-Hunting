@@ -1,0 +1,54 @@
+name: Update Epishine and Micropower outreach
+
+on:
+  push:
+    paths:
+      - '.github/workflows/update-epishine-micropower.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update tracker rows
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+
+          path = Path('data/applications.csv')
+          rows = []
+          with path.open(newline='', encoding='utf-8') as f:
+              reader = csv.reader(f)
+              for row in reader:
+                  if row and row[0] == '143':
+                      row[1] = '28 Jul 2026'
+                      row[2] = '2026-07-28'
+                      row[6] = 'Speculative Outreach'
+                      row[10] = '28 Jul 2026'
+                      row[11] = 'Awaiting Response'
+                      row[17] = 'No advertised role. Direct speculative email.'
+                      row[18] = 'Email sent 28 July 2026 to Daniel Rossing Cabernér with Andrew_Langmaid_Epishine.pdf attached. Subject: Andrew Langmaid.'
+                  elif row and row[0] == '144':
+                      row[1] = '28 Jul 2026'
+                      row[2] = '2026-07-28'
+                      row[6] = 'Speculative Outreach'
+                      row[10] = '28 Jul 2026'
+                      row[11] = 'Awaiting Response'
+                      row[17] = 'No advertised role. Direct speculative email.'
+                      row[18] = 'Email sent 28 July 2026 to Fredrik Falk with Andrew_Langmaid_Micropower_Group.pdf attached. Subject: Andrew Langmaid.'
+                  rows.append(row)
+          with path.open('w', newline='', encoding='utf-8') as f:
+              csv.writer(f, lineterminator='\n').writerows(rows)
+          PY
+      - name: Remove workflow and commit
+        run: |
+          rm .github/workflows/update-epishine-micropower.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/applications.csv .github/workflows/update-epishine-micropower.yml
+          git commit -m 'Update Epishine and Micropower outreach'
+          git push
