@@ -7,19 +7,19 @@
       .toLowerCase()
       .normalize("NFKD")
       .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\b(ab|group|sweden|technologies|technology)\b/g, "")
       .replace(/[^a-z0-9]/g, "");
   }
 
   contactMarkup = function unifiedContactMarkup(record) {
-    if (
-      record.activity_type === "Prospective Target" &&
-      record.contact_name &&
-      !record.contact_email
-    ) {
+    if (record.activity_type === "Prospective Target" && record.contact_name) {
       const title = record.contact_title
         ? `<span class="cell-note">${escapeHtml(record.contact_title)}</span>`
         : "";
-      return `${escapeHtml(record.contact_name)}${title}<span class="cell-note email-needs-sourcing">Email needs sourcing</span>`;
+      const emailLine = record.contact_email
+        ? `<span class="cell-note"><a href="mailto:${escapeHtml(record.contact_email)}">${escapeHtml(record.contact_email)}</a></span>`
+        : `<span class="cell-note email-needs-sourcing">${escapeHtml(record.email_status || "Email needs sourcing")}</span>`;
+      return `${escapeHtml(record.contact_name)}${title}${emailLine}`;
     }
 
     return originalContactMarkup(record);
@@ -53,7 +53,7 @@
   function mapTarget(row, index) {
     const emailNote = row.contact_email
       ? `Contact email available: ${row.contact_email}.`
-      : "Email needs sourcing in Genesys before outreach.";
+      : `${row.email_status || "Email needs sourcing"}.`;
 
     return {
       id: `prospective-${index + 1}-${normaliseCompanyName(row.company)}`,
@@ -87,26 +87,53 @@
     };
   }
 
-  async function mergeProspectiveTargets() {
+  async function loadTargetRows() {
+    const files = [
+      "data/vetted-speculative-targets.csv",
+      "data/vetted-speculative-targets-stockholm-1.csv",
+      "data/vetted-speculative-targets-stockholm-2.csv",
+    ];
+
+    const responses = await Promise.all(
+      files.map(async (file) => {
+        const response = await fetch(file, { cache: "no-store" });
+        if (!response.ok) throw new Error(`Could not load ${file} (${response.status})`);
+        return parseCsv(await response.text());
+      }),
+    );
+
+    return responses.flat();
+  }
+
+  async function replaceProspectiveTargets() {
     if (typeof state === "undefined" || state.records.length === 0) {
-      window.setTimeout(mergeProspectiveTargets, 75);
+      window.setTimeout(replaceProspectiveTargets, 75);
       return;
     }
 
     try {
-      const response = await fetch("data/vetted-speculative-targets.csv", { cache: "no-store" });
-      if (!response.ok) throw new Error(`Could not load vetted targets (${response.status})`);
+      const rows = await loadTargetRows();
 
-      const rows = parseCsv(await response.text());
-      const existingCompanies = new Set(state.records.map((record) => normaliseCompanyName(record.company)));
+      // Applications, direct approaches and already-sent speculative emails remain historical truth.
+      // Legacy uncontacted targets are replaced by the fully reviewed Gothenburg/Stockholm queue.
+      const historicalRecords = state.records.filter(
+        (record) => record.activity_type !== "Prospective Target",
+      );
+      const seenCompanies = new Set(
+        historicalRecords.map((record) => normaliseCompanyName(record.company)),
+      );
+
       const additions = rows
         .filter((row) => row.outreach_status && row.outreach_status.toLowerCase().includes("ready"))
-        .filter((row) => !existingCompanies.has(normaliseCompanyName(row.company)))
+        .filter((row) => {
+          const key = normaliseCompanyName(row.company);
+          if (!key || seenCompanies.has(key)) return false;
+          seenCompanies.add(key);
+          return true;
+        })
         .map(mapTarget);
 
-      if (additions.length === 0) return;
-
-      state.records = [...state.records, ...additions].sort(
+      state.records = [...historicalRecords, ...additions].sort(
         (a, b) => b.date_sort.localeCompare(a.date_sort) || String(b.id).localeCompare(String(a.id)),
       );
 
@@ -114,9 +141,9 @@
       renderSummary();
       render();
     } catch (error) {
-      console.error("Could not merge vetted prospective targets into the main tracker", error);
+      console.error("Could not replace prospective targets with the reviewed queue", error);
     }
   }
 
-  mergeProspectiveTargets();
+  replaceProspectiveTargets();
 })();
