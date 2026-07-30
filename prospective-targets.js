@@ -92,6 +92,8 @@
       "data/vetted-speculative-targets.csv",
       "data/vetted-speculative-targets-stockholm-1.csv",
       "data/vetted-speculative-targets-stockholm-2.csv",
+      "data/vetted-speculative-targets-expanded-gothenburg.csv",
+      "data/vetted-speculative-targets-expanded-stockholm.csv",
     ];
 
     const responses = await Promise.all(
