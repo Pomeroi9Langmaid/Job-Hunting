@@ -75,6 +75,11 @@
     const now = new Date();
     const selected = periodFilter.value;
     if (selected === "all") setDateRange(null, null);
+    if (selected === "today") setDateRange(now, now);
+    if (selected === "yesterday") {
+      const yesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1);
+      setDateRange(yesterday, yesterday);
+    }
     if (selected === "this-week") setDateRange(startOfWeek(now), endOfWeek(now));
     if (selected === "last-week") {
       const from = startOfWeek(now);
@@ -126,7 +131,7 @@
     if (!statusLabel) return;
 
     const periodLabel = document.createElement("label");
-    periodLabel.innerHTML = `<span>Date period</span><select id="period-filter"><option value="all">All dates</option><option value="this-week">This week (Mon-Sun)</option><option value="last-week">Last week (Mon-Sun)</option><option value="this-month" selected>This month</option><option value="previous-month">Previous month</option><option value="july-2026">July 2026</option><option value="custom">Custom dates</option></select>`;
+    periodLabel.innerHTML = `<span>Date period</span><select id="period-filter"><option value="all">All dates</option><option value="today">Today</option><option value="yesterday">Yesterday</option><option value="this-week">This week (Mon-Sun)</option><option value="last-week">Last week (Mon-Sun)</option><option value="this-month" selected>This month</option><option value="previous-month">Previous month</option><option value="july-2026">July 2026</option><option value="custom">Custom dates</option></select>`;
     const fromLabel = document.createElement("label");
     fromLabel.className = "date-range-control";
     fromLabel.innerHTML = '<span>From</span><input id="date-from" type="date" />';
@@ -175,6 +180,7 @@
     const formatter = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
     const parse = (value) => new Date(`${value}T12:00:00`);
     if (!dateFrom.value && !dateTo.value) return "All dates";
+    if (dateFrom.value && dateTo.value && dateFrom.value === dateTo.value) return formatter.format(parse(dateFrom.value));
     if (dateFrom.value && dateTo.value) return `${formatter.format(parse(dateFrom.value))} to ${formatter.format(parse(dateTo.value))}`;
     if (dateFrom.value) return `From ${formatter.format(parse(dateFrom.value))}`;
     return `Up to ${formatter.format(parse(dateTo.value))}`;
