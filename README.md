@@ -9,6 +9,7 @@ The main microsite dashboard is the single operational view. It combines:
 - `data/applications.csv` for advertised-role applications, direct-role outreach and speculative emails already sent.
 - `data/vetted-speculative-targets.csv` and `data/vetted-speculative-targets-expanded-gothenburg.csv` for the reviewed Gothenburg queue.
 - `data/vetted-speculative-targets-stockholm-1.csv`, `data/vetted-speculative-targets-stockholm-2.csv` and `data/vetted-speculative-targets-expanded-stockholm.csv` for the reviewed Stockholm queue.
+- `data/contact-enrichment.csv` for audited professional-email enrichment and contact holds supplied on 31 July 2026.
 
 The dashboard preserves all application and sent-email history. Legacy uncontacted target rows in `data/applications.csv` are replaced in the displayed operational queue by the reviewed city files. Companies already present as applications, direct outreach or sent speculative emails are automatically excluded from the unsent queue.
 
@@ -33,19 +34,23 @@ Source-population decisions after the Artilleriet and Winningtemp re-review:
 - 16 application/outreach history or duplicate records
 - 1,791 excluded
 
-The 99 Priority A/B companies are the immediate targets found directly in the two city exports. The operational microsite queue contains 130 prospective targets because it also retains 31 previously vetted, still-unsent companies that were not matched to the current source exports.
+The 99 Priority A/B companies are the immediate targets found directly in the two city exports. The operational microsite queue contains 129 prospective targets because it also retains previously vetted, still-unsent companies that were not matched to the current source exports, while Kundo is temporarily held pending a current decision-maker.
 
 Operational queue:
 
-- 130 total prospective targets
+- 129 total prospective targets
 - 53 Gothenburg
-- 77 Stockholm
+- 76 Stockholm
 - 80 Priority A
-- 50 Priority B
+- 49 Priority B
+- 100 targets with a direct professional email
+- 29 targets whose direct professional email remains unsourced
 
 Artilleriet Interiors is retained only as a watchlist record and is not displayed in the active outreach queue. Winningtemp is retained as Priority B with Jacob Österberg, VP Corporate Development, as the target contact.
 
-Every displayed prospective target has a named contact. Direct email addresses are shown only when publicly verified; otherwise the tracker states that the email needs sourcing.
+The 31 July contact-enrichment review added 83 direct professional emails. Gunnebo Safe Storage remains active without a direct email because none was found. Kundo is withheld from the active queue because the supplied Rasmus Kjellman record belongs to Benchmarking Alliance rather than Kundo; a current Kundo decision-maker must be sourced before outreach.
+
+Every displayed prospective target has a named contact. Direct email addresses are shown only when publicly verified or supplied through the audited Genesy enrichment; otherwise the tracker states that the email needs sourcing.
 
 ## Updating the tracker
 
