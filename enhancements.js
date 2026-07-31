@@ -118,6 +118,13 @@
     );
   }
 
+  function queueApply() {
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(applyExtraFilters);
+    });
+    window.setTimeout(applyExtraFilters, 50);
+  }
+
   function addFilters() {
     if (document.querySelector("#period-filter")) {
       periodFilter = document.querySelector("#period-filter");
@@ -149,18 +156,18 @@
 
     periodFilter.addEventListener("change", () => {
       applyPeriodPreset();
-      applyExtraFilters();
+      queueApply();
     });
     [dateFrom, dateTo].forEach((input) => input.addEventListener("change", () => {
       periodFilter.value = "custom";
-      applyExtraFilters();
+      queueApply();
     }));
-    replyFilter.addEventListener("change", applyExtraFilters);
+    replyFilter.addEventListener("change", queueApply);
     document.querySelector("#clear-filters")?.addEventListener("click", () => {
       periodFilter.value = "all";
       replyFilter.value = "";
       setDateRange(null, null);
-      window.setTimeout(applyExtraFilters, 0);
+      queueApply();
     });
     applyPeriodPreset();
   }
@@ -221,17 +228,18 @@
       records = parseCsv(await response.text());
       addFilters();
       addDateSummary();
-      applyExtraFilters();
+      queueApply();
 
       const body = document.querySelector("#applications-body");
       if (body) {
-        new MutationObserver(() => window.requestAnimationFrame(applyExtraFilters)).observe(body, { childList: true });
+        new MutationObserver(queueApply).observe(body, { childList: true });
       }
       document.querySelector(".controls")?.addEventListener("input", (event) => {
         if (!["period-filter", "date-from", "date-to", "reply-filter"].includes(event.target.id)) {
-          window.requestAnimationFrame(applyExtraFilters);
+          queueApply();
         }
       });
+      document.querySelector(".controls")?.addEventListener("change", queueApply);
     } catch (error) {
       console.error("Could not initialise tracker enhancements", error);
     }
