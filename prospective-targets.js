@@ -60,11 +60,11 @@
 
     return {
       id: `prospective-${index + 1}-${normaliseCompanyName(row.company)}`,
-      activity_date: "30 Jul 2026",
+      activity_date: "31 Jul 2026",
       date_sort: row.verified_date || "2026-07-30",
       company: row.company,
       city: row.city,
-      job_title: `International business development / partnerships — Priority ${row.priority}`,
+      job_title: `Full-cycle international sales / new business — Priority ${row.priority}`,
       activity_type: "Prospective Target",
       job_url: row.careers_url,
       contact_name: row.contact_name,
@@ -76,7 +76,7 @@
       interview_count: 0,
       interview_details: "",
       outcome: "",
-      route_reason: "Vetted prospective target. No application or speculative email sent.",
+      route_reason: "Vetted for hands-on full-cycle international sales and new-business outreach.",
       notes: `${row.fit_summary} Careers review: ${row.current_opening_review} ${emailNote}${enrichmentNote}`,
       interview_steps: "",
       sector_group: row.sector,
@@ -132,14 +132,19 @@
       "data/vetted-speculative-targets-stockholm-2.csv",
       "data/vetted-speculative-targets-expanded-gothenburg.csv",
       "data/vetted-speculative-targets-expanded-stockholm.csv",
+      "data/re-audit-additions-2026-07-31.csv",
     ];
 
-    const [targetSets, enrichments] = await Promise.all([
+    const [targetSets, contactEnrichments, holdOverrides] = await Promise.all([
       Promise.all(files.map(fetchCsv)),
       fetchCsv("data/contact-enrichment.csv"),
+      fetchCsv("data/full-cycle-holds-2026-07-31.csv"),
     ]);
 
-    return applyContactEnrichment(targetSets.flat(), enrichments);
+    return applyContactEnrichment(
+      targetSets.flat(),
+      [...contactEnrichments, ...holdOverrides],
+    );
   }
 
   async function replaceProspectiveTargets() {
