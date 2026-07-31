@@ -54,6 +54,9 @@
     const emailNote = row.contact_email
       ? `Contact email available: ${row.contact_email}.`
       : `${row.email_status || "Email needs sourcing"}.`;
+    const enrichmentNote = row.contact_enrichment_note
+      ? ` Contact review: ${row.contact_enrichment_note}`
+      : "";
 
     return {
       id: `prospective-${index + 1}-${normaliseCompanyName(row.company)}`,
@@ -74,7 +77,7 @@
       interview_details: "",
       outcome: "",
       route_reason: "Vetted prospective target. No application or speculative email sent.",
-      notes: `${row.fit_summary} Careers review: ${row.current_opening_review} ${emailNote}`,
+      notes: `${row.fit_summary} Careers review: ${row.current_opening_review} ${emailNote}${enrichmentNote}`,
       interview_steps: "",
       sector_group: row.sector,
       industry_sector: row.sector,
@@ -87,6 +90,41 @@
     };
   }
 
+  async function fetchCsv(file) {
+    const response = await fetch(file, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Could not load ${file} (${response.status})`);
+    return parseCsv(await response.text());
+  }
+
+  function applyContactEnrichment(rows, enrichments) {
+    const enrichmentByCompany = new Map(
+      enrichments.map((entry) => [normaliseCompanyName(entry.company), entry]),
+    );
+
+    return rows.map((row) => {
+      const enrichment = enrichmentByCompany.get(normaliseCompanyName(row.company));
+      if (!enrichment) return row;
+
+      const enriched = { ...row };
+      enriched.contact_action = String(enrichment.action || "apply").toLowerCase();
+      enriched.contact_enrichment_note = enrichment.review_note || "";
+
+      if (enrichment.action === "retain") {
+        enriched.email_status = "No professional email found in Genesy on 31 Jul 2026";
+      } else if (enrichment.professional_email) {
+        enriched.contact_email = enrichment.professional_email;
+        enriched.email_status = "Professional email sourced via Genesy on 31 Jul 2026";
+      }
+
+      if (enrichment.linkedin_profile_url) {
+        enriched.contact_source_url = enrichment.linkedin_profile_url;
+      }
+      enriched.verified_date = "2026-07-31";
+
+      return enriched;
+    });
+  }
+
   async function loadTargetRows() {
     const files = [
       "data/vetted-speculative-targets.csv",
@@ -96,15 +134,12 @@
       "data/vetted-speculative-targets-expanded-stockholm.csv",
     ];
 
-    const responses = await Promise.all(
-      files.map(async (file) => {
-        const response = await fetch(file, { cache: "no-store" });
-        if (!response.ok) throw new Error(`Could not load ${file} (${response.status})`);
-        return parseCsv(await response.text());
-      }),
-    );
+    const [targetSets, enrichments] = await Promise.all([
+      Promise.all(files.map(fetchCsv)),
+      fetchCsv("data/contact-enrichment.csv"),
+    ]);
 
-    return responses.flat();
+    return applyContactEnrichment(targetSets.flat(), enrichments);
   }
 
   async function replaceProspectiveTargets() {
@@ -127,6 +162,7 @@
 
       const additions = rows
         .filter((row) => row.outreach_status && row.outreach_status.toLowerCase().includes("ready"))
+        .filter((row) => row.contact_action !== "hold")
         .filter((row) => {
           const key = normaliseCompanyName(row.company);
           if (!key || seenCompanies.has(key)) return false;
