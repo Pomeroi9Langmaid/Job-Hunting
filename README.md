@@ -21,27 +21,29 @@ Each displayed record is classified as one of:
 
 `Prospective Target` means that the company and named contact have been researched, but Andrew has neither applied nor sent a speculative email. Missing direct contact details are shown explicitly as `Email needs sourcing` or the more precise sourcing status in the reviewed data.
 
-## Full population review — 30 July 2026
+## Full population review — updated 31 July 2026
 
 The review evaluated all 1,975 source records: 975 Gothenburg companies and 1,000 Stockholm companies.
 
-Source-population decisions:
+Source-population decisions after the Artilleriet and Winningtemp re-review:
 
-- 64 Priority A
-- 36 Priority B
-- 68 watchlist
+- 62 Priority A
+- 37 Priority B
+- 69 watchlist
 - 16 application/outreach history or duplicate records
 - 1,791 excluded
 
-The 100 Priority A/B companies are the immediate targets found directly in the two city exports. The operational microsite queue contains 131 prospective targets because it also retains 31 previously vetted, still-unsent companies that were not matched to the current source exports.
+The 99 Priority A/B companies are the immediate targets found directly in the two city exports. The operational microsite queue contains 130 prospective targets because it also retains 31 previously vetted, still-unsent companies that were not matched to the current source exports.
 
 Operational queue:
 
-- 131 total prospective targets
-- 54 Gothenburg
+- 130 total prospective targets
+- 53 Gothenburg
 - 77 Stockholm
-- 82 Priority A
-- 49 Priority B
+- 80 Priority A
+- 50 Priority B
+
+Artilleriet Interiors is retained only as a watchlist record and is not displayed in the active outreach queue. Winningtemp is retained as Priority B with Jacob Österberg, VP Corporate Development, as the target contact.
 
 Every displayed prospective target has a named contact. Direct email addresses are shown only when publicly verified; otherwise the tracker states that the email needs sourcing.
 
