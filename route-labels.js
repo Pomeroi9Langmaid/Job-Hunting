@@ -41,8 +41,42 @@
     "145": { notes: "Automatic reply received 28 July 2026; substantive response still awaited." },
     "146": { notes: "Automatic redirect received from the original contact. Replacement outreach sent to the current CEO; substantive response still awaited." },
     "148": { notes: "Automatic reply received 28 July 2026; substantive response still awaited." },
-    "151": { notes: "Automatic reply received 28 July 2026; substantive response still awaited." }
+    "151": { notes: "Automatic reply received 28 July 2026; substantive response still awaited." },
+    "154": {
+      current_status: "Application Closed",
+      outcome_date: "30 Jul 2026",
+      outcome: "Dyson decided not to progress the Field Manager application because other candidates' experience matched the role more closely.",
+      notes: "Application unsuccessful; rejection email received 30 July 2026."
+    }
   };
+
+  const newRecords = [
+    {
+      id: "155",
+      activity_date: "30 Jul 2026",
+      date_sort: "2026-07-30",
+      company: "amber",
+      city: "Nordics / Copenhagen",
+      job_title: "Account Executive Nordics (F/M/*)",
+      activity_type: "Open Role Application",
+      job_url: "https://jobs.ashbyhq.com/amber/78d03148-3101-461d-a84c-e20a4250579f",
+      contact_name: "",
+      contact_title: "",
+      contacted_date: "",
+      current_status: "Active",
+      outcome_date: "",
+      interview_count: 0,
+      interview_details: "",
+      outcome: "",
+      route_reason: "Applied through Ashby.",
+      notes: "Application confirmation received 30 July 2026.",
+      interview_steps: "",
+      sector_group: "Software / SaaS",
+      industry_sector: "Business AI / Knowledge Management SaaS",
+      employee_band: "",
+      employee_estimate: ""
+    }
+  ];
 
   function replyCategory(record) {
     if (!record) return "";
@@ -84,7 +118,14 @@
       return;
     }
 
+    newRecords.forEach((newRecord) => {
+      if (!state.records.some((record) => record.id === newRecord.id || (record.company === newRecord.company && record.job_title === newRecord.job_title && record.date_sort === newRecord.date_sort))) {
+        state.records.push(newRecord);
+      }
+    });
+
     state.records = state.records.map((record) => ({ ...record, ...(replyUpdates[record.id] || {}) }));
+    state.records.sort((a, b) => (b.date_sort || "").localeCompare(a.date_sort || "") || Number(b.id || 0) - Number(a.id || 0));
     renderSummary();
     render();
     configureFilters();
