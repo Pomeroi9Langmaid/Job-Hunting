@@ -110,7 +110,7 @@
       enriched.contact_enrichment_note = enrichment.review_note || "";
 
       if (enrichment.action === "retain") {
-        enriched.email_status = "No professional email found in Genesy on 31 Jul 2026";
+        enriched.email_status = "Professional email still requires sourcing after Genesy review on 31 Jul 2026";
       } else if (enrichment.professional_email) {
         enriched.contact_email = enrichment.professional_email;
         enriched.email_status = "Professional email sourced via Genesy on 31 Jul 2026";
@@ -135,15 +135,16 @@
       "data/re-audit-additions-2026-07-31.csv",
     ];
 
-    const [targetSets, contactEnrichments, holdOverrides] = await Promise.all([
+    const [targetSets, contactEnrichments, batchTwoEnrichments, holdOverrides] = await Promise.all([
       Promise.all(files.map(fetchCsv)),
       fetchCsv("data/contact-enrichment.csv"),
+      fetchCsv("data/contact-enrichment-batch-2-2026-07-31.csv"),
       fetchCsv("data/full-cycle-holds-2026-07-31.csv"),
     ]);
 
     return applyContactEnrichment(
       targetSets.flat(),
-      [...contactEnrichments, ...holdOverrides],
+      [...contactEnrichments, ...batchTwoEnrichments, ...holdOverrides],
     );
   }
 
