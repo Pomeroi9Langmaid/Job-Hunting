@@ -7,6 +7,7 @@
     "63": { current_status: "Referred", outcome_date: "22 Jul 2026", outcome: "Referred to Mona Thor in HR; follow-up sent 23 July 2026.", notes: "Positive referral received 22 July 2026." },
     "70": { current_status: "Future Opportunity", outcome_date: "29 Jul 2026", outcome: "No current matching role; CV retained for possible future opportunities.", notes: "Courteous reply received 29 July 2026; CV retained." },
     "71": { notes: "Automatic reply received from the replacement contact; substantive response still awaited." },
+    "84": { activity_date: "1 Aug 2026", date_sort: "2026-08-01", activity_type: "Speculative Outreach", contacted_date: "1 Aug 2026", current_status: "Awaiting Response", route_reason: "No advertised role. Direct speculative email.", notes: "Email sent 1 August 2026 to Ola Larsson with Andrew_Langmaid_Marinfloc.pdf attached. Subject: Andrew Langmaid." },
     "86": { notes: "Out-of-office reply received 28 July 2026; substantive response still awaited." },
     "124": { current_status: "Not a Fit", outcome_date: "27 Jul 2026", outcome: "Direct medtech experience was required; exchange closed.", notes: "Substantive reply received 27 July 2026; sector-experience mismatch." },
     "135": { notes: "Automatic reply received 27 July 2026; substantive response still awaited." },
