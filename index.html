@@ -11,6 +11,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="enhancements.css" />
+    <link rel="stylesheet" href="analytics.css" />
   </head>
   <body>
     <main class="page-shell">
@@ -27,147 +28,46 @@
       </header>
 
       <section class="summary-grid" aria-label="Summary">
-        <article class="summary-card">
-          <span>Total records</span>
-          <strong id="total-count">0</strong>
-        </article>
-        <article class="summary-card">
-          <span>Advertised-role applications</span>
-          <strong id="application-count">0</strong>
-        </article>
-        <article class="summary-card">
-          <span>Direct contact about advertised roles</span>
-          <strong id="direct-count">0</strong>
-        </article>
-        <article class="summary-card">
-          <span>Speculative company approaches</span>
-          <strong id="speculative-count">0</strong>
-        </article>
-        <article class="summary-card target-summary">
-          <span>Prospective targets not contacted</span>
-          <strong id="target-count">0</strong>
-        </article>
-        <article class="summary-card interview-summary">
-          <span>Interview processes</span>
-          <strong id="interview-count">0</strong>
-        </article>
+        <article class="summary-card"><span>Total records</span><strong id="total-count">0</strong></article>
+        <article class="summary-card"><span>Advertised-role applications</span><strong id="application-count">0</strong></article>
+        <article class="summary-card"><span>Direct contact about advertised roles</span><strong id="direct-count">0</strong></article>
+        <article class="summary-card"><span>Speculative company approaches</span><strong id="speculative-count">0</strong></article>
+        <article class="summary-card target-summary"><span>Prospective targets not contacted</span><strong id="target-count">0</strong></article>
+        <article class="summary-card interview-summary"><span>Interview processes</span><strong id="interview-count">0</strong></article>
+      </section>
+
+      <section id="analytics-dashboard" class="analytics-dashboard" aria-label="Live job-search analytics">
+        <div class="load-error">Loading live analysis…</div>
       </section>
 
       <section class="controls" aria-label="Filter activity">
-        <label class="search-control">
-          <span>Search</span>
-          <input
-            id="search-input"
-            type="search"
-            placeholder="Company, role or contact"
-            autocomplete="off"
-          />
-        </label>
-
-        <label>
-          <span>City</span>
-          <select id="city-filter">
-            <option value="">All cities</option>
-          </select>
-        </label>
-
-        <label>
-          <span>Industry</span>
-          <select id="industry-filter">
-            <option value="">All sectors</option>
-          </select>
-        </label>
-
-        <label>
-          <span>Company size</span>
-          <select id="size-filter">
-            <option value="">All sizes</option>
-          </select>
-        </label>
-
-        <label>
-          <span>Application / outreach route</span>
-          <select id="type-filter">
-            <option value="">All routes</option>
-            <option value="Open Role Application">Applied to an advertised role</option>
-            <option value="Direct Role Outreach">Contacted someone about an advertised role</option>
-            <option value="Speculative Outreach">Speculative approach with no advertised role</option>
-            <option value="Prospective Target">Prospective target — not contacted</option>
-          </select>
-        </label>
-
-        <label>
-          <span>Progress</span>
-          <select id="status-filter">
-            <option value="">All progress</option>
-            <option value="Active">No closure recorded</option>
-            <option value="Not Contacted">Not contacted</option>
-            <option value="Interviewed">Interviewed</option>
-            <option value="Application Closed">Application closed</option>
-            <option value="Closed by Andrew">Closed by Andrew</option>
-          </select>
-        </label>
-
+        <label class="search-control"><span>Search</span><input id="search-input" type="search" placeholder="Company, role or contact" autocomplete="off" /></label>
+        <label><span>City</span><select id="city-filter"><option value="">All cities</option></select></label>
+        <label><span>Industry</span><select id="industry-filter"><option value="">All sectors</option></select></label>
+        <label><span>Company size</span><select id="size-filter"><option value="">All sizes</option></select></label>
+        <label><span>Application / outreach route</span><select id="type-filter"><option value="">All routes</option><option value="Open Role Application">Applied to an advertised role</option><option value="Direct Role Outreach">Contacted someone about an advertised role</option><option value="Speculative Outreach">Speculative approach with no advertised role</option><option value="Prospective Target">Prospective target — not contacted</option></select></label>
+        <label><span>Progress</span><select id="status-filter"><option value="">All progress</option><option value="Active">No closure recorded</option><option value="Not Contacted">Not contacted</option><option value="Interviewed">Interviewed</option><option value="Application Closed">Application closed</option><option value="Closed by Andrew">Closed by Andrew</option></select></label>
         <button id="clear-filters" class="clear-button" type="button">Clear</button>
       </section>
 
       <section class="results-panel">
-        <div class="results-heading">
-          <p><strong id="visible-count">0</strong> records shown</p>
-          <a class="download-link" href="data/applications.csv" download>Download CSV</a>
-        </div>
-
+        <div class="results-heading"><p><strong id="visible-count">0</strong> records shown</p><a class="download-link" href="data/applications.csv" download>Download CSV</a></div>
         <div class="table-wrap">
           <table>
-            <colgroup>
-              <col class="col-date" />
-              <col class="col-company" />
-              <col class="col-industry" />
-              <col class="col-size" />
-              <col class="col-city" />
-              <col class="col-role" />
-              <col class="col-job-ad" />
-              <col class="col-contact" />
-              <col class="col-route" />
-              <col class="col-progress" />
-            </colgroup>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Company</th>
-                <th>Industry</th>
-                <th title="Approximate current employee band">Company size</th>
-                <th>City</th>
-                <th>Role</th>
-                <th>Job ad</th>
-                <th>Contact</th>
-                <th>Application / outreach route</th>
-                <th>Progress</th>
-              </tr>
-            </thead>
+            <colgroup><col class="col-date" /><col class="col-company" /><col class="col-industry" /><col class="col-size" /><col class="col-city" /><col class="col-role" /><col class="col-job-ad" /><col class="col-contact" /><col class="col-route" /><col class="col-progress" /></colgroup>
+            <thead><tr><th>Date</th><th>Company</th><th>Industry</th><th title="Approximate current employee band">Company size</th><th>City</th><th>Role</th><th>Job ad</th><th>Contact</th><th>Application / outreach route</th><th>Progress</th></tr></thead>
             <tbody id="applications-body"></tbody>
           </table>
         </div>
-
-        <div id="empty-state" class="empty-state" hidden>
-          No records match these filters.
-        </div>
+        <div id="empty-state" class="empty-state" hidden>No records match these filters.</div>
       </section>
     </main>
 
     <dialog id="details-dialog" class="details-dialog">
       <button class="dialog-close" type="button" aria-label="Close details">Close</button>
-      <p class="eyebrow">PROGRESS DETAILS</p>
-      <h2 id="dialog-company"></h2>
-      <p id="dialog-role" class="dialog-role"></p>
-      <div class="dialog-section">
-        <h3>Stages</h3>
-        <p id="dialog-stages"></p>
-      </div>
-      <div class="dialog-section">
-        <h3>Outcome</h3>
-        <p id="dialog-outcome"></p>
-      </div>
+      <p class="eyebrow">PROGRESS DETAILS</p><h2 id="dialog-company"></h2><p id="dialog-role" class="dialog-role"></p>
+      <div class="dialog-section"><h3>Stages</h3><p id="dialog-stages"></p></div>
+      <div class="dialog-section"><h3>Outcome</h3><p id="dialog-outcome"></p></div>
     </dialog>
 
     <script src="app.js" defer></script>
@@ -175,5 +75,6 @@
     <script src="prospective-targets.js" defer></script>
     <script src="date-filter.js" defer></script>
     <script src="route-labels.js" defer></script>
+    <script src="analytics.js" defer></script>
   </body>
 </html>
