@@ -1,0 +1,11 @@
+company,route,response_date,response_type,classification,positive_future_facing,conversation_progressed,automated,notes
+Brokk,Speculative Outreach,2026-08-03,Personal reply,CV retained,yes,no,no,No suitable commercial opportunity now; CV retained for future possibilities.
+Focus Nordic,Speculative Outreach,2026-08-03,Personal reply,Definitive no,no,no,no,No open position.
+Flowbox,Speculative Outreach,2026-08-03,Personal reply,Specific mismatch,no,no,no,Sales recruitment currently focused on native German and Spanish speakers.
+Visiba Care,Speculative Outreach,2026-08-03,Personal reply,No current opening,yes,no,no,Positive comments on CV and experience; commercial team is not currently growing.
+VANBRUUN,Speculative Outreach,2026-08-03,Personal reply,Keep in touch,yes,no,no,No opening now; invited Andrew to remain in contact.
+CPAC Systems,Speculative Outreach,2026-08-03,Personal reply,Conversation progressed,yes,yes,no,Marcus Wingolf referred Andrew to Felipe Lopes for a commercial discussion.
+Gunnebo Safe Storage,Speculative Outreach,2026-08-03,Delivery failure,Bounce,no,no,yes,Address not found; not a substantive reply.
+Enwa,Speculative Outreach,2026-08-03,Duplicate send,Data-quality flag,no,no,yes,Two copies were sent under different subject lines; count as one company contacted.
+JOAB,Speculative Outreach,2026-08-03,Duplicate send,Data-quality flag,no,no,yes,Two copies were sent under different subject lines; count as one company contacted.
+Westpay,Speculative Outreach,2026-08-03,Duplicate send,Data-quality flag,no,no,yes,Two copies were sent under different subject lines; count as one company contacted.
