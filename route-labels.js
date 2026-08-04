@@ -35,6 +35,7 @@
     if (status === "future opportunity" || text.includes("cv retained")) return "future";
     if (status === "not a fit" || text.includes("mismatch") || text.includes("medtech experience")) return "not-fit";
     if (status === "no current opportunity" || text.includes("no current opening") || text.includes("no current openings")) return "no-opening";
+    if (!speculative && (status === "role filled / closed" || text.includes("already been filled") || text.includes("role withdrawn") || text.includes("vacancy withdrawn"))) return "unavailable";
     if (!speculative && status === "application closed") return "unsuccessful";
     if (Number(record.interview_count || 0) > 0 || text.includes("invited") || text.includes("progressed")) return "progressing";
     if ((record.contacted_date || record.activity_type === "Open Role Application") && !record.outcome) return "awaiting";
@@ -47,7 +48,8 @@
     if (status === "No Current Opportunity") return "No current opportunity";
     if (status === "Not a Fit") return "Not a fit / experience mismatch";
     if (status === "Referred") return "Referred to another contact";
-    if (status === "Application Closed") return record.activity_type === "Open Role Application" ? "Application unsuccessful / process ended" : "No current opportunity";
+    if (status === "Application Closed") return record.activity_type === "Open Role Application" ? "Application unsuccessful" : "No current opportunity";
+    if (status === "Role Filled / Closed") return "Role filled / withdrawn — not a rejection";
     if (status === "Awaiting Response") return "Awaiting reply";
     if (status === "Active") return record.activity_type === "Open Role Application" ? "Application active" : "Active";
     if (status === "Closed by Andrew") return "Closed / withdrawn by Andrew";
@@ -100,11 +102,12 @@
 
   function configure() {
     const reply = document.querySelector("#reply-filter");
-    if (reply) reply.innerHTML = `<option value="">All email outcomes</option><option value="progressing">Positive reply / progressing</option><option value="future">Positive reply — no role now, CV retained</option><option value="referral">Referral / new contact supplied</option><option value="no-opening">Courteous reply — no current opening</option><option value="not-fit">Reply — not a fit / experience mismatch</option><option value="unsuccessful">Advertised-role application unsuccessful</option><option value="automated">Automatic reply / out of office</option><option value="awaiting">No substantive reply yet</option>`;
+    if (reply) reply.innerHTML = `<option value="">All email outcomes</option><option value="progressing">Positive reply / progressing</option><option value="future">Positive reply — no role now, CV retained</option><option value="referral">Referral / new contact supplied</option><option value="no-opening">Courteous reply — no current opening</option><option value="not-fit">Reply — not a fit / experience mismatch</option><option value="unsuccessful">Advertised-role application unsuccessful</option><option value="unavailable">Advertised role filled / withdrawn</option><option value="automated">Automatic reply / out of office</option><option value="awaiting">No substantive reply yet</option>`;
     const status = document.querySelector("#status-filter");
     if (status) Array.from(status.options).forEach((option) => {
       if (option.value === "Active") option.textContent = "Still active / awaiting outcome";
-      if (option.value === "Application Closed") option.textContent = "Application unsuccessful / process ended";
+      if (option.value === "Application Closed") option.textContent = "Application unsuccessful";
+      if (option.value === "Role Filled / Closed") option.textContent = "Role filled / withdrawn";
       if (option.value === "Closed by Andrew") option.textContent = "Closed / withdrawn by Andrew";
     });
     const controls = document.querySelector(".controls");
