@@ -76,6 +76,16 @@ Newly activated after the re-audit:
 
 Every displayed prospective target has a named contact. Direct email addresses are shown only when publicly verified or supplied through an audited Genesy enrichment; otherwise the tracker states that the email needs sourcing.
 
+## Outcome classification
+
+Advertised-role outcomes are deliberately separated:
+
+- `Application Closed` means the application was unsuccessful or the process ended against Andrew.
+- `Role Filled / Closed` means the vacancy was already filled, withdrawn or otherwise unavailable. It is not counted as a rejection or as evidence of a fit problem.
+- `Closed by Andrew` means Andrew withdrew or chose not to continue.
+
+Employer wording is kept distinct from any inferred mismatch in the record notes. Generic rejection wording is not converted into a claimed reason.
+
 ## Updating the tracker
 
 Update the appropriate CSV and commit the change to `main`. The connected Vercel project redeploys automatically. Do not create a separate operational target page.
