@@ -452,6 +452,11 @@ tbody tr:last-child td {
   background: var(--coral-pale);
 }
 
+.step-unavailable {
+  color: #586579;
+  background: #edf1f5;
+}
+
 .flow-arrow {
   color: #9aa4b2;
   font-size: 0.8rem;
