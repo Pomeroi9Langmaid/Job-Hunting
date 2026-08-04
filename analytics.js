@@ -20,7 +20,8 @@
   };
 
   const pct = (n, d) => d ? `${Math.round((n / d) * 100)}%` : "—";
-  const closed = (r) => r.current_status === "Application Closed";
+  const unsuccessful = (r) => r.current_status === "Application Closed";
+  const unavailable = (r) => r.current_status === "Role Filled / Closed";
   const interviewed = (r) => Number(r.interview_count || 0) > 0;
   const yes = (value) => String(value).toLowerCase() === "yes";
 
@@ -48,7 +49,8 @@
       const speculative = records.filter((r) => r.activity_type === "Speculative Outreach");
       const contacted = [...applications, ...direct, ...speculative];
       const interviews = contacted.filter(interviewed);
-      const appClosed = applications.filter(closed);
+      const appUnsuccessful = applications.filter(unsuccessful);
+      const appUnavailable = applications.filter(unavailable);
 
       const specReplyRows = replies.filter((r) => r.route === "Speculative Outreach" && r.response_type === "Personal reply" && !yes(r.automated));
       const positiveReplies = specReplyRows.filter((r) => yes(r.positive_future_facing));
@@ -75,7 +77,7 @@
           <span class="analytics-live">AUTO-UPDATING</span>
         </div>
         <div class="analytics-metrics">
-          ${metric("Applications", applications.length, `${appClosed.length} closed`)}
+          ${metric("Applications", applications.length, `${appUnsuccessful.length} unsuccessful · ${appUnavailable.length} role unavailable`)}
           ${metric("Interview processes", interviews.length, `${pct(interviews.length, applications.length + direct.length)} of role-led approaches`)}
           ${metric("Speculative companies", speculative.length, "unique tracker records")}
           ${metric("Personal replies", specReplyRows.length, `${pct(specReplyRows.length, speculative.length)} verified response rate`)}
@@ -97,7 +99,7 @@
             <h3>Meaningful reading</h3>
             <p>${specReplyRows.length < 20 ? "The verified reply sample is still too small for dependable conclusions about sectors, locations or recipient seniority." : "The verified reply sample is large enough to begin comparing sectors, locations and recipient seniority."}</p>
             <p>Automatic acknowledgements, out-of-office messages, delivery failures and duplicate sends are excluded from personal-reply rates.</p>
-            <p>Generic rejections remain generic. The dashboard uses only explicitly recorded reply classifications.</p>
+            <p>Generic rejections remain generic. Filled or withdrawn vacancies are reported separately and never counted as evidence against Andrew’s suitability.</p>
           </article>
         </div>`;
     } catch (error) {
