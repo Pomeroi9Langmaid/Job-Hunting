@@ -181,7 +181,11 @@ function progressMarkup(record) {
   }
 
   if (record.current_status === "Application Closed") {
-    steps.push(stepMarkup("APPLICATION CLOSED", record.outcome_date, "step-closed"));
+    steps.push(stepMarkup("APPLICATION UNSUCCESSFUL", record.outcome_date, "step-closed"));
+  }
+
+  if (record.current_status === "Role Filled / Closed") {
+    steps.push(stepMarkup("ROLE FILLED / WITHDRAWN", record.outcome_date, "step-unavailable"));
   }
 
   if (record.current_status === "Closed by Andrew") {
