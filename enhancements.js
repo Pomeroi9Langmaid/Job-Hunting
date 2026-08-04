@@ -102,6 +102,7 @@
     const status = (record.current_status || "").toLowerCase();
     const combined = `${status} ${record.outcome || ""} ${record.notes || ""}`.toLowerCase();
     if (combined.includes("referred") || combined.includes("new contact") || combined.includes("another individual")) return "referral";
+    if (status === "role filled / closed" || combined.includes("already been filled") || combined.includes("role withdrawn") || combined.includes("vacancy withdrawn")) return "unavailable";
     if (status === "application closed" || combined.includes("rejection") || combined.includes("rejected") || combined.includes("process closed") || combined.includes("not continue")) return "negative";
     if (Number(record.interview_count || 0) > 0 || combined.includes("invited") || combined.includes("positive") || combined.includes("progressed") || combined.includes("acknowledged")) return "positive";
     return record.outcome ? "positive" : "";
@@ -146,7 +147,7 @@
     toLabel.className = "date-range-control";
     toLabel.innerHTML = '<span>To</span><input id="date-to" type="date" />';
     const replyLabel = document.createElement("label");
-    replyLabel.innerHTML = `<span>Email reply</span><select id="reply-filter"><option value="">All reply outcomes</option><option value="positive">Positive reply</option><option value="negative">Negative reply</option><option value="referral">Referral / new contact</option></select>`;
+    replyLabel.innerHTML = `<span>Email reply</span><select id="reply-filter"><option value="">All reply outcomes</option><option value="positive">Positive reply</option><option value="negative">Negative reply</option><option value="unavailable">Role filled / withdrawn</option><option value="referral">Referral / new contact</option></select>`;
     statusLabel.before(periodLabel, fromLabel, toLabel, replyLabel);
 
     periodFilter = periodLabel.querySelector("select");
