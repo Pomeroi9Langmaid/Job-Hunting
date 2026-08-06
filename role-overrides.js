@@ -11,21 +11,21 @@ const roleOverrides = {
 };
 
 function applyRoleOverrides() {
-  if (!window.state || !Array.isArray(window.state.records) || window.state.records.length === 0) {
+  if (typeof state === "undefined" || !Array.isArray(state.records) || state.records.length === 0) {
     window.setTimeout(applyRoleOverrides, 100);
     return;
   }
 
   let changed = false;
-  window.state.records = window.state.records.map((record) => {
+  state.records = state.records.map((record) => {
     const override = roleOverrides[record.id];
     if (!override) return record;
     changed = true;
     return { ...record, ...override };
   });
 
-  if (changed && typeof window.render === "function") {
-    window.render();
+  if (changed && typeof render === "function") {
+    render();
   }
 }
 
