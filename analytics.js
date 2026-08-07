@@ -25,7 +25,7 @@
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
-  const pct = (n, d) => d ? `${Math.round((n / d) * 100)}%` : "—";
+  const pct = (n, d) => d ? `${((n / d) * 100).toFixed(1).replace(/\.0$/, "")}%` : "—";
   const yes = (value) => String(value).toLowerCase() === "yes";
   const interviewCount = (r) => Number(r.interview_count || 0);
   const reachedInterview = (r) => interviewCount(r) > 0;
@@ -39,11 +39,11 @@
     return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" }).format(date);
   };
 
-  const bar = (label, value, total) => `
-    <div class="analytics-bar-row">
-      <div><span>${esc(label)}</span><strong>${value}</strong></div>
+  const bar = ({ key, label, value, total, tone }) => `
+    <button type="button" class="analytics-bar-row analytics-bar-row--${esc(tone)}" data-reply-group="${esc(key)}" aria-label="Open ${value} ${esc(label)} replies">
+      <div class="analytics-bar-label"><span>${esc(label)}</span><span class="analytics-bar-action">Read replies</span><strong>${value}</strong></div>
       <div class="analytics-track"><i style="width:${total ? Math.max(value ? 3 : 0, (value / total) * 100) : 0}%"></i></div>
-    </div>`;
+    </button>`;
 
   const routeLabel = (r) => {
     if (r.activity_type === "Open Role Application") return "Specific job application";
@@ -61,22 +61,34 @@
     return `Interview #${count}`;
   };
 
-  const routeCard = ({ title, kicker, primary, primaryLabel, metrics, tone = "" }) => `
+  const routeCard = ({ title, kicker, primary, primaryLabel, metrics, tone = "", context = "" }) => `
     <article class="analytics-route-card ${tone}">
       <header><p>${esc(kicker)}</p><h3>${esc(title)}</h3></header>
       <div class="analytics-route-primary"><strong>${primary}</strong><span>${esc(primaryLabel)}</span></div>
       <dl>${metrics.map(([label, value, note]) => `
         <div><dt>${esc(label)}</dt><dd>${value}${note ? `<small>${esc(note)}</small>` : ""}</dd></div>`).join("")}</dl>
+      ${context ? `<div class="analytics-route-context">${context}</div>` : ""}
     </article>`;
+
+  const replyGroupKey = (r) => {
+    if (yes(r.conversation_progressed)) return "progressed";
+    if (yes(r.positive_future_facing)) return "positive";
+    if (r.classification === "Specific mismatch") return "mismatch";
+    if (r.classification === "Definitive no") return "negative";
+    return "neutral";
+  };
+
+  const nl2br = (value) => esc(value).replaceAll("\n", "<br>");
 
   async function renderAnalytics() {
     const root = document.querySelector("#analytics-dashboard");
     if (!root) return;
     try {
-      const [applicationsResponse, repliesResponse, companiesResponse] = await Promise.all([
+      const [applicationsResponse, repliesResponse, companiesResponse, replyMessagesResponse] = await Promise.all([
         fetch("data/applications.csv", { cache: "no-store" }),
         fetch("data/replies.csv", { cache: "no-store" }),
         fetch("data/companies.csv", { cache: "no-store" }),
+        fetch("data/reply-messages.json", { cache: "no-store" }),
       ]);
       if (!applicationsResponse.ok) throw new Error("Application analytics data could not be loaded");
       if (!repliesResponse.ok) throw new Error("Reply analytics data could not be loaded");
@@ -86,7 +98,9 @@
       const records = baseRecords.map((r) => (typeof roleOverrides !== "undefined" && roleOverrides[r.id]) ? { ...r, ...roleOverrides[r.id] } : r);
       const replies = parseCsv(await repliesResponse.text());
       const companies = parseCsv(await companiesResponse.text());
+      const replyMessages = replyMessagesResponse.ok ? await replyMessagesResponse.json() : [];
       const companyMap = new Map(companies.map((r) => [r.company, r]));
+      const messageMap = new Map(replyMessages.map((r) => [`${r.company}::${r.response_date}`, r]));
 
       const applications = records.filter((r) => r.activity_type === "Open Role Application");
       const direct = records.filter((r) => r.activity_type === "Direct Role Outreach");
@@ -102,11 +116,7 @@
       const specInterview2Rows = speculative.filter((r) => interviewCount(r) >= 2);
       const specActive = speculative.filter(isActive);
       const specReplyRows = replies.filter((r) => r.route === "Speculative Outreach" && r.response_type === "Personal reply" && !yes(r.automated));
-      const positiveReplies = specReplyRows.filter((r) => yes(r.positive_future_facing));
       const progressedReplies = specReplyRows.filter((r) => yes(r.conversation_progressed));
-      const definitiveNo = specReplyRows.filter((r) => r.classification === "Definitive no");
-      const specificMismatch = specReplyRows.filter((r) => r.classification === "Specific mismatch");
-      const noCurrentOpening = specReplyRows.filter((r) => ["No current opening", "CV retained", "Keep in touch", "Future consideration", "Location and timing mismatch"].includes(r.classification));
       const bounces = replies.filter((r) => r.response_type === "Delivery failure");
       const duplicateFlags = replies.filter((r) => r.response_type === "Duplicate send");
 
@@ -122,28 +132,31 @@
           return String(b.date_sort).localeCompare(String(a.date_sort));
         });
 
-      const responseGroups = [
-        ["Conversation progressed", progressedReplies.length],
-        ["Positive / future-facing", Math.max(0, positiveReplies.length - progressedReplies.length)],
-        ["No current opening / keep in touch", noCurrentOpening.length],
-        ["Specific mismatch", specificMismatch.length],
-        ["Definitive no", definitiveNo.length],
+      const groupDefinitions = [
+        { key: "progressed", label: "Conversation progressed", tone: "progressed" },
+        { key: "positive", label: "Positive / future-facing", tone: "positive" },
+        { key: "neutral", label: "No opening / timing constraint", tone: "neutral" },
+        { key: "mismatch", label: "Specific mismatch", tone: "mismatch" },
+        { key: "negative", label: "Definitive no", tone: "negative" },
       ];
-      const maxGroup = Math.max(1, ...responseGroups.map((g) => g[1]));
+      const responseGroups = groupDefinitions.map((group) => ({
+        ...group,
+        rows: specReplyRows.filter((r) => replyGroupKey(r) === group.key),
+      }));
+      const maxGroup = Math.max(1, ...responseGroups.map((g) => g.rows.length));
 
       const activeInterviewRows = interviewRows.filter(isActive);
-      const comparison = specInterview2Rows.length
-        ? `Speculative outreach has now produced ${specInterviewRows.length} interview-stage conversations, including ${specInterview2Rows.length} process at Interview #2.`
-        : specInterviewRows.length >= 2
-          ? `Speculative outreach has now produced ${specInterviewRows.length} interview-stage conversations, alongside ${progressedReplies.length} verified conversations that progressed beyond a simple reply.`
-          : "Speculative outreach is producing useful replies, but the interview sample is still small.";
+      const route1Rate = pct(roleInterviewRows.length, applications.length);
+      const route2ReplyRate = pct(specReplyRows.length, speculative.length);
+      const route2InterviewRate = pct(specInterviewRows.length, speculative.length);
+      const comparison = `Route 1 is converting ${route1Rate} of advertised applications to Interview #1, close to the current large-sample 6–7% benchmark. Route 2 has a ${route2ReplyRate} verified personal-reply rate and has created ${specInterviewRows.length} interview-stage conversation${specInterviewRows.length === 1 ? "" : "s"} from companies where no vacancy was advertised. Its ${route2InterviewRate} interview-creation rate is therefore not an apples-to-apples comparison with Route 1.`;
 
       root.innerHTML = `
         <div class="analytics-heading">
           <div>
             <p class="eyebrow">CURRENT PICTURE</p>
             <h2>What is actually producing conversations?</h2>
-            <p>Applications and speculative outreach are separate funnels below, so the route into every interview is visible rather than blended into one total.</p>
+            <p>Applications and speculative outreach are separate funnels below. Each route is now shown against the right context rather than treating the percentages as equivalent.</p>
           </div>
           <span class="analytics-live">DATA THROUGH ${esc(formatDate(latestDate).toUpperCase())}</span>
         </div>
@@ -155,25 +168,35 @@
             primary: applications.length,
             primaryLabel: "applications submitted",
             metrics: [
-              ["Reached Interview #1", roleInterviewRows.length, `${pct(roleInterviewRows.length, applications.length)} of applications`],
+              ["Reached Interview #1", roleInterviewRows.length, `${route1Rate} of applications`],
               ["Reached Interview #2", roleInterview2Rows.length, "later-stage processes"],
               ["Still active", roleActive.length, "not recorded as closed"],
               ["Closed", roleClosed.length, "closed or withdrawn processes"],
             ],
+            context: `
+              <span class="analytics-context-label">ADVERTISED-JOB BENCHMARK</span>
+              <p><strong>${route1Rate} → Interview #1.</strong> Current large-sample job-seeker data puts a comparable advertised-application rate at roughly <strong>6–7%</strong>.</p>
+              <a href="https://huntr.co/research/job-search-trends-q1-2026" target="_blank" rel="noopener">Huntr Q1 2026 source ↗</a>`,
           })}
           ${routeCard({
             kicker: "ROUTE 2",
             title: "Speculative email outreach",
             primary: speculative.length,
-            primaryLabel: "companies emailed",
+            primaryLabel: "companies emailed · no advertised vacancy required",
             tone: "analytics-route-card--speculative",
             metrics: [
-              ["Personal replies", specReplyRows.length, `${pct(specReplyRows.length, speculative.length)} verified response rate`],
+              ["Personal replies", specReplyRows.length, `${route2ReplyRate} verified response rate`],
               ["Conversation progressed", progressedReplies.length, "reply led to a meaningful next step"],
-              ["Reached Interview #1", specInterviewRows.length, `${pct(specInterviewRows.length, speculative.length)} of companies emailed`],
+              ["Reached Interview #1", specInterviewRows.length, `${route2InterviewRate} opportunity-creation rate`],
               ["Reached Interview #2", specInterview2Rows.length, "later-stage speculative processes"],
               ["Active interview processes", specActive.filter(reachedInterview).length, "currently live"],
             ],
+            context: `
+              <span class="analytics-context-label analytics-context-label--speculative">NO ADVERTISED VACANCY</span>
+              <p><strong>${route2ReplyRate} personal replies.</strong> That sits inside the indicative <strong>5–15%</strong> range reported for well-targeted job-seeker cold email.</p>
+              <p><strong>${specInterviewRows.length} interview-stage conversation${specInterviewRows.length === 1 ? "" : "s"} created from zero advertised roles.</strong> The ${route2InterviewRate} figure is an opportunity-creation rate, not a direct comparator with Route 1; there is no dependable like-for-like interview benchmark for this exact funnel.</p>
+              <p class="analytics-context-market">Swedish context: <strong>20.3%</strong> of Q1 2026 job openings were being recruited through methods other than advertising.</p>
+              <div class="analytics-context-links"><a href="https://pitchhired.com/blog/cold-email-reply-rates-job-search-data" target="_blank" rel="noopener">Cold-email context ↗</a><a href="https://www.scb.se/en/finding-statistics/statistics-by-subject-area/labour-market/labour-force-demand/job-openings-and-recruitment-needs/pong/statistical-news/job-openings-and-recruitment-needs-1st-quarter-2026/?menu=open" target="_blank" rel="noopener">Statistics Sweden ↗</a></div>`,
           })}
         </div>
 
@@ -206,17 +229,82 @@
         </article>
 
         <div class="analytics-grid">
-          <article class="analytics-panel">
-            <h3>Speculative reply quality</h3>
-            ${responseGroups.map(([label, value]) => bar(label, value, maxGroup)).join("")}
+          <article class="analytics-panel analytics-reply-quality">
+            <div class="analytics-panel-heading analytics-panel-heading--compact">
+              <div><h3>Speculative reply quality</h3><p>One reply, one outcome bucket. Click any bar to read the underlying responses.</p></div>
+              <span class="analytics-click-hint">CLICK TO OPEN</span>
+            </div>
+            ${responseGroups.map((group) => bar({ key: group.key, label: group.label, value: group.rows.length, total: maxGroup, tone: group.tone })).join("")}
           </article>
           <article class="analytics-panel analytics-insight">
             <h3>What the numbers say</h3>
             <p>${esc(comparison)}</p>
-            <p>The strongest current signal is not the raw volume of outreach; it is whether a route is turning into a real conversation. That is why interview stage and progressed replies now sit next to the route that generated them.</p>
+            <p>For speculative outreach, the strongest signal is whether an unsolicited approach creates a real conversation despite there being no vacancy to apply for. That is why the dashboard now gives the absence of an advertised role explicit precedence.</p>
             <p>Automatic replies, out-of-office messages, delivery failures and duplicate sends remain excluded from personal-reply rates. Current data-quality flags: ${bounces.length} bounce${bounces.length === 1 ? "" : "s"} and ${duplicateFlags.length} duplicate-send flag${duplicateFlags.length === 1 ? "" : "s"}.</p>
           </article>
-        </div>`;
+        </div>
+
+        <div class="analytics-source-note">
+          <strong>Benchmark note.</strong> Huntr Q1 2026 covers 139,927 applications from 25,635 job seekers; its 21–50 application cohort converted at 6.96% and one application to a company at 6.07%. The 5–15% cold-email reply range is an indicative third-party job-seeker benchmark rather than official labour-market data. Statistics Sweden reported 29,200 of 143,600 Q1 2026 openings were recruited through methods other than advertising. These figures provide context; they are not equivalent cohorts.
+        </div>
+
+        <div class="analytics-reply-backdrop" data-reply-close hidden></div>
+        <aside class="analytics-reply-drawer" id="analytics-reply-drawer" aria-hidden="true" aria-labelledby="analytics-reply-title">
+          <div class="analytics-reply-drawer-head">
+            <div><p class="eyebrow">SPECULATIVE REPLY DETAIL</p><h3 id="analytics-reply-title">Replies</h3><p id="analytics-reply-subtitle"></p></div>
+            <button type="button" class="analytics-reply-close" data-reply-close aria-label="Close reply detail">×</button>
+          </div>
+          <div class="analytics-reply-privacy">Reply wording is preserved for easy review. Signatures, phone/email details and your quoted outbound email are omitted from this public dashboard copy.</div>
+          <div class="analytics-reply-list" id="analytics-reply-list"></div>
+        </aside>`;
+
+      const drawer = root.querySelector("#analytics-reply-drawer");
+      const backdrop = root.querySelector(".analytics-reply-backdrop");
+      const replyTitle = root.querySelector("#analytics-reply-title");
+      const replySubtitle = root.querySelector("#analytics-reply-subtitle");
+      const replyList = root.querySelector("#analytics-reply-list");
+      const closeButton = root.querySelector(".analytics-reply-close");
+
+      const closeDrawer = () => {
+        drawer.classList.remove("is-open");
+        drawer.setAttribute("aria-hidden", "true");
+        backdrop.hidden = true;
+        document.body.classList.remove("analytics-drawer-open");
+      };
+
+      const openDrawer = (key) => {
+        const group = responseGroups.find((item) => item.key === key);
+        if (!group) return;
+        const rows = [...group.rows].sort((a, b) => String(b.response_date).localeCompare(String(a.response_date)) || a.company.localeCompare(b.company));
+        replyTitle.textContent = group.label;
+        replySubtitle.textContent = `${rows.length} verified personal repl${rows.length === 1 ? "y" : "ies"}`;
+        replyList.innerHTML = rows.map((r) => {
+          const archived = messageMap.get(`${r.company}::${r.response_date}`);
+          const message = archived?.message || "Exact response text has not yet been archived for this reply.";
+          return `<article class="analytics-reply-card analytics-reply-card--${esc(group.tone)}">
+            <header>
+              <div><strong>${esc(r.company)}</strong><small>${esc(formatDate(r.response_date))}</small></div>
+              <span>${esc(r.classification || group.label)}</span>
+            </header>
+            ${archived ? `<p class="analytics-reply-meta">${esc(archived.sender || "Sender not recorded")} · ${esc(archived.subject || "Subject not recorded")}</p>` : ""}
+            <blockquote>${nl2br(message)}</blockquote>
+            <div class="analytics-reply-note"><strong>Tracker note:</strong> ${esc(r.notes || "No additional reason recorded.")}</div>
+          </article>`;
+        }).join("");
+        backdrop.hidden = false;
+        drawer.classList.add("is-open");
+        drawer.setAttribute("aria-hidden", "false");
+        document.body.classList.add("analytics-drawer-open");
+        closeButton.focus();
+      };
+
+      root.querySelectorAll("[data-reply-group]").forEach((button) => {
+        button.addEventListener("click", () => openDrawer(button.dataset.replyGroup));
+      });
+      root.querySelectorAll("[data-reply-close]").forEach((button) => button.addEventListener("click", closeDrawer));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && drawer.classList.contains("is-open")) closeDrawer();
+      });
     } catch (error) {
       root.innerHTML = `<div class="load-error">${esc(error.message)}</div>`;
     }
