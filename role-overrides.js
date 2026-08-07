@@ -72,24 +72,6 @@ const roleAdditions = [
     employee_estimate: "About 1,688"
   },
   {
-    id: "235",
-    activity_date: "7 Aug 2026",
-    date_sort: "2026-08-07",
-    company: "Proxify",
-    city: "Greater Gothenburg / Hybrid",
-    job_title: "Enterprise Account Executive",
-    activity_type: "Open Role Application",
-    job_url: "https://jobs.proxify.io/jobs/8024669-enterprise-account-executive",
-    current_status: "Active",
-    interview_count: 0,
-    route_reason: "Applied through Proxify's official recruitment site.",
-    notes: "Application submitted online on 7 August 2026 with a tailored CV and cover letter. Original assessment: Tier A - 92/100. Strong match to enterprise new business, outbound prospecting, full-cycle ownership, CRM discipline and international selling. Staffing and tech-services category knowledge is bridgeable rather than mandatory.",
-    sector_group: "Technology & SaaS",
-    industry_sector: "Tech talent and staffing platform",
-    employee_band: "201 to 500",
-    employee_estimate: "About 495"
-  },
-  {
     id: "236",
     activity_date: "7 Aug 2026",
     date_sort: "2026-08-07",
