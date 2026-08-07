@@ -95,7 +95,11 @@
       if (!companiesResponse.ok) throw new Error("Company analytics data could not be loaded");
 
       const baseRecords = parseCsv(await applicationsResponse.text());
-      const records = baseRecords.map((r) => (typeof roleOverrides !== "undefined" && roleOverrides[r.id]) ? { ...r, ...roleOverrides[r.id] } : r);
+      const existingIds = new Set(baseRecords.map((r) => String(r.id)));
+      const additions = typeof roleAdditions !== "undefined"
+        ? roleAdditions.filter((r) => !existingIds.has(String(r.id)))
+        : [];
+      const records = [...baseRecords, ...additions].map((r) => (typeof roleOverrides !== "undefined" && roleOverrides[r.id]) ? { ...r, ...roleOverrides[r.id] } : r);
       const replies = parseCsv(await repliesResponse.text());
       const companies = parseCsv(await companiesResponse.text());
       const replyMessages = replyMessagesResponse.ok ? await replyMessagesResponse.json() : [];
