@@ -55,6 +55,7 @@
   const stageLabel = (r) => {
     const count = interviewCount(r);
     const steps = String(r.interview_steps || "").toUpperCase();
+    if (count >= 2 && steps.includes("INFORMAL COFFEE")) return "Interview #2 scheduled · informal coffee";
     if (count === 1 && steps.includes("INTERVIEW #1 INVITED")) return "Interview #1 invited";
     if (count === 1 && steps.includes("FOLLOW-UP MEETING SCHEDULED")) return "Interview #1 complete · follow-up booked";
     return `Interview #${count}`;
@@ -98,6 +99,7 @@
       const roleClosed = applications.filter(isClosed);
 
       const specInterviewRows = speculative.filter(reachedInterview);
+      const specInterview2Rows = speculative.filter((r) => interviewCount(r) >= 2);
       const specActive = speculative.filter(isActive);
       const specReplyRows = replies.filter((r) => r.route === "Speculative Outreach" && r.response_type === "Personal reply" && !yes(r.automated));
       const positiveReplies = specReplyRows.filter((r) => yes(r.positive_future_facing));
@@ -130,9 +132,11 @@
       const maxGroup = Math.max(1, ...responseGroups.map((g) => g[1]));
 
       const activeInterviewRows = interviewRows.filter(isActive);
-      const comparison = specInterviewRows.length >= 2
-        ? `Speculative outreach has now produced ${specInterviewRows.length} interview-stage conversations, alongside ${progressedReplies.length} verified conversations that progressed beyond a simple reply.`
-        : "Speculative outreach is producing useful replies, but the interview sample is still small.";
+      const comparison = specInterview2Rows.length
+        ? `Speculative outreach has now produced ${specInterviewRows.length} interview-stage conversations, including ${specInterview2Rows.length} process at Interview #2.`
+        : specInterviewRows.length >= 2
+          ? `Speculative outreach has now produced ${specInterviewRows.length} interview-stage conversations, alongside ${progressedReplies.length} verified conversations that progressed beyond a simple reply.`
+          : "Speculative outreach is producing useful replies, but the interview sample is still small.";
 
       root.innerHTML = `
         <div class="analytics-heading">
@@ -167,6 +171,7 @@
               ["Personal replies", specReplyRows.length, `${pct(specReplyRows.length, speculative.length)} verified response rate`],
               ["Conversation progressed", progressedReplies.length, "reply led to a meaningful next step"],
               ["Reached Interview #1", specInterviewRows.length, `${pct(specInterviewRows.length, speculative.length)} of companies emailed`],
+              ["Reached Interview #2", specInterview2Rows.length, "later-stage speculative processes"],
               ["Active interview processes", specActive.filter(reachedInterview).length, "currently live"],
             ],
           })}
