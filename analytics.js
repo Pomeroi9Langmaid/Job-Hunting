@@ -81,7 +81,8 @@
       if (!repliesResponse.ok) throw new Error("Reply analytics data could not be loaded");
       if (!companiesResponse.ok) throw new Error("Company analytics data could not be loaded");
 
-      const records = parseCsv(await applicationsResponse.text());
+      const baseRecords = parseCsv(await applicationsResponse.text());
+      const records = baseRecords.map((r) => (typeof roleOverrides !== "undefined" && roleOverrides[r.id]) ? { ...r, ...roleOverrides[r.id] } : r);
       const replies = parseCsv(await repliesResponse.text());
       const companies = parseCsv(await companiesResponse.text());
       const companyMap = new Map(companies.map((r) => [r.company, r]));
