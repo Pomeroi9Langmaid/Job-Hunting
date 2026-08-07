@@ -36,6 +36,77 @@ const roleOverrides = {
   }
 };
 
+const roleAdditions = [
+  {
+    id: "233",
+    activity_date: "7 Aug 2026",
+    date_sort: "2026-08-07",
+    company: "OpenAI",
+    city: "Stockholm / Hybrid",
+    job_title: "Account Director - Digital Natives - Nordics",
+    activity_type: "Open Role Application",
+    job_url: "https://openai.com/careers/account-director-digital-natives-nordics-stockholm-sweden/",
+    current_status: "Active",
+    interview_count: 0,
+    route_reason: "Applied through OpenAI's official application process.",
+    notes: "Application submitted online on 7 August 2026 with a tailored CV. Original assessment: Tier B - 83/100. Main bridgeable concern: the vacancy asks for more than $1M in annual revenue targets for more than three years; that exact quota history is not directly evidenced in the current CV. Core full-cycle SaaS and international new-business work remains a strong match.",
+    sector_group: "Technology & SaaS",
+    industry_sector: "Artificial intelligence platform"
+  },
+  {
+    id: "234",
+    activity_date: "7 Aug 2026",
+    date_sort: "2026-08-07",
+    company: "Harvey",
+    city: "Stockholm / Remote",
+    job_title: "Strategic Account Executive, Nordics",
+    activity_type: "Open Role Application",
+    job_url: "https://jobs.ashbyhq.com/harvey/07054b1e-f7ac-4388-8149-2954b30640c7",
+    current_status: "Active",
+    interview_count: 0,
+    route_reason: "Applied through Harvey's official Ashby recruitment site.",
+    notes: "Application submitted online on 7 August 2026 with a tailored CV. Original assessment: Tier A - 94/100. Strong evidence match includes full-cycle enterprise software selling and Precisely SaaS demonstrations to C-level executives and Heads of Legal.",
+    sector_group: "Technology & SaaS",
+    industry_sector: "Legal AI software",
+    employee_band: "1,001 to 5,000",
+    employee_estimate: "About 1,688"
+  },
+  {
+    id: "235",
+    activity_date: "7 Aug 2026",
+    date_sort: "2026-08-07",
+    company: "Proxify",
+    city: "Greater Gothenburg / Hybrid",
+    job_title: "Enterprise Account Executive",
+    activity_type: "Open Role Application",
+    job_url: "https://jobs.proxify.io/jobs/8024669-enterprise-account-executive",
+    current_status: "Active",
+    interview_count: 0,
+    route_reason: "Applied through Proxify's official recruitment site.",
+    notes: "Application submitted online on 7 August 2026 with a tailored CV and cover letter. Original assessment: Tier A - 92/100. Strong match to enterprise new business, outbound prospecting, full-cycle ownership, CRM discipline and international selling. Staffing and tech-services category knowledge is bridgeable rather than mandatory.",
+    sector_group: "Technology & SaaS",
+    industry_sector: "Tech talent and staffing platform",
+    employee_band: "201 to 500",
+    employee_estimate: "About 495"
+  },
+  {
+    id: "236",
+    activity_date: "7 Aug 2026",
+    date_sort: "2026-08-07",
+    company: "Harness",
+    city: "Sweden / Remote",
+    job_title: "Senior Enterprise Account Executive - Sweden",
+    activity_type: "Open Role Application",
+    job_url: "https://www.harness.io/company/jobs/apply?gh_jid=4963861007",
+    current_status: "Active",
+    interview_count: 0,
+    route_reason: "Applied through Harness's official application page.",
+    notes: "Application submitted online on 7 August 2026 with a tailored CV and manually entered cover letter. Original assessment: Tier A - 86/100. Strong match to new-logo enterprise selling and full-cycle ownership. Main risk is the technically demanding DevOps/software-delivery buyer environment; MEDDPIC terminology is not directly evidenced in the current CV.",
+    sector_group: "Technology & SaaS",
+    industry_sector: "AI software delivery platform"
+  }
+];
+
 function applyRoleOverrides() {
   if (typeof state === "undefined" || !Array.isArray(state.records) || state.records.length === 0) {
     window.setTimeout(applyRoleOverrides, 100);
@@ -43,12 +114,22 @@ function applyRoleOverrides() {
   }
 
   let changed = false;
-  state.records = state.records.map((record) => {
-    const override = roleOverrides[record.id];
-    if (!override) return record;
-    changed = true;
-    return { ...record, ...override };
+  const existingIds = new Set(state.records.map((record) => String(record.id)));
+  roleAdditions.forEach((record) => {
+    if (!existingIds.has(record.id)) {
+      state.records.push(record);
+      changed = true;
+    }
   });
+
+  state.records = state.records
+    .map((record) => {
+      const override = roleOverrides[record.id];
+      if (!override) return record;
+      changed = true;
+      return { ...record, ...override };
+    })
+    .sort((a, b) => b.date_sort.localeCompare(a.date_sort) || Number(b.id) - Number(a.id));
 
   if (changed && typeof renderSummary === "function") {
     renderSummary();
