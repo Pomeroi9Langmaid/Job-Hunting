@@ -1,4 +1,10 @@
 const roleOverrides = {
+  "37": {
+    current_status: "No Current Opportunity",
+    outcome_date: "27 Jul 2026",
+    outcome: "CEO Richard Collier confirmed Db Journey has no openings right now and advised following the company on LinkedIn for future roles.",
+    notes: "Speculative email sent 16 July 2026 to Richard Collier, CEO. Personal reply received 27 July 2026: Db Journey had no openings at that time and normally posts future roles on LinkedIn."
+  },
   "38": {
     job_url: "https://www.linkedin.com/jobs/view/4436367645",
     contact_name: "Malin Nordmark",
@@ -24,6 +30,12 @@ const roleOverrides = {
     interview_details: "6 Aug 2026: one-hour face-to-face exploratory interview with David Bryngelsson, Founder & CEO, at CarbonCloud's Gothenburg office.",
     notes: "Email sent 3 August 2026 to David Bryngelsson at david@carboncloud.com with Andrew_Langmaid_CarbonCloud.pdf attached. Subject: Andrew Langmaid. David replied on 4 August that CarbonCloud is considering additional hands-on full-cycle commercial capacity. Andrew accepted the invitation on 5 August. The one-hour face-to-face exploratory interview took place on 6 August 2026 at 11:00 at CarbonCloud's Gothenburg office. No outcome or next step has yet been recorded.",
     interview_steps: "4 Aug 2026|EXPLORATORY INTERVIEW INVITATION;5 Aug 2026|INTERVIEW CONFIRMED FOR 6 AUGUST AT 11:00;6 Aug 2026|FACE-TO-FACE INTERVIEW WITH DAVID"
+  },
+  "124": {
+    current_status: "No Current Opportunity",
+    outcome_date: "27 Jul 2026",
+    outcome: "CEO Erik Jacobsson replied that Corsmed is a medtech business rather than a jewellery business and did not indicate a relevant current opportunity.",
+    notes: "Email sent 27 July 2026 to Erik Jacobsson with Andrew_Langmaid_Corsmed.pdf attached. Erik replied the same day that Corsmed is in medtech, not jewellery. Andrew clarified on 28 July that his background is broader than jewellery and that the last decade has focused on international B2B technology, while acknowledging that direct medtech experience may be important for Corsmed."
   },
   "181": {
     notes: "Email sent 3 August 2026 to Linda Nyquist-Evenrud at l.nyquist-evenrud@allgon.com with Andrew_Langmaid_Allgon.pdf attached. Subject: Andrew Langmaid. Personal reply received 5 August 2026. Linda confirmed that Allgon had no matching opening and asked the CHRO to retain Andrew's CV. Andrew sent a brief acknowledgement on 6 August 2026, thanking her for her comments and for asking the CHRO to retain his CV. Allgon careers page: https://career.allgon.com/#jobs."
