@@ -126,27 +126,33 @@
     if (!root) return;
 
     try {
-      const [applicationsResponse, repliesResponse, companiesResponse] = await Promise.all([
+      const [applicationsResponse, updatesResponse, repliesResponse, companiesResponse] = await Promise.all([
         fetch("data/applications.csv", { cache: "no-store" }),
+        fetch("data/application-updates.csv", { cache: "no-store" }),
         fetch("data/replies.csv", { cache: "no-store" }),
         fetch("data/companies.csv", { cache: "no-store" }),
       ]);
 
-      if (!applicationsResponse.ok || !repliesResponse.ok || !companiesResponse.ok) {
+      if (!applicationsResponse.ok || !updatesResponse.ok || !repliesResponse.ok || !companiesResponse.ok) {
         throw new Error("Trend data could not be loaded");
       }
 
       const baseRecords = parseCsv(await applicationsResponse.text());
+      const updates = parseCsv(await updatesResponse.text());
       const replies = parseCsv(await repliesResponse.text());
       const companies = parseCsv(await companiesResponse.text());
       const companyMap = new Map(companies.map((record) => [record.company, record]));
 
-      const existingIds = new Set(baseRecords.map((record) => String(record.id)));
+      const recordsById = new Map(baseRecords.map((record) => [String(record.id), record]));
+      updates.forEach((record) => recordsById.set(String(record.id), record));
+      const mergedRecords = [...recordsById.values()];
+
+      const existingIds = new Set(mergedRecords.map((record) => String(record.id)));
       const additions = typeof roleAdditions !== "undefined"
         ? roleAdditions.filter((record) => !existingIds.has(String(record.id)))
         : [];
 
-      const records = [...baseRecords, ...additions].map((record) => {
+      const records = [...mergedRecords, ...additions].map((record) => {
         const override = typeof roleOverrides !== "undefined" ? roleOverrides[record.id] : null;
         return override ? { ...record, ...override } : record;
       });
