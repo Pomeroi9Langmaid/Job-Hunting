@@ -45,6 +45,13 @@ const roleOverrides = {
   },
   "227": {
     notes: "Email sent 5 August 2026 to Per-Arne Andersson at per-arne.andersson@svedbergsgroup.com with Andrew_Langmaid_Svedbergs_Group.pdf attached. Subject: Andrew Langmaid. Personal reply received 6 August 2026. Per-Arne confirmed that Svedbergs Group had no open position and advised Andrew to follow its companies for future vacancies. Andrew sent a brief acknowledgement on 6 August 2026 and confirmed that he would continue monitoring the group's vacancies."
+  },
+  "245": {
+    current_status: "Active",
+    interview_count: 1,
+    interview_details: "Interview #1 / exploratory lunch scheduled for Wednesday 26 August 2026 at 12:00 in Jonsered with CEO Stian Strøm.",
+    notes: "Email sent 10 August 2026 to Stian Strøm at stian.strom@tengtools.com with Andrew_Langmaid_TengTools.pdf attached. On 12 August Stian explained that TengTools has no current opening and questioned the fit, but invited Andrew to an exploratory lunch. Andrew accepted the discussion on 17 August. On 19 August Stian offered 12:00 lunch slots in Jonsered on 26-28 August or 2-4 September. Andrew sent his acceptance on 24 August for Wednesday 26 August at 12:00.",
+    interview_steps: "12 Aug 2026|CEO OFFERED EXPLORATORY LUNCH;17 Aug 2026|ANDREW ACCEPTED LUNCH DISCUSSION;19 Aug 2026|12:00 LUNCH DATES PROPOSED - 26-28 AUG OR 2-4 SEP;24 Aug 2026|WED 26 AUG AT 12:00 ACCEPTED;26 Aug 2026|INTERVIEW #1 SCHEDULED - EXPLORATORY LUNCH WITH STIAN"
   }
 };
 
