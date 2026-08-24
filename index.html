@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="enhancements.css" />
     <link rel="stylesheet" href="analytics.css" />
     <link rel="stylesheet" href="smart-search.css" />
+    <link rel="stylesheet" href="premium-ui.css" />
   </head>
   <body>
     <main class="page-shell">
       <header class="page-header">
         <div>
-          <p class="eyebrow">ANDREW LANGMAID</p>
-          <h1>Job Search</h1>
-          <p class="subtitle">Ask the tracker naturally, then drill into the underlying applications, outreach and replies.</p>
+          <p class="eyebrow">ANDREW LANGMAID · JOB SEARCH</p>
+          <h1>Job search</h1>
+          <p class="subtitle">Applications, direct outreach, replies and interview progress in one searchable workspace.</p>
         </div>
         <div class="updated-block">
           <span>Last updated</span>
@@ -28,32 +29,14 @@
         </div>
       </header>
 
-      <section class="summary-grid legacy-summary" aria-hidden="true" hidden>
-        <article class="summary-card"><span>Total records</span><strong id="total-count">0</strong></article>
-        <article class="summary-card"><span>Advertised-role applications</span><strong id="application-count">0</strong></article>
-        <article class="summary-card"><span>Direct contact about advertised roles</span><strong id="direct-count">0</strong></article>
-        <article class="summary-card"><span>Speculative company approaches</span><strong id="speculative-count">0</strong></article>
-        <article class="summary-card target-summary"><span>Prospective targets not contacted</span><strong id="target-count">0</strong></article>
-        <article class="summary-card interview-summary"><span>Interview processes</span><strong id="interview-count">0</strong></article>
-      </section>
-
-      <section class="smart-stats" aria-label="Key job-search signals">
-        <article class="smart-stat smart-stat--green"><span>Active interview processes</span><strong id="stat-active-interviews">–</strong><small>Live interview-stage conversations</small></article>
-        <article class="smart-stat"><span>Speculative personal reply rate</span><strong id="stat-reply-rate">–</strong><small>Real replies, excluding automated messages</small></article>
-        <article class="smart-stat smart-stat--blue"><span>Positive / future-facing replies</span><strong id="stat-positive-replies">–</strong><small>Warm signals worth remembering</small></article>
-        <article class="smart-stat smart-stat--purple"><span>Conversations progressed</span><strong id="stat-progressed">–</strong><small>Replies that produced a meaningful next step</small></article>
-        <article class="smart-stat"><span>CV retained / future consideration</span><strong id="stat-cv-retained">–</strong><small>Companies keeping the door open</small></article>
-        <article class="smart-stat"><span>Prospective targets</span><strong id="stat-targets">–</strong><small>Vetted companies not yet contacted</small></article>
-      </section>
-
       <section id="smart-search" class="smart-search-panel" aria-labelledby="smart-search-title">
         <div class="smart-search-heading">
           <div>
-            <p class="eyebrow">SMART JOB-SEARCH MEMORY</p>
-            <h2 id="smart-search-title">Ask anything you half-remember</h2>
-            <p>Searches the tracker, reply classifications and original reply wording. You do not need to remember the company, person, exact phrase or filter.</p>
+            <p class="eyebrow">SMART SEARCH</p>
+            <h2 id="smart-search-title">Ask the tracker</h2>
+            <p>Search applications, replies and interview history in natural language. Exact names, wording and dates are not required.</p>
           </div>
-          <span class="smart-search-badge">TRACKER EVIDENCE · GPT-READY</span>
+          <span class="smart-search-badge">GPT-5.6 LUNA · ACTIVE</span>
         </div>
 
         <form id="smart-search-form" class="smart-search-form">
@@ -61,7 +44,7 @@
             id="smart-search-input"
             type="search"
             autocomplete="off"
-            placeholder="e.g. Which companies invited me for coffee or lunch, or suggested meeting informally?"
+            placeholder="Ask about a company, reply, meeting, follow-up or half-remembered detail…"
             aria-label="Ask your job-search tracker"
           />
           <button id="smart-search-submit" type="submit">Ask</button>
@@ -72,7 +55,7 @@
           <button type="button" data-smart-query="Which companies gave the warmest or most positive response to my email, CV or background?">Warmest responses</button>
           <button type="button" data-smart-query="Which companies or people should I follow up with now or soon, based on what they explicitly told me?">Follow-ups due</button>
           <button type="button" data-smart-query="Who said they would keep my CV or consider me for a future opportunity?">CV kept for future</button>
-          <button type="button" data-smart-query="I remember a company where I was told to wait a few weeks and then contact a new person who had just started. Which one was it?">New person / wait a few weeks</button>
+          <button type="button" data-smart-query="I remember a company where I was told to wait a few weeks and then contact a new person who had just started. Which one was it?">Wait a few weeks</button>
         </div>
 
         <p id="smart-search-status" class="smart-search-status" aria-live="polite">Loading job-search memory…</p>
@@ -86,36 +69,85 @@
         </div>
       </section>
 
-      <section id="analytics-dashboard" class="analytics-dashboard" aria-label="Live job-search analytics">
-        <div class="load-error">Loading live analysis…</div>
-      </section>
-
-      <section class="controls controls--compact" aria-label="Refine tracker table">
-        <label class="search-control"><span>Quick table filter</span><input id="search-input" type="search" placeholder="Company, role or contact" autocomplete="off" /></label>
-        <label><span>Route</span><select id="type-filter"><option value="">All routes</option><option value="Open Role Application">Advertised role</option><option value="Direct Role Outreach">Direct about role</option><option value="Speculative Outreach">Speculative outreach</option><option value="Prospective Target">Not contacted</option></select></label>
-        <label><span>Progress</span><select id="status-filter"><option value="">All progress</option><option value="Active">No closure recorded</option><option value="Not Contacted">Not contacted</option><option value="Interviewed">Interviewed</option><option value="Application Closed">Application unsuccessful</option><option value="Role Filled / Closed">Role filled / withdrawn</option><option value="Closed by Andrew">Closed by Andrew</option></select></label>
-        <button id="clear-filters" class="clear-button" type="button">Clear</button>
-        <select id="city-filter" hidden aria-hidden="true"><option value="">All cities</option></select>
-        <select id="industry-filter" hidden aria-hidden="true"><option value="">All sectors</option></select>
-        <select id="size-filter" hidden aria-hidden="true"><option value="">All sizes</option></select>
-      </section>
-
-      <section class="results-panel">
-        <div class="results-heading"><p><strong id="visible-count">0</strong> records shown</p><a class="download-link" href="data/applications.csv" download>Download CSV</a></div>
-        <div class="table-wrap">
-          <table>
-            <colgroup><col class="col-date" /><col class="col-company" /><col class="col-industry" /><col class="col-size" /><col class="col-city" /><col class="col-role" /><col class="col-job-ad" /><col class="col-contact" /><col class="col-route" /><col class="col-progress" /></colgroup>
-            <thead><tr><th>Date</th><th>Company</th><th>Industry</th><th title="Approximate current employee band">Company size</th><th>City</th><th>Role</th><th>Job ad</th><th>Contact</th><th>Application / outreach route</th><th>Progress</th></tr></thead>
-            <tbody id="applications-body"></tbody>
-          </table>
+      <section class="signal-section" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">AT A GLANCE</p>
+            <h2 id="signals-title">Current signals</h2>
+          </div>
+          <p>The live numbers worth seeing before opening the detailed tracker.</p>
         </div>
-        <div id="empty-state" class="empty-state" hidden>No records match these filters.</div>
+        <div class="smart-stats" aria-label="Key job-search signals">
+          <article class="smart-stat smart-stat--green"><span>Active interviews</span><strong id="stat-active-interviews">–</strong><small>Live interview-stage conversations</small></article>
+          <article class="smart-stat"><span>Speculative reply rate</span><strong id="stat-reply-rate">–</strong><small>Personal replies only</small></article>
+          <article class="smart-stat smart-stat--blue"><span>Warm / future replies</span><strong id="stat-positive-replies">–</strong><small>Positive signals worth remembering</small></article>
+          <article class="smart-stat smart-stat--purple"><span>Progressed conversations</span><strong id="stat-progressed">–</strong><small>Replies that produced a next step</small></article>
+          <article class="smart-stat"><span>CV retained</span><strong id="stat-cv-retained">–</strong><small>Future consideration or keep-in-touch</small></article>
+          <article class="smart-stat"><span>Prospective targets</span><strong id="stat-targets">–</strong><small>Vetted companies not yet contacted</small></article>
+        </div>
+      </section>
+
+      <section class="tracker-section" aria-labelledby="tracker-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TRACKER</p>
+            <h2 id="tracker-title">Applications & outreach</h2>
+          </div>
+          <p>Use the compact controls for precise filtering; use Smart Search above when you only remember fragments.</p>
+        </div>
+
+        <section class="controls controls--compact" aria-label="Refine tracker table">
+          <label class="search-control"><span>Quick filter</span><input id="search-input" type="search" placeholder="Company, role or contact" autocomplete="off" /></label>
+          <label><span>Route</span><select id="type-filter"><option value="">All routes</option><option value="Open Role Application">Advertised role</option><option value="Direct Role Outreach">Direct about role</option><option value="Speculative Outreach">Speculative outreach</option><option value="Prospective Target">Not contacted</option></select></label>
+          <label><span>Progress</span><select id="status-filter"><option value="">All progress</option><option value="Active">No closure recorded</option><option value="Not Contacted">Not contacted</option><option value="Interviewed">Interviewed</option><option value="Application Closed">Application unsuccessful</option><option value="Role Filled / Closed">Role filled / withdrawn</option><option value="Closed by Andrew">Closed by Andrew</option></select></label>
+          <button id="clear-filters" class="clear-button" type="button">Clear</button>
+          <select id="city-filter" hidden aria-hidden="true"><option value="">All cities</option></select>
+          <select id="industry-filter" hidden aria-hidden="true"><option value="">All sectors</option></select>
+          <select id="size-filter" hidden aria-hidden="true"><option value="">All sizes</option></select>
+        </section>
+
+        <section class="results-panel">
+          <div class="results-heading"><p><strong id="visible-count">0</strong> records shown</p><a class="download-link" href="data/applications.csv" download>Export CSV</a></div>
+          <div class="table-wrap">
+            <table>
+              <colgroup><col class="col-date" /><col class="col-company" /><col class="col-industry" /><col class="col-size" /><col class="col-city" /><col class="col-role" /><col class="col-job-ad" /><col class="col-contact" /><col class="col-route" /><col class="col-progress" /></colgroup>
+              <thead><tr><th>Date</th><th>Company</th><th>Industry</th><th title="Approximate current employee band">Company size</th><th>City</th><th>Role</th><th>Job ad</th><th>Contact</th><th>Route</th><th>Progress</th></tr></thead>
+              <tbody id="applications-body"></tbody>
+            </table>
+          </div>
+          <div id="empty-state" class="empty-state" hidden>No records match these filters.</div>
+        </section>
+      </section>
+
+      <details class="insights-disclosure">
+        <summary>
+          <span class="insights-summary-copy">
+            <span class="eyebrow">DETAILED ANALYSIS</span>
+            <strong>Funnel & response analysis</strong>
+            <span>Benchmarks, interview sources, response quality and route performance.</span>
+          </span>
+          <span class="insights-summary-action">View</span>
+        </summary>
+        <section id="analytics-dashboard" class="analytics-dashboard" aria-label="Live job-search analytics">
+          <div class="load-error">Loading live analysis…</div>
+        </section>
+      </details>
+
+      <section class="summary-grid legacy-summary" aria-hidden="true" hidden>
+        <article class="summary-card"><span>Total records</span><strong id="total-count">0</strong></article>
+        <article class="summary-card"><span>Advertised-role applications</span><strong id="application-count">0</strong></article>
+        <article class="summary-card"><span>Direct contact about advertised roles</span><strong id="direct-count">0</strong></article>
+        <article class="summary-card"><span>Speculative company approaches</span><strong id="speculative-count">0</strong></article>
+        <article class="summary-card target-summary"><span>Prospective targets not contacted</span><strong id="target-count">0</strong></article>
+        <article class="summary-card interview-summary"><span>Interview processes</span><strong id="interview-count">0</strong></article>
       </section>
     </main>
 
     <dialog id="details-dialog" class="details-dialog">
       <button class="dialog-close" type="button" aria-label="Close details">Close</button>
-      <p class="eyebrow">PROGRESS DETAILS</p><h2 id="dialog-company"></h2><p id="dialog-role" class="dialog-role"></p>
+      <p class="eyebrow">PROGRESS DETAILS</p>
+      <h2 id="dialog-company"></h2>
+      <p id="dialog-role" class="dialog-role"></p>
       <div class="dialog-section"><h3>Stages</h3><p id="dialog-stages"></p></div>
       <div class="dialog-section"><h3>Outcome</h3><p id="dialog-outcome"></p></div>
     </dialog>
@@ -128,6 +160,5 @@
     <script src="route-labels.js" defer></script>
     <script src="analytics.js" defer></script>
     <script src="smart-search.js" defer></script>
-    <script src="smart-history-fix.js" defer></script>
   </body>
 </html>
