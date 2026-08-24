@@ -106,6 +106,7 @@
     ["String Furniture", "Consumer & Retail", "Design furniture", "Jens", ""],
     ["Aritco", "Industrial & Safety", "Lift and elevator systems", "Ida Lindvall", "CCO"],
     ["Ingrid", "Technology & SaaS", "Delivery-experience software", "Madelén Menning", ""],
+    ["Stille", "Healthcare", "Surgical instruments and surgical tables", "Ulrik Berthelsen; Louise Cavalli", "CEO; HR Manager"],
     ["Stora Enso", "Industrial & Safety", "Renewable packaging and biomaterials", "Daniel Örengård", "Head of Commercial Corrugated Sweden"],
     ["beqom", "HR Technology", "Compensation and HR software", "", ""]
   ];
