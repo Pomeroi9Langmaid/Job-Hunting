@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="enhancements.css" />
     <link rel="stylesheet" href="analytics.css" />
+    <link rel="stylesheet" href="trends.css" />
     <link rel="stylesheet" href="smart-search.css" />
     <link rel="stylesheet" href="premium-ui.css" />
     <link rel="stylesheet" href="premium-table.css" />
@@ -88,6 +89,20 @@
         </div>
       </section>
 
+      <details class="insights-disclosure search-patterns-disclosure">
+        <summary>
+          <span class="insights-summary-copy">
+            <span class="eyebrow">SEARCH PATTERNS</span>
+            <strong>Monthly activity & sector signal</strong>
+            <span>Applications by month, speculative outreach, industry mix and where positive responses are coming from.</span>
+          </span>
+          <span class="insights-summary-action">View</span>
+        </summary>
+        <section id="trend-dashboard" class="trend-dashboard" aria-label="Monthly activity and sector signal analytics">
+          <div class="load-error">Loading search patterns…</div>
+        </section>
+      </details>
+
       <section class="tracker-section" aria-labelledby="tracker-title">
         <div class="section-heading">
           <div>
@@ -155,6 +170,7 @@
 
     <script src="app.js" defer></script>
     <script src="role-overrides.js" defer></script>
+    <script src="trends.js" defer></script>
     <script src="enhancements.js" defer></script>
     <script src="prospective-targets.js" defer></script>
     <script src="date-filter.js" defer></script>
