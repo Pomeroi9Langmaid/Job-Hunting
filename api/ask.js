@@ -135,7 +135,7 @@ function prettyDate(iso) {
 }
 
 function exactLabel(scope) {
-  if (scope === 'advertised_applications') return 'advertised role';
+  if (scope === 'advertised_applications') return 'advertised-role application';
   if (scope === 'speculative_outreach') return 'speculative outreach';
   if (scope === 'prospective_targets') return 'prospective target';
   if (scope === 'interviews') return 'interview/meeting record';
@@ -180,13 +180,13 @@ function exactAnswer(plan, rows) {
   else if (end) period = ` up to ${prettyDate(end)}`;
 
   if (plan.operation === 'exact_count') {
-    if (!rows.length) return `There are no ${label} records${period}.`;
+    if (!rows.length) return `There are no ${label}s${period}.`;
     const names = rows.slice(0, 8).map(({ item }) => item.company).filter(Boolean);
     const suffix = names.length ? `: ${names.join(', ')}${rows.length > names.length ? ', …' : ''}.` : '.';
     return `There ${rows.length === 1 ? 'is' : 'are'} ${rows.length} ${label}${rows.length === 1 ? '' : 's'}${period}${suffix}`;
   }
 
-  if (!rows.length) return `I found no ${label} records${period}.`;
+  if (!rows.length) return `I found no ${label}s${period}.`;
   return `I found ${rows.length} ${label}${rows.length === 1 ? '' : 's'}${period}.`;
 }
 
