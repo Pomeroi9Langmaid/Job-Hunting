@@ -8,8 +8,89 @@
   min-width: 1120px;
 }
 
+/* Keep row height driven by the compact working data, not archival notes. */
+.results-panel .role-cell .cell-note {
+  display: none !important;
+}
+
+.results-panel .route-cell .cell-note {
+  display: -webkit-box;
+  margin-top: 4px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.results-panel .progress-flow {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.results-panel .progress-flow::-webkit-scrollbar {
+  display: none;
+}
+
+.results-panel tbody tr,
+.results-panel td {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* The original site converted the table into block/grid cards below 820px.
+   That clashes with the new compact tracker and can create enormous rows.
+   Keep a genuine table and allow horizontal scrolling instead. */
 @media (max-width: 820px) {
+  .results-panel .table-wrap {
+    overflow-x: auto !important;
+  }
+
   .results-panel table {
-    min-width: 1080px;
+    display: table !important;
+    width: 100% !important;
+    min-width: 1080px !important;
+    table-layout: fixed !important;
+  }
+
+  .results-panel thead {
+    display: table-header-group !important;
+  }
+
+  .results-panel tbody {
+    display: table-row-group !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .results-panel tr,
+  .results-panel tbody tr {
+    display: table-row !important;
+    width: auto !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #fff;
+  }
+
+  .results-panel td,
+  .results-panel th {
+    display: table-cell !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    grid-column: auto !important;
+  }
+
+  .results-panel th:nth-child(3),
+  .results-panel td:nth-child(3),
+  .results-panel th:nth-child(4),
+  .results-panel td:nth-child(4) {
+    display: none !important;
+  }
+
+  .results-panel td::before {
+    display: none !important;
+    content: none !important;
   }
 }
