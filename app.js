@@ -360,26 +360,35 @@ function renderLastUpdated(response) {
 
 async function initialise() {
   try {
-    const [response, companiesResponse] = await Promise.all([
+    const [response, updatesResponse, companiesResponse] = await Promise.all([
       fetch("data/applications.csv", { cache: "no-store" }),
+      fetch("data/application-updates.csv", { cache: "no-store" }),
       fetch("data/companies.csv", { cache: "no-store" }),
     ]);
     if (!response.ok) throw new Error(`Could not load activity data (${response.status})`);
+    if (!updatesResponse.ok) {
+      throw new Error(`Could not load activity updates (${updatesResponse.status})`);
+    }
     if (!companiesResponse.ok) {
       throw new Error(`Could not load company data (${companiesResponse.status})`);
     }
 
     const csv = await response.text();
+    const updatesCsv = await updatesResponse.text();
     const companiesCsv = await companiesResponse.text();
     state.companyProfiles = new Map(
       parseCsv(companiesCsv).map((profile) => [profile.company, profile]),
     );
-    state.records = parseCsv(csv)
+
+    const recordsById = new Map(parseCsv(csv).map((record) => [record.id, record]));
+    parseCsv(updatesCsv).forEach((record) => recordsById.set(record.id, record));
+
+    state.records = [...recordsById.values()]
       .map(normaliseRecord)
       .sort((a, b) => b.date_sort.localeCompare(a.date_sort) || Number(b.id) - Number(a.id));
 
     renderSummary();
-    renderLastUpdated(response);
+    renderLastUpdated(updatesResponse);
     setupFilters();
     render();
   } catch (error) {
