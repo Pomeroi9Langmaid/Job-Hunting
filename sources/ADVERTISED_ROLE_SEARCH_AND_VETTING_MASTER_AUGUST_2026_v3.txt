@@ -1,0 +1,305 @@
+ANDREW LANGMAID - ADVERTISED ROLE SEARCH AND VETTING MASTER
+Authoritative workflow for finding, assessing, ranking and reporting advertised vacancies
+Version 3 - 7 August 2026
+
+PURPOSE AND AUTHORITY
+
+This is the single controlling Source for advertised-job searches and vacancy assessment for Andrew Langmaid.
+
+Use it whenever searching LinkedIn, Indeed, Glassdoor, jobs.weekday.works, employer career sites or other relevant sources; assessing a vacancy supplied by Andrew; assigning a Tier or fit score; preparing a job alert; or deciding whether a vacancy is worth an application.
+
+This Source governs advertised roles only. It does not govern speculative company outreach, CV drafting, cover letters, Gmail activity or the job microsite's design.
+
+If an earlier job-search prompt conflicts with this Source, this Source takes precedence unless Andrew explicitly changes a rule in the current conversation.
+
+AUTOMATED / SCHEDULED RUN REQUIREMENT
+
+For every automated or scheduled advertised-role sweep, the current full Source must be retrieved and read before any vacancy search or scoring begins. Merely naming this Source in an automation prompt is not enough. The task must explicitly attempt to access and read the current file first.
+
+If the current Source cannot be accessed, the automated run must not silently proceed from model memory, an older prompt or a condensed summary. It must stop and report that the governing Source could not be read.
+
+An automation may repeat critical rules in its own prompt as a safety copy, but that embedded wording must never replace the current Source and must be updated whenever this Source changes.
+
+
+PRIMARY OBJECTIVE
+
+Find worthwhile permanent roles in which Andrew's proven commercial method is central: personally identifying opportunities, opening conversations, understanding needs, demonstrating value, developing proposals, negotiating and closing international new business.
+
+Do not recommend a role merely because its title or company sounds attractive. The actual work and selection criteria must fit.
+
+
+CORE PROFESSIONAL IDENTITY
+
+Andrew Langmaid is first and foremost a hands-on, full-cycle international sales professional and new-business hunter.
+
+Capability hierarchy:
+
+1. Full-cycle international sales
+2. New-business acquisition and outbound prospecting
+3. Consultative solution selling and tailored demonstrations
+4. Commercial negotiation, contract drafting and close
+5. International market development
+6. Strategic and channel partnerships
+
+Andrew personally manages the complete sales cycle: target-account selection, decision-maker identification, outbound prospecting, securing and conducting meetings, discovery, tailored demonstrations, follow-up, proposals, NDAs, commercial negotiation, contract drafting, closing and signature. He works comfortably with C-level executives and operational stakeholders.
+
+His CEO title at ArrivalGuides reflects a specific turnaround-and-sale mandate. It must not be interpreted as evidence that he is removed from frontline selling or wants another CEO or P&L-led general-management position. Following ArrivalGuides' acquisition by Smartvel, approximately 80% of his work remained hands-on international new business.
+
+Additional experience includes client retention and migration, client-success coordination, invoicing oversight, overdue-payment collection and legal escalation. These are supporting capabilities, not substitutes for frontline sales.
+
+
+BACKGROUND
+
+- Lives in Kungälv, just north of Gothenburg, Sweden
+- British and Swedish citizen
+- Native English; basic Swedish
+- Nearly 30 years of commercial experience
+- Premium and luxury brands: Patek Philippe, Cartier, IWC, Panerai, Theo Fennell, Chalfen of London and Pomeroi Fine Jewellers
+- Entrepreneurship: founded and self-financed Pomeroi Fine Jewellers; established Luxury Sweden
+- B2B technology and SaaS: ArrivalGuides, Lonely Planet, Precisely and Smartvel
+- Precisely: personally sold and demonstrated a SaaS platform for legal companies and legal teams to C-level executives and Heads of Legal
+
+
+TARGET ROLE PROFILE
+
+Prioritise permanent full-time roles at senior individual-contributor, manager or director level that remain personally hands-on.
+
+Geographic order:
+
+1. Gothenburg and the nearby area
+2. Stockholm
+3. Elsewhere in Sweden
+4. Remote roles genuinely open to someone living in Sweden
+
+Hybrid and remote roles are both acceptable. A role elsewhere in Europe is only viable when the employer explicitly permits permanent employment from Sweden or there is a credible Swedish employment arrangement.
+
+Primary role families:
+
+- Senior Account Executive or Enterprise Account Executive
+- International Sales Manager or EMEA Sales Manager
+- International Sales Director or EMEA Sales Director
+- New Business Sales Manager or New Business Director
+- Strategic Sales Lead or Commercial Sales Lead
+- Hands-on Business Development Manager or Director with direct revenue ownership
+- International Business Development or Market Development
+- Channel Sales, Partner Sales or Alliances with active partner recruitment and commercial closing
+- Head of Sales only when the role remains personally hands-on and is not principally team management or P&L ownership
+
+Conditional role families:
+
+- Account Director, Key Account Manager or Customer Growth only when at least 40% of the remit is new-business acquisition, expansion selling or commercial closing
+- Strategic Partnerships only when the work includes commercial origination, negotiation and revenue, rather than primarily relationship management
+
+Evaluate the substance, not the title. A Senior Account Executive may be a stronger fit than a Head of Sales.
+
+
+PRODUCT AND COMPANY FIT
+
+Favour companies that offer a product, brand or mission Andrew could credibly understand, believe in and sell, including:
+
+- B2B technology and SaaS
+- International industrial or technical products with a consultative sales cycle and learnable product knowledge
+- Premium, luxury or design-led brands
+- Sustainability, energy, mobility, employee wellbeing and practical business solutions
+- Companies expanding into new countries, enterprise accounts, distribution or channel partnerships
+
+Avoid commodity or uninspiring products, unstable employers and large corporate roles in which Andrew would have little autonomy, unless the commercial scope is unusually strong.
+
+Company provenance and sales operating model are part of product/company fit. A US-headquartered company is not automatically excluded, but US-headquartered, high-growth, PE-backed or strongly quota-led sales organisations require heightened scrutiny for a heavily managed sales culture. Do not assume that a sophisticated enterprise product or consultative sales cycle makes the working environment suitable.
+
+Distinguish work location from commercial scope. A role located in Sweden or remote from Sweden is not automatically an international role. A Sweden-only or narrowly local territory must receive materially lower international-scope credit than a genuinely Nordic, European, EMEA or global remit.
+
+
+MANDATORY ASSESSMENT SEQUENCE
+
+Follow this order for every vacancy. Do not score first and explain away a fundamental mismatch afterwards.
+
+STEP 1 - VERIFY THE VACANCY
+
+- Confirm that the vacancy is live on the employer's official careers site whenever possible.
+- Record the original posting date or state clearly when it is not displayed.
+- Confirm the location, work model and whether employment from Sweden is genuinely allowed.
+- Confirm the actual commercial territory or market scope: local Sweden, Nordic, European, EMEA, global or another defined remit. Do not confuse being able to work from Sweden with having an international sales remit.
+- Identify company headquarters/ownership where relevant to assessing the likely sales operating model. Do not reject by nationality alone.
+- Use the direct employer application link where available.
+- Check the tracker and previous conversations to prevent duplicate recommendations or applications.
+- Do not present an old, closed, filled or unverifiable listing as a new opportunity.
+
+STEP 2 - EXTRACT THE ACTUAL REQUIREMENTS
+
+Separate the advert into:
+
+A. Confirmed mandatory requirements: wording such as must, required, essential or an equivalent repeated central requirement.
+B. Preferred requirements: helpful but not stated as essential.
+C. Core day-to-day work: what the person will actually spend time doing.
+D. Unknowns: matters the advert does not establish and which must not be invented.
+
+Never treat a preferred qualification as mandatory without evidence. Equally, do not ignore a specialist capability merely because the advert uses softer wording when it is clearly central throughout the responsibilities.
+
+STEP 3 - APPLY THE HARD REJECTION GATES
+
+Withhold the role as Tier C / DO NOT APPLY when any of the following is central or mandatory:
+
+- Fluent or professional Swedish. Andrew's Swedish is basic.
+- Direct specialist-sector experience that Andrew cannot truthfully evidence and that is required for shortlisting.
+- An established industry-specific buyer, customer or partner network expected from day one.
+- Deep ecosystem knowledge such as cybersecurity MSSPs or systems integrators, SAP/HRIS/payroll, MICE buyers or agencies, ports and terminals, pharma, clinical markets, photonics or another similarly specialist environment.
+- Managing, coaching or developing a sizeable or geographically distributed sales team as the main purpose of the role.
+- Local field-sales execution, retail-team coaching or store performance management rather than personally winning new business.
+- P&L, general management or organisational leadership as the main job.
+- Pure account management, customer success or relationship management with no meaningful acquisition or commercial closing.
+- A highly technical scientific, clinical or engineering credential that Andrew lacks.
+- A junior, high-volume SDR/BDR or narrowly transactional sales environment.
+- Travel technology or destination content.
+- Fashion or clothing brands.
+
+A hard-gate failure cannot be rescued by a compelling company, prestigious title, high salary, remote working, international scope or a high numerical score.
+
+If a requirement is ambiguous, verify it where possible. If it cannot be verified, state the uncertainty and do not present the role as Tier A.
+
+STEP 4 - ASSESS BRIDGEABLE GAPS
+
+A gap may be bridgeable when it concerns a product category, customer type or sales tool that Andrew could reasonably learn and the employer has not made prior direct experience a selection condition.
+
+Examples of credible transfer evidence include:
+
+- learning and selling different premium products and B2B technology propositions;
+- personally demonstrating SaaS to C-level executives and Heads of Legal;
+- establishing proactive outbound programmes;
+- building international markets and distribution;
+- conducting consultative discovery, proposals, negotiation, contracts and close.
+
+Do not manufacture sector expertise or claim that general sales experience automatically replaces mandatory domain experience.
+
+One meaningful but genuinely bridgeable gap normally limits a role to Tier B. Several strong preferred requirements that Andrew cannot evidence usually make the role Tier C, because together they are likely to dominate shortlisting even if none is individually labelled mandatory.
+
+STEP 5 - ASSESS SALES OPERATING MODEL, QUOTA AND PRESSURE CULTURE
+
+This is a gate, not a five-point scoring adjustment. Do not allow strong task-level sales mechanics to rescue an operating environment Andrew is unlikely to want to work in.
+
+Andrew accepts revenue accountability, sensible targets and CRM use. Do not reject a role merely because it has a sales target, uses a CRM or requires normal pipeline visibility.
+
+WITHHOLD AS TIER C / DO NOT APPLY when the overall operating model is clearly a heavily managed sales machine, even if the product is sophisticated and the selling is described as consultative. Strong warning signals include a pattern of:
+
+- frequent or intrusive CRM activity tracking used to monitor salesperson behaviour rather than simply record opportunities;
+- weekly or similarly relentless pipeline, forecast, commit or activity reporting;
+- repeated emphasis on individual quota attainment, over-attainment, target cadence or short-term number chasing as the dominant measure of the role;
+- explicit activity KPIs such as required call, email, meeting, demo or opportunity volumes;
+- rigid territory execution combined with close managerial control of pipeline generation and forecast accuracy;
+- high-volume prospecting expectations inconsistent with senior consultative new-business work;
+- language suggesting constant performance pressure, rankings, aggressive pace, "always be closing" culture or continual inspection of sales activity;
+- an operating model where autonomy is nominal but the salesperson is in practice managed through dashboards, activity metrics and frequent forecast scrutiny.
+
+Do not require every warning signal to be present. Assess the pattern and the likely day-to-day environment. Equally, do not reject a role from one generic reference to CRM, forecasting or quota if the broader evidence shows meaningful autonomy and strategic, consultative selling.
+
+US-headquartered companies are not automatically excluded. However, where a US-headquartered or US-style enterprise-sales organisation combines quota-heavy language, CRM/activity monitoring, forecast cadence and tightly managed territory execution, treat that combination as a major warning and withhold the role when the overall model is pressure-heavy.
+
+If sales-culture evidence is materially ambiguous, investigate further before assigning Tier A. If the concern cannot be resolved, the role cannot be Tier A. State the uncertainty and normally cap it at Tier B or withhold it where the risk is substantial.
+
+Positive indicators include genuine ownership of how to build the market, long-cycle strategic selling, freedom to choose accounts and methods, limited activity policing, trust-based management, cross-border scope, and evaluation primarily on sustainable commercial outcomes rather than constant activity metrics.
+
+STEP 6 - ASSIGN THE TIER
+
+TIER A - STRONG MATCH
+
+- No fundamental gap.
+- The core work materially uses prospecting, discovery, demonstrations or solution presentation, proposals, negotiation and closing.
+- Direct new-business ownership is central.
+- The language, location, work model and seniority are viable.
+- Any missing product knowledge is learnable and not a shortlisting requirement.
+
+TIER B - WORTH CONSIDERING
+
+- The core commercial work fits.
+- There is one meaningful but genuinely bridgeable gap or a moderate concern requiring a deliberate application decision.
+- There is no fluent-Swedish, specialist-network, mandatory domain-experience, central people-management or P&L problem.
+
+TIER C - DO NOT APPLY
+
+- Any hard rejection gate applies; or
+- the role contains several material preferences Andrew cannot evidence; or
+- the job is only superficially attractive and does not use his core full-cycle new-business strengths strongly enough.
+
+Do not recommend Tier C roles. Briefly record or report them only when needed to prevent the same role being reconsidered.
+
+
+FIT SCORE
+
+Only calculate a fit score after the role passes the hard rejection gates. The Tier decision comes first; the score communicates strength within that decision and must never override it.
+
+Score out of 100:
+
+- Core full-cycle and new-business work: 0-35
+- Match to evidenced experience and seniority: 0-25
+- International scope and commercial autonomy: 0-15
+- Product, company and mission fit: 0-10
+- Language, location and work-model fit: 0-10
+- Role structure and likely working environment: 0-5
+
+The Step 5 sales-operating-model gate sits outside these points. A clearly pressure-heavy, activity-monitored sales machine is Tier C regardless of how many points the role would otherwise earn. Do not reduce a culture mismatch to a small deduction in the five-point working-environment category.
+
+For international scope, score the actual selling remit rather than the employee's physical location. A Sweden-only territory should receive low international-scope credit; Nordic, EMEA, European or global responsibilities should receive progressively more credit where genuinely evidenced.
+
+Score ranges:
+
+- 85-100: Tier A
+- 70-84: Tier B
+- Below 70: Tier C
+
+A role with one meaningful bridgeable gap cannot score above 84. A hard-gate role is Tier C / DO NOT APPLY and should not receive a misleading high score.
+
+
+SEARCH AND REPORTING STANDARD
+
+For every role presented to Andrew, include:
+
+- Tier and fit score
+- Company and exact job title
+- Location and work model
+- Permanent or fixed-term status
+- Posting date, or "date not displayed"
+- Direct official application link
+- Concise explanation of why Andrew fits
+- The main risk or bridgeable gap
+- Whether specialist or sector experience is mandatory, preferred or not stated
+- Whether the role uses prospecting, discovery, demonstrations, proposals, negotiation and closing
+- Actual commercial territory/scope: Sweden-only, Nordic, European, EMEA, global or other
+- Sales operating-model assessment: autonomy versus CRM/activity monitoring, pipeline/forecast cadence, quota pressure and any other material culture signals
+- Company headquarters/ownership when relevant to the operating-model assessment, without treating nationality alone as determinative
+- CV-tailoring priority: none, light, medium or high
+- Whether a cover letter is required, recommended, optional or not requested
+- Whether post-application LinkedIn outreach is worthwhile and to whom
+
+Use plain, specific language. Distinguish facts stated in the advert from reasonable inferences. Label uncertainty.
+
+Do not claim that Andrew lacks sales experience. Assess whether the employer is seeking narrower sector, product, technical, local-market, network or people-management experience that is less directly evidenced.
+
+
+REJECTION LEARNING AND RECORDING
+
+For every advertised application, preserve enough information to test future patterns:
+
+- Original Tier and fit score
+- Role family and industry
+- Confirmed mandatory requirements
+- Bridgeable gaps and main risk identified before applying
+- Application date
+- Employer's exact stated outcome and reason
+- Any likely explanation inferred from the advert, explicitly labelled unconfirmed
+- Confidence in that inference: low, medium or high
+
+Do not interpret a generic rejection as proof of a skills gap. Do not count a role that was filled, withdrawn or closed as evidence against Andrew's suitability. Keep those outcomes separate from employer rejections.
+
+Use emerging rejection evidence to refine future vetting, but do not infer an industry-wide pattern from only one or two roles.
+
+
+FINAL DECISION PRINCIPLE
+
+The right question is not "Could Andrew possibly do this job?"
+
+The right questions are:
+
+1. "Is Andrew likely to be shortlisted because the employer's real selection criteria match evidence he can demonstrate now?"
+2. "Does the likely day-to-day sales operating model fit the kind of autonomous, strategic, consultative new-business environment Andrew actually wants to work in?"
+
+If either answer is no, withhold the role even when the title, company, product, salary, mission or task-level sales mechanics are attractive.
