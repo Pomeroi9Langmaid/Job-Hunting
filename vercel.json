@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "ignoreCommand": "bash scripts/vercel-ignore.sh",
   "github": {
     "autoJobCancelation": true
   }
