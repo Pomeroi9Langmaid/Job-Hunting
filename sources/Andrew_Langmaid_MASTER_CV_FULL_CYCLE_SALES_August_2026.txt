@@ -1,3 +1,18 @@
+ANDREW LANGMAID - MASTER CV CONTENT AND TEMPLATE STANDARD
+
+MANDATORY TEMPLATE LOCK - 2 SEPTEMBER 2026
+
+This Source is not merely the evidence text for Andrew's CV. It also governs how every tailored advertised-role CV must be produced.
+
+- ALWAYS start from Andrew's established MASTER CV template/layout. Never create a new CV design, rebuild the document from scratch, substitute a generic template, or reinterpret the visual design.
+- The MASTER visual structure is immutable unless Andrew explicitly requests a redesign in the current conversation: preserve Andrew's circular headshot/photo in the top-right, the blue Andrew Langmaid name treatment, blue section headings and divider rules, typography, margins, spacing, two-page structure, career chronology and footer/page-number treatment.
+- Tailoring means changing only selected wording inside this established template to improve role relevance. Preserve the underlying hierarchy and layout.
+- The master career-history evidence below remains the factual authority. Do not omit, rewrite or compress experience in a way that changes its meaning merely to make a role-specific version fit.
+- Any role-specific AI/personal-project evidence must be a supporting proof point, not a replacement for Andrew's commercial identity or career chronology.
+- Do not print a raw external personal-project URL in a cover letter unless Andrew explicitly requests it. A CV may contain a discreet hyperlink when it materially strengthens the application.
+- OUTPUT NAMING: final tailored PDFs must use normal application filenames and MUST NOT contain the word MASTER or TEMPLATE. Default pattern: Andrew_Langmaid_CV_[Company].pdf. Cover: Andrew_Langmaid_Cover_[Company].pdf. Add a short role suffix only when needed to distinguish multiple applications to the same company.
+- Before delivery, visually render and inspect every page and confirm the master photo/header/layout remain intact.
+
 Andrew Langmaid · Curriculum Vitae · Page 1 of 2
 Andrew Langmaid
 Kungälv, Sweden · langmaid.andrew@gmail.com
