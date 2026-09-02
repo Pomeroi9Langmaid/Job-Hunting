@@ -1,0 +1,43 @@
+ANDREW LANGMAID - APPLICATION DOCUMENT TEMPLATE RULES
+Version 1 - 2 September 2026
+
+PURPOSE
+Permanent guardrail for every future CV and cover-letter artifact created for Andrew's job applications.
+
+NON-NEGOTIABLE CV RULE
+1. ALWAYS use Andrew's established MASTER CV template as the visual source of truth.
+2. NEVER redesign, rebuild, reformat or substitute a generic CV layout unless Andrew explicitly requests a redesign in the current conversation.
+3. Preserve exactly the established visual system: circular headshot/photo at top-right, blue Andrew Langmaid name/header treatment, blue section headings and divider rules, typography, margins, spacing, two-page structure, career chronology and footer/page numbering.
+4. Tailoring means modifying selected wording inside the MASTER template only. The underlying layout and identity remain unchanged.
+5. The current master full-cycle CV content/evidence Source is Andrew_Langmaid_MASTER_CV_FULL_CYCLE_SALES_August_2026.txt and its corresponding master document/PDF template.
+6. Always render and visually inspect the final PDF before delivery to confirm the photo, header, structure and two-page layout remain intact.
+
+NON-NEGOTIABLE COVER RULE
+1. ALWAYS use Andrew's established MASTER cover-letter template as the visual source of truth.
+2. NEVER redesign or replace the cover layout unless Andrew explicitly requests it.
+3. Preserve the established one-page formatting, typography, spacing, margins and header/contact treatment.
+4. Tailor wording only.
+5. Do NOT print a raw direct URL to Andrew's personal Family Archive/AI project in the cover unless Andrew explicitly asks for it. The project may be described as evidence of practical AI use.
+6. Always render and visually inspect the final cover before delivery.
+
+AI PROJECT POSITIONING
+Andrew's practical AI work can be used as a supporting proof point where relevant: AI-assisted website/product creation, historical-photo restoration/enhancement workflows, and experimentation with AI-generated music/video. It must not replace or distort his primary positioning as a hands-on full-cycle international sales and new-business professional.
+
+OUTPUT FILE NAMING
+- NEVER put MASTER or TEMPLATE in a delivered application filename.
+- Default CV: Andrew_Langmaid_CV_[Company].pdf
+- Default cover: Andrew_Langmaid_Cover_[Company].pdf
+- Add a short role suffix only when needed to distinguish multiple applications to the same company.
+- Internal working/template filenames may contain MASTER, but those names must never be delivered to Andrew as the final application files.
+
+FINAL CHECK BEFORE DELIVERY
+Confirm all of the following:
+- Correct MASTER visual template used.
+- Photo present on CV.
+- No unrequested redesign.
+- Role-specific wording only where useful.
+- No invented experience or language capability.
+- Cover remains one page.
+- CV remains two pages unless Andrew explicitly approves otherwise.
+- No raw Family Archive URL in cover unless explicitly requested.
+- Final filenames contain neither MASTER nor TEMPLATE.
