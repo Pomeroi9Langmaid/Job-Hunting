@@ -1,9 +1,21 @@
 ANDREW LANGMAID - ADVERTISED ROLE COVER LETTER STANDARD
-Version 1 - 31 August 2026
+Version 2 - 2 September 2026
 
 PURPOSE
 
-This Source governs the drafting of cover letters for advertised job applications.
+This Source governs the drafting and formatting of cover letters for advertised job applications.
+
+MANDATORY TEMPLATE LOCK
+
+Every advertised-role cover letter MUST use Andrew's established MASTER cover-letter template/layout as the immutable visual starting point.
+
+- Never redesign, rebuild from scratch, substitute a generic template, or reinterpret the visual structure.
+- Preserve the established typography, spacing, margins, header/contact treatment, one-page structure and overall visual hierarchy unless Andrew explicitly requests a redesign in the current conversation.
+- Tailoring means changing the role-specific wording inside the existing template, not changing the template itself.
+- Do not print a raw URL to Andrew's personal Family Archive/AI project in the cover letter unless Andrew explicitly asks for the URL to appear. It may be described as supporting evidence without the direct link.
+- Preserve Andrew's primary positioning as a hands-on full-cycle international sales and new-business professional. AI/personal-project evidence is supportive, never the main career identity.
+- OUTPUT NAMING: final PDF filenames must NEVER include MASTER or TEMPLATE. Default cover filename: Andrew_Langmaid_Cover_[Company].pdf. Add a short role suffix only when needed to distinguish multiple applications to the same company.
+- Before delivery, visually render and inspect the completed one-page cover against the established template.
 
 MANDATORY OPENING EXPLANATION
 
@@ -54,4 +66,4 @@ STYLE
 
 FINAL RULE
 
-Future advertised-role covers should use this Source as the default template standard unless Andrew explicitly instructs otherwise in the current conversation.
+Future advertised-role covers should use this Source and Andrew's established MASTER cover template as the default standard unless Andrew explicitly instructs otherwise in the current conversation.
