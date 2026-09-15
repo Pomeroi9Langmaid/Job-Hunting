@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Palats — Phone Call Prep</title>
+<style>
+:root{--bg:#f3f6f9;--card:#fff;--ink:#16202b;--muted:#627080;--line:#d9e0e7;--blue:#214f7b;--blue2:#eaf2f9;--green:#287257;--green2:#e9f5ef;--amber:#966918;--amber2:#fbf3df;--purple:#684681;--purple2:#f2edf7;--red:#9a4242;--red2:#f9ecec;--shadow:0 6px 22px rgba(20,35,50,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.42}button,textarea{font:inherit}strong{font-weight:800;color:#0f1821}a{color:var(--blue);text-underline-offset:2px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 16px 8px}.headrow{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}.title h1{margin:0;font-size:20px;letter-spacing:-.02em}.subtitle{font-size:12px;color:var(--muted);margin-top:2px}.status{font-size:11px;font-weight:850;border-radius:999px;padding:6px 9px;background:var(--green2);color:var(--green);white-space:nowrap}.tabs{display:flex;gap:6px;margin-top:9px;overflow:auto;padding-bottom:1px}.tabbtn{border:1px solid var(--line);background:#fff;color:var(--blue);padding:6px 10px;border-radius:8px;font-weight:800;cursor:pointer;white-space:nowrap}.tabbtn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+main{max-width:1500px;margin:auto;padding:12px 14px 28px}.tab{display:none}.tab.active{display:block}.note{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--muted);margin-bottom:10px}.note b{color:var(--ink)}.section-title{margin:15px 0 8px;font-size:16px;display:flex;align-items:baseline;gap:8px}.section-title span{font-size:11px;font-weight:500;color:var(--muted)}
+.numbers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-bottom:12px}.number{background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px;text-align:center;box-shadow:var(--shadow)}.number b{display:block;color:var(--amber);font-size:19px}.number span{font-size:11px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;align-items:start}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-items:start}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:11px 12px;box-shadow:var(--shadow)}.card h3{margin:0 0 6px;font-size:14px;color:var(--blue)}.card h4{margin:9px 0 5px;font-size:12px;color:var(--purple)}.card ul{margin:0;padding-left:18px}.card li{margin:0 0 4px}.card li:last-child{margin-bottom:0}.key{margin-top:7px;padding:7px 8px;border-radius:7px;background:var(--blue2);font-weight:700}.key.green{background:var(--green2)}.key.amber{background:var(--amber2)}.key.purple{background:var(--purple2)}.key.red{background:var(--red2)}
+.rolemap{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:stretch}.role{border-radius:12px;padding:13px;border:1px solid var(--line);background:#fff}.role b{display:block;font-size:17px;margin-bottom:4px}.role small{color:var(--muted)}.role.sell{border-top:4px solid var(--blue)}.role.build{border-top:4px solid var(--green)}.role.bridge{border-top:4px solid var(--purple)}.arrow{display:grid;place-items:center;font-size:25px;color:#8a98a6}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.flowstep{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px}.flowstep .k{font-size:10px;color:var(--muted);font-weight:850;text-transform:uppercase;letter-spacing:.04em}.flowstep b{display:block;margin:3px 0}.callout{border-left:4px solid var(--red);background:var(--red2);padding:10px 12px;border-radius:0 9px 9px 0;margin-top:10px}.callout strong{color:#712e2e}.goodout{border-left:4px solid var(--green);background:var(--green2);padding:10px 12px;border-radius:0 9px 9px 0;margin-top:10px}.amberout{border-left:4px solid var(--amber);background:var(--amber2);padding:10px 12px;border-radius:0 9px 9px 0;margin-top:10px}
+.badge{display:inline-block;font-size:10px;font-weight:850;padding:3px 6px;border-radius:999px;margin-left:4px;vertical-align:1px}.badge.fact{background:var(--green2);color:var(--green)}.badge.ask{background:var(--amber2);color:var(--amber)}.badge.history{background:var(--purple2);color:var(--purple)}.badge.risk{background:var(--red2);color:var(--red)}
+.answer{border-left:4px solid var(--blue);padding:7px 10px;background:var(--blue2);border-radius:0 8px 8px 0;margin:7px 0}.answer b{display:block;margin-bottom:3px;color:var(--blue)}.answer ul{margin:0;padding-left:18px}.quote{font-size:15px;font-weight:750;line-height:1.45;padding:10px 12px;border-radius:9px;background:#f8fafc;border:1px solid var(--line);margin:7px 0}.small{font-size:11px;color:var(--muted)}
+.comp{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}.comp th,.comp td{border-bottom:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top}.comp th{font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);background:#f8fafc}.comp tr:last-child td{border-bottom:0}.threat{font-weight:850;white-space:nowrap}
+.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.check{background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 10px}.check b{color:var(--blue)}
+textarea{width:100%;min-height:330px;resize:vertical;border:1px solid var(--line);border-radius:9px;padding:12px;outline:none;background:#fff;box-shadow:var(--shadow);line-height:1.5}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;font-weight:800;cursor:pointer}.btn.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+footer{margin-top:14px;padding:10px;color:var(--muted);font-size:11px;text-align:center}
+@media(max-width:1100px){.numbers{grid-template-columns:repeat(3,1fr)}.grid,.grid4{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){header{position:static}.headrow{align-items:flex-start;flex-direction:column}.numbers,.grid,.grid2,.grid4,.flow,.checklist{grid-template-columns:1fr}.rolemap{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}main{padding:10px}.comp{font-size:12px}}
+</style>
+</head>
+<body>
+<header>
+<div class="headrow"><div class="title"><h1>Palats — Phone Call Prep</h1><div class="subtitle">Per Bleckberg / Head of Sales conversation • Monday 15 Sep 2026 • 13:00 • visual anchors, not a script</div></div><div class="status">CALL TODAY • 13:00</div></div>
+<nav class="tabs" aria-label="Prep sections">
+<button class="tabbtn active" data-tab="skim">10-minute skim</button>
+<button class="tabbtn" data-tab="business">Business</button>
+<button class="tabbtn" data-tab="competition">USP + competition</button>
+<button class="tabbtn" data-tab="role">Role + fit</button>
+<button class="tabbtn" data-tab="answers">Your answers</button>
+<button class="tabbtn" data-tab="questions">Questions</button>
+<button class="tabbtn" data-tab="plan">Call plan</button>
+<button class="tabbtn" data-tab="notes">Notes</button>
+</nav></header>
+<main>
+
+<section id="skim" class="tab active">
+<div class="note"><b>Purpose of today:</b> understand what Palats is actually hiring for before trying to sell yourself into it. Show clear relevance, but use the call to establish the three big fit gates: <b>hands-on selling, international scope, and sales culture / Swedish requirement.</b></div>
+<div class="numbers">
+<div class="number"><b>2021</b><span>founded in Gothenburg</span></div>
+<div class="number"><b>26</b><span>current coworkers</span></div>
+<div class="number"><b>150+</b><span>customer organisations</span></div>
+<div class="number"><b>16k</b><span>monthly users</span></div>
+<div class="number"><b>SEK 20m</b><span>funding • Mar 2026</span></div>
+<div class="number"><b>SEK 13.5m</b><span>2025 operating revenue*</span></div>
+</div>
+<div class="grid">
+<article class="card"><h3>Palats in one sentence</h3><ul><li>B2B SaaS that helps organisations <strong>see, reuse and circulate furniture + building materials</strong> instead of buying new.</li><li>Mobile/AI inventory + QR + locations/projects + internal marketplace + impact reporting.</li><li>Commercial outcome: <strong>lower purchasing cost + less waste + lower CO₂e</strong>.</li></ul><div class="key">Think: “make reuse operational enough to become the first purchasing choice.”</div></article>
+<article class="card"><h3>Why now?</h3><ul><li>Revenue roughly doubled in 2025 while the loss narrowed.</li><li>Raised <strong>SEK 20m</strong> in March 2026 for product + expansion beyond Sweden.</li><li>Nordic expansion underway; longer-term ambition is a global matchmaking market for pre-owned corporate assets.</li><li>Current team is already much bigger than when the old Head of Sales role was recruited.</li></ul><div class="key green">This looks like a scale-up transition: from founder-led/domestic traction → repeatable commercial engine + international growth.</div></article>
+<article class="card"><h3>Why you could fit</h3><ul><li>Nearly 30 years commercial; last decade B2B tech.</li><li>Hands-on full cycle: target → outreach → discovery → demo → proposal → negotiation → contract → close.</li><li>Built proactive outbound/processes where they did not exist.</li><li>International market development + partnerships/distribution.</li><li>Can operate seniorly without wanting to become a pure manager.</li></ul><div class="key purple">Best version of this role for you = player-coach + strategic selling + international expansion.</div></article>
+<article class="card"><h3>Your 30-second story</h3><div class="quote">“I’ve spent nearly 30 years in commercial roles and the common thread has always been building new business. Over the last decade that has been in B2B technology, personally running the full cycle from target accounts and outreach through demos, negotiation and signature. My CEO title came from a defined turnaround-and-sale mandate at ArrivalGuides; even after the acquisition, around 80% of my work has remained hands-on international new business. I’m now deliberately looking for a permanent commercial role where I can keep doing that and help build growth around me.”</div></article>
+<article class="card"><h3>Why Palats?</h3><ul><li>The proposition is <strong>easy to understand and economically real</strong>, not sustainability theatre.</li><li>There is real traction and credible usage, not a concept looking for product-market fit.</li><li>Gothenburg + scale-up stage suits you.</li><li>The international expansion is the strongest strategic overlap with your background.</li></ul><div class="key">Do not say “because I need a job.” Say you reached out because the commercial problem + international growth looked genuinely relevant.</div></article>
+<article class="card"><h3>End-of-October wording</h3><div class="quote">“I’m still with Smartvel now and expect my role to finish at the end of October. Following the acquisition, I’ve stayed on through the transition and continued doing international new business. I’m using the timing deliberately to move into a permanent hands-on commercial role where I can stay close to customers and growth.”</div><div class="key amber">If asked availability: “Early November would be the natural transition point, subject to the exact arrangements.” No need to volunteer employment-dispute detail.</div></article>
+</div>
+<div class="goodout"><strong>If you only read one thing before the call:</strong> let Per explain the role first. Then test whether this is <strong>personally selling + shaping growth</strong> or primarily <strong>managing five AEs, forecasts and activity targets</strong>. The title is secondary.</div>
+</section>
+
+<section id="business" class="tab">
+<h2 class="section-title">What Palats actually does <span>plain English</span></h2>
+<div class="flow">
+<div class="flowstep"><div class="k">1 • capture</div><b>Inventory assets</b><span>Phone/photo, AI-assisted product data, QR and location.</span></div>
+<div class="flowstep"><div class="k">2 • visibility</div><b>Know what exists</b><span>Furniture/building materials visible across locations and projects.</span></div>
+<div class="flowstep"><div class="k">3 • reuse</div><b>Circulate internally</b><span>Internal marketplace before anyone buys new.</span></div>
+<div class="flowstep"><div class="k">4 • scale</div><b>Projects + clusters</b><span>Move surplus across projects, organisations and reuse networks.</span></div>
+<div class="flowstep"><div class="k">5 • prove</div><b>Measure the result</b><span>Money saved, purchases avoided and CO₂e impact.</span></div>
+</div>
+<h2 class="section-title">Business facts <span>know the direction, not every decimal</span></h2>
+<div class="grid4">
+<article class="card"><h3>2025 financials</h3><ul><li>Operating revenue: <strong>SEK 13.509m</strong>.</li><li>Net sales: about <strong>SEK 10.5m</strong>.</li><li>Result after finance: <strong>-SEK 3.683m</strong>.</li><li>EBITDA: <strong>-SEK 2.955m</strong>.</li><li>Equity: <strong>SEK 22.437m</strong>.</li><li>Solidity: <strong>69%</strong>.</li></ul><div class="key amber">Loss-making, but not obviously distressed. Do not call SEK 13.5m “ARR” — ARR is not public.</div></article>
+<article class="card"><h3>Trajectory</h3><ul><li>2024 operating revenue: about <strong>SEK 6.85m</strong>.</li><li>2025: <strong>SEK 13.51m</strong> — almost doubled.</li><li>2024 result after finance: about <strong>-SEK 4.66m</strong>.</li><li>2025 loss narrowed to <strong>-SEK 3.68m</strong>.</li><li>Employees: 15 average in 2024 → 21 in 2025 → <strong>26 coworkers now</strong>.</li></ul><div class="key green">Good direction: revenue accelerating while absolute loss narrowed.</div></article>
+<article class="card"><h3>Funding / runway</h3><ul><li>Raised <strong>SEK 20m in March 2026</strong>.</li><li>Led by AGV Invest, with Chalmers Ventures + Länsförsäkringar.</li><li>Capital earmarked for product development and expansion beyond Sweden.</li><li>Current 2026 burn/runway is <strong>not public</strong>.</li></ul><div class="key amber">Later-stage question: current ARR, burn/runway, route to break-even.</div></article>
+<article class="card"><h3>Traction</h3><ul><li><strong>150+</strong> customer organisations.</li><li><strong>16,000</strong> monthly users.</li><li>2025: <strong>86,000</strong> products circulated.</li><li>Products represented <strong>SEK 256m</strong> in value.</li><li>Nearly <strong>5,000 t CO₂e</strong> avoided (Palats calculation).</li></ul><div class="key">This is beyond “idea-stage” SaaS. They have referenceable behaviour and ROI.</div></article>
+</div>
+<h2 class="section-title">Who buys it / why</h2>
+<div class="grid">
+<article class="card"><h3>Typical organisations</h3><ul><li>Property owners / real-estate companies.</li><li>Municipalities and public-sector estates.</li><li>Universities.</li><li>Large corporates / industrial organisations.</li><li>Organisations with large property portfolios, moves, refurbishments or project churn.</li></ul></article>
+<article class="card"><h3>Economic buyer logic</h3><ul><li><strong>CFO / procurement:</strong> avoid unnecessary new purchases.</li><li><strong>Facilities / operations:</strong> know what assets exist and where.</li><li><strong>Project / property:</strong> coordinate reuse in moves/refurbishments.</li><li><strong>Sustainability:</strong> measure CO₂e/waste reduction.</li></ul><div class="key green">The strongest sales story crosses budgets: economics + operations + sustainability.</div></article>
+<article class="card"><h3>Strategic direction</h3><ul><li>Internal reuse first.</li><li>Large projects / project module.</li><li>Reuse clusters between organisations.</li><li>External marketplace / global matchmaking ambition.</li></ul><div class="key purple">Potential moat grows if Palats becomes network infrastructure, not just an inventory database.</div></article>
+</div>
+<div class="amberout"><strong>Current unknowns worth learning:</strong> actual ARR / recurring-revenue mix, average contract value, sales cycle, churn/retention, gross margin, new-logo target, and which buyer normally owns the budget.</div>
+</section>
+
+<section id="competition" class="tab">
+<div class="note"><b>Key thought:</b> Palats does <em>not</em> have a globally unique individual feature. Competitors also offer AI, inventory, marketplaces and impact reporting. The credible differentiation is the <b>combination + ease of operational use + network direction + economics-first proposition.</b></div>
+<h2 class="section-title">Closest competitive set</h2>
+<table class="comp">
+<thead><tr><th>Competitor</th><th>Where / what</th><th>Overlap with Palats</th><th>How to think about it</th></tr></thead>
+<tbody>
+<tr><td><strong>Loopfront</strong></td><td>Nordics • reuse SaaS</td><td>AI inventory, locations, internal/external marketplace, cost/CO₂/waste reporting.</td><td><span class="threat">🔴 Most direct</span> — 90+ organisations; 295k+ objects reused.</td></tr>
+<tr><td><strong>CCBuild / IVL</strong></td><td>Sweden • circular construction</td><td>Product bank, inventory, internal/public marketplace, climate/value analysis.</td><td><span class="threat">🟠 Direct/adjacent</span> in building-material workflows.</td></tr>
+<tr><td><strong>Place2Place</strong></td><td>Sweden • reuse / furniture</td><td>Corporate reuse / circulation.</td><td><span class="threat">🟠 Direct locally</span>.</td></tr>
+<tr><td><strong>Rheaply</strong></td><td>North America • enterprise reuse</td><td>Inventory, internal reuse, public marketplace, projects, impact.</td><td><span class="threat">🔴 Serious global analogue</span> if Palats enters US.</td></tr>
+<tr><td><strong>Globechain</strong></td><td>UK / international • redistribution marketplace</td><td>Surplus furniture, equipment/material redistribution + ESG data.</td><td><span class="threat">🟠 More marketplace-led</span>.</td></tr>
+<tr><td><strong>Concular</strong></td><td>Germany / EU • circular construction</td><td>Building audits, material passports, recovered-material marketplace/network.</td><td><span class="threat">🟠 Strong construction-side competitor</span>.</td></tr>
+<tr><td><strong>Madaster</strong></td><td>Europe / international</td><td>Material passports, circularity/LCA, asset value, reuse potential.</td><td><span class="threat">🟡 Adjacent</span> — more documentation/intelligence.</td></tr>
+</tbody></table>
+<h2 class="section-title">Palats USP — the version worth remembering</h2>
+<div class="rolemap">
+<div class="role sell"><b>1. EASY INPUT</b><small>Phone/photo + AI-assisted inventory + QR + locations. Remove the pain of cataloguing thousands of physical assets.</small><div class="key">If the inventory step is hard, the whole reuse strategy fails.</div></div><div class="arrow">→</div>
+<div class="role build"><b>2. OPERATIONAL FLOW</b><small>Daily reuse + projects + internal marketplace + next-step workflow + measurement in one system.</small><div class="key green">Not simply “list surplus online”.</div></div><div class="arrow">→</div>
+<div class="role bridge"><b>3. NETWORK</b><small>Organisation → projects → reuse clusters → external market. More participants can make the network more useful.</small><div class="key purple">This is where defensibility could grow.</div></div>
+</div>
+<div class="grid" style="margin-top:9px">
+<article class="card"><h3>Commercial USP</h3><ul><li>Lead with <strong>money saved</strong>, not moral pressure.</li><li>“Use what you already own before buying new.”</li><li>Environmental proof strengthens the ROI rather than replacing it.</li><li>Multiple stakeholders can see value: finance, procurement, operations, property/project, sustainability.</li></ul></article>
+<article class="card"><h3>Current proof point</h3><ul><li>Västra Götalandsregionen awarded Palats the 2026 furniture-reuse IT contract.</li><li>Palats ranked <strong>#1</strong>.</li><li>Other named bidders included <strong>Loopfront, Place2Place and IVL Sustainable Building</strong>.</li><li>Palats contract value: about <strong>SEK 1.37m</strong>.</li></ul><div class="key green">Useful evidence that Palats can win head-to-head, not just market itself well.</div></article>
+<article class="card"><h3>Excellent question for Per</h3><div class="quote">“Looking at the market from the outside, Loopfront seems like the obvious close Nordic competitor. When Palats wins against them or other alternatives, what tends to make the difference?”</div><div class="small">Shows commercial curiosity without pretending you already know their internal win/loss data.</div></article>
+</div>
+<div class="callout"><strong>Do not say:</strong> “Your USP is AI.” Loopfront and others have AI-assisted inventory too. The stronger answer is the frictionless end-to-end operating model + economic ROI + network direction.</div>
+</section>
+
+<section id="role" class="tab">
+<div class="note"><b>Important:</b> there is no public current Head of Sales specification. The 2024/25 role is a <b>historical clue only</b>, not today's job description. Your job on this call is to discover what has changed.</div>
+<h2 class="section-title">What we actually know</h2>
+<div class="grid">
+<article class="card"><h3>Henrik → you <span class="badge fact">verified</span></h3><ul><li>CEO Henrik Olausson told you Palats would recruit a <strong>Sales Manager / Head of Sales</strong>.</li><li>He told you to contact Per once Per had started.</li><li>You followed up with Per on 27 August with your CV.</li><li>You explicitly said you were interested <strong>particularly if the role remains hands-on</strong>.</li></ul><div class="key green">Per called after already having this context. He should not be assuming you want a pure management role.</div></article>
+<article class="card"><h3>Previous Head of Sales design <span class="badge history">historical</span></h3><ul><li>Leadership-team role.</li><li>Initially <strong>heavily hands-on sales</strong>.</li><li>Actively drive sales while building SaaS sales processes.</li><li>Over time, strategically expand the sales team.</li><li>Scale-up / move-fast environment.</li></ul><div class="key amber">Do not assume the new role is identical. The team is now much larger.</div></article>
+<article class="card"><h3>Current GTM team <span class="badge fact">current</span></h3><ul><li>5 AEs / Senior AEs.</li><li>2 Account Managers.</li><li>Head of Growth + Demand Generation + Content Marketing.</li><li>Partnerships.</li><li>COO + CEO.</li><li>5 Customer Success people incl. Head of CS.</li></ul><div class="key">The big question: is Head of Sales now primarily leading this engine, or still personally selling?</div></article>
+</div>
+<h2 class="section-title">Fit map</h2>
+<div class="grid">
+<article class="card"><h3>🟢 Strong version of the role</h3><ul><li>Player-coach.</li><li>Personally owns strategic / enterprise deals.</li><li>Builds Nordic / European new business.</li><li>Improves sales process, qualification and commercial discipline.</li><li>Coaches existing team but stays in market.</li><li>Meaningful autonomy over how growth is built.</li></ul></article>
+<article class="card"><h3>🟠 Borderline version</h3><ul><li>About half leadership / half personal selling.</li><li>Mainly Sweden but some Nordic expansion.</li><li>More forecast/reporting cadence than you prefer, but still trusted to sell your way.</li><li>Swedish helpful rather than essential.</li></ul></article>
+<article class="card"><h3>🔴 Wrong version</h3><ul><li>70–80% people management.</li><li>Weekly forecast/commit/activity policing dominates.</li><li>Strict call/email/demo activity quotas.</li><li>Main remit = Swedish local market.</li><li>Professional/fluent Swedish required.</li><li>Little personal ownership of complex new business.</li></ul></article>
+</div>
+<h2 class="section-title">Where you add value</h2>
+<div class="grid4">
+<article class="card"><h3>BUILD PIPELINE</h3><ul><li>Target-account selection.</li><li>Decision-maker mapping.</li><li>Personalised outbound.</li><li>New-market prospecting.</li></ul><div class="key">Precisely + ArrivalGuides proof.</div></article>
+<article class="card"><h3>SELL FULL CYCLE</h3><ul><li>Discovery.</li><li>Tailored demos.</li><li>Proposals / NDAs.</li><li>Negotiation / contracts / close.</li></ul><div class="key">This is your primary identity.</div></article>
+<article class="card"><h3>BUILD THE ENGINE</h3><ul><li>CRM structure.</li><li>Qualification / follow-up.</li><li>Sales + marketing alignment.</li><li>Repeatable commercial process.</li></ul><div class="key green">You have built process, not only operated inside one.</div></article>
+<article class="card"><h3>INTERNATIONALISE</h3><ul><li>Market entry.</li><li>Partnerships / distribution.</li><li>Cross-border enterprise selling.</li><li>Learning new propositions quickly.</li></ul><div class="key purple">Potentially your most distinctive value to Palats now.</div></article>
+</div>
+</section>
+
+<section id="answers" class="tab">
+<div class="note"><b>Use these as anchors, not memorised scripts.</b> Keep the first answer to each question short, then expand if Per probes.</div>
+<div class="grid2">
+<article class="card"><h3>“Tell me about yourself”</h3><div class="answer"><b>Anchor points</b><ul><li>Nearly 30 years commercial; last decade B2B tech.</li><li>Common thread = hands-on new business and international growth.</li><li>Personally own the full sales cycle.</li><li>Have built proactive sales processes, not just inherited them.</li><li>CEO title = specific turnaround / sale mandate.</li><li>Next move intentionally back into permanent hands-on commercial work.</li></ul></div></article>
+<article class="card"><h3>“Why did you reach out to Palats?”</h3><div class="answer"><b>Anchor points</b><ul><li>Product proposition made immediate commercial sense: reduce buying by reusing assets already owned.</li><li>Economics + sustainability is stronger than sustainability-only.</li><li>Gothenburg and scale-up stage were attractive.</li><li>International ambitions looked highly relevant to your background.</li><li>You could see a plausible need for someone who builds markets and closes business.</li></ul></div></article>
+<article class="card"><h3>“What are you doing at Smartvel now?”</h3><div class="answer"><b>Anchor points</b><ul><li>Still employed and working there now.</li><li>Following acquisition of ArrivalGuides, about 80% of your work has remained hands-on international new business for Smartvel.</li><li>Target accounts → discovery → demos → proposals → negotiation → contracts → close.</li><li>Remaining time is ArrivalGuides continuity / oversight.</li></ul></div></article>
+<article class="card"><h3>“Why are you leaving?”</h3><div class="quote">“My role with Smartvel is coming to an end following the acquisition and transition. I’m still working there now and expect to finish at the end of October. I’m using the timing deliberately to move into a permanent hands-on commercial role where I can stay close to customers, new business and international growth.”</div><div class="key amber">Keep it matter-of-fact. Do not volunteer the employment dispute, holiday issue or frustration.</div></article>
+<article class="card"><h3>“When could you start?”</h3><div class="quote">“My current expectation is to finish at the end of October, so early November would be the natural transition point, subject to the exact arrangements.”</div></article>
+<article class="card"><h3>“Why Head of Sales if you want hands-on?”</h3><div class="answer"><b>Anchor points</b><ul><li>The title is not the attraction; the substance is.</li><li>You like responsibility and shaping process / team / commercial direction.</li><li>Your strongest value is still as a player-coach: personally create and close business while raising the quality around you.</li><li>You are not looking to become a pure dashboard manager.</li></ul></div></article>
+<article class="card"><h3>“What is your best example of building sales?”</h3><div class="answer"><b>Use Precisely</b><ul><li>Company had depended on marketing-generated enquiries.</li><li>You created a global proactive new-business programme.</li><li>Target segmentation + decision makers + testing + sales/marketing alignment.</li><li>Generated qualified opportunities at a monthly volume comparable to the existing inbound/marketing channel.</li><li>Then personally carried deals through demo → proposal → negotiation → signature.</li></ul></div></article>
+<article class="card"><h3>“Give me a measurable result”</h3><div class="answer"><b>Use ArrivalGuides / Lonely Planet</b><ul><li>Personalised outbound programme.</li><li><strong>320% more qualified opportunities + scheduled meetings</strong> in first six months 2020 vs comparable 2019.</li><li>Q1 sales target achieved within six weeks.</li></ul></div></article>
+<article class="card"><h3>“Can you sell something you haven't sold before?”</h3><div class="answer"><b>Your career is the evidence</b><ul><li>Premium / luxury products → entrepreneurship → B2B technology / SaaS.</li><li>Repeatedly learned proposition, buyer problem and value quickly.</li><li>Best proof is not sector claims; it is commercial transferability.</li></ul></div></article>
+<article class="card"><h3>“What kind of role do you want?”</h3><div class="quote">“A permanent role where I can personally create opportunities and close new business, ideally with an international remit. I’m very comfortable helping shape process and developing people around me, but I want to remain close to customers and the commercial work itself.”</div></article>
+</div>
+<div class="callout"><strong>Do not over-explain the CEO title.</strong> One sentence is enough unless he asks. The important correction is: CEO was a turnaround-and-sale mandate; your day-to-day commercial identity remained hands-on.</div>
+</section>
+
+<section id="questions" class="tab">
+<div class="note"><b>Do not fire all of these at him.</b> Pick 4–6 naturally from the conversation. The first six below are the best questions for today's call.</div>
+<div class="grid">
+<article class="card"><h3>1 • Why this hire now?</h3><div class="quote">“What is driving the Head of Sales hire now, and what do you most need this person to change or achieve?”</div><div class="key green">Best opening role question. Lets Per define the problem before you pitch yourself.</div></article>
+<article class="card"><h3>2 • Hands-on vs management</h3><div class="quote">“How do you see the role split between selling personally, leading the existing team and broader commercial strategy?”</div><div class="key red">Critical fit gate for you.</div></article>
+<article class="card"><h3>3 • Success at 6 / 12 months</h3><div class="quote">“What would you want the person to have achieved after six months, and after the first year?”</div><div class="key">Gets beyond title into actual mandate.</div></article>
+<article class="card"><h3>4 • International scope</h3><div class="quote">“How much of the Head of Sales remit is Sweden today, and how much is about the Nordic or wider European expansion?”</div><div class="key purple">Potentially the strongest match to your background.</div></article>
+<article class="card"><h3>5 • Existing team</h3><div class="quote">“How is the sales team structured today, and who would actually report into the Head of Sales?”</div><div class="key">Public site shows 5 AEs + 2 AMs, but reporting lines are not public.</div></article>
+<article class="card"><h3>6 • What still needs building?</h3><div class="quote">“Where do you feel the sales engine is strong today, and where is it still being built?”</div><div class="key green">Opens a natural route for you to discuss Precisely / CRM / outbound / process.</div></article>
+<article class="card"><h3>7 • Competition / win reason</h3><div class="quote">“Loopfront looks like the obvious close Nordic competitor from the outside. When Palats wins against them or another alternative, what tends to make the difference?”</div><div class="key purple">Strong senior-commercial question.</div></article>
+<article class="card"><h3>8 • Buyer + sales cycle</h3><div class="quote">“Who is normally the real economic buyer, and what does a typical sales cycle look like from first meeting to signed customer?”</div></article>
+<article class="card"><h3>9 • Swedish requirement</h3><div class="quote">“For this particular role, how important is professional Swedish in the day-to-day work versus English and the international remit?”</div><div class="key amber">Ask directly rather than allowing an unstated concern to sit in the room.</div></article>
+<article class="card"><h3>10 • Sales operating model</h3><div class="quote">“How do you manage the sales team today — what does a normal cadence look like around targets, pipeline, forecasting and activity?”</div><div class="key amber">Listen for autonomy vs activity-policing. Do not frame it negatively.</div></article>
+<article class="card"><h3>11 • Commercial metrics <span class="badge ask">if natural</span></h3><ul><li>Current ARR / recurring-revenue mix?</li><li>Average contract value?</li><li>New-logo growth target?</li><li>Retention / churn?</li><li>Expansion revenue?</li></ul><div class="key">Good Head-of-Sales questions, but People & Culture may not have every number on a first call.</div></article>
+<article class="card"><h3>12 • Financial runway <span class="badge ask">later stage</span></h3><ul><li>How is the SEK 20m round being allocated?</li><li>What commercial milestone is the funding meant to reach?</li><li>What is the intended path to break-even?</li></ul><div class="key amber">Worth knowing before joining; probably not the first thing to lead with today.</div></article>
+</div>
+</section>
+
+<section id="plan" class="tab">
+<h2 class="section-title">Simple call structure <span>you do not need to control every minute</span></h2>
+<div class="flow">
+<div class="flowstep"><div class="k">0–5 min</div><b>Let him frame it</b><span>Thank him for calling. Ask what prompted the call and where the Head of Sales thinking is now.</span></div>
+<div class="flowstep"><div class="k">5–10 min</div><b>Your story</b><span>30 years commercial → last decade B2B tech → full-cycle international sales → CEO mandate → still hands-on.</span></div>
+<div class="flowstep"><div class="k">10–20 min</div><b>Role fit</b><span>Hands-on split, existing team, Sweden vs international, what success looks like.</span></div>
+<div class="flowstep"><div class="k">20–30 min</div><b>Commercial curiosity</b><span>Sales engine, buyer, competition, internationalisation. Add examples only where relevant.</span></div>
+<div class="flowstep"><div class="k">close</div><b>Land the next step</b><span>If still interested, say so clearly and ask what happens next.</span></div>
+</div>
+<h2 class="section-title">Pre-call checklist</h2>
+<div class="checklist">
+<div class="check"><b>✓ Know the one-line product:</b> reuse assets before buying new; save money + CO₂.</div>
+<div class="check"><b>✓ Know the business state:</b> 150+ orgs, 16k users, 20m funding, loss-making but improving.</div>
+<div class="check"><b>✓ Know your three fit gates:</b> hands-on share, international remit, sales culture / Swedish.</div>
+<div class="check"><b>✓ Know three stories:</b> Precisely process build; ArrivalGuides 320%; distribution / launch close.</div>
+<div class="check"><b>✓ Have end-Oct wording ready:</b> factual, calm, no employment-dispute detail.</div>
+<div class="check"><b>✓ Pick 4–6 questions:</b> do not interrogate him.</div>
+</div>
+<h2 class="section-title">Things not to do</h2>
+<div class="grid">
+<article class="card"><h3>Do not over-sell too early</h3><ul><li>This is partly discovery for you.</li><li>Understand the role before claiming it is perfect.</li><li>Use examples after you understand the problem they need solved.</li></ul></article>
+<article class="card"><h3>Do not sound managerial</h3><ul><li>Do not lead with “I managed teams”.</li><li>Lead with building business personally.</li><li>Then show you can coach / structure / lead around that.</li></ul></article>
+<article class="card"><h3>Do not hide the timing</h3><ul><li>You are still with Smartvel.</li><li>Expected end date: end of October.</li><li>That is a clean, normal transition point.</li><li>No need to sound apologetic.</li></ul></article>
+</div>
+<div class="goodout"><strong>Good close if it sounds right:</strong> “From what you’ve described, that sounds close to the kind of role I’m looking for — hands-on, commercial, and with scope to help shape growth. What would the next step normally be from here?”</div>
+<div class="amberout"><strong>If it sounds management-heavy:</strong> do not force it. Clarify whether they genuinely need a player-coach. It is better to discover a structural mismatch now than win the wrong job.</div>
+</section>
+
+<section id="notes" class="tab">
+<div class="note"><b>Call notes.</b> This text is saved automatically in this browser only. Use it during the call to capture facts that are not public: role split, reporting line, international remit, Swedish requirement, metrics and next step.</div>
+<textarea id="callNotes" placeholder="PALATS CALL — 15 SEP 2026\n\nCaller / role:\n\nWhy they are hiring:\n\nHands-on selling %:\n\nTeam / reporting line:\n\nSweden vs international:\n\nSwedish requirement:\n\nICP / buyer:\n\nSales cycle / ACV / ARR:\n\nTargets / forecast / activity culture:\n\nWhat they liked in my background:\n\nConcerns / gaps raised:\n\nNext step + date:\n"></textarea>
+<div class="actions"><button class="btn primary" id="copyNotes">Copy notes</button><button class="btn" id="clearNotes">Clear notes</button><span class="small" id="saveState">Saved locally</span></div>
+<h2 class="section-title">After the call — capture these before you forget</h2>
+<div class="grid4">
+<article class="card"><h3>ROLE</h3><ul><li>Exact title.</li><li>Hands-on vs management %.</li><li>Reporting line.</li><li>Team size.</li></ul></article>
+<article class="card"><h3>MARKET</h3><ul><li>Sweden / Nordics / Europe.</li><li>Buyer / ICP.</li><li>Competitive positioning.</li><li>Expansion priorities.</li></ul></article>
+<article class="card"><h3>ENGINE</h3><ul><li>ARR / ACV if shared.</li><li>Sales cycle.</li><li>Pipeline source.</li><li>Targets / forecasting cadence.</li></ul></article>
+<article class="card"><h3>PROCESS</h3><ul><li>How they assessed you.</li><li>Any concern raised.</li><li>Next person / step.</li><li>Expected timing.</li></ul></article>
+</div>
+</section>
+
+<section id="sources" style="display:block;margin-top:18px">
+<details><summary style="cursor:pointer;font-weight:800;color:var(--muted)">Sources / verification notes</summary>
+<div class="card" style="margin-top:8px"><ul>
+<li><a href="https://www.palats.io/sv-se/blogg/palats-investeringsrunda-2026" target="_blank" rel="noopener">Palats investment announcement — 3 Mar 2026</a>: funding, customers, users, reuse volume, expansion.</li>
+<li><a href="https://jobs.palats.io/people" target="_blank" rel="noopener">Palats current team</a>: 26 coworkers and current GTM structure.</li>
+<li><a href="https://jobs.palats.io/" target="_blank" rel="noopener">Palats careers</a>: company ambition and current openings.</li>
+<li><a href="https://www.allabolag.se/foretag/palats-technology-ab/g%C3%B6teborg/internet-konsulter-operat%C3%B6rer/2KHXSM8I5YFHL" target="_blank" rel="noopener">Allabolag</a>: 2025 accounts / balance-sheet ratios.</li>
+<li><a href="https://www.hitta.se/f%C3%B6retagsinformation/palats%2Btechnology%20ab/5593018400" target="_blank" rel="noopener">Hitta company financials</a>: employee and historical account comparisons.</li>
+<li><a href="https://www.evergabe.com/sl/ponudbe/it-stod-for-aterbruk-av-mobler-2026-2430977/" target="_blank" rel="noopener">VGR 2026 procurement result</a>: Palats #1; other bidders include Loopfront, Place2Place and IVL Sustainable Building.</li>
+<li><a href="https://www.loopfront.com/" target="_blank" rel="noopener">Loopfront</a>: direct Nordic competitor / feature comparison.</li>
+<li><a href="https://se.linkedin.com/posts/henrik-olausson_jag-s%C3%A4ljer-palats-med-ett-l%C3%B6fte-f%C3%B6retag-activity-7262168482887176194-etJ1" target="_blank" rel="noopener">Historical Palats Head of Sales post</a>: prior role design only, not a current specification.</li>
+</ul><div class="small" style="margin-top:8px">Internal evidence also checked: Andrew’s current MASTER CV, the original Gmail outreach to Henrik Olausson, Henrik’s reply, Andrew’s follow-up to Per Bleckberg, current Job-Hunting tracker record, and Google Calendar. Current Head of Sales specification remains unknown and should be established in the call.</div></div>
+</details>
+</section>
+<footer>Palats phone-call prep • built for rapid skim reading • facts separated from questions / historical clues</footer>
+</main>
+<script>
+const buttons=[...document.querySelectorAll('.tabbtn')];
+const tabs=[...document.querySelectorAll('.tab')];
+buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));tabs.forEach(t=>t.classList.remove('active'));btn.classList.add('active');const t=document.getElementById(btn.dataset.tab);if(t)t.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}));
+const notes=document.getElementById('callNotes');
+const key='palats-interview-notes-2026-09-15';
+try{notes.value=localStorage.getItem(key)||'';}catch(e){}
+notes.addEventListener('input',()=>{try{localStorage.setItem(key,notes.value);document.getElementById('saveState').textContent='Saved locally';}catch(e){document.getElementById('saveState').textContent='Could not save locally';}});
+document.getElementById('copyNotes').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(notes.value);document.getElementById('copyNotes').textContent='Copied';setTimeout(()=>document.getElementById('copyNotes').textContent='Copy notes',1200);}catch(e){notes.select();}});
+document.getElementById('clearNotes').addEventListener('click',()=>{if(confirm('Clear the saved Palats call notes on this browser?')){notes.value='';try{localStorage.removeItem(key);}catch(e){}}});
+</script>
+</body>
+</html>
