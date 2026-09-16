@@ -6,24 +6,29 @@
 <title>ZenDev — Meeting Prep</title>
 <style>
 :root{--bg:#f3f6f9;--card:#fff;--ink:#16202b;--muted:#667483;--line:#d9e0e7;--blue:#214f7b;--blue2:#eaf2f9;--green:#287257;--green2:#e9f5ef;--amber:#966918;--amber2:#fbf3df;--red:#9a4242;--red2:#f9ecec;--purple:#684681;--purple2:#f2edf7;--shadow:0 5px 18px rgba(20,35,50,.06)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.38}strong{font-weight:800}a{color:var(--blue)}button,textarea{font:inherit}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.42}strong{font-weight:800}a{color:var(--blue)}button,textarea{font:inherit}
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);padding:10px 15px 8px}.head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end}.head h1{font-size:20px;margin:0}.sub{font-size:12px;color:var(--muted);margin-top:2px}.status{font-size:11px;font-weight:850;padding:6px 9px;border-radius:999px;background:var(--green2);color:var(--green);white-space:nowrap}.tabs{display:flex;gap:6px;overflow:auto;margin-top:8px}.tabbtn{border:1px solid var(--line);background:#fff;color:var(--blue);padding:6px 9px;border-radius:8px;font-weight:800;white-space:nowrap;cursor:pointer}.tabbtn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
 main{max-width:1450px;margin:auto;padding:12px 14px 26px}.tab{display:none}.tab.active{display:block}.note{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--muted);margin-bottom:10px}.note b{color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:11px 12px;box-shadow:var(--shadow)}.card h3{margin:0 0 6px;font-size:14px;color:var(--blue)}.card ul{margin:0;padding-left:18px}.card li{margin:0 0 4px}.key{margin-top:7px;padding:7px 8px;border-radius:7px;background:var(--blue2);font-weight:750}.green{background:var(--green2)}.amber{background:var(--amber2)}.red{background:var(--red2)}.purple{background:var(--purple2)}.quote{font-size:15px;font-weight:750;line-height:1.42;background:#f8fafc;border:1px solid var(--line);border-radius:9px;padding:10px 11px}.section{font-size:16px;margin:15px 0 8px}.small{font-size:11px;color:var(--muted)}
 .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px}.step .k{font-size:10px;text-transform:uppercase;color:var(--muted);font-weight:850}.step b{display:block;margin:3px 0}.good{border-left:4px solid var(--green);background:var(--green2);padding:10px 12px;border-radius:0 9px 9px 0;margin-top:10px}.warn{border-left:4px solid var(--amber);background:var(--amber2);padding:10px 12px;border-radius:0 9px 9px 0;margin-top:10px}.bad{border-left:4px solid var(--red);background:var(--red2);padding:10px 12px;border-radius:0 9px 9px 0;margin-top:10px}.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.check{background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 10px}.check b{color:var(--blue)}
+.pill{display:inline-block;padding:2px 7px;border-radius:999px;font-size:10px;font-weight:850;margin-right:5px}.p-confirm{background:var(--green2);color:var(--green)}.p-case{background:var(--blue2);color:var(--blue)}.p-logo{background:var(--amber2);color:var(--amber)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}th,td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);background:#f8fafc}tr:last-child td{border-bottom:0}
+.source{font-size:11px;color:var(--muted);margin-top:6px}.source a{font-weight:700;text-decoration:none}.source a:hover{text-decoration:underline}
 textarea{width:100%;min-height:360px;border:1px solid var(--line);border-radius:9px;padding:12px;resize:vertical;box-shadow:var(--shadow)}.actions{display:flex;gap:7px;align-items:center;margin-top:8px}.btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;font-weight:800;cursor:pointer}.btn.primary{background:var(--blue);color:#fff;border-color:var(--blue)}footer{font-size:11px;color:var(--muted);text-align:center;margin-top:16px}
-@media(max-width:1000px){.grid,.grid4{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){header{position:static}.head{align-items:flex-start;flex-direction:column}.grid,.grid2,.grid4,.flow,.checks{grid-template-columns:1fr}main{padding:10px}}
+@media(max-width:1000px){.grid,.grid4{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){header{position:static}.head{align-items:flex-start;flex-direction:column}.grid,.grid2,.grid4,.flow,.checks{grid-template-columns:1fr}main{padding:10px}table{font-size:12px}}
 </style>
 </head>
 <body>
 <header>
-<div class="head"><div><h1>ZenDev — Face-to-Face Prep</h1><div class="sub">Nikola Mirković • Wed 16 Sep 2026 • 14:15–15:15 • Convendum, Kungsportsavenyn 21</div></div><div class="status">MEETING TOMORROW • 14:15</div></div>
+<div class="head"><div><h1>ZenDev — Face-to-Face Prep</h1><div class="sub">Nikola Mirković • Wed 16 Sep 2026 • 14:15–15:15 • Convendum, Kungsportsavenyn 21</div></div><div class="status">MEETING TODAY • 14:15</div></div>
 <nav class="tabs">
 <button class="tabbtn active" data-tab="skim">Quick skim</button>
-<button class="tabbtn" data-tab="business">What they do</button>
+<button class="tabbtn" data-tab="ica">ICA deep-dive</button>
+<button class="tabbtn" data-tab="business">What they sell</button>
+<button class="tabbtn" data-tab="proof">Clients + proof</button>
+<button class="tabbtn" data-tab="outreach">Enterprise outreach</button>
 <button class="tabbtn" data-tab="whybuy">Why big firms buy</button>
 <button class="tabbtn" data-tab="future">AI + future</button>
 <button class="tabbtn" data-tab="fit">Role + fit</button>
-<button class="tabbtn" data-tab="answers">Your answers</button>
 <button class="tabbtn" data-tab="questions">Questions</button>
 <button class="tabbtn" data-tab="plan">Meeting plan</button>
 <button class="tabbtn" data-tab="notes">Notes</button>
@@ -32,152 +37,189 @@ textarea{width:100%;min-height:360px;border:1px solid var(--line);border-radius:
 <main>
 
 <section id="skim" class="tab active">
-<div class="note"><b>What this is:</b> not a formal job interview yet. Nikola said your timing is good, your background could fit, and ZenDev plans to grow its growth team in Q4 / Q1 2027. He wants to explain their “slightly different growth strategy”.</div>
+<div class="note"><b>What this is:</b> not a formal job interview yet. Nikola said your timing is good, your background could fit, and ZenDev plans to grow its growth team in Q4 / Q1 2027. He wants to explain their “slightly different growth strategy”. Research refreshed 16 Sep 2026.</div>
 <div class="grid">
-<article class="card"><h3>ZenDev — in plain English</h3><ul><li>Software company / tech partner.</li><li>Sweden front-end + Bosnia delivery teams.</li><li>Helps firms add developers, build a remote team, or hand over a whole software project.</li><li>100+ people; Gothenburg, Mostar, Sarajevo.</li></ul><div class="key">Nearshore = outsource nearby, same time zone, easy travel.</div></article>
-<article class="card"><h3>Why tomorrow matters</h3><ul><li>Nikola = co-founder / co-CEO.</li><li>He read your CV and contacted you back.</li><li>Role is not fixed yet.</li><li>That means you may be able to shape the conversation around what you do best.</li></ul><div class="key green">Main aim: understand what they actually want to hire.</div></article>
-<article class="card"><h3>Your fit</h3><ul><li>Hands-on new business.</li><li>International B2B tech.</li><li>Full sales cycle.</li><li>Built outbound / CRM process before.</li><li>Senior enough for enterprise buyers, but still want to sell yourself.</li></ul><div class="key purple">Best version = enterprise / international new business, not “sell developers by the hour”.</div></article>
-<article class="card"><h3>Big question: AI</h3><ul><li>AI = fewer developers needed for some work.</li><li>Bad for simple “developer-for-hire” business.</li><li>Good for firms that solve bigger tech problems and use AI to deliver faster.</li></ul><div class="key amber">Ask: are they selling people, or outcomes?</div></article>
-<article class="card"><h3>Your 20-second story</h3><div class="quote">“I’ve spent nearly 30 years in commercial roles, with the last decade in B2B technology. I’m still very hands-on: target accounts, outreach, discovery, demos, proposals, negotiation and close. The CEO title came from a specific turnaround-and-sale mandate. My next move is deliberately back into a permanent hands-on international sales role.”</div></article>
-<article class="card"><h3>Leaving Smartvel</h3><div class="quote">“My role with Smartvel is coming to an end following the acquisition and transition. I’m still working there now and expect to finish at the end of October. I’m using the timing to move into a permanent hands-on commercial role.”</div><div class="key amber">Availability: early November is the natural point.</div></article>
+<article class="card"><h3>ZenDev — in plain English</h3><ul><li>Swedish-Bosnian software / nearshore technology partner.</li><li>Client-facing leadership in Gothenburg; engineering capacity in Mostar and Sarajevo.</li><li>Sells staff augmentation, dedicated teams, complete software projects and larger dedicated tech hubs.</li><li>100+ people today; ICA partnership is designed to add a dedicated 100+ person Sarajevo team.</li></ul><div class="key">The real product is not “cheap developers”. It is managed access to nearshore engineering capacity with Swedish-facing commercial / governance support.</div></article>
+<article class="card"><h3>What ICA proves</h3><ul><li>ICA appointed ZenDev as its IT Country Partner for Bosnia &amp; Herzegovina.</li><li>Dedicated Sarajevo hub, not developers rotating between clients.</li><li>ZenDev says it hired/onboarded 50+ engineers in six months and is building toward 100+.</li><li>Work spans retail, banking and insurance operations.</li></ul><div class="key green">This is the strongest enterprise reference for future outreach — provided sales has clear rights to use it.</div></article>
+<article class="card"><h3>What the Bosnia setup really means</h3><ul><li>ZenDev has real offices in Mostar and Sarajevo.</li><li>The ICA operation is described as a dedicated Sarajevo office / hub.</li><li>Public material does <b>not</b> show ICA establishing its own Bosnian subsidiary.</li><li>ZenDev handles local hiring, contracts, payroll, HR, retention, office and equipment.</li></ul><div class="key amber">So yes: cost matters, but the bigger value is that ICA gets a scalable local operation without building all of that infrastructure itself.</div></article>
+<article class="card"><h3>Your commercial fit</h3><ul><li>Hands-on new business and full sales cycle.</li><li>International B2B tech and complex accounts.</li><li>Target-account research + direct email + LinkedIn outreach.</li><li>Comfortable reaching senior decision-makers rather than relying on content impressions.</li></ul><div class="key purple">Best fit = enterprise hunter / ABM / international growth, not a role measured mainly by LinkedIn posting volume.</div></article>
+<article class="card"><h3>LinkedIn: useful, but as support</h3><ul><li>Reported Feb 2026 figure: 9 team members / 611k impressions.</li><li>Impressions prove distribution, not qualified pipeline.</li><li>Your preferred model: identify the right enterprise + decision-maker, email directly, use LinkedIn as a second touch / credibility layer.</li><li>Ask what percentage of actual pipeline comes from social content vs direct outbound / referrals.</li></ul><div class="key amber">KPI to care about: target accounts → conversations → meetings → opportunities → revenue.</div></article>
+<article class="card"><h3>Today’s main objective</h3><div class="quote">Understand what Nikola’s “different growth strategy” really means and whether ZenDev wants a senior enterprise seller who can systematically create new ICA-like accounts — or a social-selling/content-led growth profile.</div><div class="key green">If it is the first version, there is a credible match.</div></article>
 </div>
-<div class="good"><strong>Remember 2 things:</strong> 1) What does Nikola mean by “different growth strategy”? 2) How does he think AI changes ZenDev over the next 3–5 years?</div>
+<div class="good"><strong>Remember 3 things:</strong> 1) How exactly was ICA won? 2) Which parts of that sales motion are repeatable? 3) What does success in this role mean in meetings, opportunities and revenue — not impressions?</div>
+</section>
+
+<section id="ica" class="tab">
+<div class="note"><b>ICA is the key case.</b> It changes the story from “we can supply developers from Bosnia” to “we can build and operate a dedicated nearshore engineering hub for a major Swedish enterprise”.</div>
+<h2 class="section">What is confirmed publicly</h2>
+<div class="grid4">
+<article class="card"><h3>Relationship</h3><ul><li>ZenDev calls itself ICA’s <b>IT Country Partner for Bosnia &amp; Herzegovina</b>.</li><li>Long-term dedicated collaboration.</li><li>Single-client focus for the ICA team.</li></ul><div class="source"><a href="https://ica.zendev.se/" target="_blank" rel="noopener">Source: ICA × ZenDev hub</a></div></article>
+<article class="card"><h3>Physical setup</h3><ul><li>ZenDev has offices in Gothenburg, Mostar and Sarajevo.</li><li>ICA collaboration uses a dedicated Sarajevo office / hub.</li><li>On-site Sarajevo work features prominently in ICA conditions.</li></ul><div class="source"><a href="https://ica.zendev.se/conditions/" target="_blank" rel="noopener">Source: ICA conditions</a></div></article>
+<article class="card"><h3>Scale</h3><ul><li>Target = 100+ engineers, designers and specialists.</li><li>ZenDev says 50+ engineers were hired and onboarded in six months.</li><li>Team has scaled in phases as ICA roadmap needs became clearer.</li></ul><div class="source"><a href="https://www.zendev.se/nearshore-development-teams" target="_blank" rel="noopener">Source: nearshore teams</a></div></article>
+<article class="card"><h3>Areas of work</h3><ul><li>Retail.</li><li>Banking.</li><li>Insurance.</li><li>Recruitment includes software development, QA, DevOps, data and system engineering.</li></ul><div class="source"><a href="https://zendev.talentlyft.com/ica" target="_blank" rel="noopener">Source: ICA careers</a></div></article>
+</div>
+<h2 class="section">What ZenDev is actually selling ICA</h2>
+<div class="flow">
+<div class="step"><div class="k">ZenDev handles</div><b>Local operating engine</b><span>Recruitment, onboarding, contracts, payroll, HR, retention/replacement, office, equipment and local infrastructure.</span></div>
+<div class="step"><div class="k">ICA keeps</div><b>Enterprise control</b><span>Strategy, roadmap, product priorities, architecture decisions, code-review standards, repositories, IP and final hiring approval.</span></div>
+<div class="step"><div class="k">Together</div><b>Integrated delivery</b><span>Working rhythm, culture, onboarding, governance, demos/reviews and collaboration across Sarajevo and Sweden.</span></div>
+<div class="step"><div class="k">Commercial result</div><b>Capacity without building a country operation</b><span>ICA can scale a serious engineering function in Bosnia while ZenDev carries much of the local employment and operating complexity.</span></div>
+</div>
+<div class="good"><strong>Best interpretation:</strong> Bosnia is certainly part of the cost / competitiveness equation, but cost alone undersells the deal. ICA is buying access to talent, hiring speed, local employment infrastructure, same-time-zone collaboration, scalability and a dedicated operating model — while retaining technology ownership and control.</div>
+<h2 class="section">What current recruitment reveals about the work</h2>
+<div class="grid2">
+<article class="card"><h3>Bank / insurance product engineering</h3><p>Public recruitment has described development and software-correction work for new and existing functionality for <b>ICA Banken / ICA Insurance</b>, collaborating with teams in Sweden and Bosnia.</p><div class="key">That looks like embedded enterprise product engineering, not a one-off outsourced website build.</div></article>
+<article class="card"><h3>Data platform work</h3><p>A data-engineering advert described a <b>Google Cloud Platform</b> data platform with file/API/event-driven ingestion and domain-specific analytical data products aligned to data-mesh principles.</p><div class="key">Again: enterprise infrastructure / data capability, not commodity body-shopping.</div></article>
+</div>
+<div class="warn"><strong>Important unknown to ask Nikola:</strong> what is the precise legal/commercial model? Public material strongly indicates ZenDev runs the local people/operations, but do not describe it as “ICA’s own Bosnia office/company” unless Nikola confirms that wording.</div>
 </section>
 
 <section id="business" class="tab">
-<div class="note"><b>Do not overcomplicate this.</b> ZenDev gives companies extra software-building power.</div>
-<h2 class="section">4 ways they sell</h2>
+<div class="note"><b>Four distinct things to sell.</b> The buyer, sales cycle and value story differ materially between adding one engineer and building an ICA-scale country hub.</div>
+<h2 class="section">4 engagement models</h2>
 <div class="flow">
-<div class="step"><div class="k">1</div><b>Add developers</b><span>1–few ZenDev developers join the client’s existing tech team. Client manages them.</span></div>
-<div class="step"><div class="k">2</div><b>Dedicated team</b><span>A whole remote team works mainly for one client. ZenDev handles the people; client sets priorities.</span></div>
-<div class="step"><div class="k">3</div><b>Whole project</b><span>Client gives ZenDev a defined project. ZenDev handles discovery → build → QA → launch.</span></div>
-<div class="step"><div class="k">4</div><b>Tech hub</b><span>Large remote department for one enterprise. ICA = 100+ person Sarajevo hub.</span></div>
+<div class="step"><div class="k">1</div><b>Staff augmentation</b><span>Senior ZenDev engineers embed into an existing client team, use the client’s tools and report into client tech leadership.</span></div>
+<div class="step"><div class="k">2</div><b>Dedicated team / unit</b><span>A stable nearshore unit works long-term on one client/domain. ZenDev can provide PM/team leadership and manage the unit’s output.</span></div>
+<div class="step"><div class="k">3</div><b>End-to-end project</b><span>Discovery → design → engineering → QA → deployment → handover / maintenance, with a defined budget, timeline and outcome.</span></div>
+<div class="step"><div class="k">4</div><b>Enterprise tech hub</b><span>Large dedicated capability in Bosnia. ICA is the clearest public proof: recruiting and operating a 100+ person hub.</span></div>
 </div>
-<h2 class="section">Useful facts</h2>
+<h2 class="section">What they can actually build</h2>
+<div class="grid">
+<article class="card"><h3>Enterprise software</h3><ul><li>Legacy modernisation.</li><li>New product lines.</li><li>Complex integrations.</li><li>SAP / ERP / PIM / APIs.</li><li>Maintenance and ongoing feature work.</li></ul></article>
+<article class="card"><h3>Data + AI</h3><ul><li>OCR / document extraction.</li><li>ML pipelines.</li><li>Agentic workflows.</li><li>Data platforms and analytics.</li><li>Automation inside operational workflows.</li></ul></article>
+<article class="card"><h3>Digital products</h3><ul><li>Web and mobile apps.</li><li>E-commerce / B2B commerce.</li><li>SaaS products / MVPs.</li><li>UX/UI.</li><li>IoT / property / logistics solutions.</li></ul></article>
+</div>
+<div class="source"><a href="https://www.zendev.se/services/software-development" target="_blank" rel="noopener">Source: ZenDev software development</a> · <a href="https://www.zendev.se/enterprise-software-development" target="_blank" rel="noopener">Enterprise development</a></div>
+<h2 class="section">Commercial positioning in one sentence</h2>
+<div class="quote">“ZenDev gives Nordic enterprises a Sweden-facing technology partner with scalable nearshore engineering in Bosnia — from one embedded senior engineer through to a dedicated long-term technology hub — while the client keeps ownership of strategy, IP, repositories and architecture.”</div>
+</section>
+
+<section id="proof" class="tab">
+<div class="note"><b>Separate strong evidence from marketing logos.</b> This matters when you are sitting in front of a CIO and saying “we already do this for companies like you”.</div>
+<table>
+<thead><tr><th>Company</th><th>Evidence level</th><th>What ZenDev publicly shows</th><th>How safely to use it</th></tr></thead>
+<tbody>
+<tr><td><b>ICA</b></td><td><span class="pill p-confirm">CONFIRMED CURRENT</span></td><td>IT Country Partner in Bosnia &amp; Herzegovina; dedicated Sarajevo hub; 100+ target; work across retail, banking and insurance.</td><td>Lead enterprise proof — but ask Nikola exactly what sales can disclose and which outcomes can be quantified.</td></tr>
+<tr><td><b>Kalmar / Cargotec</b></td><td><span class="pill p-confirm">CONFIRMED ONGOING</span></td><td>ZenDev says Cargotec has worked with them for 7 years and they are “still building with them today”. Public case: commissioning/mobile app, 17 languages, 103% efficiency improvement claim.</td><td>Strong named industrial/logistics reference.</td></tr>
+<tr><td><b>Arvid Nilsson</b></td><td><span class="pill p-confirm">CONFIRMED LONG-TERM</span></td><td>Magento/B2B commerce with SAP + PIM and 20+ custom APIs; indexing reduced from days to ~2 minutes. ZenDev says the relationship is 5+ years / still a client.</td><td>Strong B2B commerce + integration reference.</td></tr>
+<tr><td><b>Greenfee365</b></td><td><span class="pill p-case">NAMED CASE</span></td><td>Booking/payment platform work, integrations and performance/UX improvements; testimonial shown on ZenDev site.</td><td>Use as named case; do not automatically call it current without confirmation.</td></tr>
+<tr><td><b>Meela Health</b></td><td><span class="pill p-case">NAMED CASE</span></td><td>Platform work for therapist matching; ZenDev links the product to a €2.6m seed round.</td><td>Useful product / health-tech proof, not an ICA-style enterprise reference.</td></tr>
+<tr><td><b>Northerner</b></td><td><span class="pill p-case">NAMED CASE</span></td><td>E-commerce platform integrations, APIs and operational automation.</td><td>Named e-commerce proof.</td></tr>
+<tr><td><b>Zynka / Familjehem Göteborg / Hidroxa / others</b></td><td><span class="pill p-case">NAMED CASES</span></td><td>Public project/case material across property, mobile, e-commerce and own products.</td><td>Good breadth; qualify whether current before saying “client today”.</td></tr>
+<tr><td><b>Volvo / Ericsson / IKEA / Emerson / SKF</b></td><td><span class="pill p-logo">TRUSTED-BY LOGO</span></td><td>Logos appear on ZenDev pages. Some pages also state logistics is “trusted by Volvo, Cargotec and Emerson”.</td><td><b>Do not imply a current active direct engagement</b> unless Nikola confirms the relationship and scope.</td></tr>
+</tbody>
+</table>
+<div class="source"><a href="https://www.zendev.se/projects" target="_blank" rel="noopener">Source: projects</a> · <a href="https://www.zendev.se/industries/logistics-and-transportation" target="_blank" rel="noopener">Logistics evidence</a> · <a href="https://www.zendev.se/services/software-development" target="_blank" rel="noopener">Software development evidence</a></div>
+<div class="good"><strong>Key sales point:</strong> ICA should become the anchor case for large-enterprise outreach. Cargotec and Arvid Nilsson then prove that ZenDev can also start smaller, deliver something concrete and remain embedded for years.</div>
+</section>
+
+<section id="outreach" class="tab">
+<div class="note"><b>Your instinct is right:</b> reaching an ICA-sized enterprise is hard. The challenge is not finding thousands of prospects; it is identifying a small number of accounts with the right trigger, reaching the correct senior buyer, surviving vendor/procurement scrutiny and giving them a credible reason to change.</div>
+<h2 class="section">What an ICA-like target should look like</h2>
 <div class="grid4">
-<article class="card"><h3>Company</h3><ul><li>Founded 2016.</li><li>100+ people.</li><li>Gothenburg + Bosnia.</li><li>ISO 27001 / 9001.</li></ul></article>
-<article class="card"><h3>ICA</h3><ul><li>ZenDev = ICA IT Country Partner for Bosnia & Herzegovina.</li><li>100+ person dedicated hub.</li><li>Retail, banking, insurance.</li></ul><div class="key green">Strong enterprise proof.</div></article>
-<article class="card"><h3>How clients keep control</h3><ul><li>Client owns code + repo + docs.</li><li>Can bring work in-house later.</li><li>ZenDev says no lock-in.</li></ul></article>
-<article class="card"><h3>Financial sense-check</h3><ul><li>Bosnian operating company reported 2025 revenue KM 7.789m.</li><li>EBITDA KM 1.275m.</li><li>Swedish AB is mainly sales/front-end.</li></ul><div class="key green">Looks like a real operating business, not just a tiny agency.</div></article>
+<article class="card"><h3>Scale</h3><ul><li>Large Nordic / European enterprise.</li><li>Substantial internal IT/product organisation.</li><li>Multiple business units / digital products.</li><li>Enough demand to justify 5–100+ external engineers.</li></ul></article>
+<article class="card"><h3>Trigger</h3><ul><li>Hiring bottleneck.</li><li>Large transformation / modernisation roadmap.</li><li>Legacy systems or integration backlog.</li><li>New data/AI/product programme.</li><li>Pressure to improve delivery economics.</li></ul></article>
+<article class="card"><h3>Best buyers</h3><ul><li>CIO / CTO.</li><li>VP / Director Engineering.</li><li>Head of Software / Digital.</li><li>Head of Data / Platform for specialist work.</li><li>Strategic sourcing / procurement once interest exists.</li></ul></article>
+<article class="card"><h3>What they need to believe</h3><ul><li>ZenDev can recruit quality at scale.</li><li>Security / GDPR / governance are enterprise-ready.</li><li>Team integrates culturally and operationally.</li><li>They keep IP and control.</li><li>ZenDev will still be there in 5 years.</li></ul></article>
 </div>
+<h2 class="section">The outreach motion that fits you</h2>
+<div class="flow">
+<div class="step"><div class="k">1</div><b>Build a finite account list</b><span>Prioritise sectors already evidenced: retail, banking/insurance, manufacturing/logistics, B2B commerce and complex digital operations.</span></div>
+<div class="step"><div class="k">2</div><b>Map the right decision-maker</b><span>Find the person who owns engineering capacity / transformation / digital delivery — not a generic marketing contact.</span></div>
+<div class="step"><div class="k">3</div><b>Direct email + LinkedIn</b><span>Personalised email as the primary professional channel, LinkedIn connection/message as a second route and profile-validation layer.</span></div>
+<div class="step"><div class="k">4</div><b>Lead with relevant proof</b><span>“We are building a dedicated 100+ person Sarajevo hub for ICA” is far stronger than generic “we provide software developers”.</span></div>
+</div>
+<h2 class="section">How ICA should be turned into a repeatable case</h2>
+<div class="checks">
+<div class="check"><b>Origin:</b> Was ICA inbound, referral, founder network, social selling, direct outbound or existing relationship?</div>
+<div class="check"><b>First buyer:</b> Who first engaged — CIO/CTO, engineering leader, sourcing, HR/talent, another sponsor?</div>
+<div class="check"><b>Initial wedge:</b> Did it begin with a few roles / project and expand, or start as a country-hub strategy?</div>
+<div class="check"><b>Sales cycle:</b> How long from first conversation to signed agreement? What procurement/security gates were involved?</div>
+<div class="check"><b>Proof rights:</b> What numbers, names, outcomes and quotes can sales use publicly in outbound?</div>
+<div class="check"><b>Repeatability:</b> Which 20–50 enterprises have the same structural problem ICA had?</div>
+</div>
+<div class="warn"><strong>LinkedIn posting:</strong> 611k impressions can support awareness, but it is not the same thing as enterprise acquisition. For your role, ask for the hard funnel: how many target accounts, senior conversations, qualified opportunities and signed customers came from social content versus direct outreach / referrals?</div>
+<div class="good"><strong>Your likely value:</strong> turning this from broad social visibility into a disciplined enterprise account programme — exact companies, exact buying centres, tailored proof, direct multichannel contact, follow-up and CRM governance.</div>
 </section>
 
 <section id="whybuy" class="tab">
-<div class="note"><b>Your confusion is fair:</b> a large company often <b>can</b> do this itself. The reason to use ZenDev is usually <b>speed, capacity, skills, flexibility or cost</b> — not because the client has no tech team.</div>
-<h2 class="section">Simple answer</h2>
-<div class="quote">The client keeps its own tech leaders and core team. ZenDev adds extra people / a specialist team / a whole project team when the client does not want to hire everything itself.</div>
-<h2 class="section">Why use ZenDev if you already have developers?</h2>
+<div class="note"><b>Why would ICA not just hire these people itself?</b> Because establishing and scaling a foreign engineering operation carries recruitment, legal, HR, payroll, office, management and retention overhead. ZenDev already has that infrastructure.</div>
 <div class="grid">
-<article class="card"><h3>1. Team is already full</h3><ul><li>Internal developers are busy with core systems.</li><li>New project needs to start now.</li><li>ZenDev runs work in parallel.</li></ul><div class="key">Example: keep core team on daily business; ZenDev builds the new app.</div></article>
-<article class="card"><h3>2. Hiring is too slow</h3><ul><li>Recruiting 10–20 senior engineers can take months.</li><li>ZenDev says it can show vetted people within 48h and onboard in 2–3 weeks.</li></ul><div class="key amber">Company claim — but the logic is clear: buy speed.</div></article>
-<article class="card"><h3>3. Need skills only for a while</h3><ul><li>Specialist mobile / integration / AI / legacy work.</li><li>May not justify permanent hires.</li><li>Bring skills in, finish work, reduce team later.</li></ul></article>
-<article class="card"><h3>4. Flexible capacity</h3><ul><li>Need 5 people now, maybe 15 later.</li><li>Permanent hiring is harder to reverse.</li><li>External team can scale up/down more easily.</li></ul></article>
-<article class="card"><h3>5. Cost</h3><ul><li>Bosnia has lower employment cost than Sweden.</li><li>ZenDev handles payroll, HR, equipment etc.</li><li>ZenDev claims ~40–50% lower total cost vs hiring a senior developer in Sweden.</li></ul><div class="key amber">Their claim, not independently verified here.</div></article>
-<article class="card"><h3>6. Build a foreign tech hub</h3><ul><li>ICA wants a 100+ person team in Sarajevo.</li><li>Doing that alone means local recruitment, contracts, payroll, HR, office, management setup.</li><li>ZenDev already has that infrastructure.</li></ul><div class="key green">This is probably the clearest reason ICA needs a partner.</div></article>
+<article class="card"><h3>1. Hiring speed + talent access</h3><ul><li>ZenDev recruits locally in Bosnia.</li><li>It says vetted CVs can be shown quickly and teams can be built in phases.</li><li>ICA case demonstrates 50+ hires in six months.</li></ul></article>
+<article class="card"><h3>2. Lower operating cost</h3><ul><li>Bosnian employment economics are lower than Sweden.</li><li>Client avoids direct payroll, pension, recruitment fees and office setup for these hires.</li><li>Cost is a feature — but should not be the only sales story.</li></ul></article>
+<article class="card"><h3>3. Same time zone / proximity</h3><ul><li>Full working-day overlap with Sweden.</li><li>Short travel for workshops/onboarding.</li><li>Nearshore rather than distant offshore model.</li></ul></article>
+<article class="card"><h3>4. Flexible capacity</h3><ul><li>Scale teams as roadmap changes.</li><li>Avoid hiring every specialist permanently.</li><li>Reduce or transition with notice rather than carrying permanent headcount.</li></ul></article>
+<article class="card"><h3>5. Enterprise controls stay internal</h3><ul><li>Client owns code, repo, IP and architecture decisions.</li><li>Final approval on hires.</li><li>Can bring work in-house later.</li></ul></article>
+<article class="card"><h3>6. Delivery maturity</h3><ul><li>ISO 27001 / ISO 9001.</li><li>GDPR processes.</li><li>Long client relationships and enterprise integration experience.</li><li>Gothenburg leadership for Swedish buyers.</li></ul></article>
 </div>
-<h2 class="section">Important: they do NOT necessarily replace the in-house team</h2>
-<div class="checks">
-<div class="check"><b>ZenDev says about half its engagements work alongside existing in-house teams.</b> Their people join the client’s tools, stand-ups and tech leadership.</div>
-<div class="check"><b>Client keeps ownership.</b> Code, repo, docs and infrastructure remain with the client, so work can later move back in-house.</div>
-</div>
-<div class="good"><strong>Easy way to think about it:</strong> ICA may keep strategy, architecture, product ownership and core technology leadership internally — while ZenDev builds and runs a large delivery team in Bosnia. Public material does not tell us the exact ICA split, so ask Nikola how it works in practice.</div>
+<div class="good"><strong>Easy way to think about it:</strong> ICA retains the “brain” and ownership of its technology organisation, while ZenDev supplies and operates a substantial part of the scalable engineering capacity in Bosnia.</div>
 </section>
 
 <section id="future" class="tab">
-<div class="note"><b>My view:</b> ZenDev has a decent future if it moves up the value chain. The risky version is simply selling developer headcount.</div>
+<div class="note"><b>AI is the strategic test.</b> The more ZenDev is paid merely for developer headcount, the more AI productivity can pressure the model. The more it is paid for enterprise outcomes, specialist capability and operating a trusted delivery unit, the stronger the defence.</div>
 <div class="grid4">
-<article class="card"><h3>🟢 Best</h3><ul><li>Enterprise tech partner.</li><li>Owns outcomes.</li><li>Large strategic accounts.</li><li>AI-enabled delivery.</li></ul><div class="key green">Good future.</div></article>
-<article class="card"><h3>🟢 Good</h3><ul><li>Dedicated teams.</li><li>Long client relationships.</li><li>Deep domain knowledge.</li></ul><div class="key green">Harder to replace than a freelancer.</div></article>
-<article class="card"><h3>🟠 Watch</h3><ul><li>Normal outsourcing.</li><li>Still viable.</li><li>But AI means smaller teams / more output per engineer.</li></ul></article>
-<article class="card"><h3>🔴 Weak</h3><ul><li>“Need 5 Java developers?”</li><li>Price + headcount sale.</li><li>Easy to compare with many competitors.</li></ul><div class="key red">Most exposed to AI + price pressure.</div></article>
+<article class="card"><h3>🟢 Strongest future</h3><ul><li>Strategic enterprise partner.</li><li>Dedicated tech hubs / units.</li><li>Owns defined outcomes.</li><li>AI-enabled delivery.</li><li>Deep domain knowledge.</li></ul><div class="key green">Harder to commoditise.</div></article>
+<article class="card"><h3>🟢 Good future</h3><ul><li>Long-term embedded teams.</li><li>Legacy/integration complexity.</li><li>Regulated sectors.</li><li>Data / platform / AI work.</li></ul><div class="key green">Trust + context matter.</div></article>
+<article class="card"><h3>🟠 Pressure</h3><ul><li>Generic staff augmentation.</li><li>Billing primarily per developer/month.</li><li>Little proprietary expertise.</li><li>Easy vendor substitution.</li></ul><div class="key amber">AI raises output per engineer, so clients may need fewer seats.</div></article>
+<article class="card"><h3>🔴 Weakest future</h3><ul><li>Commodity “cheap developer” pitch.</li><li>Competing mainly on hourly rate.</li><li>No enterprise proof / vertical expertise.</li><li>No ownership of business outcomes.</li></ul><div class="key red">Race to the bottom.</div></article>
 </div>
-<h2 class="section">AI in one line</h2>
-<div class="flow">
-<div class="step"><div class="k">OLD</div><b>Sell people</b><span>More developers = more revenue.</span></div>
-<div class="step"><div class="k">NOW</div><b>AI raises output</b><span>One strong developer can do more.</span></div>
-<div class="step"><div class="k">BETTER</div><b>Sell results</b><span>Smaller team + AI + clear business outcome.</span></div>
-<div class="step"><div class="k">BEST</div><b>Sell transformation</b><span>Help client decide what to build, automate and change.</span></div>
-</div>
-<div class="warn"><strong>Question:</strong> “If customers can get more done with smaller AI-enabled teams, how does that change ZenDev’s business model over the next 3–5 years?”</div>
+<div class="quote" style="margin-top:10px">Question for Nikola: “If AI lets a client deliver the same roadmap with materially fewer engineers, how do you want ZenDev to make more money five years from now — bigger managed outcomes, more strategic hubs, IP/products, specialist AI capability, or something else?”</div>
 </section>
 
 <section id="fit" class="tab">
-<div class="note"><b>Verified opportunity:</b> no formal vacancy yet. Nikola said ZenDev plans to expand its growth team in Q4 / Q1 2027 and your background could fit.</div>
 <div class="grid">
-<article class="card"><h3>🟢 Strong fit</h3><ul><li>Enterprise new business.</li><li>Nordics / Europe.</li><li>Complex consultative deals.</li><li>Strategic partnerships.</li><li>You still personally prospect + close.</li><li>Autonomy.</li></ul></article>
-<article class="card"><h3>🟠 Need to understand</h3><ul><li>How much is social selling?</li><li>Sweden-only or international?</li><li>How technical must you be?</li><li>Targets / KPIs?</li><li>Who owns pipeline?</li></ul></article>
-<article class="card"><h3>🔴 Poor fit</h3><ul><li>Mostly LinkedIn content / marketing.</li><li>High-volume body-shopping.</li><li>Pure account management.</li><li>Fluent Swedish required.</li><li>Activity-policed SDR culture.</li></ul></article>
+<article class="card"><h3>Your 20-second story</h3><div class="quote">“I’ve spent nearly 30 years in commercial roles, with the last decade in B2B technology. I’m still very hands-on: target accounts, outreach, discovery, demos, proposals, negotiation and close. The CEO title came from a specific turnaround-and-sale mandate. My next move is deliberately back into a permanent hands-on international sales role.”</div></article>
+<article class="card"><h3>Leaving Smartvel</h3><div class="quote">“My role with Smartvel is coming to an end following the acquisition and transition. I’m still working there now and expect to finish at the end of October. I’m using the timing to move into a permanent hands-on commercial role.”</div><div class="key amber">Availability: early November is the natural point.</div></article>
+<article class="card"><h3>What you bring that is relevant here</h3><ul><li>International B2B new business.</li><li>Complex account selling.</li><li>Hands-on prospecting, not just management.</li><li>Direct email + LinkedIn multichannel outreach.</li><li>CRM/process discipline.</li><li>C-level conversations and full-cycle ownership.</li></ul><div class="key purple">Position yourself around creating new enterprise logos, not around being a “LinkedIn creator”.</div></article>
 </div>
-</section>
-
-<section id="answers" class="tab">
-<div class="note"><b>Use points, not scripts.</b> Keep answers short and conversational.</div>
-<div class="grid2">
-<article class="card"><h3>Tell me about yourself</h3><ul><li>Nearly 30 years commercial.</li><li>Last decade B2B tech.</li><li>Hands-on full-cycle international sales.</li><li>Built outbound + sales process.</li><li>CEO = turnaround / sale mandate, not career direction.</li></ul></article>
-<article class="card"><h3>Why ZenDev?</h3><ul><li>Local Gothenburg company.</li><li>International delivery model.</li><li>Real enterprise proof via ICA.</li><li>Interesting growth stage.</li><li>You like building new business, not just managing accounts.</li></ul></article>
-<article class="card"><h3>What are you doing now?</h3><ul><li>Still working at Smartvel.</li><li>~80% hands-on international new business.</li><li>Prospecting → discovery → demo → proposal → negotiation → contract → close.</li></ul></article>
-<article class="card"><h3>Why leaving?</h3><div class="quote">“My role is coming to an end following the acquisition and transition. I’m still working there now and expect to finish at the end of October.”</div></article>
-<article class="card"><h3>Can you sell software services?</h3><ul><li>You do not need to be the engineer.</li><li>You need to understand the business problem.</li><li>Bring technical people in when needed.</li><li>You have 10 years selling B2B tech to senior buyers.</li></ul></article>
-<article class="card"><h3>Best proof</h3><ul><li>Precisely: built proactive global new-business process.</li><li>ArrivalGuides: +320% qualified opportunities / meetings.</li><li>Personally carried opportunities through to signature.</li></ul></article>
-</div>
+<h2 class="section">A useful commercial point to make</h2>
+<div class="quote">“What interests me is not blasting thousands of generic prospects or posting every day for impressions. With a proposition like ICA, I’d want to identify the finite group of enterprises with the same structural problem, map the actual buying centre, then reach those people directly by email and LinkedIn with a highly relevant reason to talk.”</div>
 </section>
 
 <section id="questions" class="tab">
-<div class="note"><b>Pick 5–6.</b> Let the conversation flow.</div>
-<div class="grid">
-<article class="card"><h3>1. Different growth strategy</h3><div class="quote">“You said ZenDev has developed a slightly different growth strategy. What do you mean by different?”</div></article>
-<article class="card"><h3>2. Why hire?</h3><div class="quote">“What do you want the next person in growth to actually solve?”</div></article>
-<article class="card"><h3>3. My day-to-day?</h3><div class="quote">“Would I mainly create pipeline, close new business, build partnerships, work strategic accounts — or something else?”</div></article>
-<article class="card"><h3>4. International?</h3><div class="quote">“Where should the next growth come from: Sweden, Nordics or wider Europe?”</div></article>
-<article class="card"><h3>5. Why clients buy</h3><div class="quote">“For a large company that already has its own tech team, what normally makes them decide to use ZenDev rather than build everything internally?”</div><div class="key green">Ask this. It answers your own concern.</div></article>
-<article class="card"><h3>6. ICA</h3><div class="quote">“With ICA, what does ZenDev own and what stays with ICA’s internal tech organisation?”</div><div class="key green">Very useful real example.</div></article>
-<article class="card"><h3>7. AI</h3><div class="quote">“If AI means clients need smaller development teams, how does that change ZenDev’s model over the next 3–5 years?”</div></article>
-<article class="card"><h3>8. Competition</h3><div class="quote">“Why does a client choose ZenDev over another nearshore partner or a large Nordic consultancy?”</div></article>
-<article class="card"><h3>9. Success</h3><div class="quote">“How would you measure success for the person you bring into growth?”</div></article>
-<article class="card"><h3>10. Swedish</h3><div class="quote">“How important is professional Swedish for the role you have in mind?”</div></article>
-<article class="card"><h3>11. Team</h3><div class="quote">“How do you, Senad and Haris split growth today, and where would the next person fit?”</div></article>
-<article class="card"><h3>12. Next step</h3><div class="quote">“If we both think there could be a fit, what would the next step be?”</div></article>
+<div class="note"><b>Prioritise the bold questions.</b> They will tell you whether this is genuinely the sort of role you want.</div>
+<div class="grid2">
+<article class="card"><h3>Growth strategy</h3><ul><li><b>“When you say your growth strategy is slightly different, what exactly do you mean?”</b></li><li><b>“Is the new role primarily expected to create enterprise pipeline and close new logos, or to build visibility through social/content?”</b></li><li>“What proportion of pipeline today comes from founder network/referrals, LinkedIn content, inbound and proactive outbound?”</li><li>“What would I personally own from first target account through to signature?”</li></ul></article>
+<article class="card"><h3>ICA — the crucial case</h3><ul><li><b>“How did ICA actually begin — who found whom?”</b></li><li>“Who was the first internal sponsor at ICA?”</li><li>“What was the first scope, and how did it become a 100+ person hub?”</li><li>“How long was the sales cycle and what procurement/security barriers had to be cleared?”</li><li>“What parts of the ICA story are we allowed to use directly in sales outreach?”</li></ul></article>
+<article class="card"><h3>Target market</h3><ul><li><b>“If I started tomorrow, which 20 accounts would you most want me to open?”</b></li><li>“Which verticals have the strongest win rate and margin?”</li><li>“Who is normally the economic buyer: CTO/CIO, engineering, digital, sourcing?”</li><li>“What size first engagement is realistic for a new enterprise customer?”</li></ul></article>
+<article class="card"><h3>Customers + proof</h3><ul><li>“Which named logos on the website are active customers today?”</li><li>“Which accounts can I use as references without restrictions?”</li><li>“How concentrated is revenue in the largest clients, particularly ICA?”</li><li>“What are the best quantified business outcomes we can put in front of a buyer?”</li></ul></article>
+<article class="card"><h3>KPIs + economics</h3><ul><li><b>“How would you measure me in the first 6–12 months?”</b></li><li>“Meetings, qualified pipeline, new logos, ARR/revenue, gross margin — what matters most?”</li><li>“What is a normal enterprise sales cycle?”</li><li>“How is commission structured for large multi-year accounts?”</li></ul></article>
+<article class="card"><h3>AI + business model</h3><ul><li><b>“If customers need fewer engineers because of AI, how does ZenDev’s model evolve?”</b></li><li>“Are you deliberately moving from selling capacity toward owning outcomes / managed delivery?”</li><li>“Where do your own products fit into the long-term model?”</li></ul></article>
 </div>
 </section>
 
 <section id="plan" class="tab">
-<h2 class="section">Simple 60-minute flow</h2>
+<div class="note"><b>Keep the meeting conversational.</b> You do not need to prove you know every technical term. Your job is to understand the commercial engine and let Nikola see how you think about growth.</div>
 <div class="flow">
-<div class="step"><div class="k">0–10</div><b>Let Nikola talk</b><span>Why now? Different growth strategy?</span></div>
-<div class="step"><div class="k">10–20</div><b>Your story</b><span>Hands-on international sales; CEO mandate explained quickly.</span></div>
-<div class="step"><div class="k">20–40</div><b>Business model</b><span>Why clients buy, ICA, international growth, AI.</span></div>
-<div class="step"><div class="k">40–60</div><b>Fit + next step</b><span>What role? What would you own? Timing?</span></div>
+<div class="step"><div class="k">0–10 min</div><b>Let Nikola explain</b><span>His growth strategy, why he replied to you, what he is considering building.</span></div>
+<div class="step"><div class="k">10–25 min</div><b>Understand ICA</b><span>How they won it, buyer, timeline, model, what is repeatable.</span></div>
+<div class="step"><div class="k">25–40 min</div><b>Connect your experience</b><span>Hands-on target-account selling, international new business, direct outreach, full cycle and CRM discipline.</span></div>
+<div class="step"><div class="k">40–55 min</div><b>Pressure-test the role</b><span>KPIs, pipeline model, social vs outbound, AI, target market, economics.</span></div>
 </div>
-<h2 class="section">Before you leave, know these</h2>
-<div class="checks">
-<div class="check"><b>Role:</b> what would you actually do?</div>
-<div class="check"><b>Market:</b> Sweden or international?</div>
-<div class="check"><b>Sales model:</b> strategic enterprise or body-shopping?</div>
-<div class="check"><b>AI:</b> does Nikola have a convincing future view?</div>
-<div class="check"><b>Language:</b> is Swedish a real requirement?</div>
-<div class="check"><b>Next step:</b> who / when / what happens next?</div>
-</div>
+<div class="good"><strong>Closing thought:</strong> If they want someone to systematically build the next ICA/Cargotec-type relationships, say clearly that this is the part that interests you. If success is mainly daily LinkedIn posting and impressions, establish that now rather than discovering it later.</div>
 </section>
 
 <section id="notes" class="tab">
-<div class="note"><b>Quick notes.</b> Saves in this browser.</div>
-<textarea id="callNotes" placeholder="ZENDEV — 16 SEP 2026\n\nDifferent growth strategy:\n\nWhat role are they thinking?\n\nWhy do big clients use ZenDev vs internal team?\n\nICA: what stays in-house / what does ZenDev own?\n\nMain offer I would sell:\n\nSweden / Nordics / Europe:\n\nAI: Nikola's view:\n\nStrategic enterprise or developer headcount?\n\nPipeline source:\n\nTargets / KPIs:\n\nSwedish requirement:\n\nWhat Nikola liked about me:\n\nConcerns / gaps:\n\nNext step + date:\n"></textarea>
-<div class="actions"><button id="copyNotes" class="btn primary">Copy notes</button><button id="clearNotes" class="btn">Clear</button><span id="saveState" class="small">Saved locally</span></div>
+<div class="note"><b>Meeting notes.</b> Saved locally in this browser as you type.</div>
+<textarea id="notesBox" placeholder="Nikola said…\n\nGrowth strategy…\n\nICA origin / buyer / sales cycle…\n\nRole ownership + KPIs…\n\nNext step…"></textarea>
+<div class="actions"><button class="btn primary" id="saveNotes">Save notes</button><button class="btn" id="clearNotes">Clear</button><span class="small" id="saveState"></span></div>
 </section>
 
-<section style="margin-top:16px"><details><summary style="cursor:pointer;font-weight:800;color:var(--muted)">Sources / fact notes</summary><div class="card" style="margin-top:8px"><ul>
-<li><a href="https://www.zendev.se/about" target="_blank">ZenDev About</a> — company size, locations, ICA partnership.</li>
-<li><a href="https://www.zendev.se/services/software-development" target="_blank">ZenDev Software Development</a> — works with existing in-house teams; client owns code / repo / docs; project model.</li>
-<li><a href="https://www.zendev.se/staff-augmentation-services" target="_blank">ZenDev Staff Augmentation</a> — 2–3 week onboarding claim, hybrid in-house + Bosnia setup.</li>
-<li><a href="https://www.zendev.se/nearshore-development-teams" target="_blank">ZenDev Nearshore Teams</a> — dedicated team model and what ZenDev handles.</li>
-<li><a href="https://ica.zendev.se/" target="_blank">ZenDev × ICA</a> — 100+ person Sarajevo hub / IT Country Partner.</li>
-<li><a href="https://www.zendev.se/sv/resurskonsultning" target="_blank">ZenDev Swedish staff augmentation page</a> — company claim of roughly 40–50% lower total cost than hiring a senior developer in Sweden.</li>
-</ul><div class="small">Internal evidence also checked: current MASTER CV, live Gmail thread, Calendar event and canonical Job-Hunting tracker. No formal role specification exists yet. Where the page discusses future business risk or likely ICA work split, it is clearly framed as assessment / a question to verify with Nikola.</div></div></details></section>
-<footer>ZenDev prep • short-hand version • facts separated from questions / assessment</footer>
+<footer>Private meeting-prep page • Research refreshed 16 Sep 2026 • Public facts are distinguished from inference; confirm commercial/confidential detail directly with Nikola.</footer>
 </main>
 <script>
-const buttons=[...document.querySelectorAll('.tabbtn')],tabs=[...document.querySelectorAll('.tab')];buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));tabs.forEach(t=>t.classList.remove('active'));btn.classList.add('active');const t=document.getElementById(btn.dataset.tab);if(t)t.classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}));
-const notes=document.getElementById('callNotes'),key='zendev-meeting-notes-2026-09-16';try{notes.value=localStorage.getItem(key)||''}catch(e){}notes.addEventListener('input',()=>{try{localStorage.setItem(key,notes.value);document.getElementById('saveState').textContent='Saved locally'}catch(e){document.getElementById('saveState').textContent='Could not save'}});document.getElementById('copyNotes').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(notes.value);document.getElementById('copyNotes').textContent='Copied';setTimeout(()=>document.getElementById('copyNotes').textContent='Copy notes',1200)}catch(e){notes.select()}});document.getElementById('clearNotes').addEventListener('click',()=>{if(confirm('Clear saved ZenDev notes?')){notes.value='';try{localStorage.removeItem(key)}catch(e){}}});
+const buttons=[...document.querySelectorAll('.tabbtn')];
+const tabs=[...document.querySelectorAll('.tab')];
+function show(id){tabs.forEach(t=>t.classList.toggle('active',t.id===id));buttons.forEach(b=>b.classList.toggle('active',b.dataset.tab===id));history.replaceState(null,'','#'+id);}
+buttons.forEach(b=>b.addEventListener('click',()=>show(b.dataset.tab)));
+const initial=location.hash.slice(1);if(initial&&document.getElementById(initial))show(initial);
+const notes=document.getElementById('notesBox');
+const key='zendev-meeting-notes-2026-09-16';
+notes.value=localStorage.getItem(key)||'';
+function save(){localStorage.setItem(key,notes.value);const s=document.getElementById('saveState');s.textContent='Saved '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});}
+notes.addEventListener('input',()=>{localStorage.setItem(key,notes.value)});
+document.getElementById('saveNotes').addEventListener('click',save);
+document.getElementById('clearNotes').addEventListener('click',()=>{if(confirm('Clear meeting notes?')){notes.value='';localStorage.removeItem(key);document.getElementById('saveState').textContent='Cleared';}});
 </script>
 </body>
 </html>
