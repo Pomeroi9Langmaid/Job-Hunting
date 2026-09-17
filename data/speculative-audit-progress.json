@@ -22,9 +22,22 @@
     "Stockholm": 0,
     "total": 109
   },
+  "staged_blocks": [
+    {
+      "region": "Gothenburg",
+      "start_row": 91,
+      "end_row": 120,
+      "path": "data/speculative-audit-blocks/gothenburg-091-120.csv",
+      "status": "classified_and_saved_pending_master_merge"
+    }
+  ],
   "next_cursor": {
     "region": "Gothenburg",
     "source_row": 91
   },
-  "operating_rule": "Process each source row once in source order. Record a terminal or governed hold status in data/speculative-company-audit.csv before advancing the cursor. For any potentially viable international company, complete live GitHub and Gmail history checks before INTERNATIONAL - READY or INTERNATIONAL - NEEDS CONTACT. Never infer unsent from absence in an old target queue."
+  "staged_next_cursor": {
+    "region": "Gothenburg",
+    "source_row": 121
+  },
+  "operating_rule": "Process each source row once in source order. Record a terminal or governed hold status in data/speculative-company-audit.csv before advancing the committed cursor. A staged block must be merged into the master audit before it is counted as completed. For any potentially viable international company, complete live GitHub and Gmail history checks before INTERNATIONAL - READY or INTERNATIONAL - NEEDS CONTACT. Never infer unsent from absence in an old target queue."
 }
