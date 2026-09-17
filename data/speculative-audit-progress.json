@@ -18,13 +18,13 @@
   },
   "completed": {
     "Kungälv": 19,
-    "Gothenburg": 60,
+    "Gothenburg": 90,
     "Stockholm": 0,
-    "total": 79
+    "total": 109
   },
   "next_cursor": {
     "region": "Gothenburg",
-    "source_row": 61
+    "source_row": 91
   },
   "operating_rule": "Process each source row once in source order. Record a terminal or governed hold status in data/speculative-company-audit.csv before advancing the cursor. For any potentially viable international company, complete live GitHub and Gmail history checks before INTERNATIONAL - READY or INTERNATIONAL - NEEDS CONTACT. Never infer unsent from absence in an old target queue."
 }
