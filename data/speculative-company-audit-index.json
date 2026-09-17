@@ -3,85 +3,20 @@
   "updated": "2026-09-17",
   "storage_model": "append_only_blocks",
   "canonical_union": [
-    {
-      "path": "data/speculative-company-audit.csv",
-      "coverage": {
-        "Kungälv": [1, 19],
-        "Gothenburg": [1, 90]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-091-120.csv",
-      "coverage": {
-        "Gothenburg": [91, 120]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-121-150.csv",
-      "coverage": {
-        "Gothenburg": [121, 150]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-151-180.csv",
-      "coverage": {
-        "Gothenburg": [151, 180]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-181-210.csv",
-      "coverage": {
-        "Gothenburg": [181, 210]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-211-230.csv",
-      "coverage": {
-        "Gothenburg": [211, 230]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-231-240.csv",
-      "coverage": {
-        "Gothenburg": [231, 240]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-241-250.csv",
-      "coverage": {
-        "Gothenburg": [241, 250]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-251-255.csv",
-      "coverage": {
-        "Gothenburg": [251, 255]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-256-260.csv",
-      "coverage": {
-        "Gothenburg": [256, 260]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-261-265.csv",
-      "coverage": {
-        "Gothenburg": [261, 265]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-266-270.csv",
-      "coverage": {
-        "Gothenburg": [266, 270]
-      }
-    },
-    {
-      "path": "data/speculative-audit-blocks/gothenburg-271-275.csv",
-      "coverage": {
-        "Gothenburg": [271, 275]
-      }
-    }
+    {"path":"data/speculative-company-audit.csv","coverage":{"Kungälv":[1,19],"Gothenburg":[1,90]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-091-120.csv","coverage":{"Gothenburg":[91,120]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-121-150.csv","coverage":{"Gothenburg":[121,150]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-151-180.csv","coverage":{"Gothenburg":[151,180]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-181-210.csv","coverage":{"Gothenburg":[181,210]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-211-230.csv","coverage":{"Gothenburg":[211,230]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-231-240.csv","coverage":{"Gothenburg":[231,240]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-241-250.csv","coverage":{"Gothenburg":[241,250]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-251-255.csv","coverage":{"Gothenburg":[251,255]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-256-260.csv","coverage":{"Gothenburg":[256,260]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-261-265.csv","coverage":{"Gothenburg":[261,265]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-266-270.csv","coverage":{"Gothenburg":[266,270]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-271-275.csv","coverage":{"Gothenburg":[271,275]}},
+    {"path":"data/speculative-audit-blocks/gothenburg-276-280.csv","coverage":{"Gothenburg":[276,280]}}
   ],
   "rule": "Treat the ordered union of the files above as the canonical audit ledger. New audit work should be written in small non-overlapping append-only block files and added to this index before advancing speculative-audit-progress.json. Never rescan a source row already covered by this index unless Andrew explicitly requests a re-audit."
 }
