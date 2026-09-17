@@ -1,0 +1,20 @@
+source_region,source_row,company,domain,city,audit_status,reason,history_status,contact_name,contact_title,direct_email,last_verified,next_action
+Kungälv,1,Sea IT,seait.com,Kungälv,IRRELEVANT / EXCLUDED,Specialist maritime ICT/cybersecurity; specialist-domain exclusion.,,,,,2026-09-17,No further action
+Kungälv,2,Oscar Medtec,oscarmedtec.se,Kungälv,IRRELEVANT / EXCLUDED,Medical/medtech supplier; specialist medtech exclusion.,,,,,2026-09-17,No further action
+Kungälv,3,Ergofast,ergofast.se,Kungälv,NATIONAL / NORDIC ONLY,Fastening/building supplier focused on Sweden/Norway; no broader international commercial remit verified.,,,,,2026-09-17,No further action unless international remit changes
+Kungälv,4,Kungälv's Energy,kungalvenergi.se,Kungälv,NATIONAL / NORDIC ONLY,Municipal utility focused on Kungälv; current role requires very good Swedish.,,,,,2026-09-17,No further action
+Kungälv,5,Indus Sweden,indus.se,Kungälv,NATIONAL / NORDIC ONLY,Swedish modular-premises business; current footprint is domestic Sweden.,,,,,2026-09-17,No further action unless export growth is verified
+Kungälv,6,Lecor Stålteknik,lecor.se,Kungälv,IRRELEVANT / EXCLUDED,Specialist steel-engineering business; technical-domain mismatch.,,,,,2026-09-17,No further action
+Kungälv,7,Kungälvsbostäder,kungalvsbostader.se,Kungälv,NATIONAL / NORDIC ONLY,Municipal/local housing company; no international sales remit.,,,,,2026-09-17,No further action
+Kungälv,8,Future Eyewear Group,future.se,Kungälv,ALREADY HANDLED,International company but already handled in current search.,Speculative outreach sent 2026-09-07; also applied in 2021,Peter Larsson,Nordic Sales Director,peter.larsson@future.se,2026-09-17,Do not re-contact without explicit history review
+Kungälv,9,Nordic Fastening Group Ab,nfgab.se,Kungälv,ALREADY HANDLED,International-capable industrial supplier but already contacted.,Speculative outreach sent 2026-08-05; OOO received,Jesper Johnsson,,jesper.johnsson@nfgab.se,2026-09-17,Do not duplicate; retain history
+Kungälv,10,UPS-teknik,ups-teknik.se,KUNGÄLV,NATIONAL / NORDIC ONLY,Swedish critical-power specialist; technical sales and no international expansion verified.,,,,,2026-09-17,No further action unless international remit is verified
+Kungälv,11,Lerøy,leroyseafood.com,Kungälv,IRRELEVANT / EXCLUDED,Very large global seafood group; large-corporate gate and no unusual autonomous commercial remit identified.,,,,,2026-09-17,No speculative outreach
+Kungälv,12,Duschprodukter Sweden,dpsgroup.se,Kungälv,ALREADY HANDLED,Internationally relevant local company but already contacted.,Speculative outreach sent 2026-08-03,Peter Lindenhall,Sales Manager,peter.lindenhall@dpsgroup.se,2026-09-17,Do not duplicate; retain history
+Kungälv,13,Autolane,autolane.se,Kungälv,NATIONAL / NORDIC ONLY,Local vehicle dealer; domestic transactional sales model.,,,,,2026-09-17,No further action
+Kungälv,14,Happy flow logistics,happyflowlogistics.com,Kungälv,IRRELEVANT / EXCLUDED,Very small logistics company and no proven international commercial platform suitable for senior permanent sales role.,,,,,2026-09-17,No further action
+Kungälv,15,Elkraftbyrån i Göteborg AB,elkraftbyran.se,Kode,IRRELEVANT / EXCLUDED,Highly technical electrical-engineering specialist.,,,,,2026-09-17,No further action
+Kungälv,16,Aristo,aristo.se,Kungälv,ALREADY HANDLED,International/export business but already contacted.,Speculative outreach sent 2026-09-04; Dan replied 2026-09-07 and retained CV,Dan Möller,Sales Manager / Export Sales,dan@aristo.se,2026-09-17,Do not duplicate; future-facing CV-retained history
+Kungälv,17,Hurtigs Bil,hurtigsbil.se,Kungälv,NATIONAL / NORDIC ONLY,Local vehicle dealership; no international remit.,,,,,2026-09-17,No further action
+Kungälv,18,JUSSILA BYGG AB,,Kungälv,NATIONAL / NORDIC ONLY,Local construction company; no international sales remit.,,,,,2026-09-17,No further action
+Kungälv,19,Fredkullaskolan,fredkullaskolan.se,Kungälv,IRRELEVANT / EXCLUDED,School/education provider; outside target commercial profile.,,,,,2026-09-17,No further action
