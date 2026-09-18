@@ -1,0 +1,6 @@
+source_region,source_row,company,domain,city,audit_status,reason,history_status,contact_name,contact_title,direct_email,last_verified,next_action
+Stockholm,221,"Klövern",,Stockholm,IRRELEVANT / EXCLUDED,"Real-estate company rather than an international product-led sales employer.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,222,"Affärshögskolan",,Stockholm,IRRELEVANT / EXCLUDED,"Education provider rather than a commercial international sales employer.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,223,"Mycronic PCB Assembly Solutions",,Stockholm,IRRELEVANT / EXCLUDED,"Specialist electronics-manufacturing technology operation inside a larger global group; deep technical and group-scale gates apply.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,224,"Arex Advisor",,Stockholm,IRRELEVANT / EXCLUDED,"Pharma commercialisation/advisory consultancy; specialist pharma-domain and consultancy gates apply.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,225,"Jobbsprånget",,Stockholm,IRRELEVANT / EXCLUDED,"Non-profit employment/integration programme rather than a commercial company.","","","","",2026-09-18,"No speculative outreach"
