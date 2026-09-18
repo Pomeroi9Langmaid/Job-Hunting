@@ -1,0 +1,6 @@
+source_region,source_row,company,domain,city,audit_status,reason,history_status,contact_name,contact_title,direct_email,last_verified,next_action
+Stockholm,216,"Nordic Angels",,Stockholm,IRRELEVANT / EXCLUDED,"Investor network/capital-market initiative rather than an operating product company with a permanent sales organisation.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,217,"Sales and Marketing higher education",,Stockholm,IRRELEVANT / EXCLUDED,"Education provider rather than a commercial international sales employer.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,218,"Beredskapslyftet",,Stockholm,IRRELEVANT / EXCLUDED,"Civic preparedness initiative rather than an operating commercial company.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,219,"HealthCap",,Stockholm,IRRELEVANT / EXCLUDED,"Life-science venture-capital investor rather than an operating product/service company.","","","","",2026-09-18,"No speculative outreach"
+Stockholm,220,"BioArctic",,Stockholm,IRRELEVANT / EXCLUDED,"Biopharmaceutical company; pharma/life-science exclusion applies.","","","","",2026-09-18,"No speculative outreach"
