@@ -1,0 +1,6 @@
+source_region,source_row,company,domain,city,audit_status,reason,history_status,contact_name,contact_title,direct_email,last_verified,next_action
+Stockholm,241,"Swedbank Pay",,Stockholm,IRRELEVANT / EXCLUDED,"Large bank/payment-group operation; corporate scale and group structure do not provide the unusual autonomous international commercial remit required.",,,,,2026-09-18,"No speculative outreach"
+Stockholm,242,"P Capital Partners",,Stockholm,IRRELEVANT / EXCLUDED,"Investment/asset-management firm rather than an operating product company with a hands-on international sales organisation.",,,,,2026-09-18,"No speculative outreach"
+Stockholm,243,"Swedish Authority for Privacy Protection",,Stockholm,IRRELEVANT / EXCLUDED,"Government regulator rather than a commercial employer.",,,,,2026-09-18,"No speculative outreach"
+Stockholm,244,"Asker Healthcare Group",,Stockholm,IRRELEVANT / EXCLUDED,"Healthcare products/services group where regulated healthcare procurement and domain expertise are material.",,,,,2026-09-18,"No speculative outreach"
+Stockholm,245,"Fidelio Capital",,Stockholm,IRRELEVANT / EXCLUDED,"Investment company rather than an operating product/service employer with its own international sales function.",,,,,2026-09-18,"No speculative outreach"
