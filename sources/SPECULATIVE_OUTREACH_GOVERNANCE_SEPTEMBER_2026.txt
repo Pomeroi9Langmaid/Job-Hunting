@@ -1,0 +1,158 @@
+ANDREW LANGMAID - SPECULATIVE OUTREACH GOVERNANCE
+Version 1 - 21 September 2026
+
+PURPOSE AND AUTHORITY
+
+Permanent guardrail for every speculative-company outreach workflow for Andrew Langmaid.
+
+Use this Source whenever:
+- qualifying a company for speculative outreach;
+- selecting or validating a recipient;
+- preparing a speculative Gmail draft;
+- recreating or correcting an existing speculative draft;
+- deciding whether a message may be sent or scheduled.
+
+If an earlier speculative-outreach instruction conflicts with this Source, this Source takes precedence unless Andrew explicitly changes a rule in the current conversation.
+
+CORE POSITIONING
+
+Andrew is a hands-on full-cycle international sales and new-business professional. Speculative outreach should target companies where his proven commercial method is credible and useful:
+- international new-business acquisition;
+- consultative B2B sales;
+- market development;
+- commercial negotiation and closing;
+- international distribution/channel development where commercially active;
+- senior individual-contributor or hands-on commercial leadership work.
+
+Do not position Andrew primarily as a CEO candidate.
+
+OUTREACH AUTHORISATION - NON-NEGOTIABLE
+
+1. NEVER send or schedule a speculative email unless Andrew explicitly authorises that send/schedule action in the current conversation.
+2. Default action is Gmail DRAFT ONLY.
+3. Creating a draft is not permission to send it.
+4. Existing scheduled or sent messages must not be altered unless Andrew explicitly asks.
+
+DUPLICATE AND HISTORY CHECK
+
+Before qualifying a speculative target:
+1. Check the Job-Hunting repository/tracker for previous application, direct outreach, speculative outreach, hold, exclusion or prior contact history.
+2. Check relevant Gmail history where needed to confirm the company has not already been approached.
+3. Do not create duplicate active drafts for the same intended outreach.
+4. After replacing a malformed draft, verify exactly one correct active draft remains for that recipient/company.
+
+GMAIL DRAFT VISUAL STANDARD - NON-NEGOTIABLE
+
+Every speculative Gmail draft must reproduce the established approved Gmail format used in Andrew's previously sent speculative emails.
+
+BODY
+- Subject: Andrew Langmaid, unless Andrew explicitly requests another subject.
+- Standard speculative body wording remains unchanged except for:
+  a) recipient first name;
+  b) company name;
+  c) the company/location opening sentence where appropriate.
+- The four proof-point items MUST be a real HTML/Gmail bullet list, not plain hyphen text.
+- The four lead phrases MUST appear in bold:
+  - Entrepreneurial drive:
+  - Commercial results:
+  - Earned trust:
+  - Still hands-on:
+- Preserve normal paragraph spacing matching the previously sent speculative emails.
+
+SIGNATURE
+The signature MUST use the established HTML signature architecture, not a plain-text fallback:
+- circular Andrew Langmaid headshot displayed inline;
+- vertical divider;
+- Andrew Langmaid in the established larger/bold treatment;
+- Full-Cycle International Sales · New Business · International Growth;
+- Kungälv, Sweden;
+- clickable telephone;
+- clickable email;
+- clickable LinkedIn URL.
+The headshot must be embedded as an inline/CID image so it renders inside the signature.
+Do not create or leave a draft where the signature collapses into separate plain-text lines.
+
+ATTACHMENT
+- Every speculative draft must include the correct company-specific CV PDF.
+- Use the established MASTER CV visual/content template.
+- Do not send a draft with a missing CV attachment.
+
+LOCATION SENTENCE GOVERNANCE
+
+Use location wording that is factually accurate for the target:
+
+1. KUNGÄLV COMPANY
+Default wording:
+"Being based here in Kungälv myself also made it feel particularly natural to reach out."
+
+2. GOTHENBURG / IMMEDIATE GOTHENBURG-REGION COMPANY
+Default wording:
+"Living just up the road in Kungälv also made it feel natural to reach out."
+
+Use this only when the company's location genuinely makes "just up the road" accurate.
+
+3. ELSEWHERE IN SWEDEN, INCLUDING STOCKHOLM, MALMÖ, LUND, HELSINGBORG AND OTHER REGIONS
+Do NOT use "just up the road".
+Default national wording:
+"Although living in Kungälv, just north of Gothenburg, I am open to the right opportunity elsewhere in Sweden, so it made sense to reach out."
+
+If another location-specific sentence has already been explicitly approved by Andrew for that company, preserve the approved wording.
+
+FINAL DRAFT QA - REQUIRED BEFORE REPORTING COMPLETE
+
+For every newly created or rebuilt speculative draft:
+1. Confirm recipient email and first name.
+2. Confirm company name.
+3. Confirm correct geography sentence.
+4. Confirm real bullet-list HTML exists.
+5. Confirm all four lead phrases are bold.
+6. Confirm established HTML signature exists.
+7. Confirm inline headshot exists as an inline/CID image.
+8. Confirm the company-specific CV is attached.
+9. Confirm the message is labelled DRAFT.
+10. Confirm there is exactly one intended active draft for the company after any replacement/cleanup.
+11. Confirm nothing was sent or scheduled.
+
+If the Gmail connector cannot preserve the approved signature architecture, do not silently downgrade to plain text. Stop the draft-generation step and report the limitation.
+
+COMPANY QUALIFICATION STANDARD
+
+A speculative target should normally demonstrate several of:
+- genuine international or multi-market commercial activity;
+- a credible B2B, premium-brand, industrial, sustainability, technology or SaaS proposition Andrew could learn and believe in;
+- identifiable need for international growth, enterprise sales, business development, market development or channel/distribution work;
+- sufficient maturity to plausibly employ a permanent senior commercial person;
+- a sales motion compatible with consultative full-cycle selling.
+
+Avoid or hold companies that are:
+- highly specialist scientific/clinical/engineering propositions requiring domain credentials Andrew cannot evidence;
+- junior/high-volume SDR environments;
+- principally Swedish-only/local sales without credible international scope;
+- fashion/clothing;
+- travel technology/destination content;
+- recruitment/staffing/agency businesses;
+- social-media/noise-led propositions inconsistent with Andrew's preferences;
+- extremely small/immature businesses where a permanent senior role is implausible;
+- companies with a live advertised role that should instead be assessed through the advertised-role workflow.
+
+CONTACT HIERARCHY
+
+Prefer, where appropriate:
+1. CRO / CCO / Chief Sales Officer / Chief Revenue Officer
+2. VP/Director/Head of Sales, International Sales, New Business, Business Development or International Growth
+3. Relevant commercial/partnership leader with direct revenue responsibility
+4. CEO/Founder/Managing Director as fallback, especially in smaller companies where that person remains commercially active
+
+Do not select CTO/technical leadership when a credible commercial decision-maker is available.
+
+GENESY
+
+Andrew may use Genesy to source professional contacts and direct professional emails.
+Do not run any credit-consuming search, export, enrichment or personal-contact access without Andrew's prior explicit approval.
+When Andrew supplies a Genesy result, validate role/company fit and then use the supplied professional email if appropriate.
+
+FINAL PRINCIPLE
+
+The objective is not maximum volume. It is a defensible list of companies Andrew could genuinely want to join and where his international full-cycle sales background has a plausible commercial use.
+
+A completed speculative workflow is only complete when BOTH company qualification and Gmail-draft governance are correct.
