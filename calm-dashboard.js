@@ -128,8 +128,11 @@
         <article><span>Applications closed this month</span><strong>${closedThisMonth}</strong><small>Employer rejection only</small></article>
       </div>
       <div class="calm-columns">
-        <section class="calm-panel">
-          <div class="calm-panel-title"><div><p class="eyebrow">RECENT OUTCOMES</p><h3>What employers actually said</h3></div></div>
+        <details class="calm-panel calm-panel-disclosure">
+          <summary class="calm-panel-title">
+            <div><p class="eyebrow">RECENT OUTCOMES</p><h3>What employers actually said</h3></div>
+            <span class="calm-panel-toggle" aria-hidden="true"></span>
+          </summary>
           <div class="calm-list">
             ${recentOutcomes.map((r) => `
               <article class="calm-list-row">
@@ -137,9 +140,12 @@
                 <div class="calm-list-copy"><span class="reason-chip">${escape(reasonLabel(r))}</span><p>${escape(r.outcome || 'No outcome detail recorded.')}</p><small>${escape(r.outcome_date || '')} · ${escape(cvVersion(r))}</small></div>
               </article>`).join('') || '<p class="calm-empty">No recent advertised-role outcomes recorded.</p>'}
           </div>
-        </section>
-        <section class="calm-panel">
-          <div class="calm-panel-title"><div><p class="eyebrow">INTERVIEWS</p><h3>Progress and outcome</h3></div></div>
+        </details>
+        <details class="calm-panel calm-panel-disclosure">
+          <summary class="calm-panel-title">
+            <div><p class="eyebrow">INTERVIEWS</p><h3>Progress and outcome</h3></div>
+            <span class="calm-panel-toggle" aria-hidden="true"></span>
+          </summary>
           <div class="calm-list">
             ${interviewRecords.map((r) => `
               <article class="calm-list-row">
@@ -147,7 +153,7 @@
                 <div class="calm-list-copy"><span class="status-chip status-${escape((r.current_status || 'active').toLowerCase().replaceAll(' ', '-').replaceAll('/', '-'))}">${escape(r.current_status || 'Active')}</span><p>${escape(r.outcome || r.interview_details || 'Conversation remains open.')}</p><small>${r.interview_count} interview${r.interview_count === 1 ? '' : 's'} recorded</small></div>
               </article>`).join('') || '<p class="calm-empty">No interviews recorded.</p>'}
           </div>
-        </section>
+        </details>
       </div>
       <section class="calm-activity">
         <div><p class="eyebrow">EFFORT</p><h3>Activity without the noise</h3></div>
