@@ -1,0 +1,37 @@
+REST OF SWEDEN SPECULATIVE HUNT - CONTINUATION CHECKPOINT
+
+Saved: 21 September 2026
+Authority: sources/SPECULATIVE_OUTREACH_GOVERNANCE_SEPTEMBER_2026.txt (Version 5)
+
+CURRENT STATE
+- Active governed Rest-of-Sweden queue: 49 companies.
+- Governance/dedupe ledger: 108 decisions.
+- Closed historic regional audit remains closed; do not reopen it just to re-scan already completed geography.
+- This Rest-of-Sweden expansion layer is additive and must continuously dedupe against repo/tracker plus Gmail history.
+
+OPERATING BOUNDARIES
+- ChatGPT does not use Genesy.
+- Company hunting, qualification, deduplication and public/company-controlled contact research continue without Genesy.
+- No speculative email may be sent or scheduled unless Andrew explicitly authorises that action in the current conversation.
+- Drafts, if later requested, must follow Governance v5 HTML/CID/signature/CV requirements.
+- Companies with a live relevant advertised role route to the advertised-role workflow instead of speculative outreach.
+- AI/product-defensibility and technical-domain gates remain mandatory.
+
+LATEST COMPLETED HUNTING PASS
+- Added/qualified during latest passes include Ejendals, ESBE, Norden Machinery, Hydroware, Rottne Industri, Absolent, Toyota Material Handling Europe, Thule Group and Hultafors Group.
+- Hästens routed to advertised-role workflow due current live roles and prior 2020 application history.
+- Holds/exclusions recorded for SOMAS, Dynapac, Komatsu Forest, Alimak, Trioworld, Habo Gruppen, Orkla House Care, Pelly Group, Morakniv and other weaker/technical leads.
+
+NEXT SEARCH DIRECTION
+Continue only with genuinely new names, prioritising:
+1. Östergötland / Norrköping-Linköping-Mjölby industrial and premium-product exporters.
+2. Mälardalen / Västerås-Örebro / Eskilstuna.
+3. Dalarna / Värmland / Gävleborg.
+4. Northern Sweden: Sundsvall-Timrå, Umeå, Skellefteå, Luleå, Piteå and export manufacturers outside the already governed set.
+5. Gap corrections elsewhere in Sweden only when evidence shows a genuinely strong missed company.
+
+QUALIFICATION DISCIPLINE
+- Promote only where Andrew's hands-on international full-cycle sales background has a plausible commercial use.
+- Prefer identifiable international sales/new-business/market-development need, a mature employer and a defensible product/service.
+- Do not pad the active queue. Record weaker names as HOLD / EXCLUDED / ADVERTISED_ROLE_ROUTE with the reason.
+- Before promoting: repo/tracker history check + Gmail history check + current vacancy check + recipient suitability + AI/product-defensibility check.
