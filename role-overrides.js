@@ -140,5 +140,3 @@ function applyRoleOverrides() {
     render();
   }
 }
-
-applyRoleOverrides();
