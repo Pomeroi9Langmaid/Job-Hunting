@@ -9,6 +9,8 @@ The main microsite dashboard is the single operational view. It combines:
 - `data/applications.csv` for advertised-role applications, direct-role outreach and speculative emails already sent.
 - `data/vetted-speculative-targets.csv` and `data/vetted-speculative-targets-expanded-gothenburg.csv` for the reviewed Gothenburg queue.
 - `data/vetted-speculative-targets-stockholm-1.csv`, `data/vetted-speculative-targets-stockholm-2.csv` and `data/vetted-speculative-targets-expanded-stockholm.csv` for the reviewed Stockholm queue.
+- `data/vetted-speculative-targets-rest-sweden-2026-09-21.csv` for the governed active Rest-of-Sweden expansion queue.
+- `data/rest-sweden-governance-ledger-2026-09-21.csv` for the Rest-of-Sweden dedupe and decision ledger, retaining qualified, re-approach, already-contacted, hold and advertised-role-route outcomes.
 - `data/contact-enrichment.csv` for the first audited professional-email enrichment batch supplied on 31 July 2026.
 - `data/contact-enrichment-batch-2-2026-07-31.csv` for the second audited Genesy batch, including accepted emails, unresolved contacts and contact holds.
 - `data/full-cycle-holds-2026-07-31.csv` for companies removed from immediate outreach after the full-cycle sales re-audit.
