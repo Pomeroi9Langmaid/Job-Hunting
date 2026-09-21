@@ -1,5 +1,5 @@
 ANDREW LANGMAID - SPECULATIVE OUTREACH GOVERNANCE
-Version 2 - 21 September 2026
+Version 3 - 21 September 2026
 
 PURPOSE AND AUTHORITY
 
@@ -134,6 +134,8 @@ Avoid or hold companies that are:
 - social-media/noise-led propositions inconsistent with Andrew's preferences;
 - extremely small/immature businesses where a permanent senior role is implausible;
 - companies with a live advertised role that should instead be assessed through the advertised-role workflow.
+- legal-technology businesses: exclude by default because Andrew regards this category as unusually exposed to generative-AI substitution, feature commoditisation and reduced defensibility. Only reconsider a legal-tech company if Andrew explicitly asks or there is a clearly evidenced, unusually defensible commercial proposition that is not materially dependent on functionality generative AI can readily reproduce.
+- other software propositions where generative AI materially weakens the product moat or can readily substitute the core customer value. AI exposure is a qualification factor, not merely a technology label: distinguish durable workflow/data/infrastructure value from easily replicated content, drafting, generic automation or thin-feature software.
 
 CONTACT HIERARCHY
 
@@ -173,3 +175,12 @@ When an attached draft must be recreated rather than edited in place:
 10. Re-list Gmail drafts and confirm exactly one active draft remains for that company.
 
 This method was successfully validated on the 21 September 2026 speculative batch and is now the required rebuild method for future speculative drafts.
+
+
+AI / PRODUCT-DEFENSIBILITY CHECK - ADDED 21 SEPTEMBER 2026
+
+Before promoting a new speculative company, explicitly ask whether generative AI can readily reproduce or materially compress the company's core customer value.
+- EXCLUDE by default: legal tech; generic drafting/content-generation tools; thin workflow layers; undifferentiated automation where AI can substitute the core product with low switching cost.
+- DO NOT exclude merely because a company uses AI. Physical products, infrastructure, proprietary operational data, embedded enterprise workflows, regulated/mission-critical systems, distribution networks and specialist platforms may remain defensible.
+- Where exposure is mixed, mark the company HOLD / BORDERLINE rather than silently qualifying it.
+- If a company fails this product-defensibility check, do not spend Andrew's time sourcing a professional contact or creating a Gmail draft.
