@@ -25,6 +25,18 @@ Each displayed record is classified as one of:
 
 `Prospective Target` means that the company and named contact have been researched, but Andrew has neither applied nor sent a speculative email. Missing direct contact details are shown explicitly as `Email needs sourcing` or the more precise sourcing status in the reviewed data.
 
+## Speculative outreach governance
+
+The controlling Source for speculative-company qualification, Genesy contact handling and Gmail draft creation is `sources/SPECULATIVE_OUTREACH_GOVERNANCE_SEPTEMBER_2026.txt`.
+
+Key non-negotiable controls include:
+
+- Gmail drafts only unless Andrew explicitly authorises sending or scheduling in the current conversation.
+- Exact approved Gmail visual treatment: real HTML bullet list, bold proof-point headings, established HTML signature, inline circular headshot, correct links and company-specific CV attachment.
+- Geography wording must be factually accurate: Kungälv-local, Gothenburg/"just up the road", or elsewhere-in-Sweden wording as defined in the Source.
+- Before a draft is reported complete, verify the message is still a draft, the CV and inline signature image are present, and exactly one intended active draft remains after any replacement.
+- Prospect qualification must be deduplicated against tracker/history and remain focused on credible full-cycle international sales fit rather than maximum volume.
+
 ## Full population review
 
 The review evaluated all 1,975 source records: 975 Gothenburg companies and 1,000 Stockholm companies. The full audit and watchlist remain retained as research history; the operational queue is deliberately narrower than the population of commercially plausible companies.
