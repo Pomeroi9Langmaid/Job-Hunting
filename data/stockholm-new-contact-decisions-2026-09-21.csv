@@ -1,4 +1,11 @@
 company,status,recipient,recipient_title,direct_email,decision_note
+"Agaton","CLOSED CURRENT CYCLE - NO VERIFIED CONTACT","Andreas Kullberg","Founder / CEO","","Andrew confirmed no correct contact could be found in Genesy; do not use shared routes."
+"CapitalBox","CLOSED CURRENT CYCLE - NO VERIFIED CONTACT","Hampus Sjöberg","Head of Strategic Partnerships and Business Development","","Andrew confirmed no correct contact could be found in Genesy; do not use the CEO fallback this cycle."
+"EvoluteIQ","CLOSED CURRENT CYCLE - NO VERIFIED CONTACT","","Current global/Stockholm senior commercial leader","","Andrew confirmed no correct contact could be found in Genesy."
+"Lifesum","CLOSED CURRENT CYCLE - NO VERIFIED CONTACT","Chris Seth","Chief Business Officer","","Andrew confirmed no correct contact could be found in Genesy; do not use the lower-hierarchy fallback."
 "Grale","READY - DRAFT PENDING","Allen Mohammadi","Founder & CEO","allen@plasticfri.com","Direct professional route supplied by Andrew from Genesy; current founder/CEO retained."
 "Quinyx","READY - DRAFT PENDING","Erik Fjellborg","CEO & Founder","erik.fjellborg@quinyx.com","CEO/founder fallback accepted after preferred CRO direct email could not be verified."
 "Syre","READY - DRAFT PENDING","Dennis Nobelius","CEO","dennis.nobelius@syre.com","CEO fallback accepted after preferred CCO direct email could not be verified."
+"Tacton","CLOSED CURRENT CYCLE - NO VALID COMMERCIAL CONTACT","Vera Wolf","SVP Sales EMEA / APAC","","Eva Lessing is CHRO and outside the governing commercial-recipient hierarchy; no verified direct Vera Wolf email."
+"Talentium","CLOSED CURRENT CYCLE - NO VERIFIED COMPANY EMAIL","Richard Leksell","Chief Commercial Officer","","The supplied richard@bonitcapital.com address is a Bonit Capital route, not a current verified Talentium company address."
+"Teenage Engineering","CLOSED CURRENT CYCLE - NO VERIFIED DIRECT EMAIL","Symon Curtis","Head of Global Sales","","Correct commercial contact identified by Andrew, but Genesy found no direct professional email."
