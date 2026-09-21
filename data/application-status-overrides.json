@@ -1,10 +1,40 @@
 {
+  "25": {
+    "current_status": "Application Closed",
+    "outcome_date": "2 Sep 2026",
+    "outcome": "Coretura moved forward with other candidates. The message did not identify a specific deficiency in Andrew's application.",
+    "notes_append": "2 Sep 2026: generic rejection received from Coretura; no specific reason supplied."
+  },
+  "29": {
+    "current_status": "Application Closed",
+    "outcome_date": "15 Sep 2026",
+    "outcome": "Cebon confirmed that the recruitment process was completed and another candidate was selected. No specific reason relating to Andrew was supplied.",
+    "notes_append": "15 Sep 2026: Cebon confirmed another candidate was selected; no individual feedback was provided."
+  },
+  "33": {
+    "current_status": "Application Closed",
+    "outcome_date": "8 Sep 2026",
+    "outcome": "Saab decided not to move forward with the Business Development Manager - International Collaboration application. No specific reason was supplied.",
+    "notes_append": "8 Sep 2026: generic rejection received from Saab; no specific reason supplied."
+  },
+  "34": {
+    "current_status": "Application Closed",
+    "outcome_date": "8 Sep 2026",
+    "outcome": "Saab decided not to move forward with the Business Development Manager - Upgrades and Modifications application. No specific reason was supplied.",
+    "notes_append": "8 Sep 2026: generic rejection received from Saab; no specific reason supplied."
+  },
   "38": {
     "current_status": "Application Closed",
     "outcome_date": "4 Sep 2026",
     "interview_count": "1",
     "outcome": "Navigio and Surikat decided to move forward with other candidates who are a little closer to the profile they are looking for. No more specific reason was given.",
     "notes_append": "4 Sep 2026: Erik Brechter confirmed that Navigio and Surikat jointly decided to continue with other candidates. He asked permission to retain Andrew's details for future opportunities. Any domain-fit explanation remains inference rather than employer-stated feedback."
+  },
+  "233": {
+    "current_status": "Application Closed",
+    "outcome_date": "9 Sep 2026",
+    "outcome": "OpenAI decided not to move forward and said it was proceeding with other candidates whose skills and experience more closely aligned with current hiring needs. No specific individual gap was identified.",
+    "notes_append": "9 Sep 2026: generic rejection received from OpenAI. The message cited other candidates' closer alignment but did not identify a specific deficiency."
   },
   "245": {
     "current_status": "Closed by Andrew",
@@ -17,5 +47,17 @@
     "outcome_date": "1 Sep 2026",
     "outcome": "Furhat Robotics said that after reviewing Andrew's application against the role requirements and the fit of other candidates, it would not proceed to the next step. No individual reason was provided.",
     "notes_append": "1 Sep 2026: rejection received from Furhat Robotics. The employer gave no specific skill-gap or seniority reason."
+  },
+  "308": {
+    "current_status": "Application Closed",
+    "outcome_date": "3 Sep 2026",
+    "outcome": "Alegor Tech did not progress the application. The LinkedIn rejection supplied no specific individual reason.",
+    "notes_append": "3 Sep 2026: LinkedIn application rejection received from Alegor Tech; no specific reason supplied."
+  },
+  "322": {
+    "current_status": "Application Closed",
+    "outcome_date": "14 Sep 2026",
+    "outcome": "Nordic SeaFarm via Engdahl Nordic AB did not progress the application. The LinkedIn rejection supplied no specific individual reason.",
+    "notes_append": "14 Sep 2026: LinkedIn application rejection received; no specific reason supplied."
   }
 }
