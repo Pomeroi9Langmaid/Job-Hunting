@@ -4,8 +4,8 @@ Saved: 21 September 2026
 Authority: sources/SPECULATIVE_OUTREACH_GOVERNANCE_SEPTEMBER_2026.txt (Version 5)
 
 CURRENT STATE
-- Active governed Rest-of-Sweden queue: 60 companies.
-- Governance/dedupe ledger: 126 decisions.
+- Active governed Rest-of-Sweden queue: 64 companies.
+- Governance/dedupe ledger: 134 decisions.
 - Closed historic regional audit remains closed; do not reopen it just to re-scan already completed geography.
 - This Rest-of-Sweden expansion layer is additive and must continuously dedupe against repo/tracker plus Gmail history.
 
@@ -18,10 +18,10 @@ OPERATING BOUNDARIES
 - AI/product-defensibility and technical-domain gates remain mandatory.
 
 LATEST COMPLETED HUNTING PASS
-- Active queue now includes 60 governed companies; ledger records 126 qualification/history decisions.
-- Latest additions include Wibe Group, OilQuick, NHC International, Gymleco, Fumex, Sunds Fibertech, Orwak, LINTEX, Swedstyle, Wapro and Presona.
+- Active queue now includes 64 governed companies; ledger records 134 qualification/history decisions.
+- Latest additions include Wibe Group, OilQuick, NHC International, Gymleco, Fumex, Sunds Fibertech, Orwak, LINTEX, Swedstyle, Wapro, Presona, Rapid Granulator, Hammar Maskin, El-Björn and Be-Ge Group.
 - Recent advertised-role/history diversions include Hästens and Holms Attachments; SPM Instrument is held because a directly relevant Global Area Sales Manager process only recently closed.
-- Holds/exclusions include Robot System Products, Cranab, Eco Log, Tormek, Rimaster and other weaker, overly technical, too-small or structurally poor-fit leads.
+- Holds/exclusions include Robot System Products, Cranab, Eco Log, Tormek, Rimaster, Emballator, HordaGruppen, Olsbergs and other weaker, overly technical, too-small, commodity-like or structurally poor-fit leads.
 - The no-Genesy rule remains an operating boundary: all hunting/qualification continues through public/company-controlled research plus repo/Gmail dedupe.
 
 NEXT SEARCH DIRECTION
