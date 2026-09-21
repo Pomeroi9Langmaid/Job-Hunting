@@ -171,7 +171,10 @@ function stepMarkup(label, date, className) {
 }
 
 function progressMarkup(record) {
-  const steps = [stepMarkup(startLabel(record.activity_type), record.activity_date, "step-start")];
+  const initialLabel = record.current_status === "Application Incomplete"
+    ? "APPLICATION STARTED"
+    : startLabel(record.activity_type);
+  const steps = [stepMarkup(initialLabel, record.activity_date, "step-start")];
 
   if (record.interview_steps) {
     record.interview_steps.split(";").forEach((step) => {
@@ -190,6 +193,10 @@ function progressMarkup(record) {
 
   if (record.current_status === "Closed by Andrew") {
     steps.push(stepMarkup("CLOSED BY ANDREW", record.outcome_date, "step-closed"));
+  }
+
+  if (record.current_status === "Application Incomplete") {
+    steps.push(stepMarkup("APPLICATION INCOMPLETE / NOT SUBMITTED", record.outcome_date, "step-unavailable"));
   }
 
   return steps.join('<span class="flow-arrow" aria-hidden="true">→</span>');
@@ -344,13 +351,12 @@ function renderSummary() {
   ).length;
 }
 
-function renderLastUpdated(response) {
-  const header = response.headers.get("last-modified");
-  const latestRecordDate = state.records.reduce(
-    (latest, record) => (record.date_sort > latest ? record.date_sort : latest),
-    "",
-  );
-  const date = header ? new Date(header) : new Date(`${latestRecordDate}T12:00:00`);
+function renderLastUpdated() {
+  const latestDataDate = state.records.reduce((latest, record) => {
+    const candidate = record.data_updated_sort || record.date_sort || "";
+    return candidate > latest ? candidate : latest;
+  }, "");
+  const date = latestDataDate ? new Date(`${latestDataDate}T12:00:00`) : new Date();
   elements.lastUpdated.textContent = new Intl.DateTimeFormat("en-GB", {
     day: "numeric",
     month: "long",
@@ -388,7 +394,7 @@ async function initialise() {
       .sort((a, b) => b.date_sort.localeCompare(a.date_sort) || Number(b.id) - Number(a.id));
 
     renderSummary();
-    renderLastUpdated(updatesResponse);
+    renderLastUpdated();
     setupFilters();
     render();
   } catch (error) {
