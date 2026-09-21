@@ -10,12 +10,9 @@
     <title>Andrew's Job Search</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="enhancements.css" />
     <link rel="stylesheet" href="analytics.css" />
     <link rel="stylesheet" href="trends.css" />
-    <link rel="stylesheet" href="smart-search.css" />
     <link rel="stylesheet" href="premium-ui.css" />
-    <link rel="stylesheet" href="premium-table.css" />
     <link rel="stylesheet" href="calm-ui.css" />
   </head>
   <body>
@@ -32,64 +29,6 @@
         </div>
       </header>
 
-      <section id="smart-search" class="smart-search-panel" aria-labelledby="smart-search-title">
-        <div class="smart-search-heading">
-          <div>
-            <p class="eyebrow">SMART SEARCH</p>
-            <h2 id="smart-search-title">Ask the tracker</h2>
-            <p>Search applications, replies and interview history in natural language. Exact names, wording and dates are not required.</p>
-          </div>
-          <span class="smart-search-badge">GPT-5.6 LUNA · ACTIVE</span>
-        </div>
-
-        <form id="smart-search-form" class="smart-search-form">
-          <input
-            id="smart-search-input"
-            type="search"
-            autocomplete="off"
-            placeholder="Ask about a company, reply, meeting, follow-up or half-remembered detail…"
-            aria-label="Ask your job-search tracker"
-          />
-          <button id="smart-search-submit" type="submit">Ask</button>
-        </form>
-
-        <div class="smart-query-chips" aria-label="Example searches">
-          <button type="button" data-smart-query="Which companies invited me for coffee, lunch or an informal meeting?">Coffee / lunch invitations</button>
-          <button type="button" data-smart-query="Which companies gave the warmest or most positive response to my email, CV or background?">Warmest responses</button>
-          <button type="button" data-smart-query="Which companies or people should I follow up with now or soon, based on what they explicitly told me?">Follow-ups due</button>
-          <button type="button" data-smart-query="Who said they would keep my CV or consider me for a future opportunity?">CV kept for future</button>
-          <button type="button" data-smart-query="I remember a company where I was told to wait a few weeks and then contact a new person who had just started. Which one was it?">Wait a few weeks</button>
-        </div>
-
-        <p id="smart-search-status" class="smart-search-status" aria-live="polite">Loading job-search memory…</p>
-
-        <div id="smart-search-answer" class="smart-search-answer" hidden>
-          <div class="smart-answer-copy">
-            <p class="eyebrow">ANSWER</p>
-            <p id="smart-answer-text"></p>
-          </div>
-          <div id="smart-search-matches" class="smart-search-matches"></div>
-        </div>
-      </section>
-
-      <section class="signal-section" aria-labelledby="signals-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">AT A GLANCE</p>
-            <h2 id="signals-title">Current signals</h2>
-          </div>
-          <p>The live numbers worth seeing before opening the detailed tracker.</p>
-        </div>
-        <div class="smart-stats" aria-label="Key job-search signals">
-          <article class="smart-stat smart-stat--green"><span>Active interviews</span><strong id="stat-active-interviews">–</strong><small>Live interview-stage conversations</small></article>
-          <article class="smart-stat"><span>Speculative reply rate</span><strong id="stat-reply-rate">–</strong><small>Personal replies only</small></article>
-          <article class="smart-stat smart-stat--blue"><span>Warm / future replies</span><strong id="stat-positive-replies">–</strong><small>Positive signals worth remembering</small></article>
-          <article class="smart-stat smart-stat--purple"><span>Progressed conversations</span><strong id="stat-progressed">–</strong><small>Replies that produced a next step</small></article>
-          <article class="smart-stat"><span>CV retained</span><strong id="stat-cv-retained">–</strong><small>Future consideration or keep-in-touch</small></article>
-          <article class="smart-stat"><span>Prospective targets</span><strong id="stat-targets">–</strong><small>Loading current vetted queue…</small></article>
-        </div>
-      </section>
-
       <details class="insights-disclosure search-patterns-disclosure">
         <summary>
           <span class="insights-summary-copy">
@@ -105,34 +44,53 @@
       </details>
 
       <section class="tracker-section" aria-labelledby="tracker-title">
-        <div class="section-heading">
+        <div class="section-heading tracker-heading">
           <div>
             <p class="eyebrow">TRACKER</p>
             <h2 id="tracker-title">Applications & outreach</h2>
           </div>
-          <p>Use the compact controls for precise filtering; use Smart Search above when you only remember fragments.</p>
+          <p>One live view of the same pipeline shown above.</p>
         </div>
 
-        <section class="controls controls--compact" aria-label="Refine tracker table">
-          <label class="search-control"><span>Quick filter</span><input id="search-input" type="search" placeholder="Company, role or contact" autocomplete="off" /></label>
-          <label><span>Route</span><select id="type-filter"><option value="">All routes</option><option value="Open Role Application">Advertised role</option><option value="Direct Role Outreach">Direct about role</option><option value="Speculative Outreach">Speculative outreach</option><option value="Prospective Target">Not contacted</option></select></label>
-          <label><span>Progress</span><select id="status-filter"><option value="">All progress</option><option value="Active">No closure recorded</option><option value="Not Contacted">Not contacted</option><option value="Interviewed">Interviewed</option><option value="Application Closed">Application unsuccessful</option><option value="Role Filled / Closed">Role filled / withdrawn</option><option value="Closed by Andrew">Closed by Andrew</option><option value="Application Incomplete">Application incomplete</option></select></label>
-          <button id="clear-filters" class="clear-button" type="button">Clear</button>
-          <select id="city-filter" hidden aria-hidden="true"><option value="">All cities</option></select>
-          <select id="industry-filter" hidden aria-hidden="true"><option value="">All sectors</option></select>
-          <select id="size-filter" hidden aria-hidden="true"><option value="">All sizes</option></select>
-        </section>
+        <div class="tracker-toolbar">
+          <label class="tracker-search">
+            <span>Search</span>
+            <input id="search-input" type="search" placeholder="Company, role, person, city or note…" autocomplete="off" />
+          </label>
+          <button id="clear-filters" class="clear-button tracker-clear" type="button">Reset</button>
+        </div>
 
-        <section class="results-panel">
-          <div class="results-heading"><p><strong id="visible-count">0</strong> records shown</p><a class="download-link" href="data/applications.csv" download>Export CSV</a></div>
+        <nav class="pipeline-tabs" aria-label="Pipeline view">
+          <button type="button" class="pipeline-tab is-active" data-pipeline-view="current">Current pipeline <strong id="view-count-current">0</strong></button>
+          <button type="button" class="pipeline-tab" data-pipeline-view="applications">Open applications <strong id="view-count-applications">0</strong></button>
+          <button type="button" class="pipeline-tab" data-pipeline-view="interviews">Interviews <strong id="view-count-interviews">0</strong></button>
+          <button type="button" class="pipeline-tab" data-pipeline-view="awaiting">Awaiting replies <strong id="view-count-awaiting">0</strong></button>
+          <button type="button" class="pipeline-tab" data-pipeline-view="closed">Closed <strong id="view-count-closed">0</strong></button>
+          <button type="button" class="pipeline-tab" data-pipeline-view="all">All history <strong id="view-count-all">0</strong></button>
+        </nav>
+
+        <section class="results-panel tracker-results">
+          <div class="results-heading">
+            <p><strong id="visible-count">0</strong> records shown</p>
+            <p id="tracker-view-description" class="tracker-view-description">Open applications, live interview conversations and speculative outreach still awaiting a reply.</p>
+          </div>
           <div class="table-wrap">
-            <table>
-              <colgroup><col class="col-date" /><col class="col-company" /><col class="col-industry" /><col class="col-size" /><col class="col-city" /><col class="col-role" /><col class="col-job-ad" /><col class="col-contact" /><col class="col-route" /><col class="col-progress" /></colgroup>
-              <thead><tr><th>Date</th><th>Company</th><th>Industry</th><th title="Approximate current employee band">Company size</th><th>City</th><th>Role</th><th>Job ad</th><th>Contact</th><th>Route</th><th>Progress</th></tr></thead>
+            <table class="tracker-table">
+              <colgroup>
+                <col class="col-company" />
+                <col class="col-role" />
+                <col class="col-route" />
+                <col class="col-status" />
+                <col class="col-contact" />
+                <col class="col-date" />
+              </colgroup>
+              <thead>
+                <tr><th>Company</th><th>Role / context</th><th>Route</th><th>Status</th><th>Contact</th><th>Activity</th></tr>
+              </thead>
               <tbody id="applications-body"></tbody>
             </table>
           </div>
-          <div id="empty-state" class="empty-state" hidden>No records match these filters.</div>
+          <div id="empty-state" class="empty-state" hidden>No records match this view and search.</div>
         </section>
       </section>
 
@@ -150,14 +108,6 @@
         </section>
       </details>
 
-      <section class="summary-grid legacy-summary" aria-hidden="true" hidden>
-        <article class="summary-card"><span>Total records</span><strong id="total-count">0</strong></article>
-        <article class="summary-card"><span>Advertised-role applications</span><strong id="application-count">0</strong></article>
-        <article class="summary-card"><span>Direct contact about advertised roles</span><strong id="direct-count">0</strong></article>
-        <article class="summary-card"><span>Speculative company approaches</span><strong id="speculative-count">0</strong></article>
-        <article class="summary-card target-summary"><span>Prospective targets not contacted</span><strong id="target-count">0</strong></article>
-        <article class="summary-card interview-summary"><span>Interview processes</span><strong id="interview-count">0</strong></article>
-      </section>
     </main>
 
     <dialog id="details-dialog" class="details-dialog">
@@ -171,16 +121,10 @@
 
     <script src="company-industries.js"></script>
     <script src="sector-normalisation.js"></script>
-    <script src="app.js" defer></script>
     <script src="role-overrides.js" defer></script>
+    <script src="app.js" defer></script>
     <script src="trends.js" defer></script>
-    <script src="enhancements.js" defer></script>
-    <script src="prospective-targets.js" defer></script>
-    <script src="date-filter.js" defer></script>
-    <script src="route-labels.js" defer></script>
     <script src="analytics.js" defer></script>
-    <script src="smart-search.js" defer></script>
-    <script src="target-stats.js" defer></script>
     <script src="calm-dashboard.js" defer></script>
   </body>
 </html>
