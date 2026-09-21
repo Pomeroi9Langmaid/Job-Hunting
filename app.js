@@ -3,30 +3,41 @@ const state = {
   companyProfiles: new Map(),
 };
 
+let trackerView = "current";
+
 const elements = {
   body: document.querySelector("#applications-body"),
-  totalCount: document.querySelector("#total-count"),
-  applicationCount: document.querySelector("#application-count"),
-  directCount: document.querySelector("#direct-count"),
-  speculativeCount: document.querySelector("#speculative-count"),
-  targetCount: document.querySelector("#target-count"),
-  interviewCount: document.querySelector("#interview-count"),
   visibleCount: document.querySelector("#visible-count"),
   lastUpdated: document.querySelector("#last-updated"),
   search: document.querySelector("#search-input"),
-  city: document.querySelector("#city-filter"),
-  industry: document.querySelector("#industry-filter"),
-  size: document.querySelector("#size-filter"),
-  type: document.querySelector("#type-filter"),
-  status: document.querySelector("#status-filter"),
   clear: document.querySelector("#clear-filters"),
   emptyState: document.querySelector("#empty-state"),
+  viewDescription: document.querySelector("#tracker-view-description"),
   dialog: document.querySelector("#details-dialog"),
   dialogCompany: document.querySelector("#dialog-company"),
   dialogRole: document.querySelector("#dialog-role"),
   dialogStages: document.querySelector("#dialog-stages"),
   dialogOutcome: document.querySelector("#dialog-outcome"),
   dialogClose: document.querySelector(".dialog-close"),
+};
+
+const TERMINAL_STATUSES = new Set([
+  "Application Closed",
+  "Role Filled / Closed",
+  "Closed by Andrew",
+  "No Current Opportunity",
+  "Not Pursued",
+  "Not a Fit",
+  "Application Incomplete",
+]);
+
+const VIEW_DESCRIPTIONS = {
+  current: "Open applications, live interview conversations and speculative outreach still awaiting a reply.",
+  applications: "Advertised-role applications that are still recorded as open.",
+  interviews: "Interview-stage conversations that have not been closed by either side.",
+  awaiting: "Speculative outreach where no substantive reply or closure is recorded yet.",
+  closed: "Closed, unsuccessful, unavailable or otherwise inactive records.",
+  all: "Complete application and outreach history.",
 };
 
 function parseCsv(text) {
@@ -69,17 +80,8 @@ function parseCsv(text) {
   );
 }
 
-function normaliseRecord(record) {
-  const companyProfile = state.companyProfiles.get(record.company) || {};
-  return {
-    ...record,
-    ...companyProfile,
-    interview_count: Number(record.interview_count || 0),
-  };
-}
-
 function escapeHtml(value) {
-  return String(value)
+  return String(value ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
@@ -87,268 +89,219 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function splitCities(city) {
-  return city
-    .split(/\s*[/,]\s*/)
-    .map((part) => part.trim())
-    .filter(Boolean);
+function normaliseSearch(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
-function addOptions(select, values) {
-  values.forEach((value) => {
-    const option = document.createElement("option");
-    option.value = value;
-    option.textContent = value;
-    select.append(option);
-  });
+function applyCompanyProfile(record) {
+  const companyProfile = state.companyProfiles.get(record.company) || {};
+  return {
+    ...companyProfile,
+    ...record,
+    sector_group: record.sector_group || companyProfile.sector_group || "",
+    industry_sector: record.industry_sector || companyProfile.industry_sector || "",
+    employee_band: record.employee_band || companyProfile.employee_band || "",
+    employee_estimate: record.employee_estimate || companyProfile.employee_estimate || "",
+    contact_email: record.contact_email || companyProfile.contact_email || "",
+    interview_count: Number(record.interview_count || 0),
+  };
 }
 
-function setupFilters() {
-  const cities = [...new Set(state.records.flatMap((record) => splitCities(record.city)))].sort();
-  const industries = [...new Set(state.records.map((record) => record.sector_group).filter(Boolean))].sort();
-  const sizeOrder = [
-    "1 to 10",
-    "11 to 50",
-    "51 to 200",
-    "201 to 500",
-    "501 to 1,000",
-    "1,001 to 5,000",
-    "5,001 to 10,000",
-    "10,001+",
-  ];
-  const sizesPresent = new Set(state.records.map((record) => record.employee_band).filter(Boolean));
-  addOptions(elements.city, cities);
-  addOptions(elements.industry, industries);
-  addOptions(elements.size, sizeOrder.filter((size) => sizesPresent.has(size)));
+function isClosedRecord(record) {
+  return TERMINAL_STATUSES.has(record.current_status);
+}
 
-  [
-    elements.search,
-    elements.city,
-    elements.industry,
-    elements.size,
-    elements.type,
-    elements.status,
-  ].forEach((control) =>
-    control.addEventListener("input", render),
-  );
+function isOpenApplication(record) {
+  return record.activity_type === "Open Role Application" && record.current_status === "Active";
+}
 
-  elements.clear.addEventListener("click", () => {
-    elements.search.value = "";
-    elements.city.value = "";
-    elements.industry.value = "";
-    elements.size.value = "";
-    elements.type.value = "";
-    elements.status.value = "";
-    render();
-    elements.search.focus();
-  });
+function isLiveInterview(record) {
+  return Number(record.interview_count || 0) > 0 && !isClosedRecord(record);
+}
+
+function isAwaitingSpeculative(record) {
+  return record.activity_type === "Speculative Outreach" && record.current_status === "Awaiting Response";
+}
+
+function isActiveDirectRole(record) {
+  return record.activity_type === "Direct Role Outreach" &&
+    ["Active", "Awaiting Response"].includes(record.current_status);
+}
+
+function isCurrentRecord(record) {
+  return isOpenApplication(record) ||
+    isLiveInterview(record) ||
+    isAwaitingSpeculative(record) ||
+    isActiveDirectRole(record);
+}
+
+function viewMatches(record, view = trackerView) {
+  if (view === "applications") return isOpenApplication(record);
+  if (view === "interviews") return isLiveInterview(record);
+  if (view === "awaiting") return isAwaitingSpeculative(record);
+  if (view === "closed") return !isCurrentRecord(record);
+  if (view === "all") return true;
+  return isCurrentRecord(record);
+}
+
+function searchMatches(record) {
+  const query = normaliseSearch(elements.search?.value);
+  if (!query) return true;
+  const haystack = normaliseSearch([
+    record.company,
+    record.job_title,
+    record.city,
+    record.contact_name,
+    record.contact_title,
+    record.contact_email,
+    record.current_status,
+    record.activity_type,
+    record.sector_group,
+    record.industry_sector,
+    record.notes,
+    record.outcome,
+    record.interview_details,
+  ].filter(Boolean).join(" "));
+  return query.split(/\s+/).every((token) => haystack.includes(token));
 }
 
 function routeLabel(type) {
-  if (type === "Open Role Application") return "ADVERTISED ROLE";
-  if (type === "Direct Role Outreach") return "DIRECT ABOUT ROLE";
-  if (type === "Prospective Target") return "NOT APPLIED / NOT REACHED OUT";
-  return "REACHED OUT";
+  if (type === "Open Role Application") return "Advertised role";
+  if (type === "Direct Role Outreach") return "Direct about role";
+  if (type === "Speculative Outreach") return "Speculative";
+  return type || "Other";
 }
 
 function routeClass(type) {
   if (type === "Open Role Application") return "pill-role";
   if (type === "Direct Role Outreach") return "pill-direct";
-  if (type === "Prospective Target") return "pill-target";
-  return "pill-speculative";
+  if (type === "Speculative Outreach") return "pill-speculative";
+  return "";
 }
 
-function startLabel(type) {
-  if (type === "Open Role Application") return "APPLIED FOR ROLE";
-  if (type === "Direct Role Outreach") return "DIRECT ROLE OUTREACH";
-  if (type === "Prospective Target") return "NOT CONTACTED";
-  return "REACHED OUT";
+function statusLabel(record) {
+  const status = record.current_status || "";
+  if (status === "Active") {
+    if (isLiveInterview(record)) return "Conversation active";
+    if (record.activity_type === "Open Role Application") return "Open";
+    return "Active";
+  }
+  if (status === "Awaiting Response") return "Awaiting reply";
+  if (status === "Application Closed") return "Unsuccessful";
+  if (status === "Role Filled / Closed") return "Role filled / withdrawn";
+  if (status === "Closed by Andrew") return "Closed by Andrew";
+  if (status === "No Current Opportunity") return "No current opportunity";
+  if (status === "Application Incomplete") return "Not submitted";
+  if (status === "Future Opportunity") return "Future opportunity";
+  if (status === "Referred") return "Referred";
+  if (status === "Not a Fit") return "Not a fit";
+  if (status === "Not Pursued") return "Not pursued";
+  return status || "No status";
 }
 
-function stepMarkup(label, date, className) {
-  const dateMarkup = date ? `<small>${escapeHtml(date)}</small>` : "";
-  return `<span class="progress-step ${className}">${escapeHtml(label)}${dateMarkup}</span>`;
+function statusClass(record) {
+  if (isLiveInterview(record)) return "status-active";
+  if (isOpenApplication(record)) return "status-open";
+  if (isAwaitingSpeculative(record)) return "status-awaiting";
+  if (record.current_status === "Application Closed") return "status-closed";
+  if (record.current_status === "Closed by Andrew") return "status-closed-by-andrew";
+  if (record.current_status === "No Current Opportunity") return "status-inactive";
+  if (record.current_status === "Application Incomplete") return "status-incomplete";
+  return isClosedRecord(record) ? "status-inactive" : "status-neutral";
 }
 
-function progressMarkup(record) {
-  const initialLabel = record.current_status === "Application Incomplete"
-    ? "APPLICATION STARTED"
-    : startLabel(record.activity_type);
-  const steps = [stepMarkup(initialLabel, record.activity_date, "step-start")];
-
-  if (record.interview_steps) {
-    record.interview_steps.split(";").forEach((step) => {
-      const [date, label] = step.split("|");
-      if (label) steps.push(stepMarkup(label, date, "step-interview"));
-    });
-  }
-
-  if (record.current_status === "Application Closed") {
-    steps.push(stepMarkup("APPLICATION UNSUCCESSFUL", record.outcome_date, "step-closed"));
-  }
-
-  if (record.current_status === "Role Filled / Closed") {
-    steps.push(stepMarkup("ROLE FILLED / WITHDRAWN", record.outcome_date, "step-unavailable"));
-  }
-
-  if (record.current_status === "Closed by Andrew") {
-    steps.push(stepMarkup("CLOSED BY ANDREW", record.outcome_date, "step-closed"));
-  }
-
-  if (record.current_status === "Application Incomplete") {
-    steps.push(stepMarkup("APPLICATION INCOMPLETE / NOT SUBMITTED", record.outcome_date, "step-unavailable"));
-  }
-
-  return steps.join('<span class="flow-arrow" aria-hidden="true">→</span>');
+function companyMarkup(record) {
+  const city = record.city ? `<span class="tracker-meta">${escapeHtml(record.city)}</span>` : "";
+  return `<strong>${escapeHtml(record.company)}</strong>${city}`;
 }
 
 function roleMarkup(record) {
-  const parts = [escapeHtml(record.job_title)];
-  if (record.notes) parts.push(`<span class="cell-note">${escapeHtml(record.notes)}</span>`);
-  return parts.join("");
-}
-
-function jobAdMarkup(record) {
-  if (record.job_url) {
-    return `<a class="job-link" href="${escapeHtml(record.job_url)}" target="_blank" rel="noreferrer" aria-label="View the job advertisement for ${escapeHtml(record.job_title)}">VIEW JOB AD</a>`;
-  }
-
-  const label = record.activity_type === "Speculative Outreach" ? "Not applicable" : "Not retained";
-  return `<span class="job-link-missing">${label}</span>`;
-}
-
-function industryMarkup(record) {
-  return record.industry_sector
-    ? escapeHtml(record.industry_sector)
-    : '<span class="cell-note">Not researched</span>';
-}
-
-function companySizeMarkup(record) {
-  if (!record.employee_band) return '<span class="cell-note">Not researched</span>';
-
-  const estimate = record.employee_estimate
-    ? `<span class="cell-note">${escapeHtml(record.employee_estimate)}</span>`
+  const link = record.job_url
+    ? `<a class="tracker-link" href="${escapeHtml(record.job_url)}" target="_blank" rel="noreferrer">Job ad ↗</a>`
     : "";
-  return `<span class="size-band">${escapeHtml(record.employee_band)}</span>${estimate}`;
-}
-
-function routeMarkup(record) {
-  return `
-    <span class="pill ${routeClass(record.activity_type)}">${routeLabel(record.activity_type)}</span>
-    <span class="cell-note">${escapeHtml(record.route_reason)}</span>
-  `;
+  return `<strong>${escapeHtml(record.job_title || "Commercial approach")}</strong>${link}`;
 }
 
 function contactMarkup(record) {
   if (!record.contact_name) {
     return record.activity_type === "Open Role Application"
-      ? '<span class="cell-note">Online application</span>'
-      : '<span class="cell-note">Contact not recorded</span>';
+      ? '<span class="tracker-muted">Online application</span>'
+      : '<span class="tracker-muted">—</span>';
   }
-
-  const title = record.contact_title
-    ? `<span class="cell-note">${escapeHtml(record.contact_title)}</span>`
-    : "";
-  const email = record.contact_email
-    ? `<a class="cell-note contact-email" href="mailto:${escapeHtml(record.contact_email)}">${escapeHtml(record.contact_email)}</a>`
-    : "";
-  const sent = record.contacted_date
-    ? `<span class="cell-note">Sent ${escapeHtml(record.contacted_date)}</span>`
-    : "";
-  return `${escapeHtml(record.contact_name)}${title}${email}${sent}`;
+  const title = record.contact_title ? `<span class="tracker-meta">${escapeHtml(record.contact_title)}</span>` : "";
+  return `<strong>${escapeHtml(record.contact_name)}</strong>${title}`;
 }
 
-function progressFilterMatches(record, selected) {
-  if (!selected) return true;
-  if (selected === "Interviewed") return record.interview_count > 0;
-  if (selected === "Active") {
-    return record.current_status === "Active" || record.current_status === "Awaiting Response";
-  }
-  return record.current_status === selected;
-}
-
-function recordMatches(record) {
-  const query = elements.search.value.trim().toLowerCase();
-  const city = elements.city.value;
-  const industry = elements.industry.value;
-  const size = elements.size.value;
-  const type = elements.type.value;
-  const status = elements.status.value;
-  const haystack = Object.values(record).join(" ").toLowerCase();
-
-  return (
-    (!query || haystack.includes(query)) &&
-    (!city || splitCities(record.city).includes(city)) &&
-    (!industry || record.sector_group === industry) &&
-    (!size || record.employee_band === size) &&
-    (!type || record.activity_type === type) &&
-    progressFilterMatches(record, status)
-  );
+function activityMarkup(record) {
+  const start = record.activity_date ? `<strong>${escapeHtml(record.activity_date)}</strong>` : "";
+  const updated = record.outcome_date && record.outcome_date !== record.activity_date
+    ? `<span class="tracker-meta">Updated ${escapeHtml(record.outcome_date)}</span>`
+    : "";
+  return `${start}${updated}`;
 }
 
 function rowMarkup(record) {
-  const details = record.interview_count > 0 || record.outcome
-    ? `<button class="details-button" type="button" data-details-id="${escapeHtml(record.id)}">DETAILS</button>`
+  const details = (record.interview_count > 0 || record.outcome || record.notes)
+    ? `<button class="details-button tracker-details" type="button" data-details-id="${escapeHtml(record.id)}">Details</button>`
     : "";
 
   return `
     <tr>
-      <td class="date-cell" data-label="Date">${escapeHtml(record.activity_date)}</td>
-      <td class="company-cell" data-label="Company">${escapeHtml(record.company)}</td>
-      <td class="industry-cell" data-label="Industry">${industryMarkup(record)}</td>
-      <td class="size-cell" data-label="Company size">${companySizeMarkup(record)}</td>
-      <td class="city-cell" data-label="City">${escapeHtml(record.city)}</td>
-      <td class="role-cell" data-label="Role">${roleMarkup(record)}</td>
-      <td class="job-ad-cell" data-label="Job ad">${jobAdMarkup(record)}</td>
+      <td class="company-cell" data-label="Company">${companyMarkup(record)}</td>
+      <td class="role-cell" data-label="Role / context">${roleMarkup(record)}</td>
+      <td class="route-cell" data-label="Route"><span class="pill ${routeClass(record.activity_type)}">${escapeHtml(routeLabel(record.activity_type))}</span></td>
+      <td class="status-cell" data-label="Status"><span class="tracker-status ${statusClass(record)}">${escapeHtml(statusLabel(record))}</span>${details}</td>
       <td class="contact-cell" data-label="Contact">${contactMarkup(record)}</td>
-      <td class="route-cell" data-label="Route">${routeMarkup(record)}</td>
-      <td class="progress-cell" data-label="Progress">
-        <div class="progress-flow">${progressMarkup(record)}</div>
-        ${details}
-      </td>
+      <td class="date-cell" data-label="Activity">${activityMarkup(record)}</td>
     </tr>
   `;
 }
 
-function openDetails(record) {
-  elements.dialogCompany.textContent = record.company;
-  elements.dialogRole.textContent = record.job_title;
-  elements.dialogStages.textContent = record.interview_details || "No interview recorded.";
-  elements.dialogOutcome.textContent = record.outcome || "No outcome recorded.";
-  elements.dialog.showModal();
-}
-
-function render() {
-  const filtered = state.records.filter(recordMatches);
-  elements.body.innerHTML = filtered.map(rowMarkup).join("");
-  elements.visibleCount.textContent = filtered.length;
-  elements.emptyState.hidden = filtered.length !== 0;
-
-  document.querySelectorAll("[data-details-id]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const record = state.records.find((item) => item.id === button.dataset.detailsId);
-      if (record) openDetails(record);
-    });
+function setTrackerView(view) {
+  trackerView = VIEW_DESCRIPTIONS[view] ? view : "current";
+  document.querySelectorAll("[data-pipeline-view]").forEach((button) => {
+    const active = button.dataset.pipelineView === trackerView;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
   });
+  if (elements.viewDescription) elements.viewDescription.textContent = VIEW_DESCRIPTIONS[trackerView];
+  render();
 }
 
 function renderSummary() {
-  elements.totalCount.textContent = state.records.length;
-  elements.applicationCount.textContent = state.records.filter(
-    (record) => record.activity_type === "Open Role Application",
-  ).length;
-  elements.directCount.textContent = state.records.filter(
-    (record) => record.activity_type === "Direct Role Outreach",
-  ).length;
-  elements.speculativeCount.textContent = state.records.filter(
-    (record) => record.activity_type === "Speculative Outreach",
-  ).length;
-  elements.targetCount.textContent = state.records.filter(
-    (record) => record.activity_type === "Prospective Target",
-  ).length;
-  elements.interviewCount.textContent = state.records.filter(
-    (record) => record.interview_count > 0,
-  ).length;
+  const counts = {
+    current: state.records.filter((record) => viewMatches(record, "current")).length,
+    applications: state.records.filter(isOpenApplication).length,
+    interviews: state.records.filter(isLiveInterview).length,
+    awaiting: state.records.filter(isAwaitingSpeculative).length,
+    closed: state.records.filter((record) => viewMatches(record, "closed")).length,
+    all: state.records.length,
+  };
+
+  Object.entries(counts).forEach(([key, value]) => {
+    const el = document.querySelector(`#view-count-${key}`);
+    if (el) el.textContent = String(value);
+  });
+}
+
+function render() {
+  const filtered = state.records.filter((record) => viewMatches(record) && searchMatches(record));
+  elements.body.innerHTML = filtered.map(rowMarkup).join("");
+  elements.visibleCount.textContent = String(filtered.length);
+  elements.emptyState.hidden = filtered.length !== 0;
+}
+
+function openDetails(record) {
+  elements.dialogCompany.textContent = record.company;
+  elements.dialogRole.textContent = record.job_title || "Commercial approach";
+  elements.dialogStages.textContent = record.interview_details || "No interview stage recorded.";
+  elements.dialogOutcome.textContent = record.outcome || "No closed outcome recorded.";
+  elements.dialog.showModal();
 }
 
 function renderLastUpdated() {
@@ -364,49 +317,108 @@ function renderLastUpdated() {
   }).format(date);
 }
 
+function applyStatusPatch(record, patch) {
+  if (!patch) return record;
+  const merged = { ...record, ...patch };
+  if (patch.notes_append) {
+    merged.notes = [record.notes, patch.notes_append].filter(Boolean).join(" ");
+    delete merged.notes_append;
+  }
+  return merged;
+}
+
+function setupInteractions() {
+  elements.search?.addEventListener("input", render);
+
+  elements.clear?.addEventListener("click", () => {
+    if (elements.search) elements.search.value = "";
+    setTrackerView("current");
+    elements.search?.focus();
+  });
+
+  document.querySelectorAll("[data-pipeline-view]").forEach((button) => {
+    button.addEventListener("click", () => setTrackerView(button.dataset.pipelineView));
+  });
+
+  document.addEventListener("click", (event) => {
+    const detailButton = event.target.closest?.("[data-details-id]");
+    if (detailButton) {
+      const record = state.records.find((item) => String(item.id) === String(detailButton.dataset.detailsId));
+      if (record) openDetails(record);
+      return;
+    }
+
+    const topCard = event.target.closest?.("[data-tracker-view]");
+    if (topCard) {
+      setTrackerView(topCard.dataset.trackerView);
+      document.querySelector(".tracker-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+
+  elements.dialogClose?.addEventListener("click", () => elements.dialog.close());
+  elements.dialog?.addEventListener("click", (event) => {
+    if (event.target === elements.dialog) elements.dialog.close();
+  });
+}
+
 async function initialise() {
   try {
-    const [response, updatesResponse, companiesResponse] = await Promise.all([
+    const [response, updatesResponse, companiesResponse, statusResponse] = await Promise.all([
       fetch("data/applications.csv", { cache: "no-store" }),
       fetch("data/application-updates.csv", { cache: "no-store" }),
       fetch("data/companies.csv", { cache: "no-store" }),
+      fetch("data/application-status-overrides.json", { cache: "no-store" }),
     ]);
+
     if (!response.ok) throw new Error(`Could not load activity data (${response.status})`);
-    if (!updatesResponse.ok) {
-      throw new Error(`Could not load activity updates (${updatesResponse.status})`);
-    }
-    if (!companiesResponse.ok) {
-      throw new Error(`Could not load company data (${companiesResponse.status})`);
+    if (!updatesResponse.ok) throw new Error(`Could not load activity updates (${updatesResponse.status})`);
+    if (!companiesResponse.ok) throw new Error(`Could not load company data (${companiesResponse.status})`);
+    if (!statusResponse.ok) throw new Error(`Could not load status updates (${statusResponse.status})`);
+
+    const companies = parseCsv(await companiesResponse.text());
+    state.companyProfiles = new Map(companies.map((profile) => [profile.company, profile]));
+
+    const recordsById = new Map();
+    parseCsv(await response.text()).forEach((record) => {
+      const legacyPatch = typeof roleOverrides !== "undefined" ? roleOverrides[record.id] : null;
+      recordsById.set(String(record.id), legacyPatch ? { ...record, ...legacyPatch } : record);
+    });
+
+    if (typeof roleAdditions !== "undefined") {
+      roleAdditions.forEach((record) => {
+        if (!recordsById.has(String(record.id))) recordsById.set(String(record.id), record);
+      });
     }
 
-    const csv = await response.text();
-    const updatesCsv = await updatesResponse.text();
-    const companiesCsv = await companiesResponse.text();
-    state.companyProfiles = new Map(
-      parseCsv(companiesCsv).map((profile) => [profile.company, profile]),
-    );
+    parseCsv(await updatesResponse.text()).forEach((update) => {
+      const existing = recordsById.get(String(update.id)) || {};
+      recordsById.set(String(update.id), { ...existing, ...update });
+    });
 
-    const recordsById = new Map(parseCsv(csv).map((record) => [record.id, record]));
-    parseCsv(updatesCsv).forEach((record) => recordsById.set(record.id, record));
+    const statusOverrides = await statusResponse.json();
+    Object.entries(statusOverrides).forEach(([id, patch]) => {
+      const existing = recordsById.get(String(id));
+      if (existing) recordsById.set(String(id), applyStatusPatch(existing, patch));
+    });
 
     state.records = [...recordsById.values()]
-      .map(normaliseRecord)
-      .sort((a, b) => b.date_sort.localeCompare(a.date_sort) || Number(b.id) - Number(a.id));
+      .filter((record) => record.activity_type !== "Prospective Target")
+      .map(applyCompanyProfile)
+      .sort((a, b) =>
+        String(b.data_updated_sort || b.date_sort || "").localeCompare(String(a.data_updated_sort || a.date_sort || "")) ||
+        String(b.date_sort || "").localeCompare(String(a.date_sort || "")) ||
+        Number(b.id || 0) - Number(a.id || 0),
+      );
 
-    renderSummary();
     renderLastUpdated();
-    setupFilters();
-    render();
+    renderSummary();
+    setupInteractions();
+    setTrackerView("current");
   } catch (error) {
     document.querySelector(".results-panel").innerHTML = `
       <div class="load-error">The tracker data could not be loaded. ${escapeHtml(error.message)}</div>
     `;
   }
 }
-
-elements.dialogClose.addEventListener("click", () => elements.dialog.close());
-elements.dialog.addEventListener("click", (event) => {
-  if (event.target === elements.dialog) elements.dialog.close();
-});
 
 initialise();
