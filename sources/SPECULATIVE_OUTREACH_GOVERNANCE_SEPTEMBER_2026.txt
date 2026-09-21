@@ -1,5 +1,5 @@
 ANDREW LANGMAID - SPECULATIVE OUTREACH GOVERNANCE
-Version 4 - 21 September 2026
+Version 5 - 21 September 2026
 
 PURPOSE AND AUTHORITY
 
@@ -147,11 +147,14 @@ Prefer, where appropriate:
 
 Do not select CTO/technical leadership when a credible commercial decision-maker is available.
 
-GENESY
+GENESY - USER-OPERATED ONLY
 
-Andrew may use Genesy to source professional contacts and direct professional emails.
-Do not run any credit-consuming search, export, enrichment or personal-contact access without Andrew's prior explicit approval.
-When Andrew supplies a Genesy result, validate role/company fit and then use the supplied professional email if appropriate.
+ChatGPT does NOT use Genesy.
+ChatGPT must never run, attempt, simulate or claim to run a Genesy search, enrichment, export, contact lookup or any other Genesy action.
+ChatGPT must never spend, request permission to spend, or imply that it can spend Genesy credits.
+Andrew may use Genesy manually if he chooses.
+If Andrew supplies a Genesy result in the conversation, ChatGPT may validate the supplied role/company fit and use a supplied professional email where appropriate.
+If no trustworthy public/company-controlled professional email can be verified, mark the email as needing sourcing. Do not tell Andrew that ChatGPT will use Genesy next.
 
 FINAL PRINCIPLE
 
@@ -194,6 +197,11 @@ Additional operating rules:
 - Relevance must be rechecked immediately before recipient/email sourcing and before draft creation.
 - Legal-tech companies are excluded by default. Do not promote them merely because the company is growing or internationally active.
 - Where a correct professional email can be verified from a public/company-controlled source, it may be used without requiring Andrew to repeat the search in Genesy.
-- If no sufficiently trustworthy professional email can be verified, list the company for Andrew to research in Genesy rather than guessing an address.
+- If no sufficiently trustworthy professional email can be verified, mark the email as needing sourcing rather than guessing an address. Andrew may choose how to source it manually.
 - Draft creation may begin only after company fit, duplicate/history clearance, recipient appropriateness and email confidence all pass.
 - Every new draft must use the user-confirmed HTML/CID signature + real HTML bullet architecture validated on 21 September 2026.
+
+
+USER-CORRECTED GENESY RULE - 21 SEPTEMBER 2026
+
+Andrew explicitly corrected the workflow: ChatGPT does not use Genesy. This is an operating boundary, not an approval gate. Genesy is user-operated only. Company hunting, qualification, deduplication and public contact research must continue without treating Genesy as an assistant tool or next automated step.
