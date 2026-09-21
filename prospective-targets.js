@@ -50,6 +50,13 @@
     });
   }
 
+  function displayDate(value) {
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || ""));
+    if (!match) return "31 Jul 2026";
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    return `${Number(match[3])} ${months[Number(match[2]) - 1]} ${match[1]}`;
+  }
+
   function mapTarget(row, index) {
     const emailNote = row.contact_email
       ? `Contact email available: ${row.contact_email}.`
@@ -60,7 +67,7 @@
 
     return {
       id: `prospective-${index + 1}-${normaliseCompanyName(row.company)}`,
-      activity_date: "31 Jul 2026",
+      activity_date: displayDate(row.verified_date),
       date_sort: row.verified_date || "2026-07-30",
       company: row.company,
       city: row.city,
@@ -132,6 +139,7 @@
       "data/vetted-speculative-targets-stockholm-2.csv",
       "data/vetted-speculative-targets-expanded-gothenburg.csv",
       "data/vetted-speculative-targets-expanded-stockholm.csv",
+      "data/vetted-speculative-targets-rest-sweden-2026-09-21.csv",
       "data/re-audit-additions-2026-07-31.csv",
     ];
 
