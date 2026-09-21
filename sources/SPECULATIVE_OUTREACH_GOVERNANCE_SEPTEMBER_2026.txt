@@ -1,5 +1,5 @@
 ANDREW LANGMAID - SPECULATIVE OUTREACH GOVERNANCE
-Version 3 - 21 September 2026
+Version 4 - 21 September 2026
 
 PURPOSE AND AUTHORITY
 
@@ -184,3 +184,16 @@ Before promoting a new speculative company, explicitly ask whether generative AI
 - DO NOT exclude merely because a company uses AI. Physical products, infrastructure, proprietary operational data, embedded enterprise workflows, regulated/mission-critical systems, distribution networks and specialist platforms may remain defensible.
 - Where exposure is mixed, mark the company HOLD / BORDERLINE rather than silently qualifying it.
 - If a company fails this product-defensibility check, do not spend Andrew's time sourcing a professional contact or creating a Gmail draft.
+
+
+USER-CONFIRMED CANONICAL DRAFT STANDARD - 21 SEPTEMBER 2026
+
+Andrew reviewed the rebuilt speculative Gmail drafts after the HTML/CID repair and confirmed that they were perfect. Treat that rebuilt structure as the canonical production standard for all future speculative drafts.
+
+Additional operating rules:
+- Relevance must be rechecked immediately before recipient/email sourcing and before draft creation.
+- Legal-tech companies are excluded by default. Do not promote them merely because the company is growing or internationally active.
+- Where a correct professional email can be verified from a public/company-controlled source, it may be used without requiring Andrew to repeat the search in Genesy.
+- If no sufficiently trustworthy professional email can be verified, list the company for Andrew to research in Genesy rather than guessing an address.
+- Draft creation may begin only after company fit, duplicate/history clearance, recipient appropriateness and email confidence all pass.
+- Every new draft must use the user-confirmed HTML/CID signature + real HTML bullet architecture validated on 21 September 2026.
