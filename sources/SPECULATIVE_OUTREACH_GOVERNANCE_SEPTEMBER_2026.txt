@@ -1,5 +1,5 @@
 ANDREW LANGMAID - SPECULATIVE OUTREACH GOVERNANCE
-Version 1 - 21 September 2026
+Version 2 - 21 September 2026
 
 PURPOSE AND AUTHORITY
 
@@ -156,3 +156,20 @@ FINAL PRINCIPLE
 The objective is not maximum volume. It is a defensible list of companies Andrew could genuinely want to join and where his international full-cycle sales background has a plausible commercial use.
 
 A completed speculative workflow is only complete when BOTH company qualification and Gmail-draft governance are correct.
+
+
+APPROVED REBUILD METHOD - CONFIRMED 21 SEPTEMBER 2026
+
+When an attached draft must be recreated rather than edited in place:
+1. Use a previously sent approved speculative email as the visual reference.
+2. Build the outgoing message as HTML, not plain text.
+3. Preserve the real HTML bullet list and bold proof-point labels.
+4. Reuse the established signature HTML structure.
+5. Embed Andrew's approved headshot inline so Gmail stores it as a CID/inline image.
+6. Attach the company-specific CV PDF.
+7. Create the replacement draft first.
+8. Inspect the saved Gmail draft/MIME to confirm inline image + attachment + DRAFT state.
+9. Only then remove the malformed/superseded draft.
+10. Re-list Gmail drafts and confirm exactly one active draft remains for that company.
+
+This method was successfully validated on the 21 September 2026 speculative batch and is now the required rebuild method for future speculative drafts.
