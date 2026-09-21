@@ -20,7 +20,7 @@
   }
 
   function isClosed(record) {
-    return ['Application Closed', 'Role Filled / Closed', 'Closed by Andrew', 'Not Pursued', 'No Current Opportunity'].includes(record.current_status);
+    return ['Application Closed', 'Role Filled / Closed', 'Closed by Andrew', 'Not Pursued', 'No Current Opportunity', 'Not a Fit', 'Application Incomplete'].includes(record.current_status);
   }
 
   function cvVersion(record) {
@@ -215,7 +215,6 @@
     }
     if (typeof state === 'undefined' || !state.records?.length) return;
 
-    await applyOverrides();
     insertOverview(state.records);
     enhanceDialog();
     applyCvBadges();
