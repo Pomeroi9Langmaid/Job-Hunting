@@ -160,3 +160,16 @@ SEVEN-DRAFT CID REBUILD - 22 SEPTEMBER 2026 - 166/462
 - Exactly seven intended active drafts exist for these seven companies; all are labelled DRAFT.
 - Combi Wear Parts recipient is Fredrik Ivansson, CEO, fredrik.ivansson@combiparts.com. Keep this draft on hold while Sacha de Bilderling's existing positive review/reply is still in progress.
 - Nothing from this rebuild was sent or scheduled.
+
+LIVE GOVERNANCE RECONCILIATION + CONTINUATION HUNT - 22 SEPTEMBER 2026 - 169/471
+- Structural audit found one empty CSV row in the Governance ledger. Earlier 166/462 reporting counted that blank as a decision; the true pre-batch state was 166 active / 461 real governed company decisions.
+- The empty row has been removed. After this continuation batch the live state is 169 active / 471 governed decisions.
+- New Priority-A additions: Kopparbergs Bryggeri and Åbro Bryggeri.
+- New Priority-B conditional addition: Magnihill.
+- Existing Sevan target enriched: CEO Elin Ingves Pyk now has verified public direct email elin@sevan.se; active count unchanged by this correction.
+- Venture Design is routed to ADVERTISED_ROLE_ROUTE because a directly relevant Head of Sales recruitment is current/recently active.
+- New governed holds: Kronfågel (large-group/local-commercial structure), PR Home (parent + financial), Englesson (scale + financial), Kullamust (scale + financial), Klädesholmen Seafood (financial) and LOHILO Foods (compact/international-scope).
+- Repo and targeted Gmail history checks found no prior employment outreach for the three new active targets.
+- No Gmail draft was created, changed, sent or scheduled in this hunting continuation. The seven verified CID drafts remain untouched.
+- Next continuation must start from 169/471 and only evaluate companies absent from both live files.
+
