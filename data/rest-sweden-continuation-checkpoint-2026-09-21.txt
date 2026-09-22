@@ -326,3 +326,13 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 178/539
 - No email was created, sent or scheduled for these holds/diversions.
 - Next untouched-company continuation starts from 178/539.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 179/548
+- Live active speculative queue: 179 companies.
+- Governance/dedupe ledger: 548 real company decisions.
+- New conditional promotion: Newport Collection (B), Norrköping.
+- Newport basis: profitable premium interiors/lifestyle business, global e-commerce, explicit 2026 international ambitions and founder-led expansion. D2C/retail weighting keeps it second wave.
+- Preferred recipient: founder/CEO Bo-Wilhelm Horndahl, wille@newport.se, publicly published company address.
+- Holds added: Elodie Details (small + loss-making), Design House Stockholm (small + loss-making), Sagaform (New Wave Group + loss), Light My Fire (small/declining), Cooee Design (micro + loss), DBKD (micro despite strong margins), Ire Möbel (micro), Casall Professional (Nordic/project-technical scope).
+- No email was sent or scheduled in this governance batch.
+- Next untouched-company continuation starts from 179/548.
+
