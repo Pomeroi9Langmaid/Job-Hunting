@@ -387,3 +387,10 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 180/562
 - No email was sent or scheduled in this governance batch.
 - Next untouched-company continuation starts from 180/562.
 
+GMAIL DRAFT QA - KLIPPAN YLLEFABRIK - 22 SEPTEMBER 2026
+- Klippan Yllefabrik Gmail draft created for Petter Magnusson at petter@klippanyllefabrik.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+
