@@ -173,3 +173,15 @@ LIVE GOVERNANCE RECONCILIATION + CONTINUATION HUNT - 22 SEPTEMBER 2026 - 169/471
 - No Gmail draft was created, changed, sent or scheduled in this hunting continuation. The seven verified CID drafts remain untouched.
 - Next continuation must start from 169/471 and only evaluate companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 171/490
+- Live active speculative queue: 171 companies.
+- Governance/dedupe ledger: 490 real company decisions.
+- New conditional promotions: IV Produkt (B) and HAKI Safety (B). Both have verified public senior professional emails and cleared repo/Gmail duplicate checks.
+- IV Produkt preferred recipient: Niclas Schubert, SVP Sales & Marketing Europe, niclas.schubert@ivprodukt.se.
+- HAKI Safety preferred recipient: Sverker Lindberg, President and CEO, sverker.lindberg@hakisafety.com.
+- New governed holds: Formpress, HSP Gripen, SP Maskiner, Malwa Forest, Byarums Bruk, Örsjö Belysning, Scanmaskin / Tyrolit Construction Sweden, Setra Group, Källemo, HILFA Sweden, Hillerstorp Sweden, Luna Group, ESSVE and OP Höglunds.
+- FTG Forest / FTG Cranes is routed to ADVERTISED_ROLE_ROUTE because a directly relevant Germany/Austria sales-market-development recruitment takes precedence over speculative outreach.
+- Duplicate/history locks added for Berg Propulsion and Swegon; both were already contacted in July 2026 and must not resurface in the new-target hunt.
+- No Gmail draft was created, altered, sent or scheduled. The seven previously verified CID drafts remain untouched.
+- Next continuation must start from 171/490 and only evaluate genuinely untouched companies absent from both live files.
+
