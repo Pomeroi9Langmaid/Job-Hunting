@@ -308,3 +308,10 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 178/534
 - No email was sent or scheduled in this governance batch.
 - Next untouched-company continuation starts from 178/534.
 
+GMAIL DRAFT QA - HALLINS - 22 SEPTEMBER 2026
+- Hallins Gmail draft created for Lars Torpman at lars.torpman@hallins.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+
