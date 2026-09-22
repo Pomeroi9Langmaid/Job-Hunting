@@ -152,3 +152,11 @@ DRAFT QA + CURRENT-DATA REFRESH - 22 SEPTEMBER 2026 - 166/462
 - New active additions saved: EWES (B) and Kongamek (A). Kongamek preferred recipient is CCO Ida Stiller, ida.stiller@kongamek.se.
 - Current-data correction: Sordin removed from active queue and changed to HOLD_CURRENT_DOWNSIZING after June 2026 redundancy announcement.
 - New governed exclusions/holds include Pinewood (apparel), Ed-Wa Plast (small/technical), Skeppshultstegen (small/financial), Hörle Wire (technical/financial), and Gnosjö Automatsvarvning (technical/financial).
+
+SEVEN-DRAFT CID REBUILD - 22 SEPTEMBER 2026 - 166/462
+- Rebuilt seven Gmail speculative drafts: Combi Wear Parts, The Green Dairy, Fria Bröd, Delicato Bakverk, Olle Svenssons Partiaffär, Rowico Home and Malmsten.
+- All seven use the canonical opening only: company fit sentence plus governed geography sentence; no extra company-specific facts added to the first paragraph.
+- QA verified real HTML bullet list, all four bold proof-point headings, established table signature, 108px circular Andrew headshot converted by Gmail into a true inline CID image, clickable contact links and the correct company-specific CV PDF.
+- Exactly seven intended active drafts exist for these seven companies; all are labelled DRAFT.
+- Combi Wear Parts recipient is Fredrik Ivansson, CEO, fredrik.ivansson@combiparts.com. Keep this draft on hold while Sacha de Bilderling's existing positive review/reply is still in progress.
+- Nothing from this rebuild was sent or scheduled.
