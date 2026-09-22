@@ -206,3 +206,14 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 172/511
 - No Gmail draft was created, changed, sent or scheduled. The seven previously verified CID drafts remain untouched.
 - Next continuation must start from 172/511 and only evaluate genuinely untouched companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 173/512
+- Live active speculative queue: 173 companies.
+- Governance/dedupe ledger: 512 real company decisions.
+- New conditional promotion: Smedbo (B), Helsingborg.
+- Current CEO Pär Rampe took over in March 2026; direct professional email still needs verification and must not be guessed from format data.
+- Fit basis: profitable premium physical products, roughly 70 staff globally, own international organisations across Europe/USA, retailer/e-commerce/project channels and an explicit current growth strategy.
+- Scandtap's directly relevant Sales Manager recruitment closed 9 Aug 2026; it is no longer a live advertised-role conflict. Current Smedbo recruiting is non-conflicting product/customer-service work.
+- Repo and targeted Gmail history show no prior Smedbo employment outreach.
+- No Gmail draft was created, changed, sent or scheduled. The seven previously verified CID drafts remain untouched.
+- Next continuation must start from 173/512 and only evaluate genuinely untouched companies absent from both live files.
+
