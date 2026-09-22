@@ -115,3 +115,11 @@ LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 165/453
 - EWES, Varnamo of Sweden / Varnamo Sangklader and Wikholm Form were already safely saved before this continuation and must not be reworked.
 - Continue only with genuinely untouched companies absent from both live files, with repo/Gmail/current-role checks before promotion.
 - No email sent or scheduled.
+
+DRAFT + EMAIL RECONCILIATION - 22 SEPTEMBER 2026 - 165/453
+- Live active queue: 165 companies.
+- Live Governance/dedupe ledger: 453 decisions.
+- Sacha de Bilderling / Combi Wear Parts reply verified in Gmail: Business Development Officer; substantive positive review-in-progress response; Sacha will study the request and come back. Do not chase now.
+- New Gmail drafts created for The Green Dairy, Fria Bröd, Delicato Bakverk, Olle Svenssons Partiaffär, Rowico Home and Malmsten. Company-specific CV filenames attached. Nothing sent or scheduled.
+- Gmail connector cannot reproduce the true inline/CID headshot on created drafts; these six therefore use the approved email structure with text signature and no photo, explicitly at the user's request to move new companies into Gmail drafting.
+- Current active companies missing a direct professional email remain a separate enrichment list.
