@@ -250,3 +250,12 @@ LIVE CONTINUATION / DELIVERY RECONCILIATION - 22 SEPTEMBER 2026 - 175/523
 - No new message was sent or scheduled during this reconciliation.
 - Next untouched-company continuation starts from 175/523.
 
+GMAIL DRAFT CORRECTION - 22 SEPTEMBER 2026
+- Najell Gmail draft created for Malin Jeraeus Wallerborn at malin@najell.com. Subject: Andrew Langmaid.
+- Human Care Gmail draft created for Jessica Ammerlaan at jessica.ammerlaan@humancaregroup.com. Subject: Andrew Langmaid.
+- Both drafts are verified DRAFT state with correct company-named CV PDF attached and a true Gmail inline image/CID headshot.
+- QA confirms the email body contains no marketing wording; the opening now uses "international sales and new-business work".
+- Exactly one intended active draft exists for each recipient/company.
+- Nothing was sent or scheduled.
+- Governance now permanently locks marketing wording out of speculative email copy while preserving factual historical titles in the MASTER CV.
+
