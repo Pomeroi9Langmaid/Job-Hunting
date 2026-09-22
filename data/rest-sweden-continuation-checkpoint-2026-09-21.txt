@@ -259,3 +259,16 @@ GMAIL DRAFT CORRECTION - 22 SEPTEMBER 2026
 - Nothing was sent or scheduled.
 - Governance now permanently locks marketing wording out of speculative email copy while preserving factual historical titles in the MASTER CV.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 176/528
+- Live active speculative queue: 176 companies.
+- Governance/dedupe ledger: 528 real company decisions.
+- New conditional promotion: Hedson Technologies (B), Arlöv / Vänersborg.
+- Hedson fit: profitable Swedish industrial equipment business, global partner/distributor sales and current international sales leadership; Storskogen ownership and application-specific workshop/automotive domain keep it second wave.
+- Preferred recipient: Niklas Johansson, Business Unit Manager and Sales Director - MSO Partnerships, niklas.johansson@hedson.com.
+- Frico governed as HOLD_PARENT_DUPLICATE because Systemair is already active.
+- Spendrups governed as HOLD_DOMESTIC_COMMERCIAL_STRUCTURE pending a clearer autonomous international-sales mandate.
+- EngmoDun governed as HOLD_FOREIGN_PARENT because the brand is part of Denmark-based DYKON A/S.
+- Nola Industrier governed as HOLD_SMALL_FINANCIAL.
+- No email was sent or scheduled in this governance batch.
+- Next untouched-company continuation starts from 176/528.
+
