@@ -4,8 +4,8 @@ Saved: 21 September 2026
 Authority: sources/SPECULATIVE_OUTREACH_GOVERNANCE_SEPTEMBER_2026.txt (Version 5)
 
 CURRENT STATE
-- Active governed Rest-of-Sweden queue: 121 companies.
-- Governance/dedupe ledger: 294 decisions.
+- Active governed Rest-of-Sweden queue: 129 companies.
+- Governance/dedupe ledger: 323 decisions.
 - Closed historic regional audit remains closed; do not reopen it just to re-scan already completed geography.
 - This Rest-of-Sweden expansion layer is additive and must continuously dedupe against repo/tracker plus Gmail history.
 
@@ -50,3 +50,13 @@ LATEST RECONCILIATION - 22 SEPTEMBER 2026 - 121/294
 - Latest qualified additions include Weland AB, Glimakra of Sweden, Brodit, Regin Group, MCT Brattberg, Swede Ship Marine, Binar Handling, Hydria Water, Modul-System, TYRI Lights, BCC AB, Work System, Cresto Group and Alentec & Orion.
 - Recent duplicate/history locks include Hydroscand, Nederman, Elvaco, OXE Marine, Candela, Consilium Safety Group, Plejd, VBG Group, Oxeon/TeXtreme and QleanAir.
 - Continue only from companies absent from BOTH live files and then check repo-wide + Gmail history before promotion.
+
+LATEST RESTART PASS - 22 SEPTEMBER 2026
+- Restarted from live repo after chat error; live state at restart was 126 active / 311 governed decisions.
+- Added Skandia Elevator (A), LIMAB (B conditional) and Kockum Sonics / Kockumation (B conditional).
+- Recorded NIMO and Steelwrist as ADVERTISED_ROLE_ROUTE, not speculative targets.
+- Recorded Tele Radio as ALREADY_CONTACTED_GROUP_REPLIED through the 3 Aug Allgon approach and 5 Aug Group CEO response.
+- Recorded Hultdins as ALREADY_CONTACTED from 11 Aug outreach with company CV attached.
+- Recorded Hörby Bruk, Primo Sverige, Habia Cable, Elcowire and Lesjöfors as governed holds for fit/structure/technical reasons.
+- Current live state after this pass: 129 active / 323 governed decisions.
+- Duplicate control remains: a company must be absent from both active queue and ledger, then clear Gmail history, current-role and fit checks before promotion.
