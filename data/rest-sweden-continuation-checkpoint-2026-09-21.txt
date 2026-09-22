@@ -72,3 +72,12 @@ CONTINUATION PASS - 22 SEPTEMBER 2026 - 134/336
 - New holds/watchlist recorded: CTT Systems, Stenvalls Trä, Faluplast, Bronco Transmission, UW-Tech and Holma Spinning Mill.
 - Older Gothenburg/Stockholm send-queue files are not a current draft inventory; the current applications/sent-history file supersedes them because many of those companies have already been contacted.
 - Continue hunting only with companies absent from both the 134-company active queue and 336-decision Governance ledger, with Gmail/current-role/history checks before promotion.
+
+DRAFT STAGING + FURTHER HUNT - 22 SEPTEMBER 2026 - 136/339
+- Active speculative queue: 136 companies.
+- Governance/dedupe ledger: 339 decisions.
+- 34 Priority-A companies with verified public direct emails have been staged in data/speculative-draft-production-manifest-2026-09-22.csv.
+- Gmail production is blocked by connector capability: create_draft cannot embed the required inline/CID signature headshot. Governance v5 explicitly forbids creating downgraded plain/non-CID drafts, so no malformed Gmail drafts were created.
+- No email was sent or scheduled.
+- Further hunt additions: Nick's / LBP = Priority A, email sourcing still required; Candypeople = Priority B conditional, current direct email still requires verification.
+- Swedish Nutra = ADVERTISED_ROLE_ROUTE because a live Sales Manager B2B / Head of Sales vacancy was published 20 Sep 2026 with deadline 20 Oct 2026.
