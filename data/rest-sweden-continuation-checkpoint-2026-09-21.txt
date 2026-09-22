@@ -197,3 +197,12 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 172/505
 - No Gmail draft was created, changed, sent or scheduled. The seven previously verified CID drafts remain untouched.
 - Next continuation must start from 172/505 and only evaluate genuinely untouched companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 172/511
+- Active speculative queue remains 172 companies.
+- Governance/dedupe ledger now contains 511 real company decisions.
+- No new promotion in this pass; the untouched candidates failed hard gates rather than being padded into the queue.
+- New governed holds: Acetec (international-scope/technical), Nimo-Verken (current financial capacity), Svenska Tanso (specialist technical), Teijo AB (foreign-parent/scale), RE:DO Foods (micro/financial) and Sweeds Sweden (micro scale).
+- All six cleared repo/Gmail duplicate-history checks before Governance was written.
+- No Gmail draft was created, changed, sent or scheduled. The seven previously verified CID drafts remain untouched.
+- Next continuation must start from 172/511 and only evaluate genuinely untouched companies absent from both live files.
+
