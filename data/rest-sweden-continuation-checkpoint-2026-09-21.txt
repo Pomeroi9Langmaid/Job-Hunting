@@ -132,3 +132,12 @@ LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 166/456
 - Sacha de Bilderling / Combi Wear Parts is now an active conversation: Sacha replied on 22 Sep 2026 that he will study the request and opportunities within the company, so no recipient repair is needed.
 - Draft production remains subject to Governance v5 HTML/CID signature + company-specific CV requirements; no downgraded Gmail draft should be created.
 - Continue hunting only from companies absent from both live files and after Gmail/current-role checks.
+
+LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 166/456
+- Active speculative queue: 166 companies.
+- Governance/dedupe ledger: 456 decisions.
+- Confirmed saved Priority-A additions include The Green Dairy, Almondy and Rowico Home; conditional additions include Ankarsrum Kitchen, Primus-Silva Sweden / Silva, Liljas Plast, Conform Collection and EWES.
+- Combi Wear Parts recipient hierarchy corrected from Sacha de Bilderling to CEO Fredrik Ivansson in Governance, active queue and draft manifest.
+- Five current Gmail drafts (Malmsten, Rowico Home, Olle Svenssons Partiaffär, Delicato Bakverk, Fria Bröd) fail canonical QA: opening wording was altered and no inline/CID headshot is present. They are NOT send-ready. No further malformed drafts should be created.
+- Gmail connector test confirmed that attaching the headshot produces an ordinary attachment rather than a CID/inline MIME part. Test duplicate was removed; no email was sent or scheduled.
+- Continue hunting from EWES / remaining untouched mid-market Swedish exporters; do not repeat prior sweeps.
