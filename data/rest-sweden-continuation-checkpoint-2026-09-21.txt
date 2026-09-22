@@ -81,3 +81,13 @@ DRAFT STAGING + FURTHER HUNT - 22 SEPTEMBER 2026 - 136/339
 - No email was sent or scheduled.
 - Further hunt additions: Nick's / LBP = Priority A, email sourcing still required; Candypeople = Priority B conditional, current direct email still requires verification.
 - Swedish Nutra = ADVERTISED_ROLE_ROUTE because a live Sales Manager B2B / Head of Sales vacancy was published 20 Sep 2026 with deadline 20 Oct 2026.
+
+CONTINUATION HUNT - 22 SEPTEMBER 2026 - 142/373
+- Active speculative queue: 142 companies.
+- Governance/dedupe ledger: 373 decisions.
+- New promotion: Famora Foods = Priority A; direct email still needs sourcing.
+- New conditional promotion: Foodster / Tony's Pizza / Toppery = Priority B; founder Tony Gerasovski has verified public direct email.
+- Newly governed holds: Two Face Brew = HOLD_SMALL; Stacky's / Smartare Mat = HOLD_SMALL; Ramén Valves = HOLD_TECHNICAL_ADVERTISED; Dream of Sweden = HOLD_SMALL; Godisfabriken Aroma = HOLD_INTERNATIONAL_SCOPE.
+- Existing Governance preserved: Kiviks Musteri = HOLD_NO_OPEN_APPLICATION because careers explicitly rejects spontaneous applications; Leksands Knäckebröd = HOLD_OUTSOURCED_EXPORT because export sales are handled through Scandinavian Trading AB.
+- ERT Godis and Areco Group added as Priority-B conditional targets.
+- No email sent or scheduled.
