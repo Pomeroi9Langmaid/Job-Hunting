@@ -4,8 +4,8 @@ Saved: 21 September 2026
 Authority: sources/SPECULATIVE_OUTREACH_GOVERNANCE_SEPTEMBER_2026.txt (Version 5)
 
 CURRENT STATE
-- Active governed Rest-of-Sweden queue: 85 companies.
-- Governance/dedupe ledger: 178 decisions.
+- Active governed Rest-of-Sweden queue: 107 companies.
+- Governance/dedupe ledger: 255 decisions.
 - Closed historic regional audit remains closed; do not reopen it just to re-scan already completed geography.
 - This Rest-of-Sweden expansion layer is additive and must continuously dedupe against repo/tracker plus Gmail history.
 
@@ -18,7 +18,7 @@ OPERATING BOUNDARIES
 - AI/product-defensibility and technical-domain gates remain mandatory.
 
 LATEST COMPLETED HUNTING PASS
-- Active queue now includes 85 governed companies; ledger records 178 qualification/history decisions.
+- Active queue now includes 107 governed companies; ledger records 255 qualification/history decisions.
 - Latest live queue additions now extend beyond the 64-company checkpoint and include DUX, Zilenzio, Beslag Design, Johanson Design, EdmoLift, Separett, Trejon and Flexus Balasystem, alongside the prior Wibe/OilQuick/Orwak/LINTEX/Swedstyle/Wapro/Rapid/Hammar batch.
 - Recent advertised-role/history diversions include Hästens, Holms Attachments and San Sac; SPM Instrument remains held because a directly relevant Global Area Sales Manager process only recently closed.
 - Holds/exclusions now also include Välinge Innovation open-application-only, Stolab, Gärsnäs, Furninova, Trangia, STIGA Sports and Hilleberg, in addition to the earlier technical/scale/commodity holds.
@@ -37,3 +37,9 @@ QUALIFICATION DISCIPLINE
 - Prefer identifiable international sales/new-business/market-development need, a mature employer and a defensible product/service.
 - Do not pad the active queue. Record weaker names as HOLD / EXCLUDED / ADVERTISED_ROLE_ROUTE with the reason.
 - Before promoting: repo/tracker history check + Gmail history check + current vacancy check + recipient suitability + AI/product-defensibility check.
+
+LIVE-REPO RECONCILIATION - 22 SEPTEMBER 2026
+- Live active queue checked directly before continuing: 107 companies.
+- Live Governance/dedupe ledger checked directly before continuing: 255 decisions.
+- These live files override any older count stated elsewhere in prior chat text.
+- Continue only with companies absent from BOTH the live active queue and the live Governance ledger, then run repo/Gmail/current-vacancy checks before promotion.
