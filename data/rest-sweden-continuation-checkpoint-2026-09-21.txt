@@ -4,8 +4,8 @@ Saved: 21 September 2026
 Authority: sources/SPECULATIVE_OUTREACH_GOVERNANCE_SEPTEMBER_2026.txt (Version 5)
 
 CURRENT STATE
-- Active governed Rest-of-Sweden queue: 107 companies.
-- Governance/dedupe ledger: 255 decisions.
+- Active governed Rest-of-Sweden queue: 121 companies.
+- Governance/dedupe ledger: 294 decisions.
 - Closed historic regional audit remains closed; do not reopen it just to re-scan already completed geography.
 - This Rest-of-Sweden expansion layer is additive and must continuously dedupe against repo/tracker plus Gmail history.
 
@@ -39,7 +39,14 @@ QUALIFICATION DISCIPLINE
 - Before promoting: repo/tracker history check + Gmail history check + current vacancy check + recipient suitability + AI/product-defensibility check.
 
 LIVE-REPO RECONCILIATION - 22 SEPTEMBER 2026
-- Live active queue checked directly before continuing: 107 companies.
-- Live Governance/dedupe ledger checked directly before continuing: 255 decisions.
+- Live active queue checked directly before continuing: 121 companies.
+- Live Governance/dedupe ledger checked directly before continuing: 294 decisions.
 - These live files override any older count stated elsewhere in prior chat text.
 - Continue only with companies absent from BOTH the live active queue and the live Governance ledger, then run repo/Gmail/current-vacancy checks before promotion.
+
+LATEST RECONCILIATION - 22 SEPTEMBER 2026 - 121/294
+- Live active queue: 121 companies.
+- Live Governance/dedupe ledger: 294 decisions.
+- Latest qualified additions include Weland AB, Glimakra of Sweden, Brodit, Regin Group, MCT Brattberg, Swede Ship Marine, Binar Handling, Hydria Water, Modul-System, TYRI Lights, BCC AB, Work System, Cresto Group and Alentec & Orion.
+- Recent duplicate/history locks include Hydroscand, Nederman, Elvaco, OXE Marine, Candela, Consilium Safety Group, Plejd, VBG Group, Oxeon/TeXtreme and QleanAir.
+- Continue only from companies absent from BOTH live files and then check repo-wide + Gmail history before promotion.
