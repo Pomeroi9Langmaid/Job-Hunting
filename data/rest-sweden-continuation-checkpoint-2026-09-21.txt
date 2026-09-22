@@ -123,3 +123,12 @@ DRAFT + EMAIL RECONCILIATION - 22 SEPTEMBER 2026 - 165/453
 - New Gmail drafts created for The Green Dairy, Fria Bröd, Delicato Bakverk, Olle Svenssons Partiaffär, Rowico Home and Malmsten. Company-specific CV filenames attached. Nothing sent or scheduled.
 - Gmail connector cannot reproduce the true inline/CID headshot on created drafts; these six therefore use the approved email structure with text signature and no photo, explicitly at the user's request to move new companies into Gmail drafting.
 - Current active companies missing a direct professional email remain a separate enrichment list.
+
+LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 166/456
+- Live active speculative queue: 166 companies.
+- Live Governance/dedupe ledger: 456 decisions.
+- Recent durable additions include The Green Dairy, Almondy, Rowico Home, Ankarsrum Kitchen, Primus-Silva Sweden / Silva, Liljas Plast, Conform Collection and Formenta Group.
+- The Green Dairy and all post-timeout additions are confirmed present in the live files.
+- Sacha de Bilderling / Combi Wear Parts is now an active conversation: Sacha replied on 22 Sep 2026 that he will study the request and opportunities within the company, so no recipient repair is needed.
+- Draft production remains subject to Governance v5 HTML/CID signature + company-specific CV requirements; no downgraded Gmail draft should be created.
+- Continue hunting only from companies absent from both live files and after Gmail/current-role checks.
