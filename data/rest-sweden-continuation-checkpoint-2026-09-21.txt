@@ -297,3 +297,14 @@ GMAIL DRAFT QA - LYCKEBY - 22 SEPTEMBER 2026
 - Email body uses international sales / new-business wording and contains no marketing wording.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 178/534
+- Live active speculative queue: 178 companies.
+- Governance/dedupe ledger: 534 real company decisions.
+- New conditional promotion: Hallins (B), Ödeshög.
+- Hallins fit: about 80 employees, Swedish manufacturing, professional commercial-kitchen/lifting/industrial products, Czech international operation and stated ambition to broaden exports.
+- Preferred recipient: Lars Torpman, Senior Export Manager, lars.torpman@hallins.com.
+- Texo governed as HOLD_TECHNICAL_PROJECT_ENGINEERING despite international scale because sales depend on highly engineered weaving/automation systems.
+- Eurovema Mobility excluded due bankruptcy initiated 12 Sep 2025.
+- No email was sent or scheduled in this governance batch.
+- Next untouched-company continuation starts from 178/534.
+
