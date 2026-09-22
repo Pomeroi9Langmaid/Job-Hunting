@@ -394,3 +394,9 @@ GMAIL DRAFT QA - KLIPPAN YLLEFABRIK - 22 SEPTEMBER 2026
 - Email body uses international sales / new-business wording and contains no marketing wording.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HISTORY LOCK - 22 SEPTEMBER 2026 - 180/563
+- Bolon is not untouched: GitHub and live Gmail verify speculative outreach sent 10 Aug 2026 to Annica Eklund at annica.eklund@bolon.com with Andrew_Langmaid_Bolon.pdf attached.
+- Bolon is now locked as ALREADY_CONTACTED in the current rest-Sweden Governance ledger.
+- No duplicate draft created; nothing sent or scheduled.
+- Continue only from companies absent from both live queue and ledger.
+
