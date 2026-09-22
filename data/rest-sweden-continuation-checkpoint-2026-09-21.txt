@@ -107,3 +107,11 @@ LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 163/443
 - Confirmed saved in both Governance/active where applicable: The Green Dairy, Almondy, Rowico Home, Ankarsrum Kitchen, Primus-Silva Sweden / Silva, Liljas Plast, Conform Collection, EWES, Varnamo of Sweden / Varnamo Sangklader and Wikholm Form.
 - Do not restart any earlier batch. Continue only with genuinely untouched companies absent from both live files, then run repo/Gmail/current-role checks before promotion.
 - No email sent or scheduled.
+
+LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 165/453
+- Live active speculative queue: 165 companies.
+- Live Governance/dedupe ledger: 453 decisions.
+- Continuation edge after repeated timeouts: Ludvig Svensson and Skultuna Messingsbruk are newly active; Bjornax, Team Tejbrant, Star Trading, Westal and Dorre Home are newly governed holds.
+- EWES, Varnamo of Sweden / Varnamo Sangklader and Wikholm Form were already safely saved before this continuation and must not be reworked.
+- Continue only with genuinely untouched companies absent from both live files, with repo/Gmail/current-role checks before promotion.
+- No email sent or scheduled.
