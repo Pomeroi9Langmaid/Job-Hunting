@@ -315,3 +315,14 @@ GMAIL DRAFT QA - HALLINS - 22 SEPTEMBER 2026
 - Email body uses international sales / new-business wording and contains no marketing wording.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 178/539
+- Live active speculative queue remains 178 companies.
+- Governance/dedupe ledger: 539 real company decisions.
+- LK Systems: HOLD_RECENT_EXPORT_LEADERSHIP. Current export organisation is staffed by Head of Export Sales Pontus Grimberg plus International Account Manager/export support.
+- Uddcomb International: ADVERTISED_ROLE_ROUTE. Current careers page surfaces an international export-sales role; proposition is also deeply technical across nuclear/energy/high-voltage/advanced welding.
+- Latitude 65: HOLD_SMALL_FINANCIAL despite fast revenue growth; about 30 employees and latest surfaced margin around 0.9%.
+- TST Sweden: HOLD_SMALL_SPECIALIST_PPE.
+- Camp Scandinavia / Allard International: HOLD_CLINICAL_DOMAIN despite 400-person global group and 70+ country distribution because its sales organisation is explicitly built mainly around licensed orthopaedic/healthcare professionals.
+- No email was created, sent or scheduled for these holds/diversions.
+- Next untouched-company continuation starts from 178/539.
+
