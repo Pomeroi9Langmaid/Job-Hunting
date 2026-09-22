@@ -185,3 +185,15 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 171/490
 - No Gmail draft was created, altered, sent or scheduled. The seven previously verified CID drafts remain untouched.
 - Next continuation must start from 171/490 and only evaluate genuinely untouched companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 172/505
+- Live active speculative queue: 172 companies.
+- Governance/dedupe ledger: 505 real company decisions.
+- New conditional promotion: Corroventa (B). Preferred recipient: Karl Jansson, Chief Commercial Officer, karl.jansson@corroventa.com.
+- Corroventa cleared repo/Gmail duplicate history; current careers site shows no open positions and welcomes future candidates.
+- ElectroHeat Sweden locked as ALREADY_CONTACTED after GitHub/Gmail verified Andrew's 10 Aug 2026 speculative approach to Lisa Lundström.
+- Hilding Anders routed to ADVERTISED_ROLE_ROUTE because a live Chief Commercial Officer recruitment runs through 8 Oct 2026. Carpe Diem Beds is held under parent overlap while that group-level role is live.
+- Safe at Sea held after the recent VP Global Commercial Development hire filled the exact international-growth need.
+- New governed holds: Bendiro Profile Tech, Scandi Gruppen Overseas International, Mille Notti, Viking Beds, Alfapac, Kvaser, Camfil, Gnotec, SwePart Transmission and Inwido.
+- No Gmail draft was created, changed, sent or scheduled. The seven previously verified CID drafts remain untouched.
+- Next continuation must start from 172/505 and only evaluate genuinely untouched companies absent from both live files.
+
