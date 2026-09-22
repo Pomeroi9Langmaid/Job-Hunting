@@ -60,3 +60,15 @@ LATEST RESTART PASS - 22 SEPTEMBER 2026
 - Recorded Hörby Bruk, Primo Sverige, Habia Cable, Elcowire and Lesjöfors as governed holds for fit/structure/technical reasons.
 - Current live state after this pass: 129 active / 323 governed decisions.
 - Duplicate control remains: a company must be absent from both active queue and ledger, then clear Gmail history, current-role and fit checks before promotion.
+
+CONTINUATION PASS - 22 SEPTEMBER 2026 - 134/336
+- Live active queue after reconciliation and additional hunting: 134 companies.
+- Governance/dedupe ledger: 336 decisions.
+- Clean first-wave speculative drafting pool: 34 Priority-A companies with verified public direct emails and zero collisions against the current applications/sent-history file.
+- Newly promoted in this pass: Svenska Krämfabriken (A), MAFI Group (A), Lämneå Bruk (B conditional), Proplate (B conditional), Mobilaris Industrial Solutions (B conditional).
+- SMP Parts remains B conditional under the existing Governance decision; do not override it to A.
+- LEAX Group remains HOLD_TECHNICAL_OEM under the existing Governance decision.
+- Fergas Group, Renholmen AB and Sepson Winch Group / SWG EMEA are ADVERTISED_ROLE_ROUTE, not speculative targets.
+- New holds/watchlist recorded: CTT Systems, Stenvalls Trä, Faluplast, Bronco Transmission, UW-Tech and Holma Spinning Mill.
+- Older Gothenburg/Stockholm send-queue files are not a current draft inventory; the current applications/sent-history file supersedes them because many of those companies have already been contacted.
+- Continue hunting only with companies absent from both the 134-company active queue and 336-decision Governance ledger, with Gmail/current-role/history checks before promotion.
