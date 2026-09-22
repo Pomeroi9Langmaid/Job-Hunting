@@ -374,3 +374,16 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 179/558
 - No Gmail drafts created for these holds. Nothing sent or scheduled.
 - Next untouched-company continuation starts from 179/558.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 180/562
+- Live active speculative queue: 180 companies.
+- Governance/dedupe ledger: 562 real company decisions.
+- New conditional promotion: Klippan Yllefabrik (B), Klippan.
+- Fit basis: fourth/fifth-generation family ownership, positive 2025 profitability, about 50% export to roughly 30 countries, premium wholesale/retail channels and own production.
+- Preferred recipient: Petter Magnusson, CEO, petter@klippanyllefabrik.se.
+- Current live vacancy is part-time retail sales only and does not conflict with a senior speculative route.
+- Almedahls governed as HOLD_DOMESTIC_SCOPE.
+- Klippan Safety governed as HOLD_TECHNICAL_OEM.
+- Nordic Water governed as HOLD_FOREIGN_PARENT_TECHNICAL; prior canonical audit already recorded it not pursued.
+- No email was sent or scheduled in this governance batch.
+- Next untouched-company continuation starts from 180/562.
+
