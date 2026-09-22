@@ -290,3 +290,10 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 177/531
 - No email was sent or scheduled in this governance batch.
 - Next untouched-company continuation starts from 177/531.
 
+GMAIL DRAFT QA - LYCKEBY - 22 SEPTEMBER 2026
+- Lyckeby Gmail draft created for Mathias Samuelsson at mathias.samuelsson@lyckeby.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+
