@@ -366,3 +366,11 @@ LIVE CONTINUATION HUNT + DRAFT QA - 22 SEPTEMBER 2026 - 179/556
 - Nothing sent or scheduled.
 - Next untouched-company continuation starts from 179/556.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 179/558
+- Active speculative queue remains 179 companies.
+- Governance/dedupe ledger: 558 real company decisions.
+- CellMark: HOLD_RECENT_ROLE_COMMODITY_LANGUAGE after 2026 International Sales Manager recruitment; role required fluent Swedish and is commodity/trading-led.
+- Sweden Timber Malmbäck: HOLD_RECENT_ROLE_COMMODITY after March-April 2026 Senior International Sales Manager recruitment in global timber trade.
+- No Gmail drafts created for these holds. Nothing sent or scheduled.
+- Next untouched-company continuation starts from 179/558.
+
