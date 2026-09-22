@@ -217,3 +217,14 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 173/512
 - No Gmail draft was created, changed, sent or scheduled. The seven previously verified CID drafts remain untouched.
 - Next continuation must start from 173/512 and only evaluate genuinely untouched companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 174/518
+- Live active speculative queue: 174 companies.
+- Governance/dedupe ledger: 518 real company decisions.
+- New Priority-A promotion: Najell, Lund.
+- Najell fit: SEK 191.8m 2025 group revenue (+30%), profitable, 50+ employees, four new international subsidiaries in 2025, US warehouse in 2026 and continued international store expansion.
+- Preferred current recipient: Malin Jeraeus Wallerborn, Sales Manager, malin@najell.com. Current Sales Team careers page has no matching opening; prior Commercial Business Developer posting is closed/gone.
+- Duplicate locks added: Aarke (already contacted + positive internal referral), Steamery (already contacted), BabyBjörn (sent 21 Sep) and Axkid (sent 3 Aug).
+- Mizetto governed as HOLD_SMALL_FINANCIAL despite genuine international representation.
+- No message was sent or scheduled in this continuation.
+- Next continuation must start from 174/518 and only evaluate genuinely untouched companies absent from both live files.
+
