@@ -344,3 +344,12 @@ GMAIL DRAFT QA - NEWPORT COLLECTION - 22 SEPTEMBER 2026
 - Exactly one intended active draft exists for Newport Collection.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 179/551
+- Active speculative queue remains 179 companies.
+- Governance/dedupe ledger: 551 real company decisions.
+- Examec Maskinmontage: HOLD_TECHNICAL_PROJECT_ENGINEERING despite winning Skåne Export Star 2026 and strong profitability/growth; custom machinery/engineering expertise is central.
+- Encare: historical application identified in Gmail (Sales Representative process, Jan-Feb 2022); also HOLD on clinical specialism and current financial capacity despite winning Swecare Export Award 2026.
+- Bioservo: HOLD_MICRO_FINANCIAL_CLINICAL_TECHNICAL despite Swecare Rising Star 2026.
+- No Gmail draft created for these holds. Nothing sent or scheduled.
+- Next untouched-company continuation starts from 179/551.
+
