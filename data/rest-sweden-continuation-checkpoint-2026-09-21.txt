@@ -272,3 +272,10 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 176/528
 - No email was sent or scheduled in this governance batch.
 - Next untouched-company continuation starts from 176/528.
 
+GMAIL DRAFT QA - HEDSON TECHNOLOGIES - 22 SEPTEMBER 2026
+- Hedson Technologies Gmail draft created for Niklas Johansson at niklas.johansson@hedson.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+
