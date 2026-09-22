@@ -141,3 +141,14 @@ LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 166/456
 - Five current Gmail drafts (Malmsten, Rowico Home, Olle Svenssons Partiaffär, Delicato Bakverk, Fria Bröd) fail canonical QA: opening wording was altered and no inline/CID headshot is present. They are NOT send-ready. No further malformed drafts should be created.
 - Gmail connector test confirmed that attaching the headshot produces an ordinary attachment rather than a CID/inline MIME part. Test duplicate was removed; no email was sent or scheduled.
 - Continue hunting from EWES / remaining untouched mid-market Swedish exporters; do not repeat prior sweeps.
+
+DRAFT QA + CURRENT-DATA REFRESH - 22 SEPTEMBER 2026 - 166/462
+- Active speculative queue: 166 companies.
+- Governance/dedupe ledger: 462 decisions.
+- Five malformed Gmail drafts (Malmsten, Rowico Home, Olle Svenssons Partiaffär, Delicato Bakverk, Fria Bröd) were removed from Gmail after QA confirmed no inline/CID headshot and non-canonical personalised first paragraphs. No email was sent or scheduled.
+- Canonical opening remains: [Company]'s work appears well aligned with the type of international sales and market-development work I am looking to continue. Add only the governed location sentence; do not add company-specific facts in this paragraph.
+- Gmail connector currently cannot create the required inline/CID signature image, so no further Gmail drafts may be created until that can be preserved correctly.
+- Combi Wear Parts recipient corrected everywhere to Fredrik Ivansson, CEO, fredrik.ivansson@combiparts.com.
+- New active additions saved: EWES (B) and Kongamek (A). Kongamek preferred recipient is CCO Ida Stiller, ida.stiller@kongamek.se.
+- Current-data correction: Sordin removed from active queue and changed to HOLD_CURRENT_DOWNSIZING after June 2026 redundancy announcement.
+- New governed exclusions/holds include Pinewood (apparel), Ed-Wa Plast (small/technical), Skeppshultstegen (small/financial), Hörle Wire (technical/financial), and Gnosjö Automatsvarvning (technical/financial).
