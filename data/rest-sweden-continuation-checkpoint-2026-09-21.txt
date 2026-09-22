@@ -336,3 +336,11 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 179/548
 - No email was sent or scheduled in this governance batch.
 - Next untouched-company continuation starts from 179/548.
 
+GMAIL DRAFT QA - NEWPORT COLLECTION - 22 SEPTEMBER 2026
+- Newport Collection Gmail draft created for Bo-Wilhelm Horndahl at wille@newport.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Exactly one intended active draft exists for Newport Collection.
+- Nothing sent or scheduled.
+
