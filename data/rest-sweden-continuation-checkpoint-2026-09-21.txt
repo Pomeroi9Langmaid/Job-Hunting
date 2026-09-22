@@ -228,3 +228,16 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 174/518
 - No message was sent or scheduled in this continuation.
 - Next continuation must start from 174/518 and only evaluate genuinely untouched companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 175/522
+- Live active speculative queue: 175 companies.
+- Governance/dedupe ledger: 522 real company decisions.
+- New conditional promotion: Human Care (B), Stockholm.
+- Preferred recipient: Jessica Ammerlaan, International Sales Director, jessica.ammerlaan@humancaregroup.com.
+- Fit basis: Swedish-headquartered global medical-device business, worldwide distributor network, explicit expansion phase, active dealer recruitment, no current vacancies and open applications.
+- Domain constraint: regulated medical/safe-patient-handling products keep Human Care second wave rather than Priority A.
+- Doro governed as HOLD_FOREIGN_PARENT_INTEGRATION after Xplora crossed 90% ownership and initiated compulsory redemption in Dec 2025.
+- Dignita governed as HOLD_SMALL.
+- Mips locked as ALREADY_CONTACTED; speculative email was sent 3 Sep 2026.
+- No message was sent or scheduled in this continuation.
+- Next continuation must start from 175/522 and only evaluate genuinely untouched companies absent from both live files.
+
