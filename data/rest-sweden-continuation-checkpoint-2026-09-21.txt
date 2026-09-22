@@ -241,3 +241,12 @@ LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 175/522
 - No message was sent or scheduled in this continuation.
 - Next continuation must start from 175/522 and only evaluate genuinely untouched companies absent from both live files.
 
+LIVE CONTINUATION / DELIVERY RECONCILIATION - 22 SEPTEMBER 2026 - 175/523
+- Active qualified queue remains 175 companies; Governance now records 523 real decisions.
+- Sauna360 / Tylö remains qualified but is no longer marked ready for outreach.
+- Gmail verifies the 22 Sep 2026 message to CCO Niklas Brönn (niklas.bronn@sauna360.com) was blocked by the recipient server: 550 5.4.1 Recipient address rejected / Access denied.
+- Sauna360 is now CONTACT_REPAIR_NEEDED in Governance, active queue and production manifest. Do not resend to the same address; a new verified named commercial route is required.
+- Exxentric governed as HOLD_SMALL_FINANCIAL: genuine 65+ country reach but latest scale is about 19 employees, roughly SEK 34.9m revenue and material operating loss.
+- No new message was sent or scheduled during this reconciliation.
+- Next untouched-company continuation starts from 175/523.
+
