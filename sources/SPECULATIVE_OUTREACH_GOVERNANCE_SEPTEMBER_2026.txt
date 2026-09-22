@@ -205,3 +205,10 @@ Additional operating rules:
 USER-CORRECTED GENESY RULE - 21 SEPTEMBER 2026
 
 Andrew explicitly corrected the workflow: ChatGPT does not use Genesy. This is an operating boundary, not an approval gate. Genesy is user-operated only. Company hunting, qualification, deduplication and public contact research must continue without treating Genesy as an assistant tool or next automated step.
+
+EMAIL COPY LANGUAGE LOCK - 22 SEPTEMBER 2026
+- Andrew has explicitly prohibited marketing wording in speculative outreach email copy.
+- Do not describe Andrew's desired role or work as marketing, sales-and-marketing, or market-development in the speculative email body.
+- Use sales/new-business/international-growth language instead, for example: "international sales and new-business work".
+- This restriction applies to drafted outreach copy. Do not rewrite factual historical job titles in the locked MASTER CV merely to remove the word marketing.
+
