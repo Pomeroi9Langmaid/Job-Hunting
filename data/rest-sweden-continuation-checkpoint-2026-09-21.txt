@@ -91,3 +91,11 @@ CONTINUATION HUNT - 22 SEPTEMBER 2026 - 142/373
 - Existing Governance preserved: Kiviks Musteri = HOLD_NO_OPEN_APPLICATION because careers explicitly rejects spontaneous applications; Leksands Knäckebröd = HOLD_OUTSOURCED_EXPORT because export sales are handled through Scandinavian Trading AB.
 - ERT Godis and Areco Group added as Priority-B conditional targets.
 - No email sent or scheduled.
+
+LIVE RECOVERY CHECKPOINT - 22 SEPTEMBER 2026 - 161/422
+- Live active speculative queue: 161 companies.
+- Live Governance/dedupe ledger: 422 decisions.
+- Recovery point after timeout: continue from EWES in the Värnamo/Gnosjö mid-market exporter lane.
+- Confirmed saved before recovery: The Green Dairy, Almondy, Rowico Home, Ankarsrum Kitchen, Primus-Silva Sweden / Silva, Liljas Plast and Conform Collection.
+- Do not restart prior batches or trust older 142/373 text; live CSV files are authoritative.
+- No email sent or scheduled.
