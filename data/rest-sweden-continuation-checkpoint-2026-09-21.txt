@@ -279,3 +279,14 @@ GMAIL DRAFT QA - HEDSON TECHNOLOGIES - 22 SEPTEMBER 2026
 - Email body uses international sales / new-business wording and contains no marketing wording.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HUNT - 22 SEPTEMBER 2026 - 177/531
+- Live active speculative queue: 177 companies.
+- Governance/dedupe ledger: 531 real company decisions.
+- New conditional promotion: Lyckeby (B), Kristianstad.
+- Lyckeby fit: around 170 employees, Swedish/Czech production, sales offices in Poland/Germany/China, distributors worldwide and a June 2026 GCC distributor expansion explicitly aimed at creating new business opportunities.
+- Preferred recipient: Mathias Samuelsson, Director Sales and Business Development, mathias.samuelsson@lyckeby.com.
+- Bruks Siwertell governed as HOLD_TECHNICAL_PROJECT_ENGINEERING despite strong scale/profitability because sales are inseparable from complex engineered dry-bulk/biomass systems and project expertise.
+- Saturnus governed as HOLD_COMPACT_DOMESTIC_STRUCTURE: profitable but only 39 employees and insufficient evidence of an autonomous international-sales organisation.
+- No email was sent or scheduled in this governance batch.
+- Next untouched-company continuation starts from 177/531.
+
