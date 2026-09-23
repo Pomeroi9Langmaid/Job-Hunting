@@ -544,3 +544,16 @@ GMAIL DRAFT QA - NORDIC SPORT - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunt from the live 187/597 edge unless a newer concurrent checkpoint appears.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 189/602
+- Live active speculative queue: 189 companies.
+- Governance/dedupe ledger: 602 real company decisions.
+- New conditional promotion: Kellfri (B), Skara. Preferred recipient: CSO Caroline Karlström, caroline.karlstrom@kellfri.se.
+- Kellfri basis: profitable SEK 354.9m 2025 operating company, structured CSO/B2B/export organisation and sales across seven European markets; Salix/Volati ownership and machinery-domain depth keep it second wave.
+- New conditional promotion: Metsjö (B), Linköping. Preferred recipient: CEO Anders Ivarsson, anders.i@metsjo.se.
+- Metsjö basis: 70+ employees, own Swedish production, Northern European dealer network and explicit 2026 expansion into France as part of wider Western European growth.
+- Bala Agri = HOLD_SMALL_TECHNICAL.
+- Östberg = HOLD_FINANCIAL_TECHNICAL despite 75+ country fan sales.
+- Erik Thun Group = HOLD_SPECIALIST_SHIPPING_OPERATING_MODEL despite strong scale and profitability.
+- No email sent or scheduled in this governance batch.
+- Next step: create and QA Kellfri and Metsjö Gmail drafts, then continue only from companies absent from both live files.
+
