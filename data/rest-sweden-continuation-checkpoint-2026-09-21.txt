@@ -616,3 +616,12 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 192/616
 - No email sent or scheduled in this governance batch.
 - Next step: create and QA Gmail drafts for both, then continue untouched-company hunting.
 
+GMAIL DRAFT QA - LIDAN MARINE + EKAMANT - 23 SEPTEMBER 2026
+- Live Governance state at QA: 192/616.
+- Lidan Marine Gmail draft created for Commercial Manager Thomas Jonsson at thomas.jonsson@lidanmarine.com.
+- Ekamant Gmail draft created for Director of Sales & Marketing Joakim Jonsson at joakim.jonsson@ekamant.se.
+- Both use subject: Andrew Langmaid.
+- Both verified DRAFT state, correct company-named CV PDF, true Gmail inline image/CID headshot and no marketing wording in the email body.
+- Nothing sent or scheduled.
+- Continue untouched-company hunting from the current live Governance edge.
+
