@@ -586,3 +586,12 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 190/609
 - No email sent or scheduled in this governance batch.
 - Next step: create and QA Hammarprodukter Gmail draft, then continue untouched-company hunting.
 
+GMAIL DRAFT QA - HAMMARPRODUKTER - 23 SEPTEMBER 2026
+- Hammarprodukter Gmail draft created for Lisa Holmgren at lisa@hammarprodukter.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF and true Gmail inline image/CID headshot.
+- Email body contains no marketing wording.
+- Exactly one intended active draft exists for Hammarprodukter.
+- Nothing sent or scheduled.
+- Continue untouched-company hunt from the live 190/609 edge unless a newer concurrent checkpoint appears.
+
