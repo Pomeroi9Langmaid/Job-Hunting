@@ -425,3 +425,12 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 181/566
 - No conflicting suitable senior international commercial vacancy surfaced.
 - Next step: create and QA Gmail draft only; nothing may be sent or scheduled without Andrew's explicit approval.
 
+GMAIL DRAFT QA - DEPEND COSMETIC - 23 SEPTEMBER 2026
+- Depend Cosmetic Gmail draft created for CEO Mårten Johansson at mj@depend.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Exactly one intended active draft exists for Depend Cosmetic.
+- Nothing sent or scheduled.
+- Continue untouched-company hunt from 181/566.
+
