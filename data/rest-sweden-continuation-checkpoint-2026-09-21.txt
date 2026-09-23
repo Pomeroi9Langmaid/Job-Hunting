@@ -985,3 +985,15 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 202/713
 - Current live vacancies do not conflict: RVM careers accepts spontaneous applications; Danfo's current advertised roles are logistics/procurement and assembly.
 - Nothing sent or scheduled in this governance step.
 - Next untouched-company continuation starts from 202/713 in two-company batches.
+
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 202/715
+- Live active speculative queue remains 202 companies.
+- Governance/dedupe ledger now records 715 real company decisions.
+- Roplan = HOLD_FOREIGN_PARENT_TECHNICAL: 160+ global employees but owned by US-based IDEX since 2019 and deeply technical engineered mechanical-seal/OEM selling.
+- Masonite Beams = HOLD_FOREIGN_PARENT_TECHNICAL_FINANCIAL: 57 employees, about SEK 216m 2025 revenue, weak operating margin and part of Norway-based Byggma Group; building-system sale is highly technical.
+- HordaGruppen was already governed as HOLD_TECHNICAL_OEM and was not duplicated.
+- Concurrent qualified additions RVM Systems and Danfo were preserved untouched.
+- No prior outreach found for Roplan or Masonite Beams.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 202/715 in two-company batches.
+
