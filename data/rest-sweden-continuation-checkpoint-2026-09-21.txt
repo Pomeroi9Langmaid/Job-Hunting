@@ -663,3 +663,11 @@ LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 191/631
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 191/631.
 
+GMAIL DRAFT QA - HYDRIA WATER + GROUP DEDUPE - 23 SEPTEMBER 2026 - 191/632
+- Hydria Water Gmail draft created for Tobias Barrstrand at tobias.barrstrand@hydriawater.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF, true Gmail inline image/CID headshot and no marketing wording.
+- Bevent Rasch governed as HOLD_PARENT_SIBLING_DUPLICATE because Hydria Water already provides the active route into Hydria Group.
+- Nothing sent or scheduled.
+- Continue untouched-company hunting from 191/632.
+
