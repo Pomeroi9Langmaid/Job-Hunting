@@ -997,3 +997,12 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 202/715
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 202/715 in two-company batches.
 
+GMAIL DRAFT QA - RVM SYSTEMS + DANFO - 23 SEPTEMBER 2026
+- RVM Systems Gmail draft created for Niklas Engström at niklas.engstrom@rvmsystems.com.
+- RVM copy corrected to "RVM Systems' work"; malformed duplicate with non-inline headshot was removed.
+- Danfo Gmail draft created for Johan M Ekeström at johan.ekestrom@danfo.se.
+- Both are verified DRAFT state with company-named CV PDFs, true Gmail inline image/CID headshots and zero marketing wording.
+- Exactly one intended active Gmail draft remains for each company.
+- Nothing sent or scheduled.
+- Live company state at this reconciliation: 202 active / 715 governed.
+
