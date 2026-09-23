@@ -885,3 +885,9 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 198/685
 - No prior PanLink application/outreach found in live repo or targeted Gmail history.
 - No email sent or scheduled in this governance step.
 
+GMAIL DRAFT QA - PANLINK - 23 SEPTEMBER 2026
+- PanLink draft created for Mikael Rosengren, Chief Commercial Officer, mikael.rosengren@panlink.se.
+- Verified DRAFT state, Andrew_Langmaid_PanLink.pdf attachment and true inline CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+
