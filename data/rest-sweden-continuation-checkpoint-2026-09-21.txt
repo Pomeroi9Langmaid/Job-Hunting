@@ -813,3 +813,18 @@ GMAIL DRAFT QA - SAFELINE - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from 195/669.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 196/676
+- Live active speculative queue: 196 companies.
+- Governance/dedupe ledger: 676 real company decisions.
+- New conditional promotion: DISAB Vacuum Technology (B), Eslöv / Vallentuna.
+- DISAB fit: roughly 63 employees / SEK 283m Swedish-company revenue, global distributor/agent network and an April 2026 Australian acquisition explicitly tied to international expansion.
+- Current CEO: Marcus Rasmusson. Exact direct professional email is not publicly verified; do not guess and do not create a Gmail draft yet.
+- Safeman = HOLD_SMALL_GROUP_STRUCTURE.
+- Rotage = HOLD_DOMESTIC_TECHNICAL.
+- Mared Group = HOLD_DOMESTIC_TECHNICAL_LIVE_ROLE.
+- Öhlins = HOLD_FOREIGN_PARENT_INTEGRATION after Brembo's 100% acquisition.
+- AlfaWall Oceanbird = HOLD_JV_TECHNICAL_ADVERTISED.
+- Gunry = HOLD_INTERNATIONAL_SCOPE.
+- Nothing sent or scheduled.
+- Next untouched-company continuation starts from 196/676.
+
