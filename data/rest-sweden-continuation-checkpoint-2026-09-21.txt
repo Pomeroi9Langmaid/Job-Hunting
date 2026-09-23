@@ -891,3 +891,10 @@ GMAIL DRAFT QA - PANLINK - 23 SEPTEMBER 2026
 - Email body uses international sales / new-business wording and contains no marketing wording.
 - Nothing sent or scheduled.
 
+PRO-FILE UNMATCHED GOVERNANCE CLEANUP - 23 SEPTEMBER 2026 - 198/700
+- Active queue remains 198; Governance now records 700 real company decisions.
+- Picadeli duplicate lock added: speculative outreach was sent 27 Jul 2026 and a personal response was received 29 Jul; do not re-contact as a fresh target.
+- Holds/exclusions added for Adapteo, Rescue Intellitech, Watersprint, Arvid Nilsson, AAK, Byggmax, Menigo Foodservice, Real8 Consulting Group, Bärgningstjänsten Sverige, Företagskraft Eksjö, Divardy, Schörling, Qarlbo AB and MECC Maastricht.
+- Key current reasons: Adapteo preserves prior Stockholm audit exclusion; Arvid Nilsson is in a newly announced Salix acquisition; Rescue/Watersprint fail scale/portfolio independence; AAK fails large-group/specialist gate; Byggmax and Menigo fail sales-motion/autonomy gates.
+- No Gmail message was sent or scheduled.
+
