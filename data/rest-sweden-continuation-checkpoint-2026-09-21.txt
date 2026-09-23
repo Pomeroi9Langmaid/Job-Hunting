@@ -476,3 +476,13 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 184/577
 - Nothing sent or scheduled.
 - Continue untouched-company hunt from 184/577.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 186/581
+- Live active speculative queue: 186 companies.
+- Governance/dedupe ledger: 581 real company decisions.
+- New conditional promotions: Sjöbergs Workbenches (B), Stockaryd; Calectro (B), Askim/Gothenburg.
+- Sjöbergs: 55% export, 35+ countries, Made-in-Sweden world-leading workbench brand; new CEO Stig Reitan is also Export Manager and has public direct email stig.reitan@sjobergs.se.
+- Calectro: SEK 177.8m 2025 revenue, profitable, distributors in many countries and dedicated Global Sales team; Head of Global Sales Henric Fahlén has public direct email henric.fahlen@calectro.se.
+- WFI routed to ADVERTISED_ROLE_ROUTE because its live Utesäljare role explicitly includes Sweden plus export markets in Europe.
+- Vebe Teknik governed as HOLD_SMALL_TECHNICAL.
+- Next step: create and QA Gmail drafts for Sjöbergs and Calectro only. Nothing may be sent or scheduled without Andrew's explicit approval.
+
