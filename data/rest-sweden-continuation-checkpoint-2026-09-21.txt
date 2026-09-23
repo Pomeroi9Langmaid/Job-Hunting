@@ -643,3 +643,12 @@ GOVERNANCE RECONCILIATION - MAFI / SCANMAST - 23 SEPTEMBER 2026 - 191/621
 - Live state after dedupe correction: 191 active companies / 621 real governed decisions.
 - Continue untouched-company hunting from 191/621.
 
+LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 191/625
+- Active queue remains 191; Governance/dedupe ledger now 625.
+- Emmaljunga Barnvagnsfabrik = HOLD_FINANCIAL_CONSUMER: attractive premium/international brand but weak recent operating economics and consumer-led sales.
+- Weland Medical / WeLoc = HOLD_MICRO_PARENT_DUPLICATE: worldwide distributors but only 5 employees / about SEK 17m 2025 turnover and part of Weland.
+- Eldon Installation = HOLD_SMALL_FINANCIAL_DOMESTIC: 26 employees, about SEK 106.9m 2025 turnover, 0.7% operating margin and Sweden-focused technical sales structure.
+- Svenska Tält = HOLD_SMALL_NORDIC_CONSUMER: around 20 employees and Nordic dealer scope.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 191/625.
+
