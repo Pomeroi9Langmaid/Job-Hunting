@@ -528,3 +528,10 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 187/597
 - Oxdog governed as HOLD_PARENT_GROUP within listed WS WeSports Group.
 - Next step: create and QA Nordic Sport Gmail draft only. Nothing sent or scheduled.
 
+GMAIL DRAFT QA - LYCKEBY - 23 SEPTEMBER 2026
+- Lyckeby Gmail draft created for Mathias Samuelsson at mathias.samuelsson@lyckeby.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body contains no marketing wording.
+- Nothing sent or scheduled.
+
