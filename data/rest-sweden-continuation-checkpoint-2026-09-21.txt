@@ -877,3 +877,11 @@ PRO CONTACT RECONCILIATION - SECOND BATCH - 23 SEPTEMBER 2026
 - Obviously stale or mismatched Pro records were not used. Example: the supplied Ejendals CEO record conflicts with current company-controlled evidence naming Anders Carlsson as CEO, so no Ejendals draft was created from that stale record.
 - Nothing was sent or scheduled.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 198/685
+- New conditional promotion: PanLink (B), Malmö.
+- PanLink is an international electrical-assembly partner headquartered in Malmö with Poland operations and current growth focus across Industry, Rail and Electrification.
+- Preferred recipient: Mikael Rosengren, Chief Commercial Officer, mikael.rosengren@panlink.se (company-published direct email).
+- June 2026 CEO transition and specialist contract-manufacturing / engineering depth keep PanLink second wave rather than Priority A.
+- No prior PanLink application/outreach found in live repo or targeted Gmail history.
+- No email sent or scheduled in this governance step.
+
