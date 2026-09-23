@@ -464,3 +464,15 @@ GMAIL DRAFT QA - FRONTPAC - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunt from 183/573.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 184/577
+- Live active speculative queue: 184 companies.
+- Governance/dedupe ledger: 577 real company decisions.
+- New conditional promotion: Silentia (B), Falkenberg.
+- Silentia fit: family-owned Swedish patented privacy-screen manufacturer, 50+ country representative network, about SEK 83.5m 2025 revenue and 16.6% operating margin. Small 23-person Swedish team plus healthcare/infection-control knowledge keep it conditional.
+- Preferred current fallback recipient: CEO/co-founder Dag Göranson. Direct professional email still needs trustworthy sourcing; do not guess and do not draft yet.
+- Foga System routed to ADVERTISED_ROLE_ROUTE because its live Platschef/Försäljningschef role directly covers hands-on sales, business development, negotiations and customer ownership.
+- Matting locked as ALREADY_CONTACTED_REPLIED from the 11-17 Aug 2026 Gmail thread.
+- Lanab Group governed as HOLD_SMALL_INTERNATIONAL_SCOPE.
+- Nothing sent or scheduled.
+- Continue untouched-company hunt from 184/577.
+
