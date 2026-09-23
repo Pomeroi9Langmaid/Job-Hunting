@@ -575,3 +575,14 @@ LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 189/606
 - No Gmail drafts created for these holds. Nothing sent or scheduled.
 - Continue hunting only companies absent from both live files.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 190/609
+- Live active speculative queue: 190 companies.
+- Governance/dedupe ledger: 609 real company decisions.
+- New conditional promotion: Hammarprodukter (B), Bjursås.
+- Fit basis: profitable family-owned manufacturer, around 30-country distributor footprint, historical 60%+ foreign sales, current export-sales and business-development structure.
+- Preferred recipient: Lisa Holmgren, current export-sales lead, lisa@hammarprodukter.se.
+- Cennox = HOLD_FOREIGN_PARENT_LOCAL_OPERATION.
+- Björkdalsgruvan = HOLD_FOREIGN_PARENT_SPECIALIST_MINING.
+- No email sent or scheduled in this governance batch.
+- Next step: create and QA Hammarprodukter Gmail draft, then continue untouched-company hunting.
+
