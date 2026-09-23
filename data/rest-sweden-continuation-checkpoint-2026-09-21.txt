@@ -535,3 +535,12 @@ GMAIL DRAFT QA - LYCKEBY - 23 SEPTEMBER 2026
 - Email body contains no marketing wording.
 - Nothing sent or scheduled.
 
+GMAIL DRAFT QA - NORDIC SPORT - 23 SEPTEMBER 2026
+- Nordic Sport Gmail draft created for CEO Dennis Österberg at dennis@nordicsport.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF attachment and true Gmail inline image/CID headshot.
+- Email body contains no marketing wording.
+- Exactly one intended active draft exists for Nordic Sport.
+- Nothing sent or scheduled.
+- Continue untouched-company hunt from the live 187/597 edge unless a newer concurrent checkpoint appears.
+
