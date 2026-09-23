@@ -964,3 +964,11 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 200/711
 - Nothing sent or scheduled in this governance step.
 - Next untouched-company continuation starts from 200/711 in two-company batches.
 
+GMAIL DRAFT QA - HARDFORD - 23 SEPTEMBER 2026
+- Hardford Gmail draft created for Ulrika Lindqvist at ulrika.lindqvist@hardford.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, Andrew_Langmaid_Hardford.pdf attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+- Continue untouched-company hunting from 200/711 in two-company batches.
+
