@@ -910,3 +910,11 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 199/701
 - Nothing sent or scheduled in this governance step.
 - Next untouched-company continuation starts from 199/701.
 
+GMAIL DRAFT QA - LACKEBY - 23 SEPTEMBER 2026
+- Lackeby Gmail draft created for Daniel Lindström at daniel.lindstrom@lackeby.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, Andrew_Langmaid_Lackeby.pdf attachment and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Nothing sent or scheduled.
+- Continue untouched-company hunting from 199/701.
+
