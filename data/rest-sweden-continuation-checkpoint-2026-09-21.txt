@@ -762,3 +762,14 @@ GMAIL DRAFT QA - HAFI - 23 SEPTEMBER 2026
 - Email body contains neither marketing nor market-development wording.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 194/656
+- Active speculative queue remains 194 companies.
+- Governance/dedupe ledger now records 656 real company decisions.
+- Herrljunga Drycker was already governed on 22 Sep as HOLD_RECENT_EXPORT_HIRE; no duplicate row was created.
+- Swedlock = HOLD_FINANCIAL_TECHNICAL after material 2025 losses and specialist access-control domain.
+- SKAB-Gruppen = HOLD_NORDIC_TECHNICAL despite strong scale; commercial footprint is principally Scandinavian/Nordic and vehicle-body selling is specialist.
+- Gerdins Cutting Technology = HOLD_DOWNSIZING_FINANCIAL despite historical sales to 60+ countries; current scale/headcount/revenue have contracted sharply and latest result is loss-making.
+- Parator = HOLD_SMALL_FINANCIAL_GROUP_STRUCTURE.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 194/656.
+
