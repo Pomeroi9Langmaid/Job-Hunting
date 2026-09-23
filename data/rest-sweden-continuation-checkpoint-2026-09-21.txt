@@ -625,3 +625,13 @@ GMAIL DRAFT QA - LIDAN MARINE + EKAMANT - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from the current live Governance edge.
 
+LIVE CONTINUATION ROUTE/HOLD BATCH - 23 SEPTEMBER 2026 - 192/621
+- Active queue remains 192; Governance/dedupe ledger now 621.
+- HydraSpecma / Specma = ADVERTISED_ROLE_ROUTE because the current careers site has a live New Business Developer role in Gothenburg, plus other sales vacancies.
+- Cederroth = HOLD_FOREIGN_PARENT under Orkla.
+- Fristads = HOLD_PARENT_DUPLICATE_CLOTHING because Hultafors Group is already active and Fristads is workwear/apparel-led.
+- Blåkläder = HOLD_CLOTHING_LARGE_SCALE despite genuine international reach.
+- Båstadgruppen = HOLD_WORKWEAR_PPE_STRUCTURE pending a clearer autonomous wider-international commercial mandate.
+- No Gmail drafts created in this hold/route batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 192/621.
+
