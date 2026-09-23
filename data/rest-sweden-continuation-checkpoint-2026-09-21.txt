@@ -681,3 +681,10 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 192/633
 - Nothing sent or scheduled in this governance step.
 - Next step: create and QA Gmail draft, then continue from 192/633.
 
+GMAIL DRAFT QA - NORDIC FLANGES - 23 SEPTEMBER 2026
+- Nordic Flanges Gmail draft created for Juho Niemi at juho.niemi@nordicflanges.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF, true Gmail inline image/CID headshot and no marketing wording.
+- Nothing sent or scheduled.
+- Continue untouched-company hunting from the live 192/633 edge unless a newer concurrent checkpoint appears.
+
