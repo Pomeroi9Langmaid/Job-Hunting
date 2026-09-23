@@ -455,3 +455,12 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 183/573
 - No prior FrontPac employment outreach found in the live repo or targeted Gmail history.
 - Next step: create and QA Gmail draft only; nothing may be sent or scheduled without Andrew's explicit approval.
 
+GMAIL DRAFT QA - FRONTPAC - 23 SEPTEMBER 2026
+- FrontPac Gmail draft created for Sales Manager Jesper Ladelfa at jesper.ladelfa@frontpac.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF and true Gmail inline image/CID headshot.
+- Email body uses international sales / new-business wording and contains no marketing wording.
+- Exactly one intended active draft exists for FrontPac.
+- Nothing sent or scheduled.
+- Continue untouched-company hunt from 183/573.
+
