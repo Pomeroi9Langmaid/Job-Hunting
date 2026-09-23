@@ -926,3 +926,12 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/703
 - No Gmail draft created in this two-company batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 199/703 in two-company batches.
 
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/705
+- Active speculative queue remains 199 companies.
+- Governance/dedupe ledger now records 705 real company decisions.
+- Telfa = HOLD_PARENT_DOMESTIC_TECHNICAL: Sweden-only commercial remit, OEM International ownership and specialist pump/application selling.
+- Ircon Drying Systems = HOLD_SMALL_TECHNICAL: approximately 18 employees, about SEK 59m latest surfaced revenue and highly specialist infrared drying machinery.
+- No prior outreach found for either company.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 199/705 in two-company batches.
+
