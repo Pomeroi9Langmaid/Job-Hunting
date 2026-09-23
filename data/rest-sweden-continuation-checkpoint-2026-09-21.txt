@@ -972,3 +972,16 @@ GMAIL DRAFT QA - HARDFORD - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from 200/711 in two-company batches.
 
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 202/713
+- Live active speculative queue: 202 companies.
+- Governance/dedupe ledger: 713 real company decisions.
+- New Priority A promotion: RVM Systems, Kista / Stockholm.
+- RVM Systems fit: Swedish-headquartered privately owned global reverse-vending group; strong 2025 profitability; machines sold in 40+ markets; own subsidiaries in about 20 markets; installed base moving above 20,000 after July 2026 German expansion; careers accepts spontaneous applications.
+- Preferred recipient: Niklas Engström, Group CEO, niklas.engstrom@rvmsystems.com.
+- New conditional Priority B promotion: Danfo, Nora.
+- Danfo fit: about 200 group employees / roughly SEK 300m turnover, offices in Sweden, Norway, UK and UAE, deliveries across all five continents, and explicit geographic/service growth ambition.
+- Preferred recipient: Johan M Ekeström, Group CEO, johan.ekestrom@danfo.se.
+- Targeted repo and Gmail history checks found no prior company-specific application/outreach, scheduled message or active draft for either company.
+- Current live vacancies do not conflict: RVM careers accepts spontaneous applications; Danfo's current advertised roles are logistics/procurement and assembly.
+- Nothing sent or scheduled in this governance step.
+- Next untouched-company continuation starts from 202/713 in two-company batches.
