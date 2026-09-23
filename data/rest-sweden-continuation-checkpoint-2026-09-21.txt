@@ -953,3 +953,14 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/709
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 199/709 in two-company batches.
 
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 200/711
+- Live active speculative queue: 200 companies.
+- Governance/dedupe ledger: 711 real company decisions.
+- New conditional promotion: Hardford (B), Linköping.
+- Hardford fit: 100+ employees, about EUR 40m turnover, profitable, recent capacity/headcount growth, private-label/B2B contract manufacturing, international customers and explicit new-customer prospecting by the sales team.
+- Preferred recipient: Ulrika Lindqvist, Business Director, ulrika.lindqvist@hardford.se.
+- Careers explicitly welcomes open applications; no conflicting suitable senior commercial vacancy surfaced.
+- Källbergs Industri = HOLD_FOREIGN_PARENT_GROUP because it sits inside Danish DANÆG, with wider group ownership including DLG.
+- Nothing sent or scheduled in this governance step.
+- Next untouched-company continuation starts from 200/711 in two-company batches.
+
