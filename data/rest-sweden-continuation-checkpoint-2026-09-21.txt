@@ -688,3 +688,11 @@ GMAIL DRAFT QA - NORDIC FLANGES - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from the live 192/633 edge unless a newer concurrent checkpoint appears.
 
+LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 192/636
+- Active queue remains 192; Governance/dedupe ledger now 636.
+- Isoflex = HOLD_SMALL_TECHNICAL: genuine worldwide partner/export model and profitable, but only 12 employees / SEK 27.5m 2025 turnover plus specialist rail-insulation domain.
+- VASA Bryggeri = HOLD_SMALL_FINANCIAL: 11 employees, SEK 52.4m 2025 turnover and material operating loss.
+- Nyckelbryggerier Sverige = HOLD_MICRO_FINANCIAL: 2 employees, about SEK 4.5m 2025 turnover and loss-making.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 192/636.
+
