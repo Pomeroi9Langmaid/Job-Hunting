@@ -848,3 +848,15 @@ GMAIL DRAFT QA - LIFTS ALL - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from 197/679.
 
+LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 197/684
+- Active speculative queue remains 197 companies.
+- Governance/dedupe ledger now records 684 real company decisions.
+- Hymo = HOLD_FOREIGN_PARENT_DORMANT_ENTITY.
+- Aratron = HOLD_PARENT_TECHNICAL_DOMESTIC.
+- RZ Gruppen = HOLD_TECHNICAL_CONTRACT_MANUFACTURING despite strong scale and European export.
+- H. Engströms Industri = HOLD_MICRO despite worldwide delivery/distributor ambition.
+- Intra Materialhantering = HOLD_SMALL despite subsidiaries in Estonia, France and Poland.
+- Hagab was already governed as HOLD_SWEDISH_ONLY and was not duplicated.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 197/684.
+
