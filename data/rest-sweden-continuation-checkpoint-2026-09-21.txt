@@ -828,3 +828,15 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 196/676
 - Nothing sent or scheduled.
 - Next untouched-company continuation starts from 196/676.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 197/679
+- Live active speculative queue: 197 companies.
+- Governance/dedupe ledger: 679 real company decisions.
+- New conditional promotion: Lifts All (B), Järfälla / Stockholm.
+- Lifts All fit: 58 employees, roughly SEK 176m latest revenue, more than 5,000 customised lifting solutions and 27 distributors worldwide.
+- Preferred recipient: Robin Skogward, Sales Manager / Deputy CEO, robin.skogward@liftsall.se.
+- Current visible vacancy is workshop/production; spontaneous applications are explicitly welcomed.
+- Sievert = HOLD_FOREIGN_PARENT (Rothenberger Group).
+- TR Equipment = HOLD_SMALL_MEDTECH_FINANCIAL.
+- Nothing sent or scheduled.
+- Next untouched-company continuation starts from 197/679.
+
