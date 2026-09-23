@@ -773,3 +773,13 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 194/656
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 194/656.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 194/660
+- Active speculative queue remains 194 companies.
+- Governance/dedupe ledger now records 660 real company decisions.
+- Carryline = ALREADY_CONTACTED_REPLIED. Outreach went to CEO Henrik Eriksson on 21 Sep; Henrik personally replied 22 Sep that Carryline has no open positions; Andrew acknowledged. Do not duplicate.
+- Målmarks = HOLD_SMALL_SWEDISH_TEAM despite international footprint and public Sales & Business Development route.
+- Holdon Systems = HOLD_MICRO despite 40+ country distributor network.
+- Swedinox = HOLD_MICRO_COMMODITY.
+- No Gmail drafts created in this hold/history batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 194/660.
+
