@@ -696,3 +696,14 @@ LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 192/636
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 192/636.
 
+FULL DRAFT-MANIFEST RECONCILIATION - 23 SEPTEMBER 2026 - LIVE STATE 192/636
+- Reconciled all 31 remaining DRAFT_READY_BLOCKED_CID rows against live Gmail.
+- 21 rows were stale manifest entries: Gmail verifies those speculative messages were already SENT on 22 Sep 2026 at 15:22. Manifest now marks them SENT_VERIFIED and duplicate drafting/resending is prohibited.
+- Sent-verified companies: Monitor ERP; FM Mattsson Group; CIDAN Machinery Group; Green Furniture Concept / Circalle; Winpos; EAB; Weland Solutions; Orwak; LINTEX; Swedstyle; Wapro; Rapid Granulator; Kasthall; Belid Lighting Group; Johanson Design; System Edström; Axjo Group; Candles Scandinavia; AB Munkforssågar; Movomech; Sundström Safety.
+- 10 genuinely unsent Priority-A rows were converted into live Gmail drafts and QA verified: Lamiflex Group; Weland AB; Modul-System; TYRI Lights; Work System; Cresto Group; Industrilas; HangOn; Skandia Elevator; Svenska Krämfabriken.
+- Every new draft has subject Andrew Langmaid, correct named recipient, company-specific CV filename, true Gmail inline/CID headshot and no marketing wording.
+- TYRI Lights and Industrilas were rebuilt during QA to correct possessive wording; the superseded draft messages were moved to Trash after replacement QA passed.
+- Nothing was sent or scheduled during this reconciliation.
+- Manifest now contains zero DRAFT_READY_BLOCKED_CID rows.
+- Continue untouched-company hunting and qualified-draft production from live active/governed state 192/636.
+
