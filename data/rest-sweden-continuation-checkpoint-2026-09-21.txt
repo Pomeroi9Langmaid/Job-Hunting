@@ -493,3 +493,16 @@ GMAIL DRAFT QA - SJÖBERGS + CALECTRO - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunt from 186/581.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 186/588
+- Active speculative queue remains 186 companies.
+- Governance/dedupe ledger now records 588 real company decisions.
+- PRIDO = HOLD_PARENT_LIMITED_EXPORT despite strong profitability; export share around 15%, Lagercrantz ownership and current sales footprint do not establish the wider international mandate required.
+- Gunnebo Entrance Control = HOLD_RECENT_TRANSACTION after Gunnebo's 3 Aug 2026 agreement to sell the business unit to ASSA ABLOY.
+- RCO Security = HOLD_NORDIC_PARENT_TECHNICAL; Sweden/Norway/Finland footprint, Novax/Axel Johnson ownership and specialist security domain.
+- Dinbox = HOLD_PARENT_MERGER; merger into RCO underway.
+- Hellberg Safety = HOLD_PARENT_DUPLICATE because Hultafors Group is already an active Priority-A target.
+- Axema = HOLD_NORDIC_TECHNICAL_SCALE despite a current Sales & Export Manager.
+- Portsystem 2000 = HOLD_ACQUIRED_FUSED; acquired by ASSA ABLOY and standalone entity dissolved by merger.
+- No Gmail drafts created in this hold-only batch; nothing sent or scheduled.
+- Continue untouched-company hunt from 186/588.
+
