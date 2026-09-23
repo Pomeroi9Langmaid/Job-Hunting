@@ -486,3 +486,10 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 186/581
 - Vebe Teknik governed as HOLD_SMALL_TECHNICAL.
 - Next step: create and QA Gmail drafts for Sjöbergs and Calectro only. Nothing may be sent or scheduled without Andrew's explicit approval.
 
+GMAIL DRAFT QA - SJÖBERGS + CALECTRO - 23 SEPTEMBER 2026
+- Sjöbergs Workbenches draft: Stig Reitan, stig.reitan@sjobergs.se, national geography sentence, Andrew_Langmaid_Sjobergs_Workbenches.pdf, inline CID headshot, DRAFT, no marketing wording.
+- Calectro draft: Henric Fahlén, henric.fahlen@calectro.se, governed Gothenburg-region wording ("Living just up the road in Kungälv also made it feel natural to reach out."), Andrew_Langmaid_Calectro.pdf, inline CID headshot, DRAFT, no marketing wording.
+- Exactly one intended active draft exists for each.
+- Nothing sent or scheduled.
+- Continue untouched-company hunt from 186/581.
+
