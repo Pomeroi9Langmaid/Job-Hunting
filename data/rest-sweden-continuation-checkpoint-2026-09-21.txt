@@ -741,3 +741,17 @@ GMAIL DRAFT QA - JOMA - 23 SEPTEMBER 2026
 - Exactly one intended active Joma draft exists.
 - Nothing sent or scheduled.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 194/652
+- Live active speculative queue: 194 companies.
+- Governance/dedupe ledger: 652 real company decisions.
+- New Priority-A promotion: Hafi, Getinge/Halmstad.
+- Hafi fit: 41 employees, SEK 314.9m 2025 revenue, 7.3% operating margin, worldwide branded/private-label/co-packing customers, strong export/distributor model and explicit investment for future growth.
+- Preferred recipient: Pontus Ryberg, Sales Manager Industry, Private Label & Export, pontus@hafi.com.
+- Abilia locked as FINAL_HOLD_PRIOR_AUDIT_MEDTECH; current international scale is strong but the prior canonical Stockholm audit explicitly excluded the specialist assistive/medical-tech sale.
+- T-Emballage = ADVERTISED_ROLE_ROUTE because a live Sales Executive role directly targets new business.
+- Fristad Plast = HOLD_FINANCIAL_SCALE.
+- Contura = HOLD_CURRENT_DOWNSIZING_MARKET despite autonomous NIBE spin-out status.
+- Zetterbergs = HOLD_NORDIC_TECHNICAL despite improved 2025 profitability.
+- Nothing sent or scheduled in this governance batch.
+- Continue untouched-company hunting from 194/652.
+
