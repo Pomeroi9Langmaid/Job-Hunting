@@ -518,3 +518,13 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 186/594
 - No Gmail drafts created in this hold-only batch; nothing sent or scheduled.
 - Continue untouched-company hunt from 186/594.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 187/597
+- Live active speculative queue: 187 companies.
+- Governance/dedupe ledger: 597 real company decisions.
+- New conditional promotion: Nordic Sport (B), Skellefteå.
+- Nordic Sport fit: family-owned Swedish global athletics-equipment supplier; products at major international championships, worldwide distributors, historical export share around 70%, and current company positioning says it is better known internationally than domestically.
+- Current recipient: CEO Dennis Österberg, dennis@nordicsport.se, publicly evidenced. No prior Nordic Sport employment outreach found.
+- Unihoc locked as ALREADY_CONTACTED_PARENT because Andrew already emailed Renew Group Sweden founder/CEO Jan Inge Forsberg on 4 Sep 2026.
+- Oxdog governed as HOLD_PARENT_GROUP within listed WS WeSports Group.
+- Next step: create and QA Nordic Sport Gmail draft only. Nothing sent or scheduled.
+
