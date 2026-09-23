@@ -652,3 +652,14 @@ LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 191/625
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 191/625.
 
+LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 191/631
+- Active queue remains 191; Governance/dedupe ledger now 631.
+- Malmö Chokladfabrik = HOLD_SMALL despite strong 2025 growth/profitability; only 16 employees.
+- Wellibites = HOLD_MICRO; 1 employee and SEK 11.5m 2025 turnover.
+- Åre Water / Åre Beverage Group = HOLD_MICRO_FINANCIAL; 7 employees, about SEK 10m turnover and material operating loss.
+- Kolsvart = HOLD_MICRO.
+- Sockerbageriet = HOLD_SMALL_FINANCIAL.
+- Albina Snacks / Albina Swesnacks = HOLD_SMALL.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 191/631.
+
