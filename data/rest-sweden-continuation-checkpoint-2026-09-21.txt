@@ -1006,3 +1006,11 @@ GMAIL DRAFT QA - RVM SYSTEMS + DANFO - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Live company state at this reconciliation: 202 active / 715 governed.
 
+LIVE CONTINUATION HISTORY-LOCK BATCH - 23 SEPTEMBER 2026 - 202/717
+- Active speculative queue remains 202 companies.
+- Governance/dedupe ledger now records 717 real company decisions.
+- PulPac = ALREADY_CONTACTED_REPLIED_NO_CURRENT_OPPORTUNITY. Outreach sent 22 Jul; CCO Sanna Fager replied 17 Aug that no current matching position exists; Andrew acknowledged 24 Aug.
+- Cebon = ALREADY_APPLIED_ROLE_CLOSED. Andrew applied 16 Jul 2026 to Business Developer - Primary Batteries; Cebon confirmed on 15 Sep that another candidate was selected.
+- No Gmail drafts created. Nothing sent or scheduled.
+- Continue untouched-company hunting from 202/717 in two-company batches.
+
