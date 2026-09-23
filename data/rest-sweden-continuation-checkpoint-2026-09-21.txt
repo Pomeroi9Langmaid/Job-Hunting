@@ -871,3 +871,9 @@ PRO CONTACT RECONCILIATION + GMAIL DRAFT BATCH - 23 SEPTEMBER 2026
 - Nothing in this batch was sent or scheduled.
 - Live Governance count is unchanged by contact enrichment; continue company hunting only from the current live active/governed state after refreshing the files.
 
+PRO CONTACT RECONCILIATION - SECOND BATCH - 23 SEPTEMBER 2026
+- 11 additional active targets matched to appropriate recipients from Andrew's supplied Pro contact exports and converted to QA-verified Gmail drafts: OCS Overhead Conveyor System, DUX, EdmoLift, Swedish Lorry Parts, Fogmaker International, Nords International, Benders, Varnamo of Sweden / Värnamo Sängkläder, REF Stockholm, Regin Group and CEJN.
+- Each is DRAFT only with subject Andrew Langmaid, true inline CID headshot, company-named CV attachment and zero marketing wording in the email body.
+- Obviously stale or mismatched Pro records were not used. Example: the supplied Ejendals CEO record conflicts with current company-controlled evidence naming Anders Carlsson as CEO, so no Ejendals draft was created from that stale record.
+- Nothing was sent or scheduled.
+
