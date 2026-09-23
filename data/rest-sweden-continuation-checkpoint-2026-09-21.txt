@@ -566,3 +566,12 @@ GMAIL DRAFT QA - KELLFRI + METSJÖ - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from the current live Governance edge.
 
+LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 189/606
+- Active queue remains 189; Governance/dedupe ledger now 606.
+- Foodmark = HOLD_NO_OPEN_APPLICATION: current company contact page explicitly rejects spontaneous applications.
+- Bake My Day = HOLD_FINANCIAL_UNCLEAR: genuine 2026 European expansion, but latest surfaced operating accounts remain loss-making and current 2025/2026 financial capacity is not yet verified.
+- Gille = HOLD_FOREIGN_PARENT within Biscuit International.
+- Brämhults = HOLD_FOREIGN_PARENT_NORDIC_SCOPE within Germany-headquartered Eckes-Granini Group.
+- No Gmail drafts created for these holds. Nothing sent or scheduled.
+- Continue hunting only companies absent from both live files.
+
