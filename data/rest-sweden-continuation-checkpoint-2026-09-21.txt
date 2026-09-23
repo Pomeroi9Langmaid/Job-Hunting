@@ -506,3 +506,15 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 186/588
 - No Gmail drafts created in this hold-only batch; nothing sent or scheduled.
 - Continue untouched-company hunt from 186/588.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 186/594
+- Active speculative queue remains 186 companies.
+- Governance/dedupe ledger now records 594 real company decisions.
+- Maurten explicitly locked as EXISTING_PERMANENT_EXCLUSION; canonical Gothenburg audit already excluded it and Gmail contains substantial 2020 relationship history.
+- Embellence Group locked as ALREADY_CONTACTED_REPLIED from 11-12 Aug 2026 outreach/reply; CV retained, no duplicate.
+- Ekstrands = HOLD_NORDIC_FINANCIAL.
+- NC Nordic Care = HOLD_PARENT_DUPLICATE because Kinnarps is already Priority A.
+- Aura Light = HOLD_RECENT_ACQUISITION_FINANCIAL after Lightning Group completed acquisition 31 Aug 2026.
+- Kvänum Kök = HOLD_NORDIC_SCOPE despite strong premium-product economics.
+- No Gmail drafts created in this hold-only batch; nothing sent or scheduled.
+- Continue untouched-company hunt from 186/594.
+
