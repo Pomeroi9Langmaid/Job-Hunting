@@ -944,3 +944,12 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/707
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 199/707 in two-company batches.
 
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/709
+- Active speculative queue remains 199 companies.
+- Governance/dedupe ledger now records 709 real company decisions.
+- Norwesco = HOLD_PARENT_SMALL: approximately 28 employees, about SEK 115m revenue, roughly 40% export and Lagercrantz Group ownership.
+- Finja = HOLD_FOREIGN_PARENT_RECENT_ACQUISITION: Sika completed the acquisition on 3 Feb 2026; current commercial model is Swedish building-material distribution inside the Sika group.
+- No prior outreach found for either company.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 199/709 in two-company batches.
+
