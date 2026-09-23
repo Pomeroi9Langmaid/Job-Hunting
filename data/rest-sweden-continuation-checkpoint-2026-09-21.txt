@@ -733,3 +733,11 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 193/646
 - Nothing sent or scheduled in this governance save.
 - Continue untouched-company hunting from 193/646.
 
+GMAIL DRAFT QA - JOMA - 23 SEPTEMBER 2026
+- Joma Gmail draft created for Alexander Josefsson at alexander@joma.se.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF and true Gmail inline/CID headshot.
+- Email body uses international sales / new-business wording and contains neither marketing nor market-development wording.
+- Exactly one intended active Joma draft exists.
+- Nothing sent or scheduled.
+
