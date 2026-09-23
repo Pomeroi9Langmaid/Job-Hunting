@@ -606,3 +606,13 @@ LIVE CONTINUATION HOLD/ROUTE BATCH - 23 SEPTEMBER 2026 - 190/614
 - No Gmail drafts created for this batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from the current live edge.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 192/616
+- Live active speculative queue: 192 companies.
+- Governance/dedupe ledger: 616 real company decisions.
+- New conditional promotion: Lidan Marine (B), Lidköping.
+- Lidan basis: SEK 197.8m 2025 revenue, 21.5% margin, explicit global-market remit and public Commercial Manager Thomas Jonsson, thomas.jonsson@lidanmarine.com. Custom engineering/marine/naval depth keeps it second wave.
+- New conditional promotion: Ekamant (B), Markaryd.
+- Ekamant basis: around 500 group employees, own global sales organisation and sales in 50+ countries. Director of Sales & Marketing Joakim Jonsson has public email joakim.jonsson@ekamant.se. Specialist abrasives knowledge, modest recent Swedish-company profitability and 2026 CEO transition keep it second wave.
+- No email sent or scheduled in this governance batch.
+- Next step: create and QA Gmail drafts for both, then continue untouched-company hunting.
+
