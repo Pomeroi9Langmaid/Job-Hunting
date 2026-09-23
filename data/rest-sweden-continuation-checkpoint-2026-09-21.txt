@@ -707,3 +707,18 @@ FULL DRAFT-MANIFEST RECONCILIATION - 23 SEPTEMBER 2026 - LIVE STATE 192/636
 - Manifest now contains zero DRAFT_READY_BLOCKED_CID rows.
 - Continue untouched-company hunting and qualified-draft production from live active/governed state 192/636.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 192/645
+- Live active speculative queue remains 192 companies.
+- Governance/dedupe ledger now records 645 real company decisions.
+- Talurit locked as ALREADY_CONTACTED; Gmail/repo verify speculative outreach sent 3 Aug 2026 to Victor Lindh.
+- Hagmans Nordic = HOLD_RECENT_EXACT_COMMERCIAL_RECRUITMENT: summer 2026 Export Sales Manager process directly covered export outside the Nordics, new markets and strategic partners; application deadline was 30 Aug 2026.
+- Polaria = HOLD_FOREIGN_PARENT_LOCAL_SUBSIDIARY.
+- Infralogic = HOLD_SMALL_DOMESTIC_TECHNICAL.
+- SIBE Construction = EXCLUDE_RECRUITMENT_STAFFING.
+- Lammhults Möbel = HOLD_PARENT_ALREADY_CONTACTED because Lammhults Design Group was approached 5 Aug 2026.
+- Logosol = HOLD_FINANCIAL_CURRENT_DOMESTIC_HIRING despite genuine global export.
+- Baltic Safety Products = HOLD_SMALL_FINANCIAL.
+- Marco / Marco Lift = HOLD_FOREIGN_PARENT.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 192/645.
+
