@@ -918,3 +918,11 @@ GMAIL DRAFT QA - LACKEBY - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunting from 199/701.
 
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/703
+- Active speculative queue remains 199 companies.
+- Governance/dedupe ledger now records 703 real company decisions.
+- Wellplast = ADVERTISED_ROLE_ROUTE because a live Export Sales Manager vacancy is currently published; no speculative draft created.
+- Malux = HOLD_TECHNICAL_GROUP: profitable but compact Swedish team, specialist ATEX/rail/process/communications proposition and ongoing post-acquisition integration; Niklas Lundin became group CEO 1 Jan 2026.
+- No Gmail draft created in this two-company batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 199/703 in two-company batches.
+
