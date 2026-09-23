@@ -415,3 +415,13 @@ LIVE CONTINUATION CONTACT REPAIR + HUNT - 22 SEPTEMBER 2026 - 180/565
 - No email sent or scheduled in this governance save.
 - Next untouched-company continuation starts from 180/565 after Candypeople draft QA.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 181/566
+- Live active speculative queue: 181 companies.
+- Governance/dedupe ledger: 566 real company decisions.
+- New Priority-A promotion: Depend Cosmetic, Halmstad.
+- Fit basis: 107 employees, SEK 294.2m 2025 revenue, 14.7% margin, own Halmstad manufacturing and exports to 60+ countries.
+- No prior Depend Cosmetic employment outreach found in the live repo or targeted Gmail history.
+- Preferred available recipient route: CEO Mårten Johansson, mj@depend.se, publicly used by Depend in recruitment material. Official contact page welcomes unsolicited job approaches.
+- No conflicting suitable senior international commercial vacancy surfaced.
+- Next step: create and QA Gmail draft only; nothing may be sent or scheduled without Andrew's explicit approval.
+
