@@ -445,3 +445,13 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 182/572
 - Nothing sent or scheduled.
 - Continue untouched-company hunt from 182/572.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 183/573
+- Live active speculative queue: 183 companies.
+- Governance/dedupe ledger: 573 real company decisions.
+- New conditional promotion: FrontPac (B), Arlöv.
+- Fit basis: around 200 employees, approximately SEK 500m turnover, three Swedish production sites, customers across Europe/30+ countries and more than half of deliveries outside Sweden in latest sustainability reporting.
+- Preferred recipient: Jesper Ladelfa, Sales Manager, jesper.ladelfa@frontpac.se.
+- Current visible vacancies are production-only; no conflicting suitable senior commercial role surfaced.
+- No prior FrontPac employment outreach found in the live repo or targeted Gmail history.
+- Next step: create and QA Gmail draft only; nothing may be sent or scheduled without Andrew's explicit approval.
+
