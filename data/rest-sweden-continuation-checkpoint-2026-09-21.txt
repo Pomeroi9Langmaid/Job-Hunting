@@ -935,3 +935,12 @@ LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/705
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 199/705 in two-company batches.
 
+LIVE CONTINUATION SMALL BATCH - 23 SEPTEMBER 2026 - 199/707
+- Active speculative queue remains 199 companies.
+- Governance/dedupe ledger now records 707 real company decisions.
+- Gislaved Folie = HOLD_FOREIGN_PARENT because it has been owned by German-listed SURTECO SE since 2007 and current management/international routes are integrated with SURTECO.
+- AJ Produkter = HOLD_LARGE_GROUP_OPERATING_MODEL: approximately 1,100 employees, 21 country sales companies, three factories and >SEK 3bn annual turnover; too large and country-structured for the preferred hands-on autonomous speculative route.
+- No prior company-specific outreach found for either company.
+- No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from 199/707 in two-company batches.
+
