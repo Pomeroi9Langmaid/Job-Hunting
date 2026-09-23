@@ -791,3 +791,17 @@ GMAIL DRAFT BACKLOG SYNC - 23 SEPTEMBER 2026
 - Nothing was sent or scheduled.
 - Company hunting continues from the live 194 active / 664 governed checkpoint.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 195/669
+- Live active speculative queue: 195 companies.
+- Governance/dedupe ledger: 669 real company decisions.
+- New conditional promotion: SafeLine (B), Tyresö / Stockholm.
+- SafeLine fit: SEK 274.9m 2025 Sweden-company revenue, 62 employees, strong profitability, 25+ country footprint, multiple European offices/distributors/OEM partners and explicit 2026 international-growth focus.
+- Preferred recipient: Henrik Gyllander, Group Managing Director, henrik.gyllander@safeline.se.
+- Current visible SafeLine Sweden recruitment is technical/support/engineering; no conflicting suitable senior international commercial role surfaced.
+- Bluewater = HOLD_FINANCIAL.
+- USWE Sports = HOLD_SMALL_FINANCIAL.
+- EFG European Furniture Group = ALREADY_CONTACTED; sent 3 Sep 2026 to eleonore.ljungblad@efg.se.
+- Gullberg & Jansson = HOLD_NORDIC_SMALL_STRUCTURE.
+- No email was sent or scheduled in this governance batch.
+- Next untouched-company continuation starts from 195/669.
+
