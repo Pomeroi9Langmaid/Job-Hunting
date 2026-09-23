@@ -595,3 +595,14 @@ GMAIL DRAFT QA - HAMMARPRODUKTER - 23 SEPTEMBER 2026
 - Nothing sent or scheduled.
 - Continue untouched-company hunt from the live 190/609 edge unless a newer concurrent checkpoint appears.
 
+LIVE CONTINUATION HOLD/ROUTE BATCH - 23 SEPTEMBER 2026 - 190/614
+- Active queue remains 190; Governance/dedupe ledger now 614.
+- ABA of Sweden = HOLD_FOREIGN_PARENT_TECHNICAL within Germany-headquartered NORMA Group.
+- KB Components = HOLD_LARGE_TECHNICAL_OEM despite strong global scale.
+- Prototal = ADVERTISED_ROLE_ROUTE because a live Sweden Business Developer / Sales vacancy is currently published.
+- Malmbergs Elektriska = HOLD_FINANCIAL_INTERNATIONAL_SCOPE; 2025 group operating loss and annual report says export sales are currently insignificant.
+- Svenska Fönster = HOLD_FOREIGN_PARENT_RESTRUCTURING; DOVISTA/VKR ownership, main market Sweden and Apr 2026 restructuring affecting about 190 positions.
+- Skeppshults Gjuteri was already governed earlier; no duplicate row added.
+- No Gmail drafts created for this batch. Nothing sent or scheduled.
+- Continue untouched-company hunting from the current live edge.
+
