@@ -898,3 +898,15 @@ PRO-FILE UNMATCHED GOVERNANCE CLEANUP - 23 SEPTEMBER 2026 - 198/700
 - Key current reasons: Adapteo preserves prior Stockholm audit exclusion; Arvid Nilsson is in a newly announced Salix acquisition; Rescue/Watersprint fail scale/portfolio independence; AAK fails large-group/specialist gate; Byggmax and Menigo fail sales-motion/autonomy gates.
 - No Gmail message was sent or scheduled.
 
+LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 199/701
+- Live active speculative queue: 199 companies.
+- Governance/dedupe ledger: 701 real company decisions.
+- New conditional promotion: Lackeby (B), Kalmar.
+- Lackeby fit: about 50-55 employees, strong profitability, 5,800+ installations worldwide and a dedicated four-person export sales organisation spanning Europe, Americas, Africa, Middle East, Asia and Oceania.
+- Daniel Eriksson became CEO in January 2026.
+- Preferred recipient: Daniel Lindström, Sales Director, daniel.lindstrom@lackeby.se.
+- Main constraint: specialist water-treatment/process application depth; therefore B rather than A.
+- Pahlén remains HOLD_FINANCIAL_SCALE and was not duplicated.
+- Nothing sent or scheduled in this governance step.
+- Next untouched-company continuation starts from 199/701.
+
