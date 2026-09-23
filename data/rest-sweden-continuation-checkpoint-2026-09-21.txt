@@ -860,3 +860,14 @@ LIVE CONTINUATION HOLD BATCH - 23 SEPTEMBER 2026 - 197/684
 - No Gmail drafts created in this hold-only batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 197/684.
 
+PRO CONTACT RECONCILIATION + GMAIL DRAFT BATCH - 23 SEPTEMBER 2026
+- Andrew supplied five Pro-contact CSV exports containing 246 contacts / 130 companies.
+- 21 contacts were matched to live qualified Sweden targets and selected under the Governance recipient hierarchy.
+- Gmail drafts created and QA-verified for: CTEK, ZetaDisplay, Eleiko, ITAB Group, Cibes Lift Group, Nefab, Elpress Group, Seaflex, Huddig, Wibax, Rottne Industri, Absolent, Toyota Material Handling Europe, Thule Group, OilQuick, Presona, Brodit, MCT Brattberg, LIMAB, Almondy and Ankarsrum Kitchen.
+- Commercial leaders were preferred where the supplied export offered a stronger fit: Oskar Ragvald (Eleiko, Commercial Director), Nick Hughes (ITAB, CCO), Björn Strid (Thule, Global Commercial Director), Björn Norén (Almondy, Commercial Director), Tom De Vos (Toyota Material Handling Europe, Head of Sales Development), Ola Sæverås (ZetaDisplay, Chief Business Development Officer / Working Chairman).
+- CEO/MD routes were used where no stronger relevant commercial recipient was available in the supplied export.
+- Every one of the 21 Gmail messages is DRAFT only, subject Andrew Langmaid, with the canonical HTML body, true inline CID headshot and company-named CV PDF attached.
+- QA confirms no marketing wording appears in any email body.
+- Nothing in this batch was sent or scheduled.
+- Live Governance count is unchanged by contact enrichment; continue company hunting only from the current live active/governed state after refreshing the files.
+
