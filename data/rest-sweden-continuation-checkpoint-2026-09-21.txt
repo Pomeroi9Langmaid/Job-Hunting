@@ -755,3 +755,10 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 194/652
 - Nothing sent or scheduled in this governance batch.
 - Continue untouched-company hunting from 194/652.
 
+GMAIL DRAFT QA - HAFI - 23 SEPTEMBER 2026
+- Hafi Gmail draft created for Pontus Ryberg at pontus@hafi.com.
+- Subject: Andrew Langmaid.
+- Verified DRAFT state, correct company-named CV PDF, true Gmail inline/CID headshot and exactly one intended active draft.
+- Email body contains neither marketing nor market-development wording.
+- Nothing sent or scheduled.
+
