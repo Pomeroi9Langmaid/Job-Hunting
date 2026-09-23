@@ -557,3 +557,12 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 189/602
 - No email sent or scheduled in this governance batch.
 - Next step: create and QA Kellfri and Metsjö Gmail drafts, then continue only from companies absent from both live files.
 
+GMAIL DRAFT QA - KELLFRI + METSJÖ - 23 SEPTEMBER 2026
+- Live Governance state at QA: 189/602.
+- Kellfri Gmail draft created for CSO Caroline Karlström at caroline.karlstrom@kellfri.se.
+- Metsjö Gmail draft created for CEO Anders Ivarsson at anders.i@metsjo.se.
+- Both use subject: Andrew Langmaid.
+- Both verified DRAFT state, correct company-named CV PDF, true Gmail inline image/CID headshot and no marketing wording.
+- Nothing sent or scheduled.
+- Continue untouched-company hunting from the current live Governance edge.
+
