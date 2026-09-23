@@ -635,3 +635,11 @@ LIVE CONTINUATION ROUTE/HOLD BATCH - 23 SEPTEMBER 2026 - 192/621
 - No Gmail drafts created in this hold/route batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 192/621.
 
+GOVERNANCE RECONCILIATION - MAFI / SCANMAST - 23 SEPTEMBER 2026 - 191/621
+- Corrected a duplicate/conflicting MAFI record discovered during the untouched-company scan.
+- The active Priority-A MAFI Group row and its QUALIFIED ledger duplicate were removed because current official Scanmast/MAFI material confirms the same MAFI business sits inside Volati; Governance already contained the correct HOLD_SMALL_PARENT_FINANCIAL decision for MAFI.
+- The stale MAFI Group draft-manifest row was removed. No Gmail draft existed from that blocked manifest row and nothing was sent.
+- Scanmast governed separately as HOLD_PARENT_TECHNICAL_NORDIC: combined Scanmast/MAFI scale is substantial and a Head of Export Sales exists, but Scanmast is Volati-owned and its steel-infrastructure/project-engineering sales are specialist and Nordic-led.
+- Live state after dedupe correction: 191 active companies / 621 real governed decisions.
+- Continue untouched-company hunting from 191/621.
+
