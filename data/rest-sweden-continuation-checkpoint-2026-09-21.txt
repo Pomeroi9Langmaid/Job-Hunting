@@ -783,3 +783,11 @@ LIVE CONTINUATION HUNT - 23 SEPTEMBER 2026 - 194/660
 - No Gmail drafts created in this hold/history batch. Nothing sent or scheduled.
 - Continue untouched-company hunting from 194/660.
 
+GMAIL DRAFT BACKLOG SYNC - 23 SEPTEMBER 2026
+- Created and QA-verified Gmail drafts for Kongamek, Kopparbergs Bryggeri, Åbro Bryggeri, Hafi and Depend Cosmetic.
+- All five are DRAFT only, with the correct recipient, company-named CV PDF attachment, true inline/CID headshot and the canonical speculative body.
+- QA confirms none of the five email bodies contains marketing wording.
+- Targeted Gmail checks confirmed no previous sent message and no pre-existing draft to these exact recipients before creation.
+- Nothing was sent or scheduled.
+- Company hunting continues from the live 194 active / 664 governed checkpoint.
+
