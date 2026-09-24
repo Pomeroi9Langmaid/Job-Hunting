@@ -1094,3 +1094,14 @@ AUTHORITATIVE LIVE CONTINUATION - 24 SEPTEMBER 2026 - 215/741
 - New governed hold: Tärnsjö Garveri = HOLD_SMALL_FINANCIAL (46 employees / ~SEK 53m revenue and approximately break-even 2025 profitability).
 - No new Gmail draft was created, sent or scheduled by the assistant in this continuation step.
 - Continue genuinely untouched-company hunting from 215/741.
+
+LIVE CONTINUATION HUNT - 24 SEPTEMBER 2026 - 216/747
+- Continued only with names absent from the existing Governance ledger and checked the mandatory canonical applications.csv, companies.csv and contact-enrichment.csv plus targeted Gmail history before deciding.
+- New Priority-B conditional promotion: Artwood, Skene. 18 employees but unusually strong capacity for its size: SEK 139.8m 2025 revenue and about SEK 30.0m result after finance. Current company material explicitly says Artwood is expanding in Europe and seeking agents/distributors in selected markets, with an established European reseller network. The premium/wholesale/distribution proposition maps directly to Andrew's earlier premium-brand and international channel background. Current CEO Anna-Carin Bengtsson is verified, but only shared info@/job@ routes surfaced; therefore CONTACT BLOCKER and no draft.
+- Zero Interiör / Zero Lighting governed HOLD_SMALL. Current Export Manager Sebastian Gill and a broad international agent/distributor network are verified, but the company is only 19 employees / about SEK 44m 2025 revenue, below the senior-hire capacity threshold.
+- RugVista Group governed HOLD_CONSUMER_D2C_OPERATING_MODEL. The company is financially strong and international, but explicitly operates as a direct-to-consumer online rug retailer; that is not Andrew's target hands-on international B2B/new-business operating model.
+- Wood's Air Treatment governed HOLD_FINANCIAL_CONSUMER_COMPACT. Swedish production and professional products are real, but the production company has 13 employees and sharply lower 2025 revenue with thin profitability, while the parent reported an operating loss; current commercial presentation is heavily consumer/retail led.
+- Lekolar governed HOLD_NORDIC_PUBLIC_PROCUREMENT_OPERATING_MODEL. It is substantial and profitable, but current operations are explicitly Sweden/Denmark/Norway/Finland with a school/municipality/framework-agreement sales model rather than wider international full-cycle new business.
+- Aléló governed HOLD_MICRO. European launch activity and Business Sweden export participation are real, but the company remains a 2-10 person early-stage consumer brand.
+- No Gmail draft was created, sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 216/747.
