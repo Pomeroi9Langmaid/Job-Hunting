@@ -1115,3 +1115,13 @@ LIVE CONTINUATION HUNT - 24 SEPTEMBER 2026 - 217/751
 - Hans K governed HOLD_MICRO: international design positioning and EU sales are real, but Global Furniture i Skene AB had only 4 employees and SEK 12.1m 2025 revenue.
 - No Gmail draft was created, sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 217/751.
+
+LIVE CONTINUATION HUNT - 24 SEPTEMBER 2026 - 219/754
+- Continued only with genuinely untouched companies after re-reading the governing Sources and checking canonical applications.csv, companies.csv and contact-enrichment.csv plus targeted Gmail history.
+- New Priority-B conditional promotion: Water Jet Sweden, Ronneby. 30 employees, about SEK 129.9m 2025 revenue, customers in 40+ countries and local representatives in roughly ten markets. The company actively invites new international agents and its global channel-development model is commercially relevant. Specialist cutting-machine/application depth keeps it second wave. Current Global Sales Christian Svensson is verified, but company material maps him and senior management to shared sales@waterjet.se, so this is a CONTACT BLOCKER until a direct named professional email is independently verified.
+- New Priority-B conditional promotion: Svenska Industriborstar / SIB Products, Västerås. 22 employees, SEK 81.2m 2025 revenue, positive profitability and current reseller coverage across Europe, North America and other export markets. CEO Pontus Eriksson is explicitly close to Sales and Caroline Droeser handles SIB Airport sales. Modest scale, Lagercrantz ownership and application-specific airport/industrial knowledge keep it conditional. No direct named professional email is currently published, so this is also a CONTACT BLOCKER.
+- New governed hold: Waterproof Diving International = HOLD_PARENT_SMALL_CONSUMER_SPECIALIST. Worldwide distributor/dealer reach and strong profitability are real, but the 22-person business sits inside Lagercrantz and the proposition is specialist diving equipment with only shared public contact routes.
+- Existing Governance recheck also confirmed Pax AB is already HOLD_FOREIGN_PARENT_NORDIC and Prido is already HOLD_PARENT_LIMITED_EXPORT; neither was duplicated.
+- A current search surfaced Kee/Keeplastics as a potentially relevant 80+ country exporter with an International Sales Manager vacancy indexed from July 2026. Because a live advertised role would displace speculative outreach, Kee has not been added as a speculative target in this pass; it should be verified through the advertised-role workflow before any application recommendation.
+- No Gmail draft was created, sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 219/754.
