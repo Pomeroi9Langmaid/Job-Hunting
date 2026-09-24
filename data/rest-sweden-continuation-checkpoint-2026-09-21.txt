@@ -1073,3 +1073,13 @@ LIVE CONTINUATION SMALL BATCH - 24 SEPTEMBER 2026 - 209/730
 - No conflicting suitable current senior hands-on international commercial vacancy surfaced for either company.
 - No Gmail draft was created. Nothing was sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 209/730.
+
+LIVE CONTINUATION HUNT - 24 SEPTEMBER 2026 - 212/739
+- Live Gmail correction: Pelly Group was already SENT at 15:23 Europe/Stockholm to CEO Sara Berglund with Andrew_Langmaid_Pelly_Group.pdf attached. It is now history-locked as ALREADY_CONTACTED and reconciled to application-updates.csv row 531. Do not duplicate.
+- New conditional promotion: Silvent (B), Borås. Products are used in 95+ countries through own sales companies and distributors; Swedish entity has 19 employees, about SEK 95m 2025 revenue and very strong profitability. Lifco ownership, small Swedish headcount and compressed-air application depth keep it conditional. Current CEO Anders Erlandsson has company-published direct email a.erlandsson@silvent.se.
+- New conditional promotion: TreCe (B), Norrköping. Approx. SEK 100m 2025 revenue; sustainable storage/recycling proposition with active showrooms/partners in Norway, Finland, Germany and the UK. Head of Sales Martin Larsson has company-published direct email martin.larsson@trece.se.
+- New conditional promotion: Horreds Möbel (B), Horred. Third-generation premium design manufacturer, about 45 employees / roughly SEK 86m latest revenue, with current sales coverage across Scandinavia, Germany, UK/Ireland and wider Europe. CEO Per-Ola Johansson has company-published direct email per-ola@horreds.se.
+- Targeted Job-Hunting repo and Gmail checks found no prior company-specific application/outreach, active draft, scheduled message or substantive reply for Silvent, TreCe or Horreds.
+- New governed holds: SwedSafe = HOLD_FOREIGN_PARENT_SPECIALIST (uvex full ownership + regulated PPE); Abstracta = HOLD_PARENT_CONTACTED (Lammhults Design Group outreach already sent Aug 2026); Granberg Interior = HOLD_SMALL_FINANCIAL; TR Equipment = HOLD_SMALL_LOSS_MEDTECH; Grythyttan Stålmöbler = HOLD_GROUP_CONTACTED because its global sales structure overlaps the already-contacted String Furniture group.
+- No Gmail draft was created for Silvent, TreCe or Horreds. Nothing was sent or scheduled by the assistant in this continuation step.
+- Continue genuinely untouched-company hunting from 212/739.
