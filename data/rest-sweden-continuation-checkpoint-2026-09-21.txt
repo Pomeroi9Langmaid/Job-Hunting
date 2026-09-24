@@ -1031,3 +1031,10 @@ LIVE CONTINUATION SMALL BATCH - 24 SEPTEMBER 2026 - 202/721
 - Targeted Gmail checks found no prior company-specific outreach for either company.
 - No Gmail drafts created. Nothing sent or scheduled.
 - Continue untouched-company hunting from 202/721 in two-company batches.
+
+
+CONTACT CORRECTION / DRAFT QA - 24 SEPTEMBER 2026
+- Ejendals recipient corrected to Christina Åqvist, CEO, after her 7 Sep 2026 appointment; Andrew supplied christina.aqvist@ejendals.com. Exact Gmail history clear and QA-verified draft created with canonical HTML/CID signature and Andrew_Langmaid_Ejendals.pdf. DRAFT ONLY.
+- Revent International: Andrew's previously supplied dl@revent.com was reconciled to Daniel Lago, current CEO of Revent Inc. (US subsidiary). Swedish parent CEO remains Per Johan Anders Junesand. Exact Gmail history clear and QA-verified draft created to Daniel with Andrew_Langmaid_Revent_International.pdf. DRAFT ONLY.
+- Hammar Maskin: Peter Cederholm remains the desired CEO route, but Andrew confirmed he had already searched manually and found no suitable professional contact. Status is CONTACT BLOCKER. Do not ask Andrew to repeat the same search unless new evidence appears.
+- No email was sent or scheduled in this correction step.
