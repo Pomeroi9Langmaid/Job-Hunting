@@ -1105,3 +1105,13 @@ LIVE CONTINUATION HUNT - 24 SEPTEMBER 2026 - 216/747
 - Aléló governed HOLD_MICRO. European launch activity and Business Sweden export participation are real, but the company remains a 2-10 person early-stage consumer brand.
 - No Gmail draft was created, sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 216/747.
+
+LIVE CONTINUATION HUNT - 24 SEPTEMBER 2026 - 217/751
+- Continued from 216/747 using only companies absent from Governance and the vetted register, with Target Company Master, canonical applications.csv / companies.csv / contact-enrichment.csv and targeted Gmail history checks completed before promotion.
+- New Priority-B conditional promotion: Skandilock, Svenljunga. Family-owned, 23 employees, SEK 79.8m 2025 revenue and SEK 7.7m result after finance. It is one of Europe's leading niche suppliers of tailor-made sheepskin for furniture manufacturing/interior projects and works with established international design brands. The customised premium B2B proposition is highly transferable, while small scale and material specialism keep it second wave. CEO Claes Borgvall has company-published direct email claes@skandilock.com; Peter Ohlsson is listed only as Sales, so the CEO remains the stronger small-company route.
+- Skandilock vacancy check: the Key Account Manager advert surfaced by current search was published 11 Apr 2025 with a 4 May 2025 deadline. It is historical, not a live 2026 role, so it does not displace speculative governance.
+- Skrufs Glasbruk governed HOLD_MICRO_FINANCIAL: 11 employees, SEK 11.9m 2025 revenue, negative EBIT and weak liquidity/profitability.
+- Målerås Glasbruk governed HOLD_SMALL_FINANCIAL despite products in 40+ countries: 24 employees, about SEK 36.7m latest revenue and loss-making latest surfaced year; only shared sales/info routes are published.
+- Hans K governed HOLD_MICRO: international design positioning and EU sales are real, but Global Furniture i Skene AB had only 4 employees and SEK 12.1m 2025 revenue.
+- No Gmail draft was created, sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 217/751.
