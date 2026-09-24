@@ -1038,3 +1038,10 @@ CONTACT CORRECTION / DRAFT QA - 24 SEPTEMBER 2026
 - Revent International: Andrew's previously supplied dl@revent.com was reconciled to Daniel Lago, current CEO of Revent Inc. (US subsidiary). Swedish parent CEO remains Per Johan Anders Junesand. Exact Gmail history clear and QA-verified draft created to Daniel with Andrew_Langmaid_Revent_International.pdf. DRAFT ONLY.
 - Hammar Maskin: Peter Cederholm remains the desired CEO route, but Andrew confirmed he had already searched manually and found no suitable professional contact. Status is CONTACT BLOCKER. Do not ask Andrew to repeat the same search unless new evidence appears.
 - No email was sent or scheduled in this correction step.
+
+
+CONTINUATION HUNT - 24 SEPTEMBER 2026
+- New qualified target: Ballingslöv International (Priority A). Malmö-headquartered European premium interiors group, ~1,400 employees across ~20 markets, July 2026 Spanish KBV acquisition strengthening European footprint. Group CEO Björn Hauber has company-published direct email bjorn.hauber@ballingslov.se. Prior HOLD placeholder draft was replaced with one QA-verified canonical Gmail draft; DRAFT ONLY.
+- New qualified conditional target: Tormek (Priority B). Lindesberg manufacturer with 46 employees, ~SEK 243m 2025 revenue, strong profitability and exports to 35+ countries via importing partners. CEO Samuel Stenhem; direct professional email samuel.stenhem@tormek.se verified publicly. Exact Gmail history was clear before draft creation. Current live Gmail now shows the message scheduled for 15:28 Europe/Stockholm; treat as scheduled, not sent, until dispatch is confirmed.
+- Habo Gruppen reviewed but not promoted: current footprint is primarily Nordic and current hiring is Swedish-language/domestic, so it does not clear the wider-international speculative priority ahead of stronger targets.
+- Fogia was surfaced during the sweep but live Gmail already contains a scheduled CEO message to Marcus Huber, so it was not duplicated.
