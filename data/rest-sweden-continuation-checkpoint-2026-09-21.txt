@@ -1022,3 +1022,12 @@ LIVE CONTINUATION SMALL BATCH - 24 SEPTEMBER 2026 - 202/719
 - Targeted Gmail checks found no prior company-specific outreach for either company.
 - No Gmail drafts created. Nothing sent or scheduled.
 - Continue untouched-company hunting from 202/719 in two-company batches.
+
+LIVE CONTINUATION SMALL BATCH - 24 SEPTEMBER 2026 - 202/721
+- Active speculative queue remains 202 companies.
+- Governance/dedupe ledger now records 721 real company decisions.
+- Wemo Automation = HOLD_FOREIGN_PARENT_FINANCIAL_TECHNICAL: 57 employees / about SEK 127m 2025 revenue, Japanese parent ownership and three consecutive loss-making years; specialist factory-automation depth adds further fit risk.
+- Northcone = HOLD_MICRO_FINANCIAL: only about 11 employees / SEK 37m revenue and continued material losses despite rapid top-line growth.
+- Targeted Gmail checks found no prior company-specific outreach for either company.
+- No Gmail drafts created. Nothing sent or scheduled.
+- Continue untouched-company hunting from 202/721 in two-company batches.
