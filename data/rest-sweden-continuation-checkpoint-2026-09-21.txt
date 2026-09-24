@@ -1061,3 +1061,15 @@ LIVE RECONCILIATION + CONTINUATION HUNT - 24 SEPTEMBER 2026 - 207/728
 - New holds: Midsona = HOLD_LARGE_GROUP_CONSUMER_DIVISIONAL; Nordic Paper = HOLD_LARGE_FOREIGN_PE_SPECIALIST. Nordic Paper is now 100% owned through Strategic Value Partners and already operates a global Area Sales Director structure, so an undirected speculative approach is not promoted.
 - No Gmail draft, send or scheduling action was taken for Lessebo Paper, Ljungby Maskin, Maskin Mekano, Midsona or Nordic Paper in this continuation step.
 - Continue only with genuinely untouched Swedish companies absent from both the 207-record vetted register and 728-decision Governance ledger, then run repo/application-updates/Gmail/current-role checks before promotion.
+
+LIVE CONTINUATION SMALL BATCH - 24 SEPTEMBER 2026 - 209/730
+- Current vetted/qualified target register: 209 records.
+- Current Governance/dedupe ledger: 730 real company decisions.
+- New conditional promotion: DaloLindén (B), Värnamo. Swedish manufacturing, US subsidiary and exports across 20+ markets create a credible physical-product/wholesale fit; compact scale and consumer exposure keep it conditional.
+- Preferred recipient: Mikael Johnsson, Sales & Marketing Manager, mikael.j@dalolinden.se. Company-published direct professional email verified.
+- New conditional promotion: Spaljisten (B), Åseda. Profitable Swedish B2B furniture-front manufacturer serving the worldwide market, with about 127 employees / roughly SEK 505m 2025 revenue and current Sales + Business Development leadership.
+- Preferred recipient: Frederick Svensbergh, Head of Marketing and Sales, frederick.svensbergh@spaljisten.se. Company-published direct professional email verified.
+- Targeted Job-Hunting repo and Gmail checks found no prior company-specific application/outreach, active draft, scheduled message or substantive reply for either company.
+- No conflicting suitable current senior hands-on international commercial vacancy surfaced for either company.
+- No Gmail draft was created. Nothing was sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 209/730.
