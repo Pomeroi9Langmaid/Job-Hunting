@@ -1160,3 +1160,12 @@ LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 226/782
 - No Gmail draft was created, sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 226/782.
 
+LIVE CONTINUATION HUNT + HISTORY RECONCILIATION - 25 SEPTEMBER 2026 - 228/794
+- Continued from 226 vetted targets / 782 Governance decisions using only companies absent from the live ledger, with canonical applications.csv, companies.csv and contact-enrichment.csv checks plus targeted Gmail history.
+- New Priority-B conditional promotion with CONTACT BLOCKER: XLASH / Beauty Generation AB, Stockholm. 2025 revenue SEK 113.9m, 23 employees and positive profitability; current international retailer coverage plus Business Sweden's 2026 S-Beauty export programme verify real international-growth relevance. CEO Svante Gabrán is current, but official Xlash contact is shared hello@xlash.com and no compliant direct named professional email was verified. Do not guess an address and do not draft yet.
+- XLASH vacancy check: live B2B Key Account Manager - Nordic recruitment is a roughly 12-month parental-leave cover, Nordic rather than wider international, and requires fluent Swedish. It therefore is not a suitable permanent role replacing the speculative route, but it is recorded as current hiring context.
+- History correction: live Gmail surfaced a Blå Station speculative email already SENT 24 Sep 2026 at 15:28 Europe/Stockholm to Johan Lindau, johan@blastation.se, with Andrew_Langmaid_Bla_Station.pdf. The stale Governance ADVERTISED_ROLE_ROUTE row has been corrected to ALREADY_CONTACTED, Blå Station has been added to the vetted register as Sent - Awaiting Response, and application-updates.csv now records the verified send. No duplicate message was created.
+- New governed holds/diversions: JGA / J G Anderssons Söner = HOLD_COMMODITY_TIMBER; Högland Såg & Hyvleri = HOLD_COMMODITY_TIMBER; Hanåsa Sågverk = HOLD_SMALL_COMMODITY_TIMBER; Intermercato = HOLD_PARENT_SMALL_TECHNICAL; DehuTech = HOLD_MICRO_PARENT_TECHNICAL; EVY Technology = ADVERTISED_ROLE_ROUTE; Headon Products = HOLD_MICRO_FINANCIAL; TanRevel = HOLD_MICRO_FINANCIAL; Common Clouds = HOLD_MICRO_SCALE; Skinome = HOLD_SMALL_FINANCIAL; Recipe for Men = HOLD_PARENT_DUPLICATE because Svenska Krämfabriken is already the governed route.
+- No Gmail draft was created, sent or scheduled by the assistant in this continuation step. The only sent-message change was tracker/Governance reconciliation of the pre-existing Blå Station send.
+- Continue genuinely untouched-company hunting from 228/794.
+
