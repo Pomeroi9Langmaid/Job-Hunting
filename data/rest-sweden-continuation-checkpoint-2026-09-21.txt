@@ -1234,3 +1234,11 @@ CONTINUATION HUNT - SECOND HOLD BATCH - 25 SEPTEMBER 2026 - 233/827
 - No Gmail draft was created, sent or scheduled in this hold-only pass. The active QA-verified draft manifest remains 20 messages.
 - Continue genuinely untouched-company hunting from 233/827.
 
+CONTINUATION HUNT - FORESTRY/MACHINERY CHECK - 25 SEPTEMBER 2026 - 233/829
+- Continued from 233/827 with additional genuinely untouched machinery companies after checking the live ledger first.
+- Vimek = HOLD_PARENT_OVERLAP_TECHNICAL. The business is profitable and established, but it sits under Cranab, which is already governed as HOLD_FOREIGN_PARENT_TECHNICAL; separate subsidiary outreach would duplicate the same ownership ecosystem and retains the specialist forestry-machine fit problem.
+- Logset Sverige = HOLD_FOREIGN_BRANCH_MICRO_TECHNICAL. The Swedish operation is a 1-4 person branch of the Finnish forestry-machine manufacturer, far below senior-hire capacity and technically specialist.
+- Mählers was rechecked but already governed as HOLD_NORDIC_TECHNICAL, so no duplicate row was created.
+- No Gmail draft was created, sent or scheduled in this pass. Active QA-verified draft manifest remains 20 messages.
+- Continue genuinely untouched-company hunting from 233/829.
+
