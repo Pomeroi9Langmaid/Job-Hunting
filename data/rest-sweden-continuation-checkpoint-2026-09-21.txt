@@ -1242,3 +1242,11 @@ CONTINUATION HUNT - FORESTRY/MACHINERY CHECK - 25 SEPTEMBER 2026 - 233/829
 - No Gmail draft was created, sent or scheduled in this pass. Active QA-verified draft manifest remains 20 messages.
 - Continue genuinely untouched-company hunting from 233/829.
 
+CONTINUATION HUNT - PREMIUM EXPORT + COMPACT MANUFACTURER PASS - 25 SEPTEMBER 2026 - 235/835
+- Continued from the live 233/829 checkpoint with genuinely untouched companies only.
+- New Priority-B conditional promotion: High Coast Distillery / High Coast Whisky, Bjärtrå. Approx. 28 employees / SEK 57.6m 2025 revenue, profitable, sold in roughly ten countries, and 2026 strategy explicitly prioritises visibility, market presence and sales in selected export markets. Preferred recipient Lars Karlsson, Export Sales Manager, current company-published direct email lars.karlsson@highcoastwhisky.se. Exact Gmail search is clear; no conflicting suitable senior commercial vacancy surfaced.
+- New Priority-B conditional promotion: Hernö Gin, Härnösand. SEK 47.4m 2025 revenue / SEK 5.8m profit before tax, distribution in about 30 countries and a stated profitable-growth agenda. Preferred recipient Emma Edfors, CEO, current company-published direct email emma@hernogin.com. Exact Gmail search is clear; no stronger current international commercial leader or conflicting suitable senior commercial vacancy surfaced.
+- New governed holds: Bergo Flooring = HOLD_SMALL_FINANCIAL despite >80% export to 40+ countries; Trebema = HOLD_MICRO_SCALE; Guardio Safety = HOLD_MICRO_FINANCIAL; Luda.Farm = HOLD_MICRO_SCALE; Re-board Technology = HOLD_SMALL_SCALE_ACCOUNTING because current 17-person scale plus unusual 2025 reporting do not support a new permanent senior-hire assumption.
+- No Gmail draft was created, sent or scheduled in this pass. The existing active QA-verified draft manifest remains untouched.
+- Continue genuinely untouched-company hunting from 235/835.
+
