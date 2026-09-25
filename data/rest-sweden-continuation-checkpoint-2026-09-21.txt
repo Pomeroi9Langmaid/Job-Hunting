@@ -1199,3 +1199,15 @@ GMAIL DRAFT BATCH + CONTINUATION HUNT - 25 SEPTEMBER 2026 - 231/809
 - ScanBox was rediscovered but is already history-locked: applications.csv and live Gmail verify speculative outreach sent 10 Aug 2026 to Johan Olsson. No duplicate was created.
 - Continue genuinely untouched-company hunting from 231/809.
 
+CONTINUATION HUNT + TWO NEW ACTIVE DRAFTS - 25 SEPTEMBER 2026 - 233/816
+- Continued from 231 vetted / 809 governed decisions with genuinely untouched Swedish companies and current company/financial evidence.
+- Two new Priority-B conditional targets were promoted and Gmail drafts created: Inpipe Sweden (Rolf Näslund, Director Commercial Strategy, rolf.naslund@inpipe.se) and Horda Stans (Anders Edin, Sales & Marketing Director, anders.edin@hordastans.se).
+- Exact-recipient Gmail searches were clear immediately before creation. Both stored drafts were reopened and QA verified: DRAFT state only, subject Andrew Langmaid, canonical body, correct non-local Kungälv sentence, four proof points, CEO clarification, personal sign-off, clickable LinkedIn, company-named CV PDF and true inline/CID portrait. Nothing was sent or scheduled.
+- Inpipe is especially relevant because Business Sweden documents active international expansion, concrete prospecting opportunities, establishment in Italy and an India pilot; 2025 revenue is SEK 64.5m with strong profitability.
+- Horda Stans has 113 employees, SEK 243.6m 2025 revenue, 10.8% operating margin, current international customers and a Sales & Marketing Director plus Germany/Switzerland KAM.
+- Governance conflict prevention caught two companies before final promotion: Borox International remains HOLD_TECHNICAL_RECENT_SALES under the existing 22 Sep decision, and Helge Nyberg remains HOLD_FINANCIAL_SCALE under the existing 22 Sep decision. Their newly created Gmail drafts were immediately moved to Trash and verified DRAFT+TRASH. They are not active/send-ready and were not added to the vetted register or manifest.
+- Swedrive was also already governed as HOLD_TECHNICAL_PARENT and was not duplicated.
+- New governed holds: Håkansson Sågblad = HOLD_SMALL_FINANCIAL_PARENT; HRD Carpets / Horredsmattan = HOLD_MICRO_FINANCIAL; Designtak = HOLD_PARENT_BUILDING_SYSTEMS; Markisol = HOLD_SMALL_SWEDISH_OPCO_GLOBAL_GROUP; Aero Materiel = HOLD_RECENT_SALES_LEADERSHIP_RECRUITMENT.
+- Active QA-verified Gmail draft manifest now contains 20 messages. Nothing sent or scheduled.
+- Continue genuinely untouched-company hunting from 233/816.
+
