@@ -1187,3 +1187,15 @@ LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 229/806
 - Previously governed findings were not duplicated: Akriform Plast, First Class Brands of Sweden, Foodimpex International, Gotlandschips, Trensums Food and Starke Arvid remain under their existing dispositions.
 - No Gmail draft was created, sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 229/806.
+
+GMAIL DRAFT BATCH + CONTINUATION HUNT - 25 SEPTEMBER 2026 - 231/810
+- Created and reopened 18 valid Gmail speculative drafts. Every active message remains DRAFT only; nothing was sent or scheduled.
+- Active draft companies: Olofsfors; Skultuna Flexible / Skultuna Induflex; Svenska LantChips; Carlfors Bruk; Plantma Forestry; Hasta; Lessebo Paper; Ljungby Maskin; DaloLindén; Spaljisten; Silvent; TreCe; Horreds Möbel; Morakniv; Elmo Leather; Skandilock; Standby Group / Standby AB; Somas Instrument.
+- Every active stored draft was QA verified for exact recipient, subject Andrew Langmaid, canonical body, correct non-local Kungälv sentence, four proof points, CEO clarification, personal sign-off, clickable LinkedIn link, company-specific CV attachment and true inline/CID portrait. Unique Gmail draft/message IDs are stored in data/speculative-draft-manifest-2026-09-25.csv.
+- During continuation research, two apparent new targets were found to conflict with pre-existing Governance decisions before finalisation: Sveba Dahlen remains ADVERTISED_ROLE_ROUTE because Governance records a directly relevant live export-business-development recruitment; Scanreco remains HOLD_TECHNICAL. Their newly created drafts were immediately moved to Gmail Trash and verified as DRAFT+TRASH. They are not active/send-ready and the vetted register was corrected.
+- New valid Priority-B conditional promotion and active Gmail draft: Somas Instrument, Säffle. Family-owned, strongly profitable, worldwide offices/representatives and a substantial export-sales organisation. Preferred recipient Gustav Kildén, Sales and Marketing Director, gustav.kilden@somas.se.
+- New Priority-B conditional CONTACT BLOCKER: Paxxo, Malmö. Family-owned, 56 employees, about SEK 169m 2025 revenue, Longopac sold through partners in 40+ countries and historical international-sales hiring. Current CEO Henrik Péters is verified, but the historically published direct email requires fresh 2026 verification before use. No draft created.
+- New hold: Setrab = HOLD_FOREIGN_PARENT_TECHNICAL_LANGUAGE. Emballator Group remains newly governed HOLD_LARGE_GROUP_LOCAL_STRUCTURE.
+- ScanBox was rediscovered but is already history-locked: applications.csv and live Gmail verify speculative outreach sent 10 Aug 2026 to Johan Olsson. No duplicate was created.
+- Continue genuinely untouched-company hunting from 231/810.
+
