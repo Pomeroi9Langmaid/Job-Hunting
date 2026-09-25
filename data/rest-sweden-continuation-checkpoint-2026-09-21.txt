@@ -1169,3 +1169,12 @@ LIVE CONTINUATION HUNT + HISTORY RECONCILIATION - 25 SEPTEMBER 2026 - 228/794
 - No Gmail draft was created, sent or scheduled by the assistant in this continuation step. The only sent-message change was tracker/Governance reconciliation of the pre-existing Blå Station send.
 - Continue genuinely untouched-company hunting from 228/794.
 
+LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 228/799
+- Continued from 228 vetted targets / 794 Governance decisions with additional current export-food/company discovery, canonical GitHub checks and targeted Gmail history.
+- No newly untouched company in this pass cleared every speculative-promotion gate. The active queue was not padded with weaker companies.
+- Important route correction: Bakels Sweden was already governed as a large-group hold, but current research now verifies a live Export Sales Manager - Cluster North vacancy covering distributor development, key accounts and international new business. Bakels is therefore updated in place to ADVERTISED_ROLE_ROUTE. The role must be assessed through the advertised-role workflow before any action.
+- Existing prior decisions were preserved after current recheck: AstaReal remains specialist-health/foreign-parent hold; Delibake remains financial hold; Falksalt remains blocked by already-contacted parent Salinity; Candeco / OV Sweden remains integrated-parent hold.
+- New governed holds: BUBS Godis = HOLD_LARGE_FOREIGN_PARENT_CONSUMER; Dals Konfektyr = HOLD_FINANCIAL_PARENT; Eguale / Sackeus = HOLD_MICRO_SCALE; Frutoso International = HOLD_STALE_ENTITY_RENAMED because the Swedish legal entity became 247 Mobility AB in April 2026; Kahls Kaffe = HOLD_INTERNATIONAL_EVIDENCE because current company-controlled positioning remains principally Sweden-focused despite Try Swedish participation.
+- Targeted Gmail checks found no new company-specific career outreach for these untouched companies. No Gmail draft was created, sent or scheduled.
+- Continue genuinely untouched-company hunting from 228/799.
+
