@@ -1150,3 +1150,13 @@ LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 224/777
 - Kee / Keeplastics remains outside the speculative queue because its International Sales Manager vacancy belongs in the advertised-role workflow if still current.
 - No Gmail draft was created, sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 224/777.
+
+LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 226/782
+- Continued only with genuinely untouched companies absent from the 224-target vetted register and 777-decision Governance ledger, with canonical Job-Hunting repo checks and live Gmail recipient/history checks before promotion.
+- New Priority-B conditional promotion: Olofsfors AB, Nordmaling. Privately owned Swedish manufacturer with about 150 employees / roughly SEK 500m turnover and customers across almost every continent. Current 2026 company material confirms Kjell-Erik Åström remains Sales and Marketing Manager for the Forest business area; direct email kjell-erik.astrom@olofsfors.se is company-published. Specialist forestry/construction-machine application depth keeps it conditional. Careers review surfaced no conflicting suitable senior commercial vacancy.
+- New Priority-B conditional promotion: Skultuna Flexible / Skultuna Induflex, Skultuna. 34 employees, SEK 176.7m 2025 revenue and SEK 21.1m result after finance; operations in Sweden, Belgium and China and customers on every continent. Current CSMO Richard Odén has company-published direct email richard@skflex.com. Fairford Group ownership and specialist laminate/material application depth keep it conditional. Current careers page states no vacancies and welcomes spontaneous applications.
+- Exact-recipient Gmail checks returned no existing message for kjell-erik.astrom@olofsfors.se or richard@skflex.com; canonical repo searches found no prior company-specific application/outreach.
+- New governed holds: Quintus Technologies = HOLD_FOREIGN_PARENT_TECHNICAL (Kobe Steel ownership + advanced high-pressure engineering applications); SpinChem = HOLD_MICRO_TECHNICAL (about SEK 15.6m 2025 revenue + scientific/process specialism + shared career route); Endless Brake Technology Europe = HOLD_MICRO_SPECIALIST_AUTOMOTIVE (9 employees + niche motorsport brake technology + recent technical-sales recruitment requiring fluent Swedish).
+- No Gmail draft was created, sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 226/782.
+
