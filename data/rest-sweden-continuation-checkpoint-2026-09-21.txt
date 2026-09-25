@@ -1139,3 +1139,14 @@ LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 222/761
 - Kee / Keeplastics remains outside the speculative queue because the surfaced International Sales Manager vacancy must be handled under the advertised-role workflow if still current.
 - No Gmail draft was created, sent or scheduled in this continuation step.
 - Continue genuinely untouched-company hunting from 222/761.
+
+LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 224/777
+- Reconciled the latest live state before continuing: the authoritative vetted register was 222 records and the Governance ledger contained 767 real company decisions. The earlier 219/754 checkpoint in conversation was stale relative to the current GitHub files.
+- New Priority-B conditional promotion: Svenska LantChips, Södertälje. Family-owned, 38 employees and about SEK 170m 2024 revenue; current Business Sweden export programmes and the company's own export/private-label material verify active international buyer/distributor development. Preferred recipient Fredrik Stagmo, Sales and Marketing Manager & Business Developer, has current company-published direct email fredrik@lantchips.se. Current careers page is general/open application only; no conflicting suitable senior commercial vacancy surfaced.
+- New Priority-B conditional promotion with contact blocker: Nyåkers Pepparkakor, Umeå/Nyåker. 63 employees, SEK 161.2m 2025 revenue, strong profitability and company-stated export share around 40%, with the USA, Canada and Japan among major non-Nordic markets. CEO Christoffer Kakland is current, but the official page assigns him to shared info@nyakers.com. Do not use that shared inbox; no draft until a compliant senior direct route is verified.
+- Targeted canonical repo and Gmail checks found no prior company-specific application/outreach, active draft, scheduled message or substantive reply for Svenska LantChips or Nyåkers.
+- New governed holds: Recotech = HOLD_SPECIALIST_TECHNICAL_FINANCIAL; Ferrita Sweden = HOLD_SMALL_SPECIALIST_AUTOMOTIVE; Kungsörs Mekaniska Verkstad = HOLD_PARENT_TECHNICAL_SMALL; Recyctec = HOLD_MICRO_FINANCIAL; Butiksodlat Sverige = HOLD_MICRO_SCALE; Alélo Group = HOLD_MICRO_STARTUP; Nordic Chocolate = HOLD_MICRO_SCALE; Torfolk Gård = HOLD_MICRO_SCALE.
+- Recotech's current vacancies are production/technical roles; no suitable direct-application commercial role surfaced. Ferrita and KMV have export/customer activity but fail scale/specialist or parent-group tests. Recyctec, Butiksodlat, Alélo, Nordic Chocolate and Torfolk are below the credible permanent senior-hire capacity threshold.
+- Kee / Keeplastics remains outside the speculative queue because its International Sales Manager vacancy belongs in the advertised-role workflow if still current.
+- No Gmail draft was created, sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 224/777.
