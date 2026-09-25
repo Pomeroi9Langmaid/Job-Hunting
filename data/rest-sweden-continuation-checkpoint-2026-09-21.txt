@@ -1178,3 +1178,12 @@ LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 228/799
 - Targeted Gmail checks found no new company-specific career outreach for these untouched companies. No Gmail draft was created, sent or scheduled.
 - Continue genuinely untouched-company hunting from 228/799.
 
+LIVE CONTINUATION HUNT - 25 SEPTEMBER 2026 - 229/806
+- Continued from 228 vetted targets / 799 Governance decisions using genuinely untouched companies, canonical GitHub checks, current public evidence and targeted Gmail history.
+- New Priority-B conditional promotion: Standby Group / Standby AB, Trollhättan. Standby operates across Sweden, Germany, France, the UK and Finland; Standby AB has roughly 45 employees and about SEK 140m sales, while the group is around SEK 650m. Current leadership explicitly identifies international growth and new markets as opportunities.
+- Preferred Standby recipient: Mattias Andersson, current Sales & Marketing Manager. Company-published direct professional email mattias.andersson@standbygroup.com is verified. Exact Gmail recipient/company searches are clear, and canonical applications.csv, companies.csv and contact-enrichment.csv contain no Standby employment history.
+- Standby's live Account Manager recruitment is explicitly Sweden-based with Nordic collaboration. It is not the broader senior international new-business position Andrew is targeting, so it does not displace speculative outreach. Specialist emergency-vehicle application depth keeps Standby Priority B rather than A.
+- New governed holds: Arctic Roe of Scandinavia = HOLD_MICRO_FINANCIAL; Annas Pepparkakor = HOLD_FOREIGN_PARENT; KRAHN Specialty Fluids = HOLD_MICRO_PARENT_TECHNICAL; Optimel = HOLD_MICRO_PARENT; Scandinavian Design Group West = HOLD_SMALL_MIXED_SPECIALIST; Winab Vikväggar = HOLD_PARENT_GROUP.
+- Previously governed findings were not duplicated: Akriform Plast, First Class Brands of Sweden, Foodimpex International, Gotlandschips, Trensums Food and Starke Arvid remain under their existing dispositions.
+- No Gmail draft was created, sent or scheduled in this continuation step.
+- Continue genuinely untouched-company hunting from 229/806.
