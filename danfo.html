@@ -4,126 +4,227 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DANFO Group Brief | Andrew Langmaid</title>
-<meta name="description" content="Simple visual briefing for Andrew Langmaid's conversation with Johan Ekeström, CEO of DANFO Group.">
+<meta name="description" content="Interview preparation for Andrew Langmaid's exploratory conversation with Johan Ekeström, CEO of DANFO Group.">
 <style>
-:root{--bg:#f4f1ea;--card:#fffdf8;--ink:#17324a;--muted:#637282;--green:#23786f;--pale:#dfeeea;--line:#d8ddd8;--warn:#a85f42}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+:root{--bg:#f4f1ea;--card:#fffdf8;--ink:#17324a;--muted:#637282;--green:#23786f;--pale:#dfeeea;--line:#d8ddd8;--warn:#9c5d3f;--fit:#fff3bf;--fitline:#d7a700;--blue:#e8f1f8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
 a{color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:30;background:rgba(244,241,234,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .head{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:800;letter-spacing:.08em}.sub{font-size:13px;color:var(--muted)}
-nav{display:flex;gap:18px;font-size:13px;font-weight:700}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--green)}
-.hero{padding:70px 0 45px}.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:800;color:var(--green);margin-bottom:14px}
-h1{font-size:clamp(42px,6vw,74px);line-height:1.02;letter-spacing:-.045em;margin:0 0 20px;max-width:900px}
-.lead{font-size:20px;max-width:850px;color:#3d5264}.status{display:inline-flex;margin-top:22px;padding:10px 14px;border-radius:999px;background:var(--pale);color:var(--green);font-weight:800;font-size:13px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.card,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}.card h3,.panel h2{margin-top:0}.metric{font-size:34px;font-weight:800;color:var(--green)}.small{color:var(--muted);font-size:14px}
-section{padding:70px 0;border-top:1px solid var(--line)}h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.035em;margin:0 0 24px}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;padding:10px 0 12px}.tab{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 14px;font-weight:800;font-size:12px;letter-spacing:.02em;cursor:pointer}.tab.active{background:var(--ink);color:white;border-color:var(--ink)}
+main{min-height:80vh}.pane{display:none}.pane.active{display:block}.hero{padding:58px 0 44px}.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:800;color:var(--green);margin-bottom:14px}
+h1{font-size:clamp(40px,5.8vw,70px);line-height:1.02;letter-spacing:-.045em;margin:0 0 20px;max-width:980px}h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.035em;margin:0 0 22px}h3{margin-top:0}
+.lead{font-size:20px;max-width:900px;color:#3d5264}.status{display:inline-flex;margin-top:20px;padding:10px 14px;border-radius:999px;background:var(--pale);color:var(--green);font-weight:800;font-size:13px}
+section{padding:54px 0;border-top:1px solid var(--line)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}.metric{font-size:34px;font-weight:800;color:var(--green)}.small{color:var(--muted);font-size:14px}
 .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.step{padding:20px;border-radius:12px;background:var(--card);border:1px solid var(--line)}.step b{display:block;color:var(--green);margin-bottom:8px}
 .products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--card)}.product strong{display:block;font-size:18px;margin-bottom:8px}.product p{margin:0;color:var(--muted)}
-.fit{background:var(--ink);color:white;border-radius:18px;padding:38px}.fit h2{color:white}.fit .grid2{margin-top:24px}.fitbox{border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:22px}.fitbox p{color:#d9e4ea}.fitbox strong{color:#9cddd4}
+.fitnote{margin-top:14px;padding:17px 18px;background:var(--fit);border:1px solid #ecd46d;border-left:5px solid var(--fitline);border-radius:10px;color:#5d4d09}.fitnote strong{color:#403400}
+.dark{background:var(--ink);color:white;border-radius:18px;padding:36px}.dark h2{color:white}.dark p{color:#dce6ec}.dark strong{color:#9cddd4}
+.callout{padding:24px;border-left:4px solid var(--warn);background:#f1e4dc;border-radius:8px;color:#684335}.answer{font-size:20px;line-height:1.65;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.do{background:#e4f1ed;border-color:#b9d8d0}.dont{background:#f3e7e2;border-color:#dfc3b7}.career{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:17px 0;border-bottom:1px solid var(--line)}.career b{color:var(--green)}
 .qs{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}.qs li{display:grid;grid-template-columns:50px 1fr;gap:12px;padding:20px 4px;border-bottom:1px solid var(--line)}.qs span{color:var(--green);font-weight:800}
-.callout{padding:24px;border-left:4px solid var(--warn);background:#f1e4dc;border-radius:8px;color:#684335}
-.sources a{display:block;margin:10px 0;color:var(--green)}
-footer{padding:35px 0 60px;color:var(--muted);font-size:13px}
-@media(max-width:850px){nav{display:none}.grid3,.grid2,.products,.flow{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.grid3,.grid2,.products,.flow{grid-template-columns:1fr}.hero{padding-top:48px}.fit{padding:25px}h1{font-size:44px}}
+.cvtop{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:25px}.button{display:inline-block;text-decoration:none;background:var(--ink);color:white;padding:12px 16px;border-radius:9px;font-weight:800}.cv{background:white;border:1px solid var(--line);border-radius:12px;padding:32px;box-shadow:0 8px 20px rgba(23,50,74,.05)}.cv h3{margin-top:26px;border-bottom:1px solid var(--line);padding-bottom:6px;color:var(--green)}.cv ul{padding-left:22px}.cv li{margin:7px 0}
+.sources a{display:block;margin:10px 0;color:var(--green)}footer{padding:35px 0 60px;color:var(--muted);font-size:13px}
+@media(max-width:850px){.grid3,.grid2,.products,.flow{grid-template-columns:1fr 1fr}.career{grid-template-columns:1fr}.head{align-items:flex-start;padding-top:15px}}
+@media(max-width:560px){.grid3,.grid2,.products,.flow{grid-template-columns:1fr}.hero{padding-top:40px}h1{font-size:42px}.cvtop{display:block}.button{margin-top:14px}.tabs{overflow-x:auto;flex-wrap:nowrap}.tab{white-space:nowrap}}
 </style>
 </head>
 <body>
-<header><div class="wrap head"><div><div class="brand">DANFO GROUP BRIEF</div><div class="sub">Johan M Ekeström · CEO · exploratory call</div></div><nav><a href="#group">Group</a><a href="#model">Model</a><a href="#fit">Fit</a><a href="#questions">Questions</a></nav></div></header>
+<header>
+<div class="wrap head"><div><div class="brand">DANFO GROUP BRIEF</div><div class="sub">Johan M Ekeström · CEO · exploratory call</div></div></div>
+<div class="wrap tabs" role="tablist">
+<button class="tab active" data-tab="danfo">DANFO</button>
+<button class="tab" data-tab="mefit">ME/FIT</button>
+<button class="tab" data-tab="questions">Questions to Ask</button>
+<button class="tab" data-tab="cv">CV Backup</button>
+</div>
+</header>
 <main>
+
+<div class="pane active" id="danfo">
 <div class="wrap hero">
 <div class="eyebrow">THE SIMPLE VERSION</div>
-<h1>Not “selling toilets”. Selling public-infrastructure solutions and long-term service.</h1>
+<h1>Public-infrastructure solutions + long-term service.</h1>
 <p class="lead">DANFO designs and manufactures public sanitation solutions, then supports customers through installation, renovation, operation, cleaning, maintenance and full-service contracts. The Group also has mobile, dry-sanitation and specialist narcotics-separation products.</p>
 <div class="status">CEO has proposed a video call · possible opening in a few months</div>
 </div>
 
-<section id="group"><div class="wrap">
+<section><div class="wrap">
 <div class="eyebrow">GROUP SNAPSHOT</div><h2>What DANFO is</h2>
 <div class="grid3">
-<div class="card"><div class="metric">1969</div><h3>Long-established Swedish business</h3><p class="small">Head office and production in Nora, outside Örebro.</p></div>
+<div class="card"><div class="metric">1969</div><h3>Established Swedish business</h3><p class="small">Head office and production in Nora, outside Örebro.</p></div>
 <div class="card"><div class="metric">~200</div><h3>Employees</h3><p class="small">Current company material describes a group of around 200 people.</p></div>
 <div class="card"><div class="metric">~SEK 300m</div><h3>Turnover</h3><p class="small">Current recruitment material cites approximately SEK 300m revenue.</p></div>
 </div>
 <div style="height:18px"></div>
 <div class="grid2">
-<div class="panel"><h2 style="font-size:28px">International footprint</h2><p>Danfo says it operates in <b>Sweden, Norway, the UK and the UAE</b>. It has dedicated operations in Sweden, Norway and the UK, with group HQ guidance from Sweden.</p></div>
-<div class="panel"><h2 style="font-size:28px">Growth direction</h2><p>Its stated future vision is to become the <b>“heart of public environments”</b> and to grow the <b>services segment plus adjacent products and solutions</b>.</p></div>
-</div>
-</div></section>
-
-<section id="model"><div class="wrap">
-<div class="eyebrow">COMMERCIAL MODEL</div><h2>How the customer relationship works</h2>
-<div class="flow">
-<div class="step"><b>01</b>Understand the public environment and user need</div>
-<div class="step"><b>02</b>Design / advise / specify the right solution</div>
-<div class="step"><b>03</b>Manufacture and install the product</div>
-<div class="step"><b>04</b>Operate, clean, maintain or renovate</div>
-<div class="step"><b>05</b>Potential recurring full-service relationship</div>
-</div>
-<div style="height:30px"></div>
-<div class="products">
-<div class="product"><strong>Danfo</strong><p>Permanent public-toilet buildings, design, construction, renovation and lifecycle service.</p></div>
-<div class="product"><strong>Danfo360</strong><p>Full-service model: Danfo can own the building and handle construction, daily operation and maintenance for a fixed monthly cost.</p></div>
-<div class="product"><strong>Hyrtoaletten</strong><p>Mobile / temporary sanitation for construction, events, beaches and outdoor operations.</p></div>
-<div class="product"><strong>Pacto + NaRQ</strong><p>Pacto: dry sanitation without water/electricity. NaRQ: hygienic narcotics-separation for prisons, detention and airports.</p></div>
+<div class="panel"><h3>International footprint</h3><p>Danfo says it operates in <b>Sweden, Norway, the UK and the UAE</b>.</p><div class="fitnote"><strong>WHERE YOU COULD FIT:</strong> International growth immediately makes your experience more relevant: developing markets, building pipeline, partnerships and closing across countries rather than only managing a Swedish account base.</div></div>
+<div class="panel"><h3>Growth direction</h3><p>Its stated direction includes growing the <b>services segment and adjacent products/solutions</b>.</p><div class="fitnote"><strong>WHERE YOU COULD FIT:</strong> New services and adjacent offers usually need commercial development, target-market selection, proposition testing and new customer conversations — exactly the part of the sales cycle you prefer to own.</div></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">WHO BUYS</div><h2>Typical customer logic</h2>
+<div class="eyebrow">COMMERCIAL MODEL</div><h2>How the customer relationship works</h2>
+<div class="flow">
+<div class="step"><b>01</b>Understand the environment and user need</div>
+<div class="step"><b>02</b>Design / advise / specify the solution</div>
+<div class="step"><b>03</b>Manufacture and install</div>
+<div class="step"><b>04</b>Operate, clean, maintain or renovate</div>
+<div class="step"><b>05</b>Build a recurring service relationship</div>
+</div>
+<div class="fitnote"><strong>WHERE YOU COULD FIT:</strong> This is not a simple transactional product sale. It can involve discovery, multiple stakeholders, solution shaping, commercial negotiation and a longer-term account relationship. That maps well to your consultative full-cycle style.</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">BUSINESS AREAS / OFFERS</div><h2>What sits inside the Group proposition</h2>
+<div class="products">
+<div class="product"><strong>Danfo</strong><p>Permanent public-toilet buildings, design, construction, renovation and lifecycle service.</p><div class="fitnote"><strong>FIT:</strong> complex solution sale and long-term customer value.</div></div>
+<div class="product"><strong>Danfo360</strong><p>Full-service model covering construction, daily operation and maintenance under an ongoing commercial relationship.</p><div class="fitnote"><strong>FIT:</strong> recurring-revenue/service growth is commercially interesting and less dependent on one-off product wins.</div></div>
+<div class="product"><strong>Hyrtoaletten</strong><p>Mobile / temporary sanitation for construction, events, beaches and outdoor operations.</p><div class="fitnote"><strong>FIT:</strong> potential for channel, territory and segment development.</div></div>
+<div class="product"><strong>Pacto + NaRQ</strong><p>Pacto: dry sanitation without water/electricity. NaRQ: hygienic narcotics separation for specialist environments.</p><div class="fitnote"><strong>FIT:</strong> adjacent products can create new market-development work, provided technical expertise is supported internally.</div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">WHO BUYS</div><h2>Customer logic</h2>
 <div class="grid3">
-<div class="card"><h3>Municipalities & cities</h3><p class="small">Long-term public infrastructure, often with formal procurement, accessibility, design and service requirements.</p></div>
-<div class="card"><h3>Public-space operators</h3><p class="small">Locations where availability, safety, cleaning and uptime matter over the full lifecycle.</p></div>
-<div class="card"><h3>Specialist environments</h3><p class="small">Construction, events, emergency preparedness, prisons, detention facilities and airports depending on product.</p></div>
+<div class="card"><h3>Municipalities & cities</h3><p class="small">Public infrastructure with procurement, accessibility, design, reliability and service requirements.</p></div>
+<div class="card"><h3>Public-space operators</h3><p class="small">Locations where uptime, safety, cleaning and lifecycle cost matter.</p></div>
+<div class="card"><h3>Specialist environments</h3><p class="small">Construction, events, emergency preparedness, prisons, detention and airports depending on product.</p></div>
 </div>
-<div style="height:22px"></div>
-<div class="callout"><b>Important unknown for the call:</b> how much of the possible role is proactive international new-business development versus Swedish public procurement / tender management.</div>
-</div></section>
-
-<section id="fit"><div class="wrap fit">
-<div class="eyebrow" style="color:#9cddd4">WHY YOUR BACKGROUND CAN FIT</div><h2>The overlap is commercial, not technical.</h2>
-<div class="grid2">
-<div class="fitbox"><strong>International market development</strong><p>You have built markets, channels and new-business pipeline across countries rather than relying on an inherited account book.</p></div>
-<div class="fitbox"><strong>Full-cycle ownership</strong><p>Target accounts → decision makers → discovery → solution presentation → proposal → negotiation → contract → signature.</p></div>
-<div class="fitbox"><strong>Complex propositions</strong><p>You have repeatedly learned new products and translated them into business value without pretending to be the engineer.</p></div>
-<div class="fitbox"><strong>Senior stakeholder selling</strong><p>You are comfortable with C-level and operational stakeholders, which matters when a sale touches procurement, operations, public space and long-term service.</p></div>
-</div>
-<div style="height:28px"></div>
-<p><b>The key test:</b> if Johan is thinking about international growth, new countries, group-level business development, adjacent solutions or strategic commercial expansion, the fit becomes considerably stronger. If it is mostly Swedish tender administration or a highly technical Nora-based project role, it becomes weaker.</p>
-</div></section>
-
-<section id="questions"><div class="wrap">
-<div class="eyebrow">QUESTIONS FOR JOHAN</div><h2>Use the call to discover the role before selling too hard</h2>
-<ul class="qs">
-<li><span>01</span><div><b>“When you mentioned a possible opening in a few months, what kind of need do you think may emerge?”</b><div class="small">Get him to define the problem first.</div></div></li>
-<li><span>02</span><div><b>“Would that be primarily within Sweden, or are you thinking more broadly across the Group and international markets?”</b><div class="small">Critical for your fit.</div></div></li>
-<li><span>03</span><div><b>“Where do you see the strongest growth opportunity now: core Danfo solutions, services, adjacent products, or new geographies?”</b></div></li>
-<li><span>04</span><div><b>“How is new business currently generated — by the Swedish team, the subsidiaries, business-area managers, or centrally?”</b></div></li>
-<li><span>05</span><div><b>“How much of the commercial work is formal public procurement versus proactive business development and relationship building?”</b></div></li>
-<li><span>06</span><div><b>“If you could add one commercial capability to the Group today, what would make the biggest difference?”</b><div class="small">This can expose the job before a job description exists.</div></div></li>
-</ul>
+<div style="height:18px"></div>
+<div class="callout"><b>Key test for the call:</b> how much of the possible role is proactive international new-business development versus Swedish public procurement/tender administration. Your fit is strongest on the first.</div>
 </div></section>
 
 <section><div class="wrap">
 <div class="eyebrow">JOHAN</div><h2>Why his interest matters</h2>
 <div class="grid2">
-<div class="panel"><h3>Johan M Ekeström</h3><p>CEO of Danfo International since 1 October 2024. Earlier background includes McKinsey and multiple leadership positions at Munters, followed by a CEO role in Southeast Asia.</p></div>
-<div class="panel"><h3>His email to you</h3><p>He said he is always looking for people with drive, that DANFO could possibly have an opening in a few months, and he personally proposed a short video call next week.</p><p class="small">That is a genuine exploratory commercial conversation, not a generic “CV retained” reply.</p></div>
+<div class="panel"><h3>Johan M Ekeström</h3><p>CEO of Danfo International since 1 October 2024. Earlier background includes McKinsey, leadership roles at Munters and a CEO role in Southeast Asia.</p></div>
+<div class="panel"><h3>His reply</h3><p>He said he is always looking for people with drive, that DANFO could possibly have an opening in a few months, and he personally suggested a short video call next week.</p><p class="small">Treat this as an exploratory CEO conversation: understand the commercial problem he may need solved before trying to define a job title.</p></div>
+</div>
+</div></section>
+</div>
+
+<div class="pane" id="mefit">
+<div class="wrap hero">
+<div class="eyebrow">ME / FIT</div>
+<h1>Your story in 60 seconds.</h1>
+<p class="lead">Use this tab if Johan asks “tell me about yourself”, “what are you looking for?” or “why are you leaving?”</p>
+</div>
+
+<section><div class="wrap">
+<div class="eyebrow">WHO YOU ARE</div><h2>Commercial identity</h2>
+<div class="dark">
+<p><strong>Hands-on international new business.</strong> Nearly 30 years commercially, but the relevant point is that you still personally create opportunities and carry them through discovery, proposal, negotiation, contract and close.</p>
+<p><strong>Not looking for another CEO job.</strong> The CEO title came from a specific turnaround-and-sale mandate. Your deliberate next move is back into a permanent role where winning customers is the core job.</p>
 </div>
 </div></section>
 
-<section class="sources"><div class="wrap">
-<div class="eyebrow">SOURCE DESK</div><h2>Official DANFO sources</h2>
-<a href="https://danfo.se/det-har-ar-danfo" target="_blank" rel="noopener">About DANFO / Group structure</a>
-<a href="https://danfo.se/produkter-tjanster" target="_blank" rel="noopener">Products & services</a>
-<a href="https://danfo.se/drift-underhall/danfo360-drift-och-underhall" target="_blank" rel="noopener">Danfo360 full-service model</a>
-<a href="https://danfo.se/det-har-ar-danfo/nyheter/ny-vd-danfo-international" target="_blank" rel="noopener">Johan Ekeström appointment</a>
-<a href="https://danfo.se/det-har-ar-danfo/karriar/logistik-ink%C3%B6pschef" target="_blank" rel="noopener">Current size / turnover / future growth direction</a>
-<a href="https://danfo.se/prata-med-oss" target="_blank" rel="noopener">Team and international subsidiaries</a>
+<section><div class="wrap">
+<div class="eyebrow">CAREER SNAPSHOT</div><h2>The recent brief</h2>
+<div class="career"><b>Earlier career</b><div>Premium brands, wholesale, retail, account management and entrepreneurship. Founded Pomeroi Fine Jewellers and later Luxury Sweden. At Padani, grew UK turnover by approximately 80% in the first year.</div></div>
+<div class="career"><b>ArrivalGuides</b><div>Joined in strategic sales and personally owned international full-cycle selling. During the Lonely Planet period, introduced personalised B2B outreach that generated 320% more qualified opportunities and meetings over six months.</div></div>
+<div class="career"><b>Precisely</b><div>Built a proactive global new-business programme for legal SaaS, sold to C-level executives and Heads of Legal, and personally managed opportunities through demo, proposal, negotiation and signature.</div></div>
+<div class="career"><b>2022 mandate</b><div>Asked by ArrivalGuides' owners to stabilise the business after COVID, restore commercial momentum and prepare it for acquisition.</div></div>
+<div class="career"><b>Acquisition</b><div>Smartvel agreement reached in 2023 and transaction completed in 2024. You supported due diligence, transition and familiarisation after the acquisition.</div></div>
+<div class="career"><b>Today</b><div>Approximately 80% of your work has remained hands-on international new business for Smartvel, with the remainder covering ArrivalGuides continuity and oversight.</div></div>
 </div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">WHY YOU ARE LEAVING</div><h2>Clean, truthful answer</h2>
+<div class="answer">
+“My role finishes at the end of October, and that is agreed. I originally took the CEO role to stabilise ArrivalGuides and prepare it for a sale, and that mandate was completed when Smartvel acquired the company. I stayed on to help with the transition and, at the same time, continued doing a lot of hands-on international new business. Over the last 18 months the economics around the content side of the business have become more difficult, with AI and wider market changes being part of that, and the group has had to look carefully at costs. We have had open discussions about it, and it became clear that this is the right point for me to move on. I have done what I originally came in to do, and I now want to put my energy back into a permanent hands-on international sales role.”
+</div>
+<div style="height:18px"></div>
+<div class="grid2">
+<div class="panel do"><h3>Why this works</h3><p>It is factual, commercially understandable and does not pretend everything was perfect. It explains the business context, confirms the original mandate was completed, and finishes by moving the conversation toward what you want next.</p></div>
+<div class="panel dont"><h3>Do not volunteer</h3><p>“I was sacked”, “I should have left 18 months ago”, “I stupidly stayed because it was comfortable”, or a long explanation about A-kassa. Those are personal feelings, not the useful business explanation.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">IF HE PUSHES</div><h2>Backup version</h2>
+<div class="answer" style="font-size:17px">
+“The acquisition changed the shape of the role. I stayed longer than the original mandate because I wanted to help the transition and I believed the business could recover. In hindsight I probably stayed a little too long, but there is nothing dramatic behind it. The company needs to reduce cost, my original mandate is complete, and the timing is right for me to move back into the kind of international new-business role I actually want to do.”
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">WHY DANFO COULD FIT YOU</div><h2>The connection</h2>
+<div class="grid2">
+<div class="panel"><h3>International market development</h3><p>You have repeatedly built new pipeline, developed markets and worked across borders.</p></div>
+<div class="panel"><h3>Full-cycle selling</h3><p>You personally prospect, discover, shape the proposition, negotiate and close.</p></div>
+<div class="panel"><h3>Learning new propositions</h3><p>Your career shows movement across sectors. You do not need to be the engineer; you need to understand enough to translate capability into customer value.</p></div>
+<div class="panel"><h3>Commercial builder mentality</h3><p>DANFO's growth in services, adjacent solutions or new geographies could benefit from someone comfortable creating structure and revenue where no mature playbook exists.</p></div>
+</div>
+</div></section>
+</div>
+
+<div class="pane" id="questions">
+<div class="wrap hero">
+<div class="eyebrow">QUESTIONS TO ASK</div>
+<h1>Find the real commercial need.</h1>
+<p class="lead">Do not interrogate him. Pick the questions that fit the flow and listen for the problem he is trying to solve.</p>
+</div>
+<section><div class="wrap">
+<ul class="qs">
+<li><span>01</span><div><b>“When you mentioned a possible opening in a few months, what kind of need do you think may emerge?”</b><div class="small">Best opening question. Let him define the role/problem.</div></div></li>
+<li><span>02</span><div><b>“Would that be primarily within Sweden, or are you thinking more broadly across the Group and international markets?”</b><div class="small">Critical to understanding your fit.</div></div></li>
+<li><span>03</span><div><b>“Where do you see the strongest growth opportunity now: the core Danfo offer, services, adjacent products, or new geographies?”</b></div></li>
+<li><span>04</span><div><b>“How is new business currently generated across the Group — locally in each subsidiary, through business-area managers, or centrally?”</b></div></li>
+<li><span>05</span><div><b>“How much of the commercial work is formal public procurement versus proactive business development and relationship building?”</b></div></li>
+<li><span>06</span><div><b>“Are there markets or customer segments where you feel DANFO has a strong proposition but is not yet getting enough commercial traction?”</b></div></li>
+<li><span>07</span><div><b>“If you could add one commercial capability to the Group today, what would make the biggest difference?”</b><div class="small">Can expose the job before a formal job description exists.</div></div></li>
+<li><span>08</span><div><b>“What would make you say six months from now that the person you brought in had been a very good hire?”</b></div></li>
+</ul>
+</div></section>
+</div>
+
+<div class="pane" id="cv">
+<div class="wrap hero">
+<div class="eyebrow">CV BACKUP</div>
+<div class="cvtop"><div><h1 style="margin-bottom:10px">The CV Johan received.</h1><p class="lead">Exact attachment filename: <b>Andrew_Langmaid_Danfo.pdf</b>. Use this only if you need to check what he has in front of him.</p></div>
+<a class="button" href="https://mail.google.com/mail/u/?authuser=langmaid.andrew%40gmail.com#all/1a0d3956adeffc0e" target="_blank" rel="noopener">Open sent email ↗</a></div>
+<div class="cv">
+<h2 style="font-size:32px;margin-bottom:5px">Andrew Langmaid</h2>
+<p>Kungälv, Sweden · Swedish and British citizen · English (native), Swedish (basic)</p>
+<h3>Commercial Profile</h3>
+<p>Hands-on, full-cycle B2B technology and SaaS sales professional with nearly 30 years of commercial experience, including the last decade in technology. Personally builds new pipeline and manages opportunities from target-account selection and outbound prospecting through discovery, tailored demonstrations, proposals, negotiation, contracts and signature. The CEO title reflects a defined turnaround-and-sale mandate; the next move is intentionally back into a hands-on new-business role.</p>
+<h3>Selected Achievements</h3>
+<ul>
+<li>At Precisely, built a global proactive new-business programme for legal SaaS and personally sold to C-level executives and Heads of Legal through demonstration, proposal, negotiation and signature.</li>
+<li>Increased qualified opportunities and scheduled meetings by 320% in six months through personalised B2B outreach.</li>
+<li>Following the Smartvel acquisition, around 80% of the current role has remained hands-on international new business, from target account to close.</li>
+<li>Personally originated, negotiated and closed a major international distribution agreement.</li>
+<li>Current personal AI project: designing and building a live family-archive website with AI-assisted development and photo restoration; also experimenting with AI-generated music and video.</li>
+<li>Built success across different sectors by learning complex products quickly and converting customer needs into commercial value.</li>
+</ul>
+<h3>Current Role</h3>
+<p><b>Chief Executive Officer (turnaround, sale and transition mandate) | ArrivalGuides, part of Smartvel | 2022-Present</b></p>
+<ul>
+<li>Appointed on a defined turnaround-and-sale mandate after COVID-19: stabilise operations, restore commercial momentum and prepare the company for acquisition.</li>
+<li>Completed the core mandate when Smartvel acquired ArrivalGuides; agreement reached in 2023 and transaction completed in 2024.</li>
+<li>Current role approximately 80% hands-on international new business for Smartvel and 20% oversight of ArrivalGuides.</li>
+</ul>
+<h3>Recent Experience</h3>
+<p><b>Precisely | Strategic Sales and Marketing Operations | 2020-2021</b><br>Created a global proactive new-business programme for legal SaaS and personally managed opportunities end to end.</p>
+<p><b>ArrivalGuides / Lonely Planet | Head of Sales & Marketing Operations / Commercial Lead / Director Strategic Sales | 2015-2020</b><br>International full-cycle sales, strategic customers, CRM redesign, 320% increase in qualified opportunities/meetings, international distribution agreement, and commercial launch work.</p>
+<h3>Earlier Experience</h3>
+<p>Founded Luxury Sweden; earlier international sales and managing-director roles with Theo Fennell and Padani; founded and self-financed Pomeroi Fine Jewellers; eight years in B2B account management with Chalfen of London. Increased Padani UK revenue by approximately 80% in the first year.</p>
+<h3>Education</h3>
+<p>BA (Hons) Business Management · University of Kent, Canterbury, UK</p>
+</div>
+</div>
+</div>
+
 </main>
 <footer><div class="wrap">Prepared for Andrew Langmaid · 25 September 2026 · facts separated from interview interpretation</div></footer>
+<script>
+const tabs=[...document.querySelectorAll('.tab')], panes=[...document.querySelectorAll('.pane')];
+function openTab(id){tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));panes.forEach(p=>p.classList.toggle('active',p.id===id));window.scrollTo({top:0,behavior:'instant'});history.replaceState(null,'','#'+id)}
+tabs.forEach(t=>t.addEventListener('click',()=>openTab(t.dataset.tab)));
+const hash=location.hash.replace('#','');if(panes.some(p=>p.id===hash))openTab(hash);
+</script>
 </body>
 </html>
