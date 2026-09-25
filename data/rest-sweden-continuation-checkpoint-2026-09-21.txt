@@ -1224,3 +1224,13 @@ CONTINUATION HUNT - GOVERNED HOLD BATCH - 25 SEPTEMBER 2026 - 233/822
 - No Gmail draft was created, sent or scheduled in this hold-only pass. The active QA-verified draft manifest remains 20 messages.
 - Continue genuinely untouched-company hunting from 233/822.
 
+CONTINUATION HUNT - SECOND HOLD BATCH - 25 SEPTEMBER 2026 - 233/827
+- Continued immediately from 233/822 with five additional genuinely untouched industrial companies.
+- AQ M-Tech = HOLD_PARENT_TECHNICAL_OEM: 110 employees / SEK 368.5m 2025 revenue and strong profitability, but it is an AQ Group specialist industrial/OEM manufacturing unit rather than an autonomous international new-business employer.
+- International Aluminium Casting Gnosjö = HOLD_GROUP_TECHNICAL_FINANCIAL: international customers are real, but the operation sits within IAC Sweden / Grönskär Gruppen, is specialist foundry/OEM manufacturing and has weak liquidity/solidity in the current entity.
+- Gnosjö Trafik = HOLD_FINANCIAL_DOMESTIC_LOGISTICS: 57 employees / SEK 94.3m 2025 revenue, loss after finance and no verified outward international-sales mandate.
+- Ravema = HOLD_PARENT_NORDIC_TECHNICAL: substantial and profitable, but explicitly Sweden/Norway/Finland focused, part of Pronect / Liljedahl Group and highly specialist across production machinery, automation and metrology.
+- Garboprodukter i Gnosjö = HOLD_MICRO_SCALE: profitable but only SEK 16.1m 2025 revenue and no credible senior international-hire capacity.
+- No Gmail draft was created, sent or scheduled in this hold-only pass. The active QA-verified draft manifest remains 20 messages.
+- Continue genuinely untouched-company hunting from 233/827.
+
