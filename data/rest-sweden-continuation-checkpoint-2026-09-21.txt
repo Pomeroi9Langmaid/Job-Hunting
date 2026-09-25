@@ -1211,3 +1211,16 @@ CONTINUATION HUNT + TWO NEW ACTIVE DRAFTS - 25 SEPTEMBER 2026 - 233/816
 - Active QA-verified Gmail draft manifest now contains 20 messages. Nothing sent or scheduled.
 - Continue genuinely untouched-company hunting from 233/816.
 
+CONTINUATION HUNT - GOVERNED HOLD BATCH - 25 SEPTEMBER 2026 - 233/822
+- Continued from 233 vetted / 816 governed decisions using only companies absent from the live ledger.
+- No company in this pass cleared the full speculative-promotion gate; the active queue was not padded with weaker targets.
+- Gränsfors Bruk = HOLD_FINANCIAL_SCALE. Premium brand and roughly 80% export share are attractive, but 2025 revenue fell to about SEK 37.5m and result after finance was approximately SEK -8.7m, with weak liquidity.
+- Häfla Bruks = HOLD_PARENT_OVERLAP because it is part of Weland AB, which is already an active governed target.
+- Gerdmans = HOLD_FOREIGN_PARENT_LARGE_GROUP under German-listed TAKKT AG.
+- Olsbergs Hydraulics = HOLD_FOREIGN_PARENT_TECHNICAL: Hiab acquired and integrated the business; control systems are highly technical and the company is not an autonomous route.
+- Herrgårdstoppen = HOLD_MICRO_FINANCIAL: 7 employees / SEK 21.8m latest surfaced revenue, near-break-even result, weak liquidity and solidity.
+- Eldon Enclosures = HOLD_FOREIGN_PARENT_INTEGRATED: acquired by nVent and integrated into the global nVent HOFFMAN portfolio.
+- Hestra Teknik was already governed as HOLD_SMALL_TECHNICAL and was not duplicated.
+- No Gmail draft was created, sent or scheduled in this hold-only pass. The active QA-verified draft manifest remains 20 messages.
+- Continue genuinely untouched-company hunting from 233/822.
+
