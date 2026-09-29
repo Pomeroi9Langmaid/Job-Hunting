@@ -84,22 +84,31 @@
     const root = document.querySelector("#analytics-dashboard");
     if (!root) return;
     try {
-      const [applicationsResponse, repliesResponse, companiesResponse, replyMessagesResponse] = await Promise.all([
+      const [applicationsResponse, updatesResponse, repliesResponse, companiesResponse, replyMessagesResponse] = await Promise.all([
         fetch("data/applications.csv", { cache: "no-store" }),
+        fetch("data/application-updates.csv", { cache: "no-store" }),
         fetch("data/replies.csv", { cache: "no-store" }),
         fetch("data/companies.csv", { cache: "no-store" }),
         fetch("data/reply-messages.json", { cache: "no-store" }),
       ]);
       if (!applicationsResponse.ok) throw new Error("Application analytics data could not be loaded");
+      if (!updatesResponse.ok) throw new Error("Application update analytics data could not be loaded");
       if (!repliesResponse.ok) throw new Error("Reply analytics data could not be loaded");
       if (!companiesResponse.ok) throw new Error("Company analytics data could not be loaded");
 
       const baseRecords = parseCsv(await applicationsResponse.text());
-      const existingIds = new Set(baseRecords.map((r) => String(r.id)));
+      const updates = parseCsv(await updatesResponse.text());
+      const recordsById = new Map(baseRecords.map((record) => [String(record.id), record]));
+      updates.forEach((update) => {
+        const existing = recordsById.get(String(update.id)) || {};
+        recordsById.set(String(update.id), { ...existing, ...update });
+      });
+      const mergedRecords = [...recordsById.values()];
+      const existingIds = new Set(mergedRecords.map((r) => String(r.id)));
       const additions = typeof roleAdditions !== "undefined"
         ? roleAdditions.filter((r) => !existingIds.has(String(r.id)))
         : [];
-      const records = [...baseRecords, ...additions].map((r) => (typeof roleOverrides !== "undefined" && roleOverrides[r.id]) ? { ...r, ...roleOverrides[r.id] } : r);
+      const records = [...mergedRecords, ...additions].map((r) => (typeof roleOverrides !== "undefined" && roleOverrides[r.id]) ? { ...r, ...roleOverrides[r.id] } : r);
       const replies = parseCsv(await repliesResponse.text());
       const companies = parseCsv(await companiesResponse.text());
       const replyMessages = replyMessagesResponse.ok ? await replyMessagesResponse.json() : [];
