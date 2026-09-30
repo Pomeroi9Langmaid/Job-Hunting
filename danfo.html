@@ -23,11 +23,14 @@ section{padding:54px 0;border-top:1px solid var(--line)}.grid3{display:grid;grid
 .dark{background:var(--ink);color:white;border-radius:18px;padding:36px}.dark h2{color:white}.dark p{color:#dce6ec}.dark strong{color:#9cddd4}
 .callout{padding:24px;border-left:4px solid var(--warn);background:#f1e4dc;border-radius:8px;color:#684335}.answer{font-size:20px;line-height:1.65;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:14px}
 .do{background:#e4f1ed;border-color:#b9d8d0}.dont{background:#f3e7e2;border-color:#dfc3b7}.career{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:17px 0;border-bottom:1px solid var(--line)}.career b{color:var(--green)}
+.cuegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cue{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;min-height:112px}.cue strong{display:block;font-size:16px;margin:4px 0 6px}.cue span{display:block;color:var(--muted);font-size:13px}.cue .n{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--green)}
+.timeline{display:grid;gap:12px}.milestone{display:grid;grid-template-columns:90px 1fr;gap:18px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}.year{font-size:23px;font-weight:800;color:var(--green)}.keywords{font-weight:800}.micro{margin-top:5px;color:var(--muted);font-size:13px}
+.routebox{background:var(--ink);color:white;border-radius:16px;padding:26px}.routebox .metric{color:#9cddd4}.routebox p{margin:4px 0;color:#dce6ec}.latestbox{background:var(--blue);border:1px solid #c9dce9;border-radius:16px;padding:26px}.latestbox h3{margin-bottom:12px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:white;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-size:13px;font-weight:750}
 .qs{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}.qs li{display:grid;grid-template-columns:50px 1fr;gap:12px;padding:20px 4px;border-bottom:1px solid var(--line)}.qs span{color:var(--green);font-weight:800}
 .cvtop{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:25px}.button{display:inline-block;text-decoration:none;background:var(--ink);color:white;padding:12px 16px;border-radius:9px;font-weight:800}.cv{background:white;border:1px solid var(--line);border-radius:12px;padding:32px;box-shadow:0 8px 20px rgba(23,50,74,.05)}.cv h3{margin-top:26px;border-bottom:1px solid var(--line);padding-bottom:6px;color:var(--green)}.cv ul{padding-left:22px}.cv li{margin:7px 0}
 .sources a{display:block;margin:10px 0;color:var(--green)}footer{padding:35px 0 60px;color:var(--muted);font-size:13px}
-@media(max-width:850px){.grid3,.grid2,.products,.flow{grid-template-columns:1fr 1fr}.career{grid-template-columns:1fr}.head{align-items:flex-start;padding-top:15px}}
-@media(max-width:560px){.grid3,.grid2,.products,.flow{grid-template-columns:1fr}.hero{padding-top:40px}h1{font-size:42px}.cvtop{display:block}.button{margin-top:14px}.tabs{overflow-x:auto;flex-wrap:nowrap}.tab{white-space:nowrap}}
+@media(max-width:850px){.grid3,.grid2,.products,.flow,.cuegrid{grid-template-columns:1fr 1fr}.career{grid-template-columns:1fr}.head{align-items:flex-start;padding-top:15px}}
+@media(max-width:560px){.grid3,.grid2,.products,.flow,.cuegrid{grid-template-columns:1fr}.milestone{grid-template-columns:1fr;gap:5px}.hero{padding-top:40px}h1{font-size:42px}.cvtop{display:block}.button{margin-top:14px}.tabs{overflow-x:auto;flex-wrap:nowrap}.tab{white-space:nowrap}}
 </style>
 </head>
 <body>
@@ -35,6 +38,7 @@ section{padding:54px 0;border-top:1px solid var(--line)}.grid3{display:grid;grid
 <div class="wrap head"><div><div class="brand">DANFO GROUP BRIEF</div><div class="sub">Johan M Ekeström · CEO · exploratory call</div></div></div>
 <div class="wrap tabs" role="tablist">
 <button class="tab active" data-tab="danfo">DANFO</button>
+<button class="tab" data-tab="history">Latest / History</button>
 <button class="tab" data-tab="mefit">ME/FIT</button>
 <button class="tab" data-tab="questions">Questions to Ask</button>
 <button class="tab" data-tab="cv">CV Backup</button>
@@ -45,118 +49,188 @@ section{padding:54px 0;border-top:1px solid var(--line)}.grid3{display:grid;grid
 <div class="pane active" id="danfo">
 <div class="wrap hero">
 <div class="eyebrow">THE SIMPLE VERSION</div>
-<h1>Public-infrastructure solutions + long-term service.</h1>
-<p class="lead">DANFO designs and manufactures public sanitation solutions, then supports customers through installation, renovation, operation, cleaning, maintenance and full-service contracts. The Group also has mobile, dry-sanitation and specialist narcotics-separation products.</p>
-<div class="status">CEO has proposed a video call · possible opening in a few months</div>
+<h1>Public infrastructure + lifecycle service.</h1>
+<p class="lead">Product · installation · operation · maintenance · recurring service. International Group.</p>
+<div class="status">Johan: possible opening in a few months · exploratory CEO call</div>
 </div>
 
 <section><div class="wrap">
 <div class="eyebrow">GROUP SNAPSHOT</div><h2>What DANFO is</h2>
 <div class="grid3">
-<div class="card"><div class="metric">1969</div><h3>Established Swedish business</h3><p class="small">Head office and production in Nora, outside Örebro.</p></div>
-<div class="card"><div class="metric">~200</div><h3>Employees</h3><p class="small">Current company material describes a group of around 200 people.</p></div>
-<div class="card"><div class="metric">~SEK 300m</div><h3>Turnover</h3><p class="small">Current recruitment material cites approximately SEK 300m revenue.</p></div>
+<div class="card"><div class="metric">1969</div><h3>Swedish roots</h3><p class="small">Nora · HQ + production</p></div>
+<div class="card"><div class="metric">~200</div><h3>People</h3><p class="small">Current company material</p></div>
+<div class="card"><div class="metric">~SEK 300m</div><h3>Turnover</h3><p class="small">Current recruitment material</p></div>
 </div>
 <div style="height:18px"></div>
 <div class="grid2">
-<div class="panel"><h3>International footprint</h3><p>Danfo says it operates in <b>Sweden, Norway, the UK and the UAE</b>.</p><div class="fitnote"><strong>WHERE YOU COULD FIT:</strong> International growth immediately makes your experience more relevant: developing markets, building pipeline, partnerships and closing across countries rather than only managing a Swedish account base.</div></div>
-<div class="panel"><h3>Growth direction</h3><p>Its stated direction includes growing the <b>services segment and adjacent products/solutions</b>.</p><div class="fitnote"><strong>WHERE YOU COULD FIT:</strong> New services and adjacent offers usually need commercial development, target-market selection, proposition testing and new customer conversations — exactly the part of the sales cycle you prefer to own.</div></div>
+<div class="panel"><h3>International</h3><div class="chips"><span class="chip">Sweden</span><span class="chip">Norway</span><span class="chip">UK</span><span class="chip">UAE</span></div><div class="fitnote"><strong>YOUR ANGLE:</strong> markets · pipeline · partners · cross-border close</div></div>
+<div class="panel"><h3>Growth direction</h3><div class="chips"><span class="chip">Services</span><span class="chip">Adjacent products</span><span class="chip">New markets</span></div><div class="fitnote"><strong>YOUR ANGLE:</strong> market development · proposition testing · new customers</div></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">COMMERCIAL MODEL</div><h2>How the customer relationship works</h2>
+<div class="eyebrow">COMMERCIAL MODEL</div><h2>How value is created</h2>
 <div class="flow">
-<div class="step"><b>01</b>Understand the environment and user need</div>
-<div class="step"><b>02</b>Design / advise / specify the solution</div>
-<div class="step"><b>03</b>Manufacture and install</div>
-<div class="step"><b>04</b>Operate, clean, maintain or renovate</div>
-<div class="step"><b>05</b>Build a recurring service relationship</div>
+<div class="step"><b>01</b>Need / site</div>
+<div class="step"><b>02</b>Design / specify</div>
+<div class="step"><b>03</b>Build / install</div>
+<div class="step"><b>04</b>Operate / maintain</div>
+<div class="step"><b>05</b>Recurring service</div>
 </div>
-<div class="fitnote"><strong>WHERE YOU COULD FIT:</strong> This is not a simple transactional product sale. It can involve discovery, multiple stakeholders, solution shaping, commercial negotiation and a longer-term account relationship. That maps well to your consultative full-cycle style.</div>
+<div class="fitnote"><strong>KEY:</strong> consultative · multi-stakeholder · lifecycle value · not transactional</div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">BUSINESS AREAS / OFFERS</div><h2>What sits inside the Group proposition</h2>
+<div class="eyebrow">BUSINESS AREAS</div><h2>What sits inside the Group</h2>
 <div class="products">
-<div class="product"><strong>Danfo</strong><p>Permanent public-toilet buildings, design, construction, renovation and lifecycle service.</p><div class="fitnote"><strong>FIT:</strong> complex solution sale and long-term customer value.</div></div>
-<div class="product"><strong>Danfo360</strong><p>Full-service model covering construction, daily operation and maintenance under an ongoing commercial relationship.</p><div class="fitnote"><strong>FIT:</strong> recurring-revenue/service growth is commercially interesting and less dependent on one-off product wins.</div></div>
-<div class="product"><strong>Hyrtoaletten</strong><p>Mobile / temporary sanitation for construction, events, beaches and outdoor operations.</p><div class="fitnote"><strong>FIT:</strong> potential for channel, territory and segment development.</div></div>
-<div class="product"><strong>Pacto + NaRQ</strong><p>Pacto: dry sanitation without water/electricity. NaRQ: hygienic narcotics separation for specialist environments.</p><div class="fitnote"><strong>FIT:</strong> adjacent products can create new market-development work, provided technical expertise is supported internally.</div></div>
+<div class="product"><strong>Danfo</strong><p>Permanent public infrastructure</p><div class="fitnote"><strong>VALUE:</strong> design · build · lifecycle service</div></div>
+<div class="product"><strong>Danfo360</strong><p>Operations + maintenance</p><div class="fitnote"><strong>VALUE:</strong> recurring relationship</div></div>
+<div class="product"><strong>Hyrtoaletten</strong><p>Mobile / temporary rental</p><div class="fitnote"><strong>VALUE:</strong> events · construction · outdoor</div></div>
+<div class="product"><strong>Pacto + NaRQ</strong><p>Dry + specialist sanitation</p><div class="fitnote"><strong>VALUE:</strong> adjacent markets</div></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
 <div class="eyebrow">WHO BUYS</div><h2>Customer logic</h2>
 <div class="grid3">
-<div class="card"><h3>Municipalities & cities</h3><p class="small">Public infrastructure with procurement, accessibility, design, reliability and service requirements.</p></div>
-<div class="card"><h3>Public-space operators</h3><p class="small">Locations where uptime, safety, cleaning and lifecycle cost matter.</p></div>
-<div class="card"><h3>Specialist environments</h3><p class="small">Construction, events, emergency preparedness, prisons, detention and airports depending on product.</p></div>
+<div class="card"><h3>Municipalities / cities</h3><p class="small">Procurement · accessibility · design · reliability</p></div>
+<div class="card"><h3>Public-space operators</h3><p class="small">Uptime · safety · cleaning · lifecycle cost</p></div>
+<div class="card"><h3>Specialist environments</h3><p class="small">Events · construction · prisons · airports · emergency</p></div>
 </div>
 <div style="height:18px"></div>
-<div class="callout"><b>Key test for the call:</b> how much of the possible role is proactive international new-business development versus Swedish public procurement/tender administration. Your fit is strongest on the first.</div>
+<div class="callout"><b>YOUR TEST:</b> international new business / market development <b>vs</b> Swedish tender administration. First = strongest fit.</div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">JOHAN</div><h2>Why his interest matters</h2>
+<div class="eyebrow">JOHAN</div><h2>What matters</h2>
 <div class="grid2">
-<div class="panel"><h3>Johan M Ekeström</h3><p>CEO of Danfo International since 1 October 2024. Earlier background includes McKinsey, leadership roles at Munters and a CEO role in Southeast Asia.</p></div>
-<div class="panel"><h3>His reply</h3><p>He said he is always looking for people with drive, that DANFO could possibly have an opening in a few months, and he personally suggested a short video call next week.</p><p class="small">Treat this as an exploratory CEO conversation: understand the commercial problem he may need solved before trying to define a job title.</p></div>
+<div class="panel"><h3>Johan M Ekeström</h3><div class="chips"><span class="chip">CEO since Oct 2024</span><span class="chip">McKinsey</span><span class="chip">Munters</span><span class="chip">SE Asia CEO</span></div></div>
+<div class="panel"><h3>His reply</h3><div class="chips"><span class="chip">“people with drive”</span><span class="chip">possible opening</span><span class="chip">few months</span><span class="chip">he suggested call</span></div><div class="fitnote"><strong>AIM:</strong> find the commercial problem · do not force a job title</div></div>
 </div>
+</div></section>
+</div>
+
+<div class="pane" id="history">
+<div class="wrap hero">
+<div class="eyebrow">LATEST / HISTORY</div>
+<h1>How DANFO became a Group.</h1>
+<p class="lead">Swedish core → international footprint → recurring service → acquisitions → broader Group.</p>
+</div>
+
+<section><div class="wrap">
+<div class="eyebrow">TIMELINE</div><h2>Growth in one scan</h2>
+<div class="timeline">
+<div class="milestone"><div class="year">1969</div><div><div class="keywords">Founded · Nora</div><div class="micro">Public toilet solutions · Swedish manufacturing base</div></div></div>
+<div class="milestone"><div class="year">Pre-2016</div><div><div class="keywords">International installations · recurring service</div><div class="micro">Product + operation + maintenance · multi-country customer base</div></div></div>
+<div class="milestone"><div class="year">2016</div><div><div class="keywords">Priveq growth partner</div><div class="micro">~SEK 180m · 140 employees · existing + new markets</div></div></div>
+<div class="milestone"><div class="year">2018</div><div><div class="keywords">Hyrtoaletten acquired</div><div class="micro">New business area · mobile / rental sanitation · broader offer</div></div></div>
+<div class="milestone"><div class="year">2022</div><div><div class="keywords">Nordic Toilet acquired</div><div class="micro">4,000 units · Sweden's largest toilet-hire company · Nordic expansion</div></div></div>
+<div class="milestone"><div class="year">2024</div><div><div class="keywords">Johan becomes CEO</div><div class="micro">Previous six years: high growth rate · positive margin development</div></div></div>
+<div class="milestone"><div class="year">Today</div><div><div class="keywords">Danfo International Group</div><div class="micro">Sweden · Norway · UK · UAE · Hyrtoaletten · NaRQ · Pacto</div></div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">LATEST SIGNAL</div><h2>Stockholm City</h2>
+<div class="latestbox">
+<h3>What the model looks like in real life</h3>
+<div class="chips">
+<span class="chip">Stockholm City</span>
+<span class="chip">30+ years supplied</span>
+<span class="chip">continued confidence</span>
+<span class="chip">potential +10–14 years</span>
+<span class="chip">accessibility</span>
+<span class="chip">design</span>
+<span class="chip">quality</span>
+<span class="chip">long lifecycle</span>
+</div>
+<div class="fitnote"><strong>COMMERCIAL POINT:</strong> not a one-off toilet sale · infrastructure + service + very long customer relationship</div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">LOCATION</div><h2>HQ vs Kungälv</h2>
+<div class="grid2">
+<div class="routebox"><div class="metric">Nora</div><p><b>Group HQ / Sweden</b></p><p>Kolmätaregatan 28</p><p>Örebro County · north of Örebro</p></div>
+<div class="routebox"><div class="metric">~320 km</div><p><b>From Kungälv by road</b></p><p>roughly ~4 hours driving</p><p>Not Gothenburg-local</p></div>
+</div>
+<div style="height:12px"></div>
+<div class="panel"><b>Do not confuse:</b> Hyrtoaletten subsidiary = Härryda, near Gothenburg · Group HQ = Nora.</div>
+</div></section>
+
+<section><div class="wrap sources">
+<div class="eyebrow">SOURCE CHECK</div>
+<a href="https://danfo.com/this-is-danfo" target="_blank" rel="noopener">Danfo · company / international footprint ↗</a>
+<a href="https://www.priveq.se/priveq-ny-tillvaxtpartner-for-danfo/" target="_blank" rel="noopener">Priveq · 2016 growth investment ↗</a>
+<a href="https://www.priveq.se/hyrtoaletten-blir-en-del-av-danfo/" target="_blank" rel="noopener">Priveq · Hyrtoaletten acquisition ↗</a>
+<a href="https://danfo.com/newsroom/hyrtoaletten-ab-acquires-nordic-toilet" target="_blank" rel="noopener">Danfo · Nordic Toilet acquisition ↗</a>
+<a href="https://danfo.se/det-har-ar-danfo/nyheter/Stockholms_offentliga_toaletter" target="_blank" rel="noopener">Danfo · Stockholm City latest ↗</a>
 </div></section>
 </div>
 
 <div class="pane" id="mefit">
 <div class="wrap hero">
 <div class="eyebrow">ME / FIT</div>
-<h1>Your story in 60 seconds.</h1>
-<p class="lead">Use this tab if Johan asks “tell me about yourself”, “what are you looking for?” or “why are you leaving?”</p>
+<h1>Your cues. Not a script.</h1>
+<p class="lead">Glance → remember the point → say it naturally.</p>
 </div>
+
+<section><div class="wrap">
+<div class="eyebrow">IF HE ASKS: WHY DANFO?</div><h2>Why I reached out</h2>
+<div class="cuegrid">
+<div class="cue"><div class="n">01</div><strong>Not toilets specifically</strong><span>honest starting point</span></div>
+<div class="cue"><div class="n">02</div><strong>Swedish + international</strong><span>right company profile</span></div>
+<div class="cue"><div class="n">03</div><strong>New markets / new business</strong><span>my strongest area</span></div>
+<div class="cue"><div class="n">04</div><strong>More than product</strong><span>service · maintenance · recurring value</span></div>
+<div class="cue"><div class="n">05</div><strong>Group built broader</strong><span>acquisitions · adjacent offers</span></div>
+<div class="cue"><div class="n">06</div><strong>International ambition</strong><span>clear growth angle</span></div>
+<div class="cue"><div class="n">07</div><strong>Cross-sector career</strong><span>learn proposition fast</span></div>
+<div class="cue"><div class="n">08</div><strong>Commercial problem &gt; sector</strong><span>can I add value?</span></div>
+</div>
+<div class="fitnote"><strong>ENDING THOUGHT:</strong> looked commercially interesting → worth contacting Johan directly</div>
+</div></section>
 
 <section><div class="wrap">
 <div class="eyebrow">WHO YOU ARE</div><h2>Commercial identity</h2>
 <div class="dark">
-<p><strong>Hands-on international new business.</strong> Nearly 30 years commercially, but the relevant point is that you still personally create opportunities and carry them through discovery, proposal, negotiation, contract and close.</p>
-<p><strong>Not looking for another CEO job.</strong> The CEO title came from a specific turnaround-and-sale mandate. Your deliberate next move is back into a permanent role where winning customers is the core job.</p>
+<p><strong>Hands-on international new business</strong></p>
+<p>Nearly 30 years · still personally prospect · discover · propose · negotiate · contract · close</p>
+<p><strong>Not seeking another CEO role</strong></p>
+<p>CEO = turnaround + sale mandate · next move = permanent hands-on sales</p>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">CAREER SNAPSHOT</div><h2>The recent brief</h2>
-<div class="career"><b>Earlier career</b><div>Premium brands, wholesale, retail, account management and entrepreneurship. Founded Pomeroi Fine Jewellers and later Luxury Sweden. At Padani, grew UK turnover by approximately 80% in the first year.</div></div>
-<div class="career"><b>ArrivalGuides</b><div>Joined in strategic sales and personally owned international full-cycle selling. During the Lonely Planet period, introduced personalised B2B outreach that generated 320% more qualified opportunities and meetings over six months.</div></div>
-<div class="career"><b>Precisely</b><div>Built a proactive global new-business programme for legal SaaS, sold to C-level executives and Heads of Legal, and personally managed opportunities through demo, proposal, negotiation and signature.</div></div>
-<div class="career"><b>2022 mandate</b><div>Asked by ArrivalGuides' owners to stabilise the business after COVID, restore commercial momentum and prepare it for acquisition.</div></div>
-<div class="career"><b>Acquisition</b><div>Smartvel agreement reached in 2023 and transaction completed in 2024. You supported due diligence, transition and familiarisation after the acquisition.</div></div>
-<div class="career"><b>Today</b><div>Approximately 80% of your work has remained hands-on international new business for Smartvel, with the remainder covering ArrivalGuides continuity and oversight.</div></div>
+<div class="eyebrow">CAREER SNAPSHOT</div><h2>Quick memory anchors</h2>
+<div class="career"><b>Earlier</b><div>Premium brands · wholesale · retail · entrepreneurship · Padani +~80%</div></div>
+<div class="career"><b>ArrivalGuides</b><div>International full-cycle sales · +320% qualified opportunities / meetings</div></div>
+<div class="career"><b>Precisely</b><div>Global proactive new business · legal SaaS · C-level / Heads of Legal</div></div>
+<div class="career"><b>2022</b><div>Turnaround + sale mandate · stabilise · restore commercial momentum</div></div>
+<div class="career"><b>2023/24</b><div>Smartvel agreement · acquisition complete · due diligence + transition</div></div>
+<div class="career"><b>Today</b><div>~80% hands-on international new business · ~20% ArrivalGuides oversight</div></div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">WHY YOU ARE LEAVING</div><h2>Clean, truthful answer</h2>
-<div class="answer">
-“My role finishes at the end of October, and that is agreed. I originally took the CEO role to stabilise ArrivalGuides and prepare it for a sale, and that mandate was completed when Smartvel acquired the company. I stayed on to help with the transition and, at the same time, continued doing a lot of hands-on international new business. Over the last 18 months the economics around the content side of the business have become more difficult, with AI and wider market changes being part of that, and the group has had to look carefully at costs. We have had open discussions about it, and it became clear that this is the right point for me to move on. I have done what I originally came in to do, and I now want to put my energy back into a permanent hands-on international sales role.”
+<div class="eyebrow">WHY YOU ARE LEAVING</div><h2>Memory cues only</h2>
+<div class="cuegrid">
+<div class="cue"><div class="n">01</div><strong>End October</strong><span>agreed finish</span></div>
+<div class="cue"><div class="n">02</div><strong>Original mandate</strong><span>stabilise · prepare sale</span></div>
+<div class="cue"><div class="n">03</div><strong>Mandate completed</strong><span>Smartvel acquisition</span></div>
+<div class="cue"><div class="n">04</div><strong>Stayed for transition</strong><span>plus international new business</span></div>
+<div class="cue"><div class="n">05</div><strong>Content economics harder</strong><span>AI + wider market change</span></div>
+<div class="cue"><div class="n">06</div><strong>Cost focus</strong><span>right point to move</span></div>
+<div class="cue"><div class="n">07</div><strong>Next move</strong><span>permanent · hands-on · international sales</span></div>
+<div class="cue"><div class="n">IF PUSHED</div><strong>No drama</strong><span>role changed · stayed longer · mandate done · timing right</span></div>
 </div>
-<div style="height:18px"></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">WHY DANFO COULD FIT</div><h2>The connection</h2>
 <div class="grid2">
-<div class="panel do"><h3>Why this works</h3><p>It is factual, commercially understandable and does not pretend everything was perfect. It explains the business context, confirms the original mandate was completed, and finishes by moving the conversation toward what you want next.</p></div>
-<div class="panel dont"><h3>Do not volunteer</h3><p>“I was sacked”, “I should have left 18 months ago”, “I stupidly stayed because it was comfortable”, or a long explanation about A-kassa. Those are personal feelings, not the useful business explanation.</p></div>
-</div>
-</div></section>
-
-<section><div class="wrap">
-<div class="eyebrow">IF HE PUSHES</div><h2>Backup version</h2>
-<div class="answer" style="font-size:17px">
-“The acquisition changed the shape of the role. I stayed longer than the original mandate because I wanted to help the transition and I believed the business could recover. In hindsight I probably stayed a little too long, but there is nothing dramatic behind it. The company needs to reduce cost, my original mandate is complete, and the timing is right for me to move back into the kind of international new-business role I actually want to do.”
-</div>
-</div></section>
-
-<section><div class="wrap">
-<div class="eyebrow">WHY DANFO COULD FIT YOU</div><h2>The connection</h2>
-<div class="grid2">
-<div class="panel"><h3>International market development</h3><p>You have repeatedly built new pipeline, developed markets and worked across borders.</p></div>
-<div class="panel"><h3>Full-cycle selling</h3><p>You personally prospect, discover, shape the proposition, negotiate and close.</p></div>
-<div class="panel"><h3>Learning new propositions</h3><p>Your career shows movement across sectors. You do not need to be the engineer; you need to understand enough to translate capability into customer value.</p></div>
-<div class="panel"><h3>Commercial builder mentality</h3><p>DANFO's growth in services, adjacent solutions or new geographies could benefit from someone comfortable creating structure and revenue where no mature playbook exists.</p></div>
+<div class="panel"><h3>International markets</h3><p class="small">pipeline · new countries · partners</p></div>
+<div class="panel"><h3>Full-cycle selling</h3><p class="small">prospect · discover · shape · negotiate · close</p></div>
+<div class="panel"><h3>New propositions</h3><p class="small">learn fast · translate into customer value</p></div>
+<div class="panel"><h3>Builder mentality</h3><p class="small">create structure · traction · revenue</p></div>
 </div>
 </div></section>
 </div>
@@ -165,18 +239,18 @@ section{padding:54px 0;border-top:1px solid var(--line)}.grid3{display:grid;grid
 <div class="wrap hero">
 <div class="eyebrow">QUESTIONS TO ASK</div>
 <h1>Find the real commercial need.</h1>
-<p class="lead">Do not interrogate him. Pick the questions that fit the flow and listen for the problem he is trying to solve.</p>
+<p class="lead">Prompts only. Pick what fits the conversation.</p>
 </div>
 <section><div class="wrap">
 <ul class="qs">
-<li><span>01</span><div><b>“When you mentioned a possible opening in a few months, what kind of need do you think may emerge?”</b><div class="small">Best opening question. Let him define the role/problem.</div></div></li>
-<li><span>02</span><div><b>“Would that be primarily within Sweden, or are you thinking more broadly across the Group and international markets?”</b><div class="small">Critical to understanding your fit.</div></div></li>
-<li><span>03</span><div><b>“Where do you see the strongest growth opportunity now: the core Danfo offer, services, adjacent products, or new geographies?”</b></div></li>
-<li><span>04</span><div><b>“How is new business currently generated across the Group — locally in each subsidiary, through business-area managers, or centrally?”</b></div></li>
-<li><span>05</span><div><b>“How much of the commercial work is formal public procurement versus proactive business development and relationship building?”</b></div></li>
-<li><span>06</span><div><b>“Are there markets or customer segments where you feel DANFO has a strong proposition but is not yet getting enough commercial traction?”</b></div></li>
-<li><span>07</span><div><b>“If you could add one commercial capability to the Group today, what would make the biggest difference?”</b><div class="small">Can expose the job before a formal job description exists.</div></div></li>
-<li><span>08</span><div><b>“What would make you say six months from now that the person you brought in had been a very good hire?”</b></div></li>
+<li><span>01</span><div><b>Possible opening — what need is emerging?</b><div class="small">Best opener</div></div></li>
+<li><span>02</span><div><b>Sweden role — or Group / international?</b><div class="small">Critical fit test</div></div></li>
+<li><span>03</span><div><b>Growth — core / services / adjacent / geographies?</b></div></li>
+<li><span>04</span><div><b>New business — local subsidiaries / business areas / central?</b></div></li>
+<li><span>05</span><div><b>Procurement vs proactive business development?</b></div></li>
+<li><span>06</span><div><b>Strong proposition but weak traction — where?</b></div></li>
+<li><span>07</span><div><b>One commercial capability you'd add today?</b></div></li>
+<li><span>08</span><div><b>Six months in — what would success look like?</b></div></li>
 </ul>
 </div></section>
 </div>
@@ -219,7 +293,7 @@ section{padding:54px 0;border-top:1px solid var(--line)}.grid3{display:grid;grid
 </div>
 
 </main>
-<footer><div class="wrap">Prepared for Andrew Langmaid · 25 September 2026 · facts separated from interview interpretation</div></footer>
+<footer><div class="wrap">Prepared for Andrew Langmaid · 30 September 2026 · scan cues, not a script</div></footer>
 <script>
 const tabs=[...document.querySelectorAll('.tab')], panes=[...document.querySelectorAll('.pane')];
 function openTab(id){tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));panes.forEach(p=>p.classList.toggle('active',p.id===id));window.scrollTo({top:0,behavior:'instant'});history.replaceState(null,'','#'+id)}
