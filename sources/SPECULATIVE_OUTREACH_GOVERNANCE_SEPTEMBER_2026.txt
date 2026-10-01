@@ -212,3 +212,23 @@ EMAIL COPY LANGUAGE LOCK - 22 SEPTEMBER 2026
 - Use sales/new-business/international-growth language instead, for example: "international sales and new-business work".
 - This restriction applies to drafted outreach copy. Do not rewrite factual historical job titles in the locked MASTER CV merely to remove the word marketing.
 
+LATEST USER-APPROVED SENT COPY LOCK - 28 SEPTEMBER 2026
+
+This section records the later user-approved V4.4 sent standard evidenced by the 28 September Gmail batch and supersedes earlier opening/location variants in this file where they conflict.
+
+OPENING - EXACT
+Use:
+"[Company]'s work appears well aligned with the type of international sales I am looking to continue."
+
+Do NOT use "international sales and new-business work" in this opening. New-business remains part of Andrew's role positioning elsewhere in the body, but the first company-fit sentence is locked to the wording above.
+
+LOCATION - EXACT
+For Gothenburg / immediate Gothenburg-region companies use:
+"Living in Kungälv also made it feel natural to reach out."
+
+For elsewhere in Sweden use:
+"Although living in Kungälv, just north of Gothenburg, I am open to the right opportunity elsewhere in Sweden, so it made sense to reach out."
+
+For Kungälv companies, preserve the separately approved Kungälv-specific wording already in this Governance unless Andrew explicitly changes it.
+
+All other current Governance controls remain unchanged: real HTML bullet list, four bold lead phrases, personal Best regards / Andrew sign-off, established HTML signature with true inline/CID portrait, clickable contact links, correct company-named CV PDF, DRAFT-only default, exact-recipient duplicate gate, and post-save stored-object QA.
