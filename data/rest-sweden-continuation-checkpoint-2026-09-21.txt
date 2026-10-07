@@ -1250,3 +1250,13 @@ CONTINUATION HUNT - PREMIUM EXPORT + COMPACT MANUFACTURER PASS - 25 SEPTEMBER 20
 - No Gmail draft was created, sent or scheduled in this pass. The existing active QA-verified draft manifest remains untouched.
 - Continue genuinely untouched-company hunting from 235/835.
 
+
+
+RECIPIENT TITLE GOVERNANCE CORRECTION - 7 OCTOBER 2026
+- Speculative Outreach Governance upgraded to Version 6 and stored at sources/SPECULATIVE_OUTREACH_GOVERNANCE_OCTOBER_2026_v6.txt. The former September governance file has been deleted.
+- New non-negotiable title gate: a company does not count as send-ready until the strongest current senior commercial decision-maker is identified, current employment is verified and the EXACT current title is verified. Ordinary Sales Managers, Export Sales Managers / Export Sales, KAMs, regional/area sellers and individual salespeople are not valid default final recipients.
+- Recent sent-batch title audit created at data/speculative-recipient-title-audit-2026-10-07.csv.
+- Senseair correction: the 6 Oct email was sent to Mikael Åkerholm, currently Head of Business Development. Current official structure identifies Per Nordin as Executive Sales Director, making Per the stronger sales-hierarchy route for any future contact. Historical send remains unchanged; no duplicate resend is authorised.
+- Triplesign correction: the 5 Oct email was sent to Karen Koelma, currently Export Sales Director. Current official structure identifies Malika Svensson as Sales and Marketing Director, a broader senior commercial route. Historical send remains unchanged; no duplicate resend is authorised.
+- Audited recent recipients confirmed as current senior commercial routes include OPO Scandinavia / Niklas Assarsson Widenäng (Commercial Director), BCC / Andreas Berner (Sales Director), Gymleco / Monica Sotkasiira (CEO & International Sales), Hydroware / Erik Paulsson (CCO), ExTe / Per Olsson (Sales Director), Swede Ship / Patrik Davidsson (CEO / Offer & Sales), Norden Machinery / Lars Hammarstedt (Sales Director), NCAB / Howard Goff (CCO), Marine Jet Power / Robert Magnusson (Global Director of Sales), Care of Sweden / Angelica Mänd Lantz (CCO), Nordomatic / Robert Hemmerdinger (CCO), Vitas Group / Rebecka Spånberg (CEO), and First Class Brands / Martin Szepczynski (CCO / Innovation).
+- Any further recent-batch recipient that has not yet passed the V6 title gate must be treated as unverified until checked. Do not infer approval from the fact that an email was already sent.
