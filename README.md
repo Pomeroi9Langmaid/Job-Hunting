@@ -29,7 +29,7 @@ Each displayed record is classified as one of:
 
 ## Speculative outreach governance
 
-The controlling Source for speculative-company qualification, Genesy contact handling and Gmail draft creation is `sources/SPECULATIVE_OUTREACH_GOVERNANCE_OCTOBER_2026_v6.txt`.
+The controlling Source for speculative-company qualification, Genesy contact handling and Gmail draft creation is `sources/SPECULATIVE_OUTREACH_GOVERNANCE_OCTOBER_2026_v7.txt`.
 
 Key non-negotiable controls include:
 
@@ -38,7 +38,7 @@ Key non-negotiable controls include:
 - Geography wording must be factually accurate: Kungälv-local, Gothenburg/"just up the road", or elsewhere-in-Sweden wording as defined in the Source.
 - Before a draft is reported complete, verify the message is still a draft, the CV and inline signature image are present, and exactly one intended active draft remains after any replacement.
 - Prospect qualification must be deduplicated against tracker/history and remain focused on credible full-cycle international sales fit rather than maximum volume.
-- Final recipients must pass the October 2026 title-accuracy lock: strongest current senior commercial decision-maker, exact current title verified from current company-controlled evidence and/or current LinkedIn; ordinary Sales Managers, Export Sales, KAMs and individual salespeople do not qualify by default.
+- Final recipients must pass the October 2026 V7 executive-recipient lock: use the current CEO or COO (or functionally equivalent top executive only where no CEO/COO exists). Do not address speculative outreach to CCO/CRO/CSO, VP/Director/Head of Sales/Commercial/Revenue/Growth/BD or other incumbents in the sales/commercial seat Andrew could plausibly fill.
 
 ## Full population review
 
