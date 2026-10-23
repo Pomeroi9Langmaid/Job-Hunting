@@ -1,0 +1,31 @@
+Speculative Job Hunting - hourly research checkpoint - 2026-10-23 Europe/Stockholm
+
+SOURCE AUTHORITY:
+Drive master JOB_HUNTING_MASTER_START_HERE v3.3 and current October speculative governance v7.1 checked; user 19-Oct vacancy override controls neutral copy. Official 21-Oct Protega Sent copied for wording; no independent assertion of a vacancy check in outreach.
+
+NEW POSITIVE / NOT CONTACTED:
+Swedencare AB (publ), Malmo (rest of Sweden), international physical premium pet health products in approximately 70 countries. CEO Hakan Lagerberg currently in office as of 21 Oct 2026 interim report; he plans to leave no later than Q3 2027, successor not yet appointed. Direct company-published professional address: hakan.lagerberg@swedencare.se. Latest 2026 9M net revenue 2,052.5 MSEK; operating EBITDA 407.2 MSEK (19.8%); net leverage ratio 3.0. International B2B distribution, tangible brand/manufacturing moat and credible permanent-hiring capacity. Commercial role scope conditional (group subsidiaries); no suitable advertised vacancy verified, thus use neutral Oct19 paragraph. Gmail entire mailbox/related brand terms and GitHub repo company search: no previous outreach match. Full offline RFC822 HTML/CID/PDF package locally generated and verified. IMPORTANT: NO GMAIL DRAFT CREATED; do not mark company DRAFT or SENT.
+
+NEWLY RECONCILED EXCLUSIONS:
+Eleiko: original speculative SENT 2026-09-28 to oskar.ragvald@eleiko.com, Gmail id 1a0e83f54e9122ad. No reapproach CEO.
+WALLENIUS SOL: SENT 2026-08-04 to jonas.wahlin@wallenius-sol.com, Gmail id 19fcd3042a4ef5f0; autosvar received. No new CEO outreach.
+Future Eyewear Group, Kungalv: SENT 2026-09-07 to peter.larsson@future.se, Gmail id 1a07c03d10e88020, delivery failure same day, id 1a07c04e169fe875. Prior contact/bounce requires new approval before retry.
+Nord-Lock Group: SENT 2026-08-05 to christoffer.karlsson@nord-lock.com, id 19fd22c814eec9df; auto-reply received.
+Gustaf Fagerberg AB: SENT 2026-08-10 to patrik.jansson@fagerberg.se, id 19febf65efb4bba3.
+The Nutriment Company: SENT 2026-09-07 to remi.selbach@nutriment.com, id 1a07c03d07737ee5.
+Aristo, Kungalv: SENT 2026-09-04 to dan@aristo.se, id 1a06c8fd2ec7679c; later replies.
+Snigel: CEO Malin Hlawatsch, global defense products, but direct company-published CEO professional email missing - HOLD.
+Sea IT: international shipping IT/security, but direct CEO/COO professional email not independently published - HOLD.
+Propoint AB, Kungsbacka: CEO Per-Johan Johansson listed on official site but no direct CEO email published and external OEM electronics production rather than proven international selling - HOLD.
+CE Produkter: Victoria Ekman company direct email previously verified; actual international full-cycle commercial proposition still unproven - HOLD.
+
+GMAIL: current active drafts zero, scheduled search zero, no messages sent or altered. NOR DICON: standalone /mnt/data/Nordicon_outreach_v71.html and /mnt/data/Andrew_Langmaid_Nordicon.pdf absent; 19-Oct original Nordicon Sent remains historical evidence.
+
+SOURCE URLs:
+https://www.swedencare.com/en/press/swedencare-ab-publ-interim-report-july-1st-september-30th-2026
+https://www.swedencare.com/en/press/swedencare-ab-publ-announces-intended-ceo-transition
+https://www.swedencare.com/en/
+https://www.propoint.se/kontakt/
+https://www.allabolag.se/foretag/propoint-ab/kungsbacka/elektronik-legotillverkning/2JZZIGAI5YDXQ
+
+Status labels are research-only. Do not falsely mark a Gmail DRAFT or SENT from offline output.
