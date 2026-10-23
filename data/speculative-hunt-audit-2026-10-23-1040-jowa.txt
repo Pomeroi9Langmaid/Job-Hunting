@@ -1,0 +1,39 @@
+Andrew Langmaid - speculative outreach audit and continuity checkpoint
+Date: 23 October 2026, 10:40 CEST
+Automation: Ongoing Speculative Company Hunt, normal ChatGPT only
+STATUS: Research and offline preparation; NO NEW GMAIL DRAFT, NO SEND, NO SCHEDULE.
+
+GOVERNANCE
+- Read live Google Drive JOB_HUNTING_MASTER_START_HERE.txt v3.3 (8 Oct) ID 1JN3OTGn28K0cHnrVPVb57GDXSP8xLuUR.
+- Read live SPECULATIVE_OUTREACH_GOVERNANCE_OCTOBER_2026_v7.txt v7.1 (13 Oct), ID 1yHcwhPKoWgo8vl6GmJL2F07Ha1pzUf0y.
+- User's 19 Oct instruction supersedes obsolete vacancy verification/claim paragraph. Neutral paragraph is verified in 21 Oct Protega and Zetterbergs Industri Gmail Sent copies, both checked with original MIME (4 true HTML li, signature CID, PDF).
+- Source v7.1 Drive remains outdated; did not alter it. Do not revert to the older 'I've looked through your current vacancies' claim without actual check.
+- Read canonical GitHub applications.csv, companies.csv, contact-enrichment.csv, speculative-contacted-exclusions-2026-10-08.csv, historical manifest; regional Library parsed GOTHENBURG.csv, STOCKHOLM.csv and Kungaelv.csv. Attempt to materialize raw regional CSVs refused by Library access path; XLSX target workbook successfully materialized.
+- Current Gmail list_drafts and in:scheduled both returned empty, no changes.
+- Gmail create-draft interface has no raw RFC822/multipart CID inline image insertion; a user-compliant draft could not be saved/read back, so no degraded draft attempted.
+
+NEW JOWA AB PROSPECT - CONDITIONAL B, GOTHENBURG REGION
+- HQ Kallered; internationally active marine water-treatment/environmental systems, worldwide subsidiaries/agents. Defensible physical, installed, regulated systems. Specialist marine product knowledge is a learning requirement; fit is conditional rather than guaranteed.
+- Official current CEO: Jim Jensen (full registry name Jim Are Jensen), company title CEO JOWA Group; direct company-published email jim@jowa.se. Verified 23 Oct against https://jowa.com/contact/jowa-ab-headquarter/ and Swedish public registry https://www.hitta.se/foretagsinformation/jowa+ab/5564388923; company CEO appointment took effect 1 May 2026.
+- 2025 operating JOWA AB figures: net sales SEK 113.431m, operating profit SEK 13.977m, 30 employees. Evidence: same hitta.se source.
+- Group international footprint https://jowa.com/contact/ ; actual tangible products https://jowa.com/ .
+- Vacancies examined: Sweden Jerrie inside-sales/back-office listing dated 10 Mar expired 8 Apr 2026; official July 17 technical sales representative vacancy concerns Rostock Germany and marine technology, not a verified suitable currently open Sweden full-cycle new-business role. The user-approved neutral paragraph used without falsely claiming full current vacancy listing review.
+- No matching Gmail correspondence discovered for JOWA, jim@jowa.se, Jim Jensen, parent IMS Group, TeamTec, Pocadel or Baggerod; no JOWA direct match found in canonical GitHub files checked.
+- COMPLETE OFFLINE PACKAGE at /mnt/data/JOWA_Speculative_Outreach_2026-10-23_UNSENT_NOT_GMAIL.zip, NOT a Gmail draft. Includes HTML + TXT, RFC822 EML with true inline/CID PNG headshot and original unchanged master-format CV under Andrew_Langmaid_JOWA.pdf filename. Four real li bold proof labels and clickable signature verified. PDF rendered and both pages visually checked. Package ZIP integrity passed.
+
+OTHER CANDIDATES / USEFUL EXCLUSIONS
+- NTEX / Stena: strong international logistics but already Sent 4 Aug 2026 to tobias.rindevall@ntex.com, Gmail original and GitHub confirmed. Do not introduce again to newer CEO. Existing Stena group contact also.
+- Carmenta Geospatial: Gmail sent 24 Aug 2026 to morad.elamrani@carmenta.com, excluded.
+- Gunnebo Safe Storage: Gmail sent 3 Aug 2026 (failed delivery), prior company/contact and low relevance; excluded.
+- Hecksher Gothenburg: executive published CEO Niklas Olsson niklas.olsson@hecksher.com (company dated Oct 2025) and strong multi-country new-business motion, but registered Sweden OpCo Hecksher Linieagenturer AB 2025 SEK 272.877m revenue, NEGATIVE SEK 0.822m EBIT, low equity SEK 3.8m and ~5.9% equity ratio; hiring capacity insufficiently reassuring; HOLD, not send-ready. Greencarrier parent related-group check still needed.
+- Hammar Maskin AB, Olsfors: credible export container-lift producer; 2025/04 SEK 380.5m sales but SEK -5.6m result before financial net; direct CEO email not company-published. HOLD.
+- Metalock Engineering AB: 2025 SEK 82.6m revenue, operating LOSS SEK 18.8m, despite large positive net profit due to non-operating items. Swedish registered CEO Matthew James Baisley, local General Manager Jon Strom email public, not confirmed CEO/top executive route. HOLD.
+- Solvina Mölndal: part of Rejlers, technical power systems. Official contact page publishes Sven Granfors Managing Director with direct email, but published financial/management/group structure conflicting and specialised sector; HOLD.
+- Sveaverken Global: physical agricultural robotics, international Stockholm business but official current CEO direct email not verified; HOLD.
+- Vink Essaplast: mainly Sweden industrial plastics distribution, autonomous international full-cycle remit and CEO direct email not established; HOLD.
+
+NORDICON
+- 19 Oct original sent to linus.ahlm@nordic-on.com Gmail message 1a1544a55fae6d79 read and verified as SENT with Andrew_Langmaid_Nordicon.pdf attachment, 4 HTML list elements, actual inline PNG Content-ID ii_1a153713f09eee21bf01.
+- Standalone /mnt/data/Nordicon_outreach_v71.html and /mnt/data/Andrew_Langmaid_Nordicon.pdf are absent. This does NOT affect original Gmail Sent record.
+
+Next: continue prospect research, be strict with live CEO title and public direct email, related company exclusions, actual vacancies, operating profitability and fit. Do not use Genesy. Do not send or schedule. Only save actual Gmail draft if true embedded CID signature possible; read back stored DRAFT and attachment.
