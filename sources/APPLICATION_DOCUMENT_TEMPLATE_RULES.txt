@@ -1,16 +1,80 @@
+
+*** CURRENT AUTHORITY OVERRIDE — 28 OCTOBER 2026 ***
+ADVERTISED ROLES only: current live governance is ADVERTISED_ROLES_CURRENT_V5_2026-10-28 (Google Drive document ID 1mLsWNIHFkmjsWiGcsISShbh_31PGfTZQ0iQbfjr1hfQ; GitHub main governance/ADVERTISED_ROLES_CURRENT_V5_2026-10-28.md). This is the SOLE ACTIVE advertised-role authority. Read it in FULL before any advertised-role search, score, application, CV or cover. On access failure STOP; NEVER fall back to V3, V4, cached prompts or historical records.
+ADVERTISED CV baseline ONLY: Andrew_Langmaid_CV_ADVERTISED_V2_2026-10-28.docx (Drive 1LFUIsML32lLGLierjlTPyP6lUzhzeDyq), matching PDF (Drive 1hU9RqrLvqsB46naTsiMJF-Vs-ZlS34pv). The factual/visual MASTER remains unchanged and the SPECULATIVE CV workflow is deliberately separate and unmodified.
+Evaluate REAL SHORTLISTING EVIDENCE separately from the ability to perform the job: specialist/domain/client network, quantified commercial scale, required credentials and comparable buyers. Never assign Tier A solely because the sales process sounds similar. Generate role-specific CVs using V2, verify factual figures/dates, preserve two-page portrait layout, PDF render, and ATS-extractable text. Never infer a CV failure from generic rejection wording.
+This override supersedes any conflicting historical descriptions/pointers below; they are retained as historical material only, NOT active authority.
+*** END 28 OCTOBER OVERRIDE ***
+
 ANDREW LANGMAID - APPLICATION DOCUMENT TEMPLATE RULES
-Version 1 - 2 September 2026
+Version 5 - 28 October 2026
+
 
 PURPOSE
 Permanent guardrail for every future CV and cover-letter artifact created for Andrew's job applications.
+
+
+CV ROUTING - NON-NEGOTIABLE
+
+
+There are now TWO deliberately separate CV baselines. They must never be mixed up.
+
+
+A. ADVERTISED JOB APPLICATIONS - USE SALES-FIRST CV
+Default editable baseline:
+- Andrew_Langmaid_CV_ADVERTISED_V2_2026-10-28.docx
+
+
+Matching fixed reference:
+- Andrew_Langmaid_CV_ADVERTISED_V2_2026-10-28.pdf
+
+
+This is the mandatory starting point for future advertised-role applications. It preserves Andrew's established MASTER visual structure and photograph but changes the narrative hierarchy so the recruiter first sees hands-on international full-cycle sales/new business rather than a CEO/general-management profile.
+
+
+The advertised SALES-FIRST baseline:
+- removes the defensive CEO explanation from the opening profile;
+- leads with full-cycle international new-business ownership and closing;
+- places commercial/sales achievements before the turnaround/acquisition achievement;
+- presents the current 2022-Present work as "International New Business & Commercial Transition | ArrivalGuides / Smartvel";
+- retains the official Chief Executive Officer title truthfully inside the role detail, but makes it subordinate to the approximately 80% hands-on international new-business work.
+
+
+For every advertised application:
+1. Start from the SALES-FIRST DOCX above.
+2. Verify all facts against the unchanged MASTER CV.
+3. Tailor only where the vacancy makes it useful and truthful.
+4. Preserve the visual system exactly.
+5. Deliver the company-specific file as Andrew_Langmaid_CV_[Company].pdf unless a role suffix is genuinely required.
+6. Do NOT revert to the CEO-first MASTER wording as the advertised application baseline unless Andrew explicitly instructs this in the active conversation.
+
+
+For an unusually senior advertised commercial role, role-specific tailoring may give the turnaround/leadership evidence more prominence where genuinely relevant, but the default advertised baseline remains SALES-FIRST and the core positioning remains hands-on international sales/new business.
+
+
+B. SPECULATIVE OUTREACH - MASTER CV STAYS EXACTLY AS BEFORE
+Speculative outreach continues to use:
+- Andrew_Langmaid_MASTER_CV_FULL_CYCLE_SALES_August_2026.docx
+- Andrew_Langmaid_MASTER_CV_FULL_CYCLE_SALES_August_2026.pdf
+
+
+The speculative CV content is unchanged by the 28 October 2026 advertised-CV V2 decision. Do not use the SALES-FIRST advertised CV for speculative outreach. Continue to follow governance/SPECULATIVE_OUTREACH_CURRENT_V7_2_2026-10-27.md, including its company-specific speculative filename rule Andrew_Langmaid_[Company].pdf.
+
+
+C. AUTHORITY
+The original MASTER CV remains the primary factual and visual authority for every workflow. The SALES-FIRST CV is an advertised-application presentation baseline, not a new source of career facts.
+
+
+
 
 NON-NEGOTIABLE CV RULE
 1. ALWAYS use Andrew's established MASTER CV template as the visual source of truth.
 2. NEVER redesign, rebuild, reformat or substitute a generic CV layout unless Andrew explicitly requests a redesign in the current conversation.
 3. Preserve exactly the established visual system: circular headshot/photo at top-right, blue Andrew Langmaid name/header treatment, blue section headings and divider rules, typography, margins, spacing, two-page structure, career chronology and footer/page numbering.
 4. Tailoring means modifying selected wording inside the MASTER template only. The underlying layout and identity remain unchanged.
-5. The current master full-cycle CV content/evidence Source is Andrew_Langmaid_MASTER_CV_FULL_CYCLE_SALES_August_2026.txt and its corresponding master document/PDF template.
+5. The current MASTER full-cycle CV content/evidence Sources are Andrew_Langmaid_MASTER_CV_FULL_CYCLE_SALES_August_2026.docx and the matching Andrew_Langmaid_MASTER_CV_FULL_CYCLE_SALES_August_2026.pdf. They remain the factual and visual authorities and the unchanged speculative-outreach CV. For advertised applications, the mandatory wording baseline is the separate SALES-FIRST DOCX/PDF defined in the routing section above.
 6. Always render and visually inspect the final PDF before delivery to confirm the photo, header, structure and two-page layout remain intact.
+
 
 NON-NEGOTIABLE COVER RULE
 1. ALWAYS use Andrew's established MASTER cover-letter template as the visual source of truth.
@@ -18,10 +82,16 @@ NON-NEGOTIABLE COVER RULE
 3. Preserve the established one-page formatting, typography, spacing, margins and header/contact treatment.
 4. Tailor wording only.
 5. Do NOT print a raw direct URL to Andrew's personal Family Archive/AI project in the cover unless Andrew explicitly asks for it. The project may be described as evidence of practical AI use.
-6. Always render and visually inspect the final cover before delivery.
+6. The preserved cover visual authority is Andrew_Langmaid_Cover_MASTER_LAYOUT_EXEMPLAR_2026-09-02.pdf. It is a role-specific visual/layout exemplar, not a neutral editable master; never copy its House of Control role/company wording into another application. Until a separate neutral editable cover master is preserved, use this PDF strictly to reproduce the approved one-page visual system.
+7. Cover CONTENT is governed by COVER_LETTER_STANDARD_ADVERTISED_ROLES_AUGUST_2026.txt. The visual exemplar governs layout only; its role-specific wording must never be used as a writing model.
+8. The current approved writing style is concise, role-specific and natural: a specific opening, the mandatory Smartvel sentence, selective evidence only, a short honest bridge paragraph for any genuine gap, and a simple human close. Do not force the former four-part commercial story into every cover. Do not create a second CV, generic company-praise letter, multiple bold mini-heading sections or formulaic AI-style prose.
+9. Bullets are optional and should be used only when they improve scanning; normally no more than four, with each bullet directly tied to the vacancy.
+10. Always render and visually inspect the final cover before delivery.
+
 
 AI PROJECT POSITIONING
 Andrew's practical AI work can be used as a supporting proof point where relevant: AI-assisted website/product creation, historical-photo restoration/enhancement workflows, and experimentation with AI-generated music/video. It must not replace or distort his primary positioning as a hands-on full-cycle international sales and new-business professional.
+
 
 OUTPUT FILE NAMING
 - NEVER put MASTER or TEMPLATE in a delivered application filename.
@@ -30,6 +100,7 @@ OUTPUT FILE NAMING
 - Add a short role suffix only when needed to distinguish multiple applications to the same company.
 - Internal working/template filenames may contain MASTER, but those names must never be delivered to Andrew as the final application files.
 
+
 FINAL CHECK BEFORE DELIVERY
 Confirm all of the following:
 - Correct MASTER visual template used.
@@ -37,7 +108,7 @@ Confirm all of the following:
 - No unrequested redesign.
 - Role-specific wording only where useful.
 - No invented experience or language capability.
-- Cover remains one page.
+- Cover remains one page and follows the current concise, role-specific Cover Standard rather than a generic/four-part boilerplate structure.
 - CV remains two pages unless Andrew explicitly approves otherwise.
 - No raw Family Archive URL in cover unless explicitly requested.
 - Final filenames contain neither MASTER nor TEMPLATE.
