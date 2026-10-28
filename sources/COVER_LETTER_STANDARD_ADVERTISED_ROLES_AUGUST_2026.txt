@@ -1,5 +1,10 @@
+CURRENT COVER GOVERNANCE OVERRIDE — 28 OCTOBER 2026
+SCOPE: advertised roles ONLY. Current governing source ADVERTISED_ROLES_CURRENT_V5_2026-10-28, Drive ID 1mLsWNIHFkmjsWiGcsISShbh_31PGfTZQ0iQbfjr1hfQ. This cover standard remains about CONTENT but its VISUAL authority is the user-approved 23 OCTOBER 2026 CV-matched cover style. Use A4 one page, Carlito, blue (#2375BB) name and role heading, fine blue rules, original circular portrait upper right, CV-matched contact/citizenship/languages header and neat footer. If exemplar assets are unavailable STOP/report partial rather than substitute older Arial/MASTER cover layout. Preserve exact wording when merely restyling an existing approved cover.
+PRECISE LEAVING REASON: before actual end of employment use the original mandatory sentence below; for applications submitted after 31 October 2026 update tense truthfully to: 'My role with Smartvel has come to an end, and I am deliberately looking for a permanent, hands-on international sales and new-business position.' Do not imply current employment that has finished.
+This current override takes precedence over any outdated cover-template or font instructions retained below as reference.
+
 ANDREW LANGMAID - ADVERTISED ROLE COVER LETTER STANDARD
-Version 2 - 2 September 2026
+Version 4 - 28 October 2026
 
 PURPOSE
 
@@ -7,9 +12,9 @@ This Source governs the drafting and formatting of cover letters for advertised 
 
 MANDATORY TEMPLATE LOCK
 
-Every advertised-role cover letter MUST use Andrew's established MASTER cover-letter template/layout as the immutable visual starting point.
+Every advertised-role cover letter MUST use the CV-matched visual system expressly approved on 23 October 2026 (superseding the earlier unmodified cover exemplar).
 
-- Never redesign, rebuild from scratch, substitute a generic template, or reinterpret the visual structure.
+- Do not substitute a generic template or ignore the approved 23 October CV-matched visual system.
 - Preserve the established typography, spacing, margins, header/contact treatment, one-page structure and overall visual hierarchy unless Andrew explicitly requests a redesign in the current conversation.
 - Tailoring means changing the role-specific wording inside the existing template, not changing the template itself.
 - Do not print a raw URL to Andrew's personal Family Archive/AI project in the cover letter unless Andrew explicitly asks for the URL to appear. It may be described as supporting evidence without the direct link.
@@ -25,45 +30,60 @@ Every advertised-role cover letter must explain Andrew's reason for applying usi
 
 Do not replace this with generic wording such as "organisational changes", "post-acquisition restructuring", "seeking a new challenge" or similar. Do not invent a different reason for leaving.
 
-STANDARD POSITIONING STRUCTURE
+APPROVED CONTENT STYLE - LOCKED
 
-The cover should make Andrew's commercial story immediately clear, using the same core positioning proven in speculative outreach:
+This section supersedes the earlier practice of forcing the same four-part commercial story into every advertised-role cover. The governing standard is now the concise, role-specific, natural style Andrew approved in September 2026.
 
-1. Entrepreneurial drive
-- Founded and self-financed Pomeroi Fine Jewellers in the UK.
-- Established Luxury Sweden, wrote the business plan, secured Swedish government start-up funding and agreed distribution terms with several brands.
+The cover must read like a senior commercial professional wrote it for this particular vacancy, not like a template, a second CV or AI-generated application prose.
 
-2. Commercial results
-- Increased UK turnover at Padani by approximately 80% in the first year.
-- At ArrivalGuides, personalised B2B outreach generated 320% more qualified opportunities and scheduled meetings in the first six months of 2020 than in the comparable 2019 period.
-- Achieved the annual commercial target for a newly introduced platform within six months.
+MANDATORY CONTENT SEQUENCE
 
-3. Earned trust
-- After eight years helping to develop an established central London business, its owner asked Andrew to take it over.
-- After delivering growth at Padani, Andrew was invited to become a partner.
-- In 2022, ArrivalGuides' owners asked Andrew to stabilise the company and lead its sale.
+1. Opening
+- If the source is known and natural to mention, say where Andrew saw the role, for example: "I spotted the [role] at [company] on LinkedIn..."
+- In the same opening paragraph, state in plain language why the actual work caught his attention.
+- Then include the mandatory Smartvel sentence verbatim.
+- Do not open with generic praise of the company or phrases such as "I am excited to apply", "thrilled", "perfect fit", "dynamic organisation" or similar filler.
 
-4. Continued hands-on selling
-- After ArrivalGuides was acquired by Smartvel, approximately 80% of Andrew's work remained hands-on international new business.
-- Andrew still personally handles target-account selection, outreach, discovery, tailored demonstrations, proposals, negotiation, contracts and close.
+2. Selective evidence only
+- Choose the 2-4 strongest proof points for this vacancy from the MASTER CV.
+- Do not automatically include entrepreneurship, earned trust, Padani, ArrivalGuides statistics or every stage of Andrew's career. Use only what helps this specific application.
+- Bullets are optional. Use them when they make evidence easier to scan, normally no more than four. Every bullet must earn its place.
+- A short bold lead-in inside a bullet is acceptable when useful, but do not build the cover from multiple bold mini-heading sections.
+- Do not repeat whole CV paragraphs. Translate evidence into the relevance of the role.
 
-ROLE-SPECIFIC TAILORING
+3. Bridgeable gap
+- If a genuine Tier-B gap exists, acknowledge it directly in one short, natural paragraph.
+- State what is new to Andrew without apologising or pretending otherwise, then give the closest truthful transfer evidence.
+- Do not over-explain the gap and do not manufacture sector experience, buyer relationships, technical credentials, quota history or language ability.
 
-The opening paragraph should first state why the specific role is relevant, then include the mandatory Smartvel sentence verbatim.
+4. Close
+- End with a simple statement of why the role is attractive and that Andrew would welcome a discussion.
+- Keep the close human and understated. Do not repeat the advert back to the employer.
+- Where genuine autonomy/ownership is central to the role, the approved sentence "I am comfortable being given real responsibility and expected to get on with it." may be used, but it is not boilerplate and must not appear unless it genuinely fits.
 
-After the standard positioning evidence, add a concise role-specific section explaining the strongest direct match to the vacancy. Use only evidence Andrew can truthfully support. Do not manufacture sector experience, buyer networks, technical credentials or language proficiency.
+ROLE-SPECIFIC TAILORING RULES
 
-Where there is a bridgeable gap, acknowledge it plainly and explain the closest transferable evidence. Do not hide the gap and do not over-emphasise it.
+- The job advert determines the evidence selection. The cover is not a fixed four-section biography.
+- Prioritise evidence of hands-on new business, prospecting, discovery, demonstrations, proposals, negotiation, contracts, close, international market development or relevant partnerships according to the role.
+- Use specific commercial results where they materially strengthen the case.
+- Mention Andrew's CEO mandate only when needed to explain current positioning or when the vacancy makes seniority context relevant. Do not let the CEO title dominate the cover.
+- Mention practical AI/personal-project work only where genuinely relevant to the role; never add it as routine colour.
+- If a verified named hiring manager/recruiter is available, address that person. Otherwise use a neutral professional salutation. Never guess a name.
+- If an application route does not accept a cover letter, do not invent another field in which to force the cover. Provide the CV and application answers required by the form. Create a cover anyway only if Andrew explicitly asks for one for separate use.
 
 STYLE
 
 - One page.
-- Clean Arial typography throughout.
-- Direct, senior and commercially credible.
-- Avoid generic cover-letter language and empty enthusiasm.
-- Make the reason for applying and the four-part commercial story obvious without requiring the reader to infer them.
+- Carlito regular/bold typography matching the current advertised CV; not Arial.
+- Concise, role-specific, mature and commercially credible. Prefer roughly 250-400 words when that is enough; shorter is better than padding.
+- Human, direct and understated rather than polished corporate marketing language.
+- No generic company praise, hype, filler, clichés or empty enthusiasm.
+- No formulaic "why me / why you / conclusion" construction.
+- No second-CV chronology.
+- No forced use of the same achievements from one application to the next.
 - Preserve Andrew's primary identity as a hands-on full-cycle international sales and new-business professional.
+- The final test is whether the letter sounds specific enough that changing only the company and job title would NOT make it reusable for another vacancy. If it would, rewrite it.
 
 FINAL RULE
 
-Future advertised-role covers should use this Source and Andrew's established MASTER cover template as the default standard unless Andrew explicitly instructs otherwise in the current conversation.
+Future advertised-role covers must follow this updated Source together with the 23 October CV-matched cover exemplar and current ADVERTISED_ROLES_CURRENT_V5_2026-10-28 governance. Never use older cover design rules.
