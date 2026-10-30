@@ -27,18 +27,17 @@ Each displayed record is classified as one of:
 
 `Prospective Target` means that the company and named contact have been researched, but Andrew has neither applied nor sent a speculative email. Missing direct contact details are shown explicitly as `Email needs sourcing` or the more precise sourcing status in the reviewed data.
 
-## Speculative outreach governance
+## Speculative outreach governance — CURRENT 30 October 2026
 
-The controlling Source for speculative-company qualification, Genesy contact handling and Gmail draft creation is `sources/SPECULATIVE_OUTREACH_GOVERNANCE_OCTOBER_2026_v7.txt`.
+**The ONLY active speculative-outreach governing source** is [`governance/SPECULATIVE_OUTREACH_CURRENT_V7_2_2026-10-27.md`](governance/SPECULATIVE_OUTREACH_CURRENT_V7_2_2026-10-27.md) on `main`, consolidated 30 October 2026. Its literal 27 October filename and v7.2 designation stay stable. Always fetch the live full file before acting.
 
-Key non-negotiable controls include:
+The previous `sources/SPECULATIVE_OUTREACH_GOVERNANCE_OCTOBER_2026_v7.txt` is **HISTORICAL/ARCHIVED** only, not a controlling source, regardless of any old labels in older pages, tracker records, recovery dossiers, task messages or past Git commits. Job Hunting START HERE is a source router; where it still refers to the original MASTER CV as the speculative attachment, the current GitHub v7.2 governs and overrides it.
 
-- Gmail drafts only unless Andrew explicitly authorises sending or scheduling in the current conversation.
-- Exact approved Gmail visual treatment: real HTML bullet list, bold proof-point headings, established HTML signature, inline circular headshot, correct links and company-specific CV attachment.
-- Geography wording must be factually accurate: Kungälv-local, Gothenburg/"just up the road", or elsewhere-in-Sweden wording as defined in the Source.
-- Before a draft is reported complete, verify the message is still a draft, the CV and inline signature image are present, and exactly one intended active draft remains after any replacement.
-- Prospect qualification must be deduplicated against tracker/history and remain focused on credible full-cycle international sales fit rather than maximum volume.
-- Final recipients must pass the October 2026 V7 executive-recipient lock: use the current CEO or COO (or functionally equivalent top executive only where no CEO/COO exists). Do not address speculative outreach to CCO/CRO/CSO, VP/Director/Head of Sales/Commercial/Revenue/Growth/BD or other incumbents in the sales/commercial seat Andrew could plausibly fill.
+New speculative draft attachments use **only** the approved 28 October HEADER-FIXED speculative PDF (Drive ID `1E3MefVEMn-VqB4vdALCRIPb9FOYrnkq1`, recorded size 105872 bytes). The August original MASTER CV is retained for historical factual/visual reference only and must never be attached to new drafts. Advertised-role CV is an entirely separate stream.
+
+The established private Sheets queue `SPECULATIVE_HUNTING_V71_PRIVATE_CID_QUEUE_2026-10-23` and installed script `processDriveQueueSpeculativeCIDV71` deliberately retain their literal V71 technical names. Do not use old Gmail-staging drafts or retired scripts, create duplicate tasks/triggers, or send without explicit authorisation. The existing hourly processor trigger is running; the processor's **approved-CV file/size/folder configuration is NOT YET verified**. No new READY queue rows or Gmail drafts until every current v7.2 verification gate and processor attachment QA passes. Existing actual sent and drafted correspondence must be preserved and deduplicated.
+
+All historical population and company-review sections below are retained as **research history**, not current recipient/email clearances, vacancy status, queue counts or live outreach instructions.
 
 ## Full population review
 
