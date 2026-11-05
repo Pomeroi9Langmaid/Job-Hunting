@@ -8,6 +8,7 @@ Andrew registered as seeking work on 1 November 2026. Record actual November act
 - **3 November 2026 — Circalle — UK Market Manager.** Interview / recruitment discussion. This resulted from speculative contact originally sent on **22 September**, so the November entry is the interview, not a duplicate fresh application.
 - **4 November 2026 — Greenstep — Chief Commercial Officer, Sweden — Gothenburg / hybrid.** Advertised vacancy application via https://careers.greenstep.com/sv/jobs/8591401-chief-commercial-officer-sweden . User-confirmed submitted, no confirmation email readback as yet.
 - **5 November 2026 — Hykmann Global Business Solutions — Business Developer, Industry Technology — Mölndal.** User-confirmed advertised application submitted. Official vacancy: https://www.hykmann.com/careers/jobs/667ba7fa-db29-4e0a-b7a8-547cb6960545 . Employer acknowledgement and submission method not independently verified.
+- **5 November 2026 — Versigent — Account Manager — Gothenburg.** User-confirmed application via employer Workday portal. https://www.versigent.com/careers/open-positions/J000704811 . Confirmation email not independently checked.
 - **Sandvik — NOT submitted.** Prepared CV/cover only, so exclude until user confirms actual submission.
 - **Workiva — applied 28 October 2026.** Email receipt independently verified for that date. Do **not** enter it as a November application; it belongs to October history, predating Andrew's unemployment registration.
 
@@ -20,7 +21,7 @@ Arbetsförmedlingen explicitly allows reporting jobs **not publicly advertised**
 The main Job Hunting microsite reads **data/applications.csv** plus **data/application-updates.csv**. New Workiva application record ID 299 (28 Oct), Circalle interview ID 300 (3 Nov conversation from September outreach), and Greenstep application ID 301 (4 Nov) are in applications.csv. These are operationally separate from the month-scoped activity log. Do not overwrite outcome history or relabel speculative outreach as advertised applications.
 
 ## Status distinctions
-- Microsite GitHub data: UPDATED for Workiva, Circalle and Greenstep; Hykmann microsite CSV update pending.
+- Microsite GitHub data: UPDATED for Workiva, Circalle and Greenstep; Hykmann microsite CSV update pending; Versigent application ID 302 added to microsite CSV.
 - Microsite public deployment: check Vercel readiness independently; GitHub commits do not prove deployment.
 - Arbetsförmedlingen reporting log: UPDATED locally in repository.
 - Arbetsförmedlingen Mina sidor: **NOT SUBMITTED**.
