@@ -30,3 +30,4 @@ The main Job Hunting microsite reads **data/applications.csv** plus **data/appli
 - 5 November 2026: Kiona — Senior Key Account Manager, Gothenburg (Intelligent Employment).
 - 6 November 2026: BD — Country Business Leader, MDS Nordics (Stockholm/Helsingborg/Oslo).
 These are confirmed by the applicant, but employer receipts have not been independently checked. Neither is submitted to Mina sidor.
+- 6 November 2026: Legora — GTM SMB Director EMEA, Stockholm; user-confirmed submitted via Ashby. Employer receipt unverified. Not entered in Mina sidor.
