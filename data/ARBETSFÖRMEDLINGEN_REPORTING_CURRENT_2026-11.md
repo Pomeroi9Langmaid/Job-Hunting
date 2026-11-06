@@ -25,3 +25,8 @@ The main Job Hunting microsite reads **data/applications.csv** plus **data/appli
 - Microsite public deployment: check Vercel readiness independently; GitHub commits do not prove deployment.
 - Arbetsförmedlingen reporting log: UPDATED locally in repository.
 - Arbetsförmedlingen Mina sidor: **NOT SUBMITTED**.
+
+## Additional user-confirmed applications
+- 5 November 2026: Kiona — Senior Key Account Manager, Gothenburg (Intelligent Employment).
+- 6 November 2026: BD — Country Business Leader, MDS Nordics (Stockholm/Helsingborg/Oslo).
+These are confirmed by the applicant, but employer receipts have not been independently checked. Neither is submitted to Mina sidor.
