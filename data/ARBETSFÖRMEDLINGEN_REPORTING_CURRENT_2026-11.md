@@ -1,5 +1,5 @@
 # Arbetsförmedlingen — activity report preparation (November 2026)
-Updated 5 November 2026. This file is a PRIVATE-WORKFLOW PLANNING REFERENCE in a repository; **nothing here has been entered or submitted to Arbetsförmedlingen**.
+Updated 11 November 2026. This file is a PRIVATE-WORKFLOW PLANNING REFERENCE in a repository; **nothing here has been entered or submitted to Arbetsförmedlingen**.
 
 ## Current monthly report window
 Andrew registered as seeking work on 1 November 2026. Record actual November activities and submit the **November report 1–14 December 2026** through Arbetsförmedlingen Mina sidor. Follow any individually agreed action-plan requirements. Official guidance: https://arbetsformedlingen.se/aktivitetsrapportering
@@ -31,3 +31,5 @@ The main Job Hunting microsite reads **data/applications.csv** plus **data/appli
 - 6 November 2026: BD — Country Business Leader, MDS Nordics (Stockholm/Helsingborg/Oslo).
 These are confirmed by the applicant, but employer receipts have not been independently checked. Neither is submitted to Mina sidor.
 - 6 November 2026: Legora — GTM SMB Director EMEA, Stockholm; user-confirmed submitted via Ashby. Employer receipt unverified. Not entered in Mina sidor.
+
+- **11 November 2026 — Vio.com — Head of Partnerships (Europe).** Direct email to Founder & CEO Oz Har Adir replying in the prior recruitment thread to ask about fit and permanent work from Sweden. Gmail SENT verified at 13:34 Swedish time. **Exploratory enquiry, not a submitted advertised-role application; no CV attached.** Include as employer contact / other job-seeking activity if the report form permits; do not count as an application unless a formal application is actually submitted.
