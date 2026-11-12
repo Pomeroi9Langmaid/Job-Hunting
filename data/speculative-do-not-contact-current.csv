@@ -1,0 +1,15 @@
+company,domain,restriction,scope,reason,decision_date
+ZenDev,zendev.se,HARD_NO_CONTACT,ALL_EMAIL_DRAFT_QUEUE_AND_AUTO_UNLESS_USER_REVERSES,Met Nikola Mirković 2026-09-16; user expressly says no further emails,2026-11-12
+Palats,palats.io,HARD_NO_CONTACT,ALL_EMAIL_DRAFT_QUEUE_AND_AUTO_UNLESS_USER_REVERSES,User confirms meeting with Per and fluent Swedish requirement; not suitable,2026-11-12
+TengTools,tengtools.com,HARD_NO_CONTACT,ALL_EMAIL_DRAFT_QUEUE_AND_AUTO_UNLESS_USER_REVERSES,Lunch cancelled 2026-09-04; user and CEO agreed insufficient commercial fit,2026-11-12
+Aarke,aarke.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Existing referral to senior people and warm acknowledgement,2026-11-12
+Axentia Technologies,axentia.se,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Referred to sales/HR; prior contact and separate job application history,2026-11-12
+CarbonCloud,carboncloud.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Exploratory office meeting held 2026-08-06,2026-11-12
+Consat Telematics,consat.se,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Internal CV discussion; no current suitable opening,2026-11-12
+CPAC Systems,cpacsystems.se,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Meeting with Felipe Lopes 2026-08-05 and further process; manual only,2026-11-12
+Fortex International,fortex.se,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,HR introduction and talent network membership,2026-11-12
+Hasselblad,hasselblad.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Prior internal referral to HR,2026-11-12
+Ingrid,ingrid.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,CV sent to leadership for review,2026-11-12
+Marinfloc,marinfloc.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Existing HR referral/permission to retain details,2026-11-12
+PMC Hydraulics,pmchydraulics.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,CV retained across group with prior acknowledgement,2026-11-12
+QleanAir,qleanair.com,NO_AUTOMATED_OUTREACH,NO_FRESH_SPECULATIVE_OR_AUTOMATED_EMAIL_MANUAL_ONLY_WITH_EXPLICIT_INSTRUCTION,Prior contact; fluent Swedish question raised and basic Swedish disclosed,2026-11-12
