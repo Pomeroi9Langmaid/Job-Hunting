@@ -160,9 +160,13 @@
 
       const activeInterviewRows = interviewRows.filter(isActive);
       const route1Rate = pct(roleInterviewRows.length, applications.length);
-      const route2ReplyRate = pct(specReplyRows.length, speculative.length);
-      const route2InterviewRate = pct(specInterviewRows.length, speculative.length);
-      const comparison = `Route 1 is converting ${route1Rate} of advertised applications to Interview #1, close to the current large-sample 6–7% benchmark. Route 2 has a ${route2ReplyRate} verified personal-reply rate and has created ${specInterviewRows.length} interview-stage conversation${specInterviewRows.length === 1 ? "" : "s"} from companies where no vacancy was advertised. Its ${route2InterviewRate} interview-creation rate is therefore not an apples-to-apples comparison with Route 1.`;
+      const unverifiedSpeculative = speculative.filter((r) => r.current_status === "Reply Status Unverified").length;
+      const speculativeOutcomesAudited = unverifiedSpeculative === 0;
+      const route2ReplyRate = speculativeOutcomesAudited ? pct(specReplyRows.length, speculative.length) : "not yet established";
+      const route2InterviewRate = speculativeOutcomesAudited ? pct(specInterviewRows.length, speculative.length) : "not yet established";
+      const comparison = speculativeOutcomesAudited
+        ? `Route 1 is converting ${route1Rate} of advertised applications to Interview #1. Route 2 has a ${route2ReplyRate} personal-reply rate and has created ${specInterviewRows.length} interview-stage speculative conversation${specInterviewRows.length === 1 ? "" : "s"}. These are different routes and not directly comparable.`
+        : `Route 1 has a recorded ${route1Rate} application-to-interview rate. For speculative outreach, ${unverifiedSpeculative} historical email outcomes still need reply verification. The ${specReplyRows.length} personal replies and ${specInterviewRows.length} interviews shown here are documented minimum counts, NOT reliable overall conversion rates.`;
 
       root.innerHTML = `
         <div class="analytics-heading">
@@ -198,16 +202,17 @@
             primaryLabel: "companies emailed · no advertised vacancy required",
             tone: "analytics-route-card--speculative",
             metrics: [
-              ["Personal replies", specReplyRows.length, `${route2ReplyRate} verified response rate`],
+              ["Personal replies", specReplyRows.length, speculativeOutcomesAudited ? `${route2ReplyRate} verified response rate` : "documented only · incomplete audit"],
               ["Conversation progressed", progressedReplies.length, "reply led to a meaningful next step"],
-              ["Reached Interview #1", specInterviewRows.length, `${route2InterviewRate} opportunity-creation rate`],
+              ["Reached Interview #1", specInterviewRows.length, speculativeOutcomesAudited ? `${route2InterviewRate} opportunity-creation rate` : "documented only · incomplete audit"],
               ["Reached Interview #2", specInterview2Rows.length, "later-stage speculative processes"],
               ["Active interview processes", specActive.filter(reachedInterview).length, "currently live"],
             ],
             context: `
               <span class="analytics-context-label analytics-context-label--speculative">NO ADVERTISED VACANCY</span>
-              <p><strong>${route2ReplyRate} personal replies.</strong> That sits inside the indicative <strong>5–15%</strong> range reported for well-targeted job-seeker cold email.</p>
-              <p><strong>${specInterviewRows.length} interview-stage conversation${specInterviewRows.length === 1 ? "" : "s"} created from zero advertised roles.</strong> The ${route2InterviewRate} figure is an opportunity-creation rate, not a direct comparator with Route 1; there is no dependable like-for-like interview benchmark for this exact funnel.</p>
+              ${speculativeOutcomesAudited
+                ? `<p><strong>${route2ReplyRate} personal replies.</strong> Responses and outcomes have been reconciled for the current data set.</p><p><strong>${specInterviewRows.length} interview-stage conversations.</strong> ${route2InterviewRate} opportunity creation is a different measure from advertised-job interview conversion.</p>`
+                : `<p><strong>${specReplyRows.length} documented personal replies.</strong> The ${unverifiedSpeculative} newly recovered historical approaches have not all been checked for replies or outcomes, so a reliable reply percentage cannot yet be calculated.</p><p><strong>${specInterviewRows.length} documented interview-stage conversations.</strong> This is a minimum recorded count, not a complete funnel conversion measure.</p>`}
               <p class="analytics-context-market">Swedish context: <strong>20.3%</strong> of Q1 2026 job openings were being recruited through methods other than advertising.</p>
               <div class="analytics-context-links"><a href="https://pitchhired.com/blog/cold-email-reply-rates-job-search-data" target="_blank" rel="noopener">Cold-email context ↗</a><a href="https://www.scb.se/en/finding-statistics/statistics-by-subject-area/labour-market/labour-force-demand/job-openings-and-recruitment-needs/pong/statistical-news/job-openings-and-recruitment-needs-1st-quarter-2026/?menu=open" target="_blank" rel="noopener">Statistics Sweden ↗</a></div>`,
           })}
