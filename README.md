@@ -103,3 +103,7 @@ Employer wording is kept distinct from any inferred mismatch in the record notes
 ## Updating the tracker
 
 Update the appropriate CSV and commit the change to `main`. The connected Vercel project redeploys automatically. Do not create a separate operational target page.
+
+## Gmail Sent backfill — 12 November 2026
+
+The Gmail Sent historical reconciliation appended 523 source-backed speculative-employer outreach records, preserving existing rows and giving 745 total `Speculative Outreach` records. New records use actual Gmail Sent dates, not draft or scheduled timestamps. They deliberately carry `Reply Status Unverified` until replies/outcomes can be reconciled; this is not a claim that no reply arrived. The new `Speculative sent` pipeline view shows all historical speculative records, including those awaiting reply verification; the separate `Awaiting replies` view remains restricted to confirmed awaiting status. Multiple sent items to the same company were consolidated into a single company outreach record, so these counts are company-approach records, not every individual email. The public CSV contains no Gmail message IDs, recipient email addresses, or private message bodies from the backfill. No emails, drafts, schedules or contact restriction files were changed.
