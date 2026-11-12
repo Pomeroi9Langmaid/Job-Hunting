@@ -36,6 +36,7 @@ const VIEW_DESCRIPTIONS = {
   applications: "Advertised-role applications that are still recorded as open.",
   interviews: "Interview-stage conversations that have not been closed by either side.",
   awaiting: "Speculative outreach where no substantive reply or closure is recorded yet.",
+  speculative: "All recorded speculative emails actually sent, including historical and reply-unverified outreach. Drafts are excluded.",
   closed: "Closed, unsuccessful, unavailable or otherwise inactive records.",
   all: "Complete application and outreach history.",
 };
@@ -150,7 +151,8 @@ function viewMatches(record, view = trackerView) {
   if (view === "applications") return isOpenApplication(record);
   if (view === "interviews") return isLiveInterview(record);
   if (view === "awaiting") return isAwaitingSpeculative(record);
-  if (view === "closed") return !isCurrentRecord(record);
+  if (view === "speculative") return record.activity_type === "Speculative Outreach";
+  if (view === "closed") return !isCurrentRecord(record) && record.current_status !== "Reply Status Unverified";
   if (view === "all") return true;
   return isCurrentRecord(record);
 }
@@ -200,6 +202,7 @@ function statusLabel(record) {
     return "Active";
   }
   if (status === "Awaiting Response") return "Awaiting reply";
+  if (status === "Reply Status Unverified") return "Sent · reply not checked";
   if (status === "Application Closed") return "Unsuccessful";
   if (status === "Role Filled / Closed") return "Role filled / withdrawn";
   if (status === "Closed by Andrew") return "Closed by Andrew";
@@ -287,6 +290,7 @@ function renderSummary() {
     applications: state.records.filter(isOpenApplication).length,
     interviews: state.records.filter(isLiveInterview).length,
     awaiting: state.records.filter(isAwaitingSpeculative).length,
+    speculative: state.records.filter((record) => viewMatches(record, "speculative")).length,
     closed: state.records.filter((record) => viewMatches(record, "closed")).length,
     all: state.records.length,
   };
