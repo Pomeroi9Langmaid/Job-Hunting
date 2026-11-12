@@ -133,11 +133,17 @@ function isActiveDirectRole(record) {
     ["Active", "Awaiting Response"].includes(record.current_status);
 }
 
+function isActiveInvestorNetwork(record) {
+  return record.activity_type === "Investor Network Outreach" &&
+    ["Active", "Awaiting Response"].includes(record.current_status);
+}
+
 function isCurrentRecord(record) {
   return isOpenApplication(record) ||
     isLiveInterview(record) ||
     isAwaitingSpeculative(record) ||
-    isActiveDirectRole(record);
+    isActiveDirectRole(record) ||
+    isActiveInvestorNetwork(record);
 }
 
 function viewMatches(record, view = trackerView) {
@@ -173,6 +179,7 @@ function searchMatches(record) {
 function routeLabel(type) {
   if (type === "Open Role Application") return "Advertised role";
   if (type === "Direct Role Outreach") return "Direct about role";
+  if (type === "Investor Network Outreach") return "Investor network";
   if (type === "Speculative Outreach") return "Speculative";
   return type || "Other";
 }
@@ -180,6 +187,7 @@ function routeLabel(type) {
 function routeClass(type) {
   if (type === "Open Role Application") return "pill-role";
   if (type === "Direct Role Outreach") return "pill-direct";
+  if (type === "Investor Network Outreach") return "pill-direct";
   if (type === "Speculative Outreach") return "pill-speculative";
   return "";
 }
