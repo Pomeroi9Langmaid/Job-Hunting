@@ -1,5 +1,5 @@
 # Arbetsförmedlingen — activity report preparation (November 2026)
-Updated 11 November 2026. This file is a PRIVATE-WORKFLOW PLANNING REFERENCE in a repository; **nothing here has been entered or submitted to Arbetsförmedlingen**.
+Updated 12 November 2026. This file is a PRIVATE-WORKFLOW PLANNING REFERENCE in a repository; **nothing here has been entered or submitted to Arbetsförmedlingen**.
 
 ## Current monthly report window
 Andrew registered as seeking work on 1 November 2026. Record actual November activities and submit the **November report 1–14 December 2026** through Arbetsförmedlingen Mina sidor. Follow any individually agreed action-plan requirements. Official guidance: https://arbetsformedlingen.se/aktivitetsrapportering
@@ -33,3 +33,4 @@ These are confirmed by the applicant, but employer receipts have not been indepe
 - 6 November 2026: Legora — GTM SMB Director EMEA, Stockholm; user-confirmed submitted via Ashby. Employer receipt unverified. Not entered in Mina sidor.
 
 - **11 November 2026 — Vio.com — Head of Partnerships (Europe).** Direct email to Founder & CEO Oz Har Adir replying in the prior recruitment thread to ask about fit and permanent work from Sweden. Gmail SENT verified at 13:34 Swedish time. **Exploratory enquiry, not a submitted advertised-role application; no CV attached.** Include as employer contact / other job-seeking activity if the report form permits; do not count as an application unless a formal application is actually submitted.
+- **12 November 2026 — Chalmers Ventures — portfolio investment-network introduction.** Personal email to Jonas Bergman, Investment Director, at jonas.bergman@chalmersventures.com. Gmail SENT verified 10:25 Europe/Stockholm, Gmail ID `1a1cf135db9b61eb`; approved company-named CV PDF attached. Seeking paid, permanent hands-on international commercial roles in investee businesses; **not an application to Chalmers Ventures or a particular vacancy**. Consider reporting only as **other job-seeking activity** in Mina sidor, not in the count of jobs applied for. Awaiting reply. Proof: https://mail.google.com/mail/u/?authuser=langmaid.andrew%40gmail.com#all/1a1cf135db9b61eb .
