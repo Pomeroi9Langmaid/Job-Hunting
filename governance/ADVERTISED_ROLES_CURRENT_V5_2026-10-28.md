@@ -2,6 +2,16 @@
 Version 5 — 28 October 2026. Scope: advertised vacancies and their application CVs/cover letters ONLY.
 STATUS: SOLE ACTIVE ADVERTISED-ROLE GOVERNANCE. All older advertised-role rules, CV baselines, prompts and snapshots are superseded. Never load or obey V3, V4 or a versionless cached copy when preparing a new advertised application. Do not modify speculative company research, emails or its separate master CV.
 
+## DISCOVERY-SOURCE COVERAGE ADDENDUM — 12 NOVEMBER 2026 (V5 remains active)
+- Mandatory core source checks for new advertised roles: **Ledigajobb.se**, **Platsbanken**, **LinkedIn Jobs**. Do not omit Ledigajobb.se again.
+- Complementary Swedish discovery sources, rotated through each full search cycle: **Jobbsafari**, **Jobbland**, **Indeed Sweden**, **Move to Gothenburg's careersingothenburg.com** (regional English-language portal). Review relevant adverts from Swedish recruiters including Maquire, Jerrie, A-hub, Oddwork, Your Talent and Sales Collective. Verify candidates on the employer's own careers/ATS page.
+- Secondary targeted sources: **SwedJobs**, **jobsinsweden.se**, The Hub, relevant investor/portfolio career pages, sector-specific travel/premium brands; Offentliga Jobb and EURES when the role and language fit. Do not present these as individually checked unless actually searched.
+- Location order: Kungälv, Gothenburg and Västra Götaland first; Stockholm/other Sweden only with workable hybrid/remote arrangements; Europe only where permanent employment from Sweden is confirmed or credible.
+- Search both English and Swedish job language: International Sales Manager/Director, International Business Development, Export Manager, Exportchef, Internationell säljare, Företagssäljare, Försäljningschef, Affärsutvecklare, Commercial Manager, New Business, Distribution Sales, Channel Sales, Partner Sales, Area Sales Manager. Role titles alone do not prove fit.
+- Prioritise genuinely new posts (past seven days) and then recent posts up to 30 days. Aggregator dates may reflect republishing: corroborate employer posting/status. Deduplicate across boards, employer names, requisitions and previously applied/declined roles.
+- Recommendation threshold unchanged: only Tier A or **strong Tier B**, judged on both doing the job and *first-screen shortlisting evidence*, language/geography/product credibility and the user's aversion to lengthy low-probability applications. Searching more sources must NOT result in applying for the sake of it.
+- Record which sources were actually checked and which were not; never imply automatic/continuous coverage without an observed scheduled task or run.
+
 ## Mandatory source and failure gate
 At the start of every advertised-role search, score, selection or CV preparation, read this exact CURRENT V5 governance file and current original job advert. If V5 cannot be read, STOP and state the source-access failure; never silently fall back.
 For advertised CV creation the only default wording baseline is:
