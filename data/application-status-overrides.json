@@ -30,6 +30,12 @@
     "outcome": "Navigio and Surikat decided to move forward with other candidates who are a little closer to the profile they are looking for. No more specific reason was given.",
     "notes_append": "4 Sep 2026: Erik Brechter confirmed that Navigio and Surikat jointly decided to continue with other candidates. He asked permission to retain Andrew's details for future opportunities. Any domain-fit explanation remains inference rather than employer-stated feedback."
   },
+  "86": {
+    "current_status": "Closed by Andrew",
+    "outcome_date": "12 Nov 2026",
+    "outcome": "Andrew confirms he met Per and a fluent Swedish-speaking requirement made the role unsuitable. He explicitly prohibits all further email to Palats.",
+    "notes_append": "12 Nov 2026 USER HARD NO CONTACT: Andrew confirms meeting with Per; Palats role required fluent Swedish, which he does not speak. Never draft, send or queue another Palats email without his explicit reversal. Previous tracker status 'Awaiting Response' is superseded."
+  },
   "233": {
     "current_status": "Application Closed",
     "outcome_date": "9 Sep 2026",
@@ -38,9 +44,18 @@
   },
   "245": {
     "current_status": "Closed by Andrew",
-    "outcome_date": "3 Sep 2026",
-    "outcome": "Andrew decided not to continue with the exploratory TengTools discussion after reassessing the commercial model and concluding that the fit was unlikely to justify a role.",
-    "notes_append": "3 Sep 2026: Andrew cancelled the planned lunch after further consideration. This is not an employer rejection."
+    "outcome_date": "4 Sep 2026",
+    "outcome": "Andrew withdrew the proposed exploratory meeting on 4 September after concluding no sufficiently clear commercial fit. Stian Strøm agreed. No further outreach.",
+    "notes_append": "Verified 12 Nov 2026 against Gmail 4 Sep: lunch was CANCELLED, not held. CEO agreed commercial mismatch; USER HARD NO CONTACT now applies. Never send unsolicited or automated TengTools mail.",
+    "interview_count": 0,
+    "interview_details": "Lunch initially planned, then cancelled by Andrew on 4 September 2026. NO interview or meeting held.",
+    "interview_steps": "12 Aug 2026|CEO OFFERED EXPLORATORY LUNCH;24 Aug 2026|MEETING DISCUSSED;4 Sep 2026|LUNCH CANCELLED - NO INTERVIEW"
+  },
+  "302": {
+    "current_status": "Closed by Andrew",
+    "outcome_date": "12 Nov 2026",
+    "outcome": "Meeting with Nikola Mirković held 16 September 2026; Andrew explicitly instructed on 12 November that he does NOT want any more emails to ZenDev.",
+    "notes_append": "12 Nov 2026 USER HARD NO CONTACT: despite positive September exchange and offer to meet again, Andrew explicitly forbids any further ZenDev email, draft, queue item or automated outreach unless he reverses the decision."
   },
   "306": {
     "current_status": "Application Closed",
